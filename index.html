@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lehigh CustomFit</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/overrides.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+
+</style>
+</head>
+<body id="top">
+    <header class="s-header">
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage" style="max-width:500px !important;">
+            </a>
+        </div>
+        <nav class="header-nav">
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <div class="header-nav__content">
+                    <div data-remodal-id="loginmodal" role="dialog" aria-labelledby="ContactForm" aria-describedby="ContactDesc" style="background-color:#000000 !important;border:5px solid #bed600;">
+                            <div>
+                                <h2 style="margin-top:0em !important;color:#ffffff;font-family: 'Josefin Sans', sans-serif;" id="ContactForm">Login To Your Account</h2>
+                            </div>
+                            <form method="post" action="https://www.customfit.me/process.aspx">
+                            <div class="form-group">
+                                <label for="txtCustomerNumber" style="color:#ffffff;">Account</label>
+                                <center><input type="text" class="form-control" id="txtCustomerNumber" name="txtCustomerNumber" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
+                                <label for="txtLocationNumber" style="color:#ffffff;">Location</label>
+                                <center><input type="text" class="form-control" id="txtLocationNumber" name="txtLocationNumber" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
+                                <label for="txtPassword" style="color:#ffffff;">Password</label>
+                                <center><input type="password" class="form-control" id="txtPassword" name="txtPassword" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
+                                <center>
+                                        <button type="submit" class="btn btn-success" style="color:#000000;background-color:#bed600;border:0;height:3.4rem;line-height:3rem;">Submit</button>
+                                </center>
+                            </div>
+                            </form>
+                            <p data-remodal-action="cancel" style="color:#ffffff;cursor: pointer;margin-bottom:0em !important;">CLOSE WINDOW</p>
+                        </div>
+                <h3 style="text-decoration:none;color:#bed600;">LOGIN &&nbsp;<br />COMMAND CENTER</h3>
+                <a style="text-decoration:none;color:#000000;" href="#loginmodal"><button class="btn btn-success" style="color:#000000;background-color:#bed600;border:0;height:3.4rem;line-height:3rem;">Click Here</button></a> 
+                <ul class="header-nav__list">
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <!--WERE ON THE OLD ABOUT TAB-->
+                    <li><a href="whyCustomFit.html" title="Why Get CustomFit">Why Get CustomFit</a></li>
+                    <li><a href="meetOurTeam.html" title="Our Sales Team">Our Sales Team</a></li>
+                    <!--<li><a class="smoothscroll"  href="#" title="News & Events">News & Events</a></li>-->
+                    <!--WERE ON THE OLD SERVICES TAB-->
+                    <li><a href="kiosks.html" title="Kiosks">Kiosks</a></li>
+                    <li><a href="safetyshoe.html" title="Safety Shoe Truck">Safety Shoe Truck</a></li>
+                    <li><a href="dataexchange.html" title="Data Exchange">Data Exchange</a></li>
+                    <li><a href="vouchers.html" title="Vouchers">Vouchers</a></li>
+                    <li><a href="command.html" title="Command Center">Command Center</a></li>
+                    <li><a href="orderingOptions.html" title="Ordering Options">Ordering Options</a></li>
+                    <li><a href="eipp.html" title="EIPP System">EIPP System</a></li>
+                    <li><a href="warranty.html" title="Warranty">Warranty</a></li>
+                    <li><a href="returns.html" title="Returns">Returns</a></li>
+                    <li><a href="savings.html" title="Savings">Savings</a></li>
+                    <!--WERE ON THE OLD RESOURCES TAB-->
+                    <li><a href="bootSize.html" title="Boot Size Guide">Boot Size Guide</a></li>
+                    <li><a href="faq.html" title="FAQ">FAQ</a></li>
+                    <!--<li><a class="smoothscroll"  href="#" title="Articles">Articles</a></li>
+                    <li><a class="smoothscroll"  href="#" title="Videos">Videos</a></li>-->
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
+    </header>
+    <!-- HIDE UNTIL WE NEED TO NOTIFY
+    <section id="notification-panel" style="padding-bottom:5px;">
+        <div style="background-color:#bed600;height:20px;">
+            <center><p style="font-size:15px;padding-bottom:5px;">GET OUR EMAIL NOTIFICATIONS <a href="#loginmodal" style="text-decoration: none;color:#212121;">HERE</a></p></center><br>
+        </div>
+    </section> -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/cf_welding_static.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+        <div class="shadow-overlay"></div>
+        <div class="home-content">
+            <div class="row home-content__main">
+                <h1 style="font-family: 'Josefin Sans', sans-serif;">
+                Free Managed Safety<br>
+                Shoe Programs
+                </h1>
+                <p style="font-family: 'Josefin Sans', sans-serif;">
+                With over 60 brands and 3000 styles, managing<br>
+                your safety footwear program has never been so easy.
+                </p>
+            </div>
+        </div>
+        <ul class="home-sidelinks" style="margin-right:60px !important;">
+                <form method="post" action="https://www.customfit.me/process.aspx">
+                    <div class="form-group">
+                            <label for="txtCustomerNumber" style="color:#ffffff;">Account</label>
+                            <center><input type="text" class="form-control" id="txtCustomerNumber" name="txtCustomerNumber" style="color:#bed600;border:1px solid #ffffff;background:transparent;"></center>
+                            <label for="txtLocationNumber" style="color:#ffffff;">Location</label>
+                            <center><input type="text" class="form-control" id="txtLocationNumber" name="txtLocationNumber" style="color:#bed600;border:1px solid #ffffff;background:transparent;"></center>
+                            <label for="txtPassword" style="color:#ffffff;">Password</label>
+                            <center><input type="password" class="form-control" id="txtPassword" name="txtPassword" style="color:#bed600;border:1px solid #ffffff;background:transparent;"></center>
+                            <center>
+                                    <button type="submit" class="btn btn-success" style="color:#000000;background-color:#bed600;border:0;height:3.4rem;line-height:3rem;">LOGIN</button>
+                            </center>
+            </div>
+            </form>
+        </ul>
+        <ul class="home-social">
+            <li class="home-social-title">Follow Us</li>
+            <li><a href="https://www.facebook.com/LehighCustomFit/">
+                <i class="fab fa-facebook"></i>
+                <span class="home-social-text"></i>Facebook</span>
+            </a></li>
+            <li><a href="https://twitter.com/LehighCustomFit">
+                <i class="fab fa-twitter"></i>
+                <span class="home-social-text">Twitter</span>
+            </a></li>
+            <li><a href="https://www.youtube.com/user/LehighTV">
+                <i class="fab fa-youtube"></i>
+                <span class="home-social-text">YouTube</span>
+            </a></li>
+            <li><a href="https://www.linkedin.com/company/lehigh-outfitters">
+                <i class="fab fa-linkedin"></i>
+                <span class="home-social-text">LinkedIn</span>
+            </a></li>
+        </ul>
+        <a href="#about" class="home-scroll smoothscroll">
+            <span class="home-scroll__text">Scroll Down</span>
+            <span class="home-scroll__icon"></span>
+        </a>
+    </section>
+    <section id='about' class="s-about">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" style="padding-left:0px;">
+                <h3 class="subhead">Who We Are</h3>
+                <h1 class="display-1" style="font-family: 'Josefin Sans', sans-serif;">Save Time With These CustomFit Features</h1>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+            <div class="col-full" style="padding-left:0px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-process process block-1-2 block-tab-full">
+                <div class="process__vline-left"></div>
+                <div class="process__vline-right"></div>
+                <div class="col-block process__col" data-item="1" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Data Management</h4>
+                        <p>
+                            Along with providing top quality safety footwear, Lehigh believes excellent service and maintaining efficiency and security are essential to doing good business. Our Employee Data Exchange option will help you better manage your Corporate Safety Shoe Program..
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="2" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Subsidy & Payroll Deduction</h4>
+                        <p>
+                            For your convenience and ease, we have several payment options from which to choose. We have the experience and know-how to implement your Subsidy Program to avoid hassle and confusion during invoicing and payment. We can also incorporate a Payroll Deduction Plan with any remaining balance.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="3" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Vouchers</h4>
+                        <p>
+                            The CustomFit Voucher Program is an innovative solution that allows you to lock down purchasing to only eligible employees, provides them with all the information and security to order on their own and affords you the peace of mind to know your employees' safety is being addressed.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="4" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>On-Site Kiosks</h4>
+                        <p>
+                            With a kiosk at your workplace, it's like having your own boot store! There's no reason to have limited, expensive shoe trucks come to your business when we can ship you a temporary or permanent kiosk which offers more sizes, limits down time to order, and provides an easy ordering option for all of your employees.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="5" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Data Integration</h4>
+                        <p>
+                            Along with providing top quality safety footwear, Lehigh believes excellent service and maintaining efficiency and security are essential to doing good business. Our Employee Data Exchange option will help you better manage your Corporate Safety Shoe Program.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-block process__col" data-item="6" data-aos="fade-up">
+                    <div class="process__text">
+                        <h4>Multi-Employee Ordering</h4>
+                        <p>
+                            Streamline your ordering time with Multi-Employee Ordering. It's a one-time order for all employees. Fill out one order form for all of your employees and receive one detailed statement of the entire order for efficient and organized record keeping.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='services' class="s-services light-gray">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" style="padding-left:0px;">
+                <h3 class="subhead">What We Do</h3>
+                <h1 class="display-1" style="font-family: 'Josefin Sans', sans-serif;">CustomFit is 100% FREE</h1>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+            <div class="col-full" style="padding-left:0px;">
+                <p class="lead">
+                    Our program is free for businesses interested in a managed safety shoe program. CustomFit provides you with the ultimate toolbelt for your safety footwear program at no additional cost. When doing business with us, you save on pricing and any concern with managing your employees' safety shoes. We offer free shipping, returns, and support so you can focus on what's most important - your business. Click the contact us button below to get started. 
+                </p>
+
+                <div data-remodal-id="modal0" role="dialog" aria-labelledby="ContactForm" aria-describedby="ContactDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="ContactForm">Contact Us</h2>
+                            <!--[if lte IE 8]>
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                            <![endif]-->
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                            <script>
+                                hbspt.forms.create({
+                                portalId: "4392020",
+                                formId: "7fc03a1a-67fb-4ebe-93bd-a9de7276d81b",
+                                submitButtonClass: 'btn'
+                                });
+                            </script>
+                        </div>
+                        <p data-remodal-action="cancel" style="color:black;cursor: pointer;margin-bottom:0em !important;">CLOSE WINDOW</p>
+                    </div>
+                    <a style="text-decoration:none;color:#000000;" href="#modal0"><button class="btn btn-success" style="color:#000000;background-color:#bed600;border:0;">Contact Us</button></a>
+            </div>
+        </div>
+    </section>
+    <section id='services' class="s-services light-gray" style="background-color:#000000;">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" style="padding-left:0px;">
+                <h3 class="subhead">Industries We Serve</h3>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up">
+            <center><img class="img-responsive" src="images/cf_wordcloud.png"></center>
+        </div>
+    </section>
+    <section id='works' class="s-works"> 
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" style="padding-left:0px;">
+                <h3 class="subhead">Featured Brands</h3>
+                <h1 class="display-1" style="font-family: 'Josefin Sans', sans-serif;">
+                    You won't find this brand selection of safety footwear on any other website
+                </h1>
+                <p class="lead">We have more safety footwear brands conveniently available in one spot than anyone else because we know and understand the importance of brand loyalty and value. We are continuously looking for and adding brands like Rocky, Georgia Boot, Timberland PRO to ensure you receive a quality product you can rely on. In the end, it's all about providing top-notch safety and a better selection of styles and brands is one way that we do that for you. We also have a great selection of work and weekend apparel.</p>
+            </div>
+        </div>
+        <div class="container" data-aos="fade-up">
+            <div class="wrap container">
+                <ul class="brandLogos list-unstyled row">
+                    <div data-remodal-id="modal1" role="dialog" aria-labelledby="RockyTitle" aria-describedby="RockyDesc">
+                        <div>
+                            <h2 id="RockyTitle" style="margin-top:0em !important;">Rocky Boots</h2>
+                            <p id="RockyDesc" style="text-align:left;">Rocky is a world leader in rugged outdoor and occupational footwear. Widely known for their highly technical hunting footwear, Rocky also has a wide selection of innovative shoes and boots in the western, hiking, work and duty categories with an entire line of boots for police officers, postal carriers, outdoor workingmen, cowboys, hikers and of course, hunters. The Rocky goal to provide quality outdoor and occupational footwear has not changed since the doors opened more than 80 years ago.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal1"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Rocky.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal2" role="dialog" aria-labelledby="GeorgiaTitle" aria-describedby="GeorgiaDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="GeorgiaTitle">Georgia Boots</h2>
+                                <p id="GeorgiaDesc" style="text-align:left;">A leader in the work boot market since 1937, Georgia Boot is America's Hardest Working Boot® and also known for designing some of America's most comfortable boots. Georgia Boot empowers those who work hard - the workers that pride themselves in building real value with their hands - and helps them achieve personal success by creating performance-enhancing footwear designed for the physical demands of their specific trades. You'll find styles for Farm and Ranch, Sport and Trail, Comfort and Specialized styles like Metguards and Loggers.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4">
+                            <a href="#modal2"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Georgia-Boot%20copy.png" alt=""></a>
+                    </li>
+
+
+                    <div data-remodal-id="modal3" role="dialog" aria-labelledby="LSSTitle" aria-describedby="LSSDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="LSSTitle">Lehigh Safety Shoes</h2>
+                                <p id="LSSDesc" style="text-align:left;">The Lehigh Safety Shoes Company is one of the largest and most respected safety footwear companies in the industry today. It was founded in 1922 as the Lehigh Rubber and Leather Company in the eastern Pennsylvania Lehigh Valley region where the tradition of hunting, trapping, and the blue-collar worker found security in a wealth of stable industries. Over the years, Lehigh Safety Shoes has introduced many innovative new products and technologies that have led to increased safety awareness in workplace and continues to develop styles to enhance your everyday work experience.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal3"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Lehigh-Safety-Shoes%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal4" role="dialog" aria-labelledby="DurangoTitle" aria-describedby="DurangoDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="DurangoTitle">Durango</h2>
+                                <p id="DurangoDesc" style="text-align:left;">Since 1965 Durango has developed a broad appeal and earned a reputation for authenticity and quality in the western footwear market, enabling the wearer a feeling of adventure and freedom and life on the edge. It's not a boot, it's an attitude… Durango calls it OUTLAW FUN. For a step back from the danger or to liven up your chosen occupation, Durango offers their Workin' Rebel and Farm and Ranch lines where many styles are available in protective toe and waterproof.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal4"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Durango%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal5" role="dialog" aria-labelledby="4ESTitle" aria-describedby="4ESDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="4ESTitle">4EurSole</h2>
+                                <p id="4ESDesc" style="text-align:left;">4EurSole is designed for women who are dynamic, peformance-driven and always on the go with daily commitments to family, clients, customers, patients and friends. 4EurSole footwear supports your feet with all day comfort, durability and slip resistance and supports your goals with great styling and versatility. Rocky 4EurSole is Fit for a Greater Purpose.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal5"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/4EurSole.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal6" role="dialog" aria-labelledby="S2VTitle" aria-describedby="S2VDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="S2VTitle">Rocky S2V</h2>
+                                <p id="S2VDesc" style="text-align:left;">Adapt to Different Conditions and Terrains with Rocky S2V! Elevated Details make you ... Strong. Smart. Versatile. Rocky S2V prepares you to traverse the unforseen. Check out the new slant on outdoor adventure footwear.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal6"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/S2V_Rocky%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal7" role="dialog" aria-labelledby="SGTitle" aria-describedby="SGDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="SGTitle">SlipGrips</h2>
+                                <p id="SGDesc" style="text-align:left;">Don't Slip, Get Gripped with SlipGrips slip-resistant footwear. As its own branded option, while also offering a huge selection of other top quality non-slip brands, SlipGrips provides a huge selection of affordable, durable, comfortable and stylish shoes to keep you on your feet in all service industry environments.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal7"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/slipgrips-logo-90.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal8" role="dialog" aria-labelledby="AriatTitle" aria-describedby="AriatDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="AriatTitle">Ariat</h2>
+                                <p id="AriatDesc" style="text-align:left;">Ariat was founded on technology and innovation – with the goal of making the highest-quality footwear for the world's equestrian athletes. As athletes, riders put their bodies to the test every day. Ariat creates high performance boots that keep up. Ariat strives to redesign, reimagine and reshape their world while staying true to the values and traditions that keep them authentic. Offering styles in Western, Work, Fashion and Outdoor categories; you'll find what fits you.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal8"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/ariat%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal9" role="dialog" aria-labelledby="AvengerTitle" aria-describedby="AvengerDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="AvengerTitle">Avenger</h2>
+                                <p id="AvengerDesc" style="text-align:left;">Avenger offers some of the most advanced manufacturing techniques combined with traditional styling and quality materials in order to meet the highest safety standards in the industry today. Offering both direct attach TPU/PU outsole products as well as styles which feature a rugged workplace outsole giving today’s consumers the flexible, yet tough, safety they need combined with the comfort and styling they demand.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal9"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Avenger%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal10" role="dialog" aria-labelledby="BerneTitle" aria-describedby="BerneDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="BerneTitle">Berne</h2>
+                                <p id="BerneDesc" style="text-align:left;">Berne Workwear has been in the business of making quality, durable, and long lasting outerwear since 1915. They manufacture outerwear products of the highest quality to accommodate working and hunting men, women, and children. No season is left by the wayside in Berne’s selection of clothing for all four seasons from the painstaking cold of winter to the blazing heat of summer.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal10"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/BERNE%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal11" role="dialog" aria-labelledby="BlundstoneTitle" aria-describedby="BlundstoneDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="BlundstoneTitle">Blundstone</h2>
+                                <p id="BlundstoneDesc" style="text-align:left;">Since 1870, Blundstone has made the toughest, no-nonsense footwear for work and play. While Blundstone is known for its iconic elastic-sided boots worldwide, their extensive range includes gumboots, lace-up safety footwear for men and women, heavy industrial footwear, school shoes and men’s casual footwear. Their ongoing research and development activity sees constant improvement in comfort, protection, performance and aesthetics to match the great fit and value.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal11"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Blundstone%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal12" role="dialog" aria-labelledby="BulwarkTitle" aria-describedby="BulwarkDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="BulwarkTitle">Bulwark</h2>
+                                <p id="BulwarkDesc" style="text-align:left;">As the world's largest manufacturer of flame-resistant apparel, Bulwark pledges to do all they can to protect lives. No compromise. The result is a drive to design, develop and distribute the best, most forward-thinking fire-resistant garments the world has ever seen.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal12"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Bulwark%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal13" role="dialog" aria-labelledby="CarharttTitle" aria-describedby="CarharttDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="CarharttTitle">Carhartt</h2>
+                                <p id="CarharttDesc" style="text-align:left;">For 120 years Carhartt has manufactured premium workwear known for exceptional durability, comfort, quality of construction, and fit that you can feel in the fabrics and see in the performance. Carhartt specializes in a complete head-to-toe product line for warm and cold weather alike that includes jeans and work pants, coveralls, sweatshirts, work shirts, sweats, shorts, t-shirts, work boots and accessories featuring premium fabrics, rugged construction, and a comfortable fit.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal13"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Carhart%20horizontal_color.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal14" role="dialog" aria-labelledby="CherokeeTitle" aria-describedby="CherokeeDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="CherokeeTitle">Cherokee</h2>
+                                <p id="CherokeeDesc" style="text-align:left;">Cherokee is dedicated to bringing fashion, comfort and quality, as well as a little more style and personality, to slip-resistant nursing shoes. Cherokee footwear is designed specifically for healthcare workers, combining the most advanced comfort technologies with great fashion to give you exceptional support and comfort through your longest shifts.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal14"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Cherokee%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal15" role="dialog" aria-labelledby="ChinookTitle" aria-describedby="ChinookDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="ChinookTitle">Chinook</h2>
+                                <p id="ChinookDesc" style="text-align:left;">Chinook may have started out as a small Pacific Northwest boot maker supplying footwear to one retailer but now our footwear can be found in hundreds of the largest work boot retailers coast-to-coast. Without any advertising hype we’ve grown simply by word of mouth– growth driven by quality and value.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal15"><img class="img-responsive" src="images/avatars/chinook.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal16" role="dialog" aria-labelledby="ChippewaTitle" aria-describedby="ChippewaDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="ChippewaTitle">Chippewa</h2>
+                                <p id="ChippewaDesc" style="text-align:left;">Chippewa has been supplying Americans with top-quality rugged boots and shoes for every purpose since 1901. Chippewa boots aren’t just made, they are built with the guts and determination of the loggers and engineers who paved the way, built the roads, and constructed the buildings that have made this country what it is today. They’re built with uncompromising quality and standards of U.S. craftsmen, to be the finest made, most reliable, authentic, and rich in heritage luxuries; representing integrity, heritage, and performance.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal16"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Chippewa_logo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal17" role="dialog" aria-labelledby="ConverseTitle" aria-describedby="ConverseDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="ConverseTitle">Converse</h2>
+                                <p id="ConverseDesc" style="text-align:left;">Converse fosters a culture of invention. They create products, services and experiences for today’s athlete while solving problems for the next generation.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal17"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/cf_converse_logo.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal18" role="dialog" aria-labelledby="CrocsTitle" aria-describedby="CrocsDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="CrocsTitle">Crocs</h2>
+                                <p id="CrocsDesc" style="text-align:left;">Crocs a world leader in innovative casual footwear offering several distinct shoe collections including crocs @ work™ for the hospitality and healthcare fields. All Crocs shoes feature Croslite™ material, a proprietary, revolutionary technology that gives each pair of shoes the soft, comfortable, lightweight and odor-resistant qualities that Crocs fans know and love.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal18"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Crocs%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal19" role="dialog" aria-labelledby="DanPostTitle" aria-describedby="DanPostDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="DanPostTitle">Dan Post</h2>
+                                <p id="DanPostDesc" style="text-align:left;">Introduced in the mid-1960s, the Dan Post brand is synonymous with “Handcrafted Cushion Comfort.” Crafted with the finest exotic skins and premium leathers, Dan Post employs technologically advanced materials to ensure comfort from the first step.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal19"><img class="img-responsive" src="images/avatars/danpost.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal20" role="dialog" aria-labelledby="DawgsTitle" aria-describedby="DawgsDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="DawgsTitle">Dawgs</h2>
+                                <p id="DawgsDesc" style="text-align:left;">The DAWGS Brand footwear label quickly became a leader in the shoe industry's evolution towards new comfort. DAWGS Brand's mission has and continues to bring A Foot's Best Friend to more and more happy people every day. From EXTRA PADDED Orthotic FOOT BEDS, multiple ventilation ports, to proprietary ultrasoft design materials, people can now stand on their feet all day without pain! The functionality and price make DAWGS footwear a great choice for people who love comfortable shoes. Dawgs come in all sizes, many colors and many styles that make them a fun fashion statement for young and old alike, with or without socks.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal20"><img class="img-responsive" src="images/avatars/dawgs.png" alt="Dawgs"></a>
+                    </li>
+
+                    <div data-remodal-id="modal21" role="dialog" aria-labelledby="DickiesTitle" aria-describedby="DickiesDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="DickiesTitle">Dickies</h2>
+                                <p id="DickiesDesc" style="text-align:left;">While Williamson-Dickie began as a bib overall company, today it has grown to be a go-to manufacturer of work apparel and footwear worldwide. By continually expanding and updating its selection, Dickies now offers a selection ranging from its staple work pants and work shirts to men's and women's footwear. Dickies® is a well-known brand recognized around the globe for its quality workwear and footwear.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal21"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/cf_dickies_logo.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal22" role="dialog" aria-labelledby="DingoTitle" aria-describedby="DingoDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="DingoTitle">Dingo</h2>
+                                <p id="DingoDesc" style="text-align:left;">Creative, expressive, active and fun – if this describes you, then boy do we have the boots for you! Conceived in the early 70s for a social- and fashion-conscious generation, Dingo continues to offer quality boots and shoes from biker/harness styles to western fashion.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal22"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/dingo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal23" role="dialog" aria-labelledby="DrMartensTitle" aria-describedby="DrMartensDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="DrMartensTitle">Dr. Martens</h2>
+                                <p id="DrMartensDesc" style="text-align:left;">Comfortably the toughest work boot since 1960, the Industrial line of Dr. Martens is built using the best quality materials with a more contemporary urban look. Synonymous with self-expression, Dr Martens boots are a great way to make work your own.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal23"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/DrMartens%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal24" role="dialog" aria-labelledby="FlorsheimTitle" aria-describedby="FlorsheimDesc">
+                            <div>
+                                <h2 style="margin-top:0em !important;" id="FlorsheimTitle">Florsheim Work</h2>
+                                <p id="FlorsheimDesc" style="text-align:left;">In 1892 Milton and Sigmund Florsheim started making shoes that combined style and comfort, building safety footwear that doesn’t look or feel like safety footwear. Over 110 years later, those founding principles are still alive throughout the company and in Florsheim Work. With the latest safety and comfort technology built into every work boot, Florsheim Work styles are tough enough for the job site but stylish enough for the office.</p>
+                            </div>
+                            <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                        </div>
+                    <li class="item col-xs-4"><a href="#modal24"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Florsheim-Work%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal25" role="dialog" aria-labelledby="FootGuardTitle" aria-describedby="FootGuardDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="FootGuardTitle">FootGuard</h2>
+                            <p id="FootGuardDesc" style="text-align:left;">New to the US, FootGuard is a leading safety brand from Europe with over 30 years of German engineering and heritage. It is driven to the best value priced safety footwear for your safety protection. Each style will have its own safety features and benefits as well as meets or exceeds American safety standards. FootGuard Safety shoes are designed with the latest footwear and safety trends in mind as well as providing styles that do look not like classic safety footwear.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal25"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/FootGuard%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal26" role="dialog" aria-labelledby="GenuineGripTitle" aria-describedby="GenuineGripDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="GenuineGripTitle">Genuine Grip</h2>
+                            <p id="GenuineGripDesc" style="text-align:left;">Manufacturing slip-resistant footwear since 1932, Genuine Grip's expertise comes from their team's accumulated technologies, skills, experiences and ideas in the footwear industries. Genuine Grip soles have specially designed tread patterns made of a special rubber compound to maximize slip-resistance. Their performance-inspired, ergonomically and aerodynamically designed WALKING ON AIR Dri-Lex® polyurethane footbed provides superb shock absorbency, comfort and moisture absorption.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal26"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/GenuineGrip%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal27" role="dialog" aria-labelledby="GrabbersTitle" aria-describedby="GrabbersDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="GrabbersTitle">Grabbers</h2>
+                            <p id="GrabbersDesc" style="text-align:left;">Grabbers shoes are designed for the young and the young at heart whose jobs require that they wear shoes with special, slip-resisting outsoles. They are made with genuine leather making them durable and easy to care for. Grabbers are comfortable, long-wearing and great-looking.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal27"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Grabbers%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal28" role="dialog" aria-labelledby="ImpactoTitle" aria-describedby="ImpactoDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="ImpactoTitle">Impacto</h2>
+                            <p id="ImpactoDesc" style="text-align:left;">Impacto is a privately owned Canadian company that serves the exclusive needs for worker safety products. For 25 years Impacto has specialized in improving worker safety and comfort by providing ergonomically designed personal protective equipment to reduce impact, vibration and repetitive motion in any work environment.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal28"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Impacto%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal29" role="dialog" aria-labelledby="IronAgeTitle" aria-describedby="IronAgeDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="IronAgeTitle">Iron Age</h2>
+                            <p id="IronAgeDesc" style="text-align:left;">Iron Age boots are about more then meeting or exceeding safety requirements – they're also about doing it with style and comfort, adding high-end touches like leather uppers without the high-end price tag. The name Iron Age conveys long-lasting strength; and since 1817 that's exactly what consumers have felt and known.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal29"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Iron-Age-Logo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal30" role="dialog" aria-labelledby="JohnDeereTitle" aria-describedby="JohnDeereDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="JohnDeereTitle">John Deere</h2>
+                            <p id="JohnDeereDesc" style="text-align:left;">Since 1837, the John Deere name has been synonymous with quality. Whether purchasing a tractor, bulldozer, or boots, you know you’re getting a superior product when you buy John Deere. Designed with the needs of the boot wearer in mind, we offer boots and shoes for the agricultural, industrial, and safety customer, as well as the logging and mining industry. No matter what the need, John Deere Boots will stand up to the job.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal30"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/JohnDeere%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal31" role="dialog" aria-labelledby="JustinWorkbootsTitle" aria-describedby="JustinWorkbootsDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="JustinWorkbootsTitle">Justin Workboots</h2>
+                            <p id="JustinWorkbootsDesc" style="text-align:left;">Comfort and Safety since 1879 - Each pair of Justin Original Workboots is indicative of the tireless hard work and determination that is alive and well and still building our country today and can be found in jobsites all over America. Justin Workboots are designed for dynamic support and stability for any environment, while taking protection to a whole new level. These boots always show up ready to perform, with the technology and innovation that make each pair comfortable enough to live in, but safe enough to stand up to the toughest jobs.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal31"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/JustinWorkBoots%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal32" role="dialog" aria-labelledby="KeenTitle" aria-describedby="KeenDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="KeenTitle">Keen</h2>
+                            <p id="KeenDesc" style="text-align:left;">We all live many lives splitting our time between work, play and giving back. Keen calls this living a HybridLife. HybridLife is the Keen mantra, their commitment to solutions in their product and business practices, to design footwear that enables you to play anyplace without a ceiling; and their promise to care for each other and the world around us.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal32"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Keen%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal33" role="dialog" aria-labelledby="HoneywellTitle" aria-describedby="HoneywellDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="HoneywellTitle">King's by Honeywell</h2>
+                            <p id="HoneywellDesc" style="text-align:left;">Possibly the only truly international safety footwear brand worldwide, KING’S has satisfied wearers en masse in workplaces in over 40 countires, providing them with quality standards-accredited, comfort-to-feet and value-to-employer safety and productivity. Indeed, The Logical Choice. A wide array of affordable and durable footwear that is suitable for most working conditions coupled with the 5-toe toecap feature and the PUshion cushion insole for enhanced comfort.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal33"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/honeywell_logo.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal34" role="dialog" aria-labelledby="KnappTitle" aria-describedby="KnappDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="KnappTitle">Knapp</h2>
+                            <p id="KnappDesc" style="text-align:left;">Knapp boots are trusted by people who work for a living. They are durable and comfortable, and come at a great price.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal34"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Knapp-Logo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal35" role="dialog" aria-labelledby="KodiakTitle" aria-describedby="KodiakDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="KodiakTitle">Kodiak</h2>
+                            <p id="KodiakDesc" style="text-align:left;">The Kodiak bear icon represents Canadian ruggedness and taming the great outdoors. Kodiak boots help you tap an unlimited capability on the toughest jobsites. When you see the iconic bear you know you’re wearing a hundred years of legendary craftsmanship and innovative leadership. 'Designed, engineered and built for over 100 years.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal35"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Kodiak%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal36" role="dialog" aria-labelledby="LaredoTitle" aria-describedby="LaredoDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="LaredoTitle">Laredo</h2>
+                            <p id="LaredoDesc" style="text-align:left;">Laredo Western Boots is known for its popular prices and authentic western styling. Laredo covers the style spectrum from riding to classic western to buckaroo styles. Whether you wear them for Saturday night out on the town or to work every day, Laredo Boots will stand up to the test.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal36"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Laredo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal37" role="dialog" aria-labelledby="McRaeTitle" aria-describedby="McRaeDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="McRaeTitle">McRae Industrial
+                            </h2>
+                            <p id="McRaeDesc" style="text-align:left;">Providing a complete line of affordable work boots that give you bang for your buck since 1959. Durable construction and quality materials let you concentrate on the job at hand, rather than the boots on your feet. Originally manufactured for the U.S. military, McRae Industrial Boots are tough and ready for a challenge – just like our soldiers.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal37"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/McRae-Industrial%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal38" role="dialog" aria-labelledby="MellowWalkTitle" aria-describedby="MellowWalkDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="MellowWalkTitle">Mellow Walk
+                            </h2>
+                            <p id="MellowWalkDesc" style="text-align:left;">Mellow Walk makes the most comfortable and fashionable light industrial safety footwear. Handcrafted in Toronto, 40 pairs of hands make each and every shoe. Founded in 1993, Mellow Walk operates the last shoe factory in Ontario, Canada, employing over 50 shoemakers at its Toronto manufacturing facility - the heart and soul of the company.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal38"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Mellow%20Walk%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal39" role="dialog" aria-labelledby="MichelinTitle" aria-describedby="MichelinDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="MichelinTitle">Michelin
+                            </h2>
+                            <p id="MichelinDesc" style="text-align:left;">Powered by the performance and long-lasting durability of Michelin tires, Michelin safety footwear uses the same innovative rubber compounds to build long-lasting and reliable outsoles for their boots. Alongside these innovative outsole designs is an extensive list of comfort features designed to keep feet satisfied in the most demanding work environments. Michelin footwear - a better way forward!</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal39"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Michelin%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal40" role="dialog" aria-labelledby="MoxieTradesTitle" aria-describedby="MoxieTradesDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="MoxieTradesTitle">Moxie Trades
+                            </h2>
+                            <p id="MoxieTradesDesc" style="text-align:left;">Moxie Trades continue to develop innovative and quality work boots specifically with women in mind. Moxie is defined as the slang word for the ability to face difficulty with spirit and courage. With these boots on your feet you will definitely have the confidence to get even the most difficult and challenging jobs accomplished. It started with a pink work boot, now you can find a large selection of Moxie Trades safety footwear for every need.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal40"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/MoxieTrades%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal41" role="dialog" aria-labelledby="MuckBootTradesTitle" aria-describedby="MuckBootDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="MuckBootTitle">The Original Muck Boot Company
+                            </h2>
+                            <p id="MuckBootDesc" style="text-align:left;">The Original Muck Boot Company recognized the need for a more comfortable boot for use in messy and tough conditions. Every boot in the line is expected to deliver 100% waterproof quality and comfort. Muck consists of rubber and leather footwear, all designed to tackle tough conditions in work, agriculture, lawn and garden, outdoor sporting, equestrian and whatever you get into.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal41"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Muck-logo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal42" role="dialog" aria-labelledby="NautilusTitle" aria-describedby="NautilusDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="NautilusTitle">Nautilus Safety Footwear
+                            </h2>
+                            <p id="NautilusDesc" style="text-align:left;">Drawing from an athletic footwear heritage, Nautilus Safety Footwear incorporates the comfort and support of ergonomically designed athletic footwear construction with the tough safety features required by government standards. Nautilus Safety Footwear has always strived, and will continue to strive, to improve the quality of footwear comfort and safety with steel toe, composite toe, Ergolite carbon fiber composite toe, and Alloy Lite safety toe styles.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal42"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Nautilus.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal43" role="dialog" aria-labelledby="NurseMatesTitle" aria-describedby="NurseMatesDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="NurseMatesTitle">Nurse Mates
+                            </h2>
+                            <p id="NurseMatesDesc" style="text-align:left;">Nurse Mates has been committed to delivering quality, innovative products for nearly fifty years. Their premium full-grain leathers, slip-resistant bottoms and comfort technologies make Nurse Mates footwear a great choice for working professionals seeking long-lasting style and comfort.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal43"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/NurseMates%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal44" role="dialog" aria-labelledby="OliverTitle" aria-describedby="OliverDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="OliverTitle">Oliver
+                            </h2>
+                            <p id="OliverDesc" style="text-align:left;">Oliver Footwear offers a range of specialty and safety footwear that is engineered for comfort and fit for purpose. Innovation and technology are at the forefront of development and design providing lightweight and flexible under-foot support that absorbs shock and impacts to help diminish lower back, leg and foot fatigue - especially when facing long hours or shifts at work.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal44"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Oliver%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal45" role="dialog" aria-labelledby="SwatTitle" aria-describedby="SwatDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="SwatTitle">Original S.W.A.T.
+                            </h2>
+                            <p id="SwatDesc" style="text-align:left;">Founded in 1999, Original S.W.A.T. se out to make a better boot for Law Enforcement, Military, EMT's and others who work for a living. They focus completely on tactical footwear designing and engineering all styles to help you perform on the job with all-day comfort and support. Their mission is to enhance their customers performance, comfort and safety by delivering the best tactical footwear in the world.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal45"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/OriginalSwatLogo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal46" role="dialog" aria-labelledby="PumaTitle" aria-describedby="PumaDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="PumaTitle">Puma Safety Shoes
+                            </h2>
+                            <p id="PumaDesc" style="text-align:left;">Puma is respected as one of the major sports and lifestyle brands in the world and their safety footwear line incorporates high performance, safety and comfort while allowing wearers to enjoy the superb styling which is synonymous with the brand.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal46"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/PUMA-safety-shoes%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal47" role="dialog" aria-labelledby="RangerTitle" aria-describedby="RangerDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="RangerTitle">Ranger
+                            </h2>
+                            <p id="RangerDesc" style="text-align:left;">A brand of Honeywell Safety Products, Ranger waterproof footwear is ideal for cold weather, outdoor work, refrigeration, hiking, hunting, wading or even lawn & garden. The Ranger name is synonymous with quality and value.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal47"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/RangerBoots%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal48" role="dialog" aria-labelledby="ReebokTitle" aria-describedby="ReebokDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="ReebokTitle">Reebok Work
+                            </h2>
+                            <p id="ReebokDesc" style="text-align:left;">Reebok Work styles are designed and built from the ground up with athletic performance technologies to meet the unique needs of individuals in construction, landscaping, manufacturing, warehousing, military, law enforcement and postal work. Athletic, casual, and slip resistant styles are designed to offer the perfect combination of comfort and performance. Military and tactical footwear are built for rigorous field use, tactical operations, training, and garrison or uniform wear.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal48"><img class="img-responsive" src="images/avatars/reebok.png" alt="Reebok Work"></a>
+                    </li>
+
+                    <div data-remodal-id="modal49" role="dialog" aria-labelledby="RefrigiWearTitle" aria-describedby="RefrigiWearDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="RefrigiWearTitle">RefrigiWear
+                            </h2>
+                            <p id="RefrigiWearDesc" style="text-align:left;">RefrigiWear is the leading manufacturer of insulated industrial work wear & accessories for subzero temps and everyday use.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal49"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/RefrigiWear-140.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal50" role="dialog" aria-labelledby="RockportTitle" aria-describedby="RockportDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="RockportTitle">Rockport Works
+                            </h2>
+                            <p id="RockportDesc" style="text-align:left;">For nearly 40 years, Rockport Works has been an industry innovator as the first to use advanced materials and technologies in contemporary styled footwear for men and women. Each product incorporates performance technology for lightweight comfort and on-the-job protection with a fashionable edge. All work styles are engineered to move with your feet while delivering the safety your work demands.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal50"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Rockport-Works%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal51" role="dialog" aria-labelledby="RoyerTitle" aria-describedby="RoyerDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="RoyerTitle">Royer
+                            </h2>
+                            <p id="RoyerDesc" style="text-align:left;">Tradition and innovation since 1934, Royer is a Canadian manufacturer of work boots and shoes renowned for their outstanding quality.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal51"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/royer-logo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal52" role="dialog" aria-labelledby="ServusTitle" aria-describedby="ServusDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="ServusTitle">Servus
+                            </h2>
+                            <p id="ServusDesc" style="text-align:left;">A brand of Honeywell Safety Products, Servus represents the highest standard of quality and value in protective multi-purpose boots and overshoes for every job including general outdoors, landscaping, gardening, hunting, farming, occupational and general industrial. Servus by Honeywell footwear will keep you dry, warm and comfortable.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal52"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Servus%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal53" role="dialog" aria-labelledby="SkidBusterTitle" aria-describedby="SkidBusterDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="SkidBusterTitle">SkidBuster
+                            </h2>
+                            <p id="SkidBusterDesc" style="text-align:left;">SkidBuster was designed to help make the hospitality industry safer and more comfortable. Their innovative slip-resistant outsole designs quickly and effectively channel liquid away from the shoe’s surface area to provide maximum slip resistance in all types of wet environments. From stylish designs, athletic-inspired comfort and construction, action leather, and moisture-wicking linings, SkidBuster responds to the needs of today’s food service and hotel workers.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal53"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/SkidBuster%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal54" role="dialog" aria-labelledby="SmokyTitle" aria-describedby="SmokyDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="SmokyTitle">Smoky Mountain Boots
+                            </h2>
+                            <p id="SmokyDesc" style="text-align:left;">Smoky Mountain Boots are quality crafted, fashionable, durable and affordable western, work and rubber styles for men, women and kids.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal54"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/SmokyMtn%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal55" role="dialog" aria-labelledby="SpringStepTitle" aria-describedby="SpringStepDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="SpringStepTitle">Spring Step
+                            </h2>
+                            <p id="SpringStepDesc" style="text-align:left;">This brand has a tradition of luxury and a history of performance. Safety will always come first with their professional, high quality work footwear that contains multiple comfort and safety features. These safety shoes will work hard right alongside of you as you give your one hundred percent on the job.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal55"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images//SpringStep%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal56" role="dialog" aria-labelledby="StanleyTitle" aria-describedby="StanleyDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="StanleyTitle">Stanley
+                            </h2>
+                            <p id="StanleyDesc" style="text-align:left;">For over 170 years, STANLEY has been synonymous with quality, reliability, innovation and value. From the 'do-it-yourselfer' installing a ceiling fan to the professional contractor framing new homes it’s a safe bet that STANLEY has the right tool for the job.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal56"><img class="img-responsive" src="images/avatars/stanley.png" alt="Stanley"></a>
+                    </li>
+
+                    <div data-remodal-id="modal57" role="dialog" aria-labelledby="SpencoTitle" aria-describedby="SpencoDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="SpencoTitle">Spenco
+                            </h2>
+                            <p id="SpencoDesc" style="text-align:left;">Started in 1967, Spenco is an innovative healthcare company whose mission is to help people everywhere achieve more comfortably. Spenco's core business revolves around producing high quality insole and footcare products. Spenco is a dynamic, entrepreneurial company that has evolved into one of the world's leading footcare brands and is currently sold in over 84 countries around the world.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal57"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/SpencoLogo%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal58" role="dialog" aria-labelledby="ThorogoodTitle" aria-describedby="ThorogoodDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="ThorogoodTitle">Thorogood
+                            </h2>
+                            <p id="ThorogoodDesc" style="text-align:left;">For over 115 years Weinbrenner Shoe Company has built a tradition of quality, a reputation for value, innovation and craftsmanship including its Thorogood Work footwear products. Thorogood offers a wide variety of steel and non steel toe work boots for the American workingman.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal58"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Thorogood%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal59" role="dialog" aria-labelledby="TerraTitle" aria-describedby="TerraDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="TerraTitle">Terra
+                            </h2>
+                            <p id="TerraDesc" style="text-align:left;">Hard work is what separates those who think it and those who live it. Terra supports every worker with the drive, and mental fortitude to put in a serious days work without compromise and is constantly innovating and improving the performance of every work boot. For Terra boots, it’s all about the results and they are performance-proven. Terra delivers industry leading safety and never sacrifices on comfort and performance.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal59"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Terra%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal60" role="dialog" aria-labelledby="TimberlandTitle" aria-describedby="TimberlandDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="TimberlandTitle">Timberland PRO
+                            </h2>
+                            <p id="TimberlandDesc" style="text-align:left;">Timberland PRO footwear is built with a purpose. They look at what is needed for feet to perform at their best on the job and then design products to meet those challenges. Committed to using new technologies to better products for markets that have specific on-the-job footwear requirements, Timberland PRO delivers the ultimate performance through comfort, durability and protection all-day long.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal60"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/TimberlandPRO%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal61" role="dialog" aria-labelledby="TingleyTitle" aria-describedby="TingleyDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="TingleyTitle">Tingley
+                            </h2>
+                            <p id="TingleyDesc" style="text-align:left;">For generations Tingley has been making high performance products that meet the demands of their valued customers. Utilizing the company's experience in rubber, Tingley designed, developed, and commercialized the first unlined stretch rubber overshoe which put them in the protective footwear business. Today, they have expanded and refined their product lines with superior footwear designs that reach both consumer and industrial markets.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal61"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/Tingley%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal62" role="dialog" aria-labelledby="TonyLamaTitle" aria-describedby="TonyLamaDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="TonyLamaTitle">Tony Lama
+                            </h2>
+                            <p id="TonyLamaDesc" style="text-align:left;">A legacy created by a humble cobbler and a hard-working entrepreneur with a fierce pride in his craft lives on in Tony Lama Boots. Each pair of prized Tony Lama boots are a true work of American art, meticulously built by hand, crafted of the finest and most exotic materials, always provocative, always recognized. No matter the occasion or job, you can count on Tony Lama to be indicative of the quality, comfort, and style of the modern western character.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal62"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/TonyLama%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal63" role="dialog" aria-labelledby="WorkOneTitle" aria-describedby="WorkOneDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="WorkOneTitle">Work One
+                            </h2>
+                            <p id="WorkOneDesc" style="text-align:left;">First introduced in 1918 by the Weinbrenner Shoe Company, Thorogood has grown into the company's premiere collection - including both safety and non-safety styles designed for all varieties of occupational and safety requirements - delivering comfort, fit, safety and performance in every pair of work boots made.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal63"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/WorkOne%20copy.png" alt=""></a>
+                    </li>
+
+                    <div data-remodal-id="modal64" role="dialog" aria-labelledby="XtratufTitle" aria-describedby="XtratufDesc">
+                        <div>
+                            <h2 style="margin-top:0em !important;" id="XtratufTitle">Xtratuf
+                            </h2>
+                            <p id="XtratufDesc" style="text-align:left;">Modeled after the simple beauty of the sea and the relentless passion of the storm, Xtratuf boots are made to battle the elements. For more than 50 years, Xtratuf boots have been the pinnacle of waterproofing and slip resistance, providing unparalleled comfort and quality to consumers around the world.</p>
+                        </div>
+                        <button data-remodal-action="cancel" class="btn btn-success" style="color:black;background-color: #bed600;border: 0;">CLOSE</button>
+                    </div>
+                    <li class="item col-xs-4"><a href="#modal64"><img class="img-responsive" src="http://info.rockybrands.com/rs/018-APH-439/images/XTRATUFF%20copy.png" alt=""></a>
+                    </li>
+                </ul>
+            </div >
+        </div>
+        <div class="testimonials-wrap" data-aos="fade-up">
+            <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="h1" style="font-family: 'Josefin Sans', sans-serif;">What Clients Are Saying.</h2>
+                </div>
+            </div>
+            <div class="row testimonials">
+                <div class="col-full testimonials__slider">
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/rollsroyce.png" alt="Author image" class="testimonials__avatar">
+                        <p>The service, selection and product quality are top notch. Lehigh’s IT group worked with us to customize a data management system which allowed for more accurate data input and reporting. Lehigh’s web-based ordering interface is specific to our company and is available 24/7 and the Lehigh Creative Team even provided iPad based kiosks as a convenient ordering alternative. Pricing is competitive, which has resulted in a substantial savings over traditional ‘brick and mortar only' retail options.</p>
+                        <div class="testimonials__author">
+                            Markus Jones
+                            <span>HSE Sr. Specialist, Rolls Royce</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                            <img src="images/avatars/elkay.png" alt="Author image" class="testimonials__avatar">
+                            <p>Just wanted to give you an update on our CustomFit program. We've had the website up and running and people ordering shoes for almost 2 weeks now. I've been pleasantly surprised with the ease of the whole process! Initially I was a little concerned about people finding it difficult to navigate, but it really has turned out to be the easiest process for us. We've even had success with our Spanish speaking population. No issues to date. The return process has also been smooth. Of the 35 pairs of shoes that have been ordered so far, only 1 has been returned, and that was quick and painless as well. Thank you for all your help setting this up for us, I am a convert!</p>
+                            <div class="testimonials__author">
+                                Maura Correa
+                                <span>HR Administrator, Elkay</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/auma.png" alt="Author image" class="testimonials__avatar">
+                        <p>The website works great, the prices are better, and the shipments are fantastic. Some people have told me that they have actually received their shoes in the next day after ordering. Thank you for suggesting that we try this rout, I would say it was a success.</p>
+                        <div class="testimonials__author">
+                            Joe Sentipal
+                            <span>Purchasing, Auma Actuators</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/pepsico.png" alt="Author image" class="testimonials__avatar">
+                        <p>The kiosk has been extremely user-friendly. The support personnel from Lehigh have been very helpful and are very accessible. There have been some bumps on the road (we put safety shoes on 300+ people) but Lehigh has been responsive to all issues that we have faced.</p>
+                        <div class="testimonials__author">
+                            Jason Toon
+                            <span>Mesquite, TX Location, PEPSICO</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/aksteel.png" alt="Author image" class="testimonials__avatar">
+                        <p>Just a note to say that our online boot process with Lehigh is working very well. And any time I have a question about an order or how to make the system run smoother, Tara is extremely helpful and responds to me quickly.</p>
+                        <div class="testimonials__author">
+                            Bill Adams
+                            <span>Safety, AK Steel</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/summit.png" alt="Author image" class="testimonials__avatar">
+                        <p>The program is amazing and has been very successful with our employees. We have no complaints and all praises. Thanks for all your service and dedication to Summit Midstream!</p>
+                        <div class="testimonials__author">
+                            Jeff Stoolman
+                            <span>Director of Safety, Summit Midstream</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/renaissance.png" alt="Author image" class="testimonials__avatar">
+                        <p>I wanted to say 'Thank You' again for such a great roll out yesterday. Everyone is excited about the new program, the great prices, how easy it is, etc.</p>
+                        <div class="testimonials__author">
+                            Jennifer Wilson
+                            <span>HR Manager, Renaissance Hotel Pittsburgh</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/nexeo.png" alt="Author image" class="testimonials__avatar">
+                            <p>I am writing to let you know that Lehigh Outfitters has supplied our company with high quality safety shoes and boots for more than a decade. From your boot mobile on-site fitting service to your online catalog ordering, we have enjoyed high quality footwear with fast delivery and hassle-free service to our chemical distribution plant her in Fairfield, CA. Thank you for following up with us and we’ll continue to look to Lehigh for our steel-toe protection.</p>
+                        <div class="testimonials__author">
+                        Ken Forbes
+                        <span>Laboratory Manager, Nexeo Solutions</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/utilitypipeline.png" alt="Author image" class="testimonials__avatar">
+                            <p>Thank you! You are always so quick to respond with answers and information. Our experience with your company has been great so far. The website is easy to use and any of the employees that have had to call you directly said you were very nice and helpful. They like how quick and simple it is to return boots that do not fit correctly, in exchange for a different boot.</p>
+                            <div class="testimonials__author">
+                            Rebecca Bogunovich
+                            <span>Canton, OH - Utility Pipeline</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/bway.png" alt="Author image" class="testimonials__avatar">
+                            <p>I have had much success with a seamless implementation in our York, PA location. We receive prompt responses and reactions to questions or concerns. I have enjoyed working with Lehigh from an administrative perspective and have received positive feedback from the employees here at the York location. Looking forward to continuing to grow our business relationship!</p>
+                            <div class="testimonials__author">
+                                Stacy Pitta
+                            <span>Human Resources Manager, BWAY Corp</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/schneider.png" alt="Author image" class="testimonials__avatar">
+                        <p>Employees can choose from hundreds of options that are within their budget requirements. Our shop operates 24 hours a day, 7 days a week, so the service provides an equal opportunity for all emploiyees to purchase shoes according to their schedule. It improves productivity on the shop floor. We found that employees were wasting countless time on the shoemobile. This process gets our employees back to work in a timely manner.</p>
+                        <div class="testimonials__author">
+                            Survey Responder
+                            <span>Schneider Trucking</span>
+                        </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/emerson.png" alt="Author image" class="testimonials__avatar">
+                            <p>Safety is our #1 priority, so when we were looking for a safety shoe provider we made sure that our employees had access the best product, with a variety of choices and sizes, and that they could get their shoes in a short period of time. Lehigh delivered on all accounts; variety, reliability, and most importantly safety.</p>
+                            <div class="testimonials__author">
+                                Amber Sinclair
+                                <span>HR Service Supervisor, Emerson Process Management</span>
+                            </div>
+                    </div>
+                    <div class="testimonials__slide">
+                        <img src="images/avatars/saa.png" alt="Author image" class="testimonials__avatar">
+                            <p>We have been using Lehigh CustomFit for a short period of time and it has been an awesome experience. They are a very customer driven team and have been available at any time to help me with any of my needs. They were able to assist me in customizing our website and was there for any questions that I had. The shoes always arrive quickly. Not only do they have a lot of options, but my employees love their shoes. I would highly recommend utilizing Lehigh for your needs!</p>
+                            <div class="testimonials__author">
+                                Ashley Benvenuti
+                                <span>Human Resources Manager, Superior Aluminum Alloys</span>
+                            </div>
+                    </div>          
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="s-contact" style="padding-top:0px;">
+            <div class="row">
+                <div class="col-full contact-main" data-aos="fade-up" style="margin-top:10px;">
+                    <p>
+                    <h3 class="subhead subhead--light">Contact Us</h3>
+                    <a href="mailto:customfit@lehighoutfitters.com" class="contact-email" style="font-family: 'Josefin Sans', sans-serif;">customfit@lehighoutfitters.com</a>
+                    <span class="contact-number">1-800-444-4086</span>
+                    </p>
+                    <p style="display: block;height: 1px;width: 60px;background-color: #bed600;position: absolute;"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                    <h3 class="subhead subhead--light">Where To Find Us</h3>
+                    <p class="contact-address">
+                        39 East Canal St<br>
+                        Nelsonville, OH<br>
+                        45764 US
+                    </p>
+                </div>
+                <div class="col-five tab-full contact-secondary" data-aos="fade-up">
+                    <h3 class="subhead subhead--light">Follow Us</h3>
+                    <ul class="contact-social">
+                        <li>
+                            <a href="https://www.facebook.com/LehighCustomFit/"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/LehighCustomFit"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/LehighTV"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/lehigh-outfitters"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-full cl-copyright">
+                    <span>
+    &copy;<script>document.write(new Date().getFullYear());</script> Lehigh CustomFit. All rights reserved
+    </span> 
+                </div>
+            </div>
+            <div class="cl-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+            </div>
+        </section>
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="preloader">
+        <div id="loader">            
+        </div>
+    </div>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollMove.js"></script>
+<script>
+    $(function () {
+        scrollMove('.brandLogos',60,1);
+    })
+</script>
+<script src="js/remodal.js"></script>
+<script src="js/modalInitialize.js"></script>
+</body>
+</html>
