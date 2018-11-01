@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lehigh CustomFit</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/overrides.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+        .s-header{
+            top: 0px !important;
+            background-color: #111111!important;
+            height: 120px !important;
+        }
+        .header-logo img{
+            margin-top: 15px;
+        }
+        .subhead {
+            margin-top: 2rem !important;
+        }
+        .add-bottom{
+            margin-bottom: 0rem !important;
+        }
+        tr:nth-child(even) {background-color: #f1f1f1;}
+        /*tr:nth-child(odd) {background-color:#bed600;}*/
+        thead {background-color:#000000;color:#bed600;}
+        th{
+            color:#bed600;
+        }
+        button,
+button:active {
+    border: 0px;
+    background-color: #f1f1f1;
+    font-size: 1em;
+    color: #212121;
+}
+button:hover{
+    border:0px;
+    background-color:#bed600;
+    font-size: 1em;
+    color: #212121;
+}
+button:focus{
+    border:0px;
+    background-color:#212121;
+    font-size: 1em;
+    color: #bed600;
+    outline-color: #bed600 !important;
+}
+</style>
+<script>
+    function hideTheReports(){
+        let i = 0;
+        //Hide all content on page load
+        for(i=0;i<4;i++){
+            $("#report"+i).hide();
+        }
+    }
+    $(function(){
+        hideTheReports();
+        //Load LO
+        $("#loChart").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report0").show();
+        });
+        //Load LSS
+        $("#lssChart").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report1").show();
+        });
+        //Load CF
+        $("#cfChart").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report2").show();
+        });
+        //Load SG
+        $("#sgChart").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report3").show();
+        });
+    });
+    </script>
+
+</head>
+<body id="top">
+    <section id='about' class="s-about" style="padding-bottom:0px;padding-top:10px;background-color:#111111;">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full" style="padding-left:0px;">
+                <h3 class="subhead">Reports</h3>
+            </div>
+            </div>
+            <div class="row section-intro add-bottom text-center">
+                    <div class="col-twelve tab-full">
+                            <div>
+                                    <h3 style="font-family: 'Josefin Sans', sans-serif;margin-top:10px;color:#ffffff;">Select Your Report Below</h3>
+                                </div>
+                        <p style="text-align:center;">
+                                <br>
+                                    <button id="loChart">LO</button>
+                                    <button id="lssChart">LSS</button>
+                                    <button id="cfChart">CF</button>
+                                    <button id="sgChart">SG</button>
+                                    <!--<button id="sgChart">Shoe Angel</button>-->
+                                    <div id="report0">
+                                            <iframe width="600" height="800" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/MOx" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div id="report1">
+                                            <iframe width="600" height="800" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/bivW" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div id="report2">
+                                            <iframe width="600" height="800" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/mtvW" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div id="report3">
+                                            <iframe width="600" height="800" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/RrvW" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                            </p>
+                    </div>
+            </div>
+    </section>
+    <div id="preloader">
+        <div id="loader">            
+        </div>
+    </div>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
