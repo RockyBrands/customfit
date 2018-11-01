@@ -66,7 +66,7 @@ button:focus{
     function hideTheReports(){
         let i = 0;
         //Hide all content on page load
-        for(i=0;i<4;i++){
+        for(i=0;i<5;i++){
             $("#report"+i).hide();
         }
     }
@@ -96,6 +96,9 @@ button:focus{
             $("#hideThis").hide();
             $("#report3").show();
         });
+        $("#hideCharts").on("click", function(){
+            hideTheReports();
+        });
     });
     </script>
 
@@ -110,7 +113,7 @@ button:focus{
             <div class="row section-intro add-bottom text-center">
                     <div class="col-twelve tab-full">
                             <div>
-                                    <h3 style="font-family: 'Josefin Sans', sans-serif;margin-top:10px;color:#ffffff;">Select Your Report Below</h3>
+                                    <h3 style="font-family: 'Josefin Sans', sans-serif;margin-top:10px;color:#ffffff;">Select Your Web Performance Report Below</h3>
                                 </div>
                         <p style="text-align:center;">
                                 <br>
@@ -118,6 +121,7 @@ button:focus{
                                     <button id="lssChart">LSS</button>
                                     <button id="cfChart">CF</button>
                                     <button id="sgChart">SG</button>
+                                    <button id="hideCharts">HIDE ALL</button>
                                     <!--<button id="sgChart">Shoe Angel</button>-->
                                     <div id="report0">
                                             <iframe width="900" height="1200" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/MOx" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -131,6 +135,9 @@ button:focus{
                                     <div id="report3">
                                             <iframe width="900" height="1200" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/RrvW" frameborder="0" style="border:0" allowfullscreen></iframe>
                                         </div>
+                                        <div id="report4">
+                                                <iframe width="900" height="1200" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/RrvW" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            </div>
                             </p>
                     </div>
             </div>
