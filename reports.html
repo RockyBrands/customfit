@@ -66,7 +66,7 @@ button:focus{
     function hideTheReports(){
         let i = 0;
         //Hide all content on page load
-        for(i=0;i<5;i++){
+        for(i=0;i<8;i++){
             $("#report"+i).hide();
         }
     }
@@ -96,9 +96,34 @@ button:focus{
             $("#hideThis").hide();
             $("#report3").show();
         });
+        //Load LO
+        $("#loEmail").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report4").show();
+        });
+        //Load LSS
+        $("#lssEmail").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report5").show();
+        });
+        //Load CF
+        $("#cfEmail").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report6").show();
+        });
+        //Load CF
+        $("#sgEmail").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report7").show();
+        });
         $("#hideCharts").on("click", function(){
             hideTheReports();
         });
+
     });
     </script>
 
@@ -135,9 +160,34 @@ button:focus{
                                     <div id="report3">
                                             <iframe width="900" height="1200" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/RrvW" frameborder="0" style="border:0" allowfullscreen></iframe>
                                         </div>
-                                        <div id="report4">
-                                                <iframe width="900" height="1200" src="https://datastudio.google.com/embed/reporting/0ByPWaena7R7ncGlYZkpDTTdWUDg/page/RrvW" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                            </div>
+                            </p>
+                    </div>
+            </div>
+            <div class="row section-intro add-bottom text-center">
+                    <div class="col-twelve tab-full">
+                            <div>
+                                    <h3 style="font-family: 'Josefin Sans', sans-serif;margin-top:10px;color:#ffffff;">Select Your Email Performance Report Below</h3>
+                                </div>
+                        <p style="text-align:center;">
+                                <br>
+                                    <button id="loEmail">LO</button>
+                                    <button id="lssEmail">LSS</button>
+                                    <button id="cfEmail">CF</button>
+                                    <button id="sgEmail">SG</button>
+                                    <button id="hideCharts">HIDE ALL</button>
+                                    <!--<button id="sgChart">Shoe Angel</button>-->
+                                    <div id="report4">
+                                            <iframe width="900" height="2000" src="https://datastudio.google.com/embed/reporting/1mDkimTI5yYRG-5g6ubXREDYSQwG6jMMr/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div id="report5">
+                                            <iframe width="900" height="2000" src="https://datastudio.google.com/embed/reporting/1G7TPdZIHV9zl9noBV1BYRFSWyt5Dx9oJ/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div id="report6">
+                                            <iframe width="900" height="2000" src="https://datastudio.google.com/embed/reporting/1utLAvmVtaz7ivtdx8_r9i6NC7uqnp8c-/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                    <div id="report7">
+                                            <iframe width="900" height="2000" src="https://datastudio.google.com/embed/reporting/1DwZK6f_fRobtrXZKsaYqm36eNvSUgO11/page/1M" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
                             </p>
                     </div>
             </div>
