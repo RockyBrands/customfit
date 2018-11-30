@@ -66,7 +66,7 @@ button:focus{
     function hideTheReports(){
         let i = 0;
         //Hide all content on page load
-        for(i=0;i<8;i++){
+        for(i=0;i<9;i++){
             $("#report"+i).hide();
         }
     }
@@ -119,6 +119,12 @@ button:focus{
             hideTheReports();
             $("#hideThis").hide();
             $("#report7").show();
+        });
+        //Load Social
+        $("#socialReport").on("click", function(){
+            hideTheReports();
+            $("#hideThis").hide();
+            $("#report8").show();
         });
         $("#hideCharts").on("click", function(){
             hideTheReports();
@@ -189,9 +195,24 @@ button:focus{
                             </p>
                     </div>
             </div>
+            <div class="row section-intro add-bottom text-center">
+                <div class="col-twelve tab-full">
+                        <div>
+                                <h3 style="font-family: 'Josefin Sans', sans-serif;margin-top:10px;color:#ffffff;">Select Your Social Media Report Below</h3>
+                            </div>
+                    <p style="text-align:center;">
+                            <br>
+                                <button id="socialReport">Social Report</button>
+                                <div id="report8">
+                                    <iframe width="600" height="600" src="https://datastudio.google.com/embed/reporting/1fVRcj78mhOgwDQSGLtTtDy3gI7rf7J2Y/page/MCWX" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                        </p>
+                </div>
+        </div>
     </section>
     <div id="preloader">
-      <h3 style="font-family: 'Josefin Sans', sans-serif;margin-top:10px;color:#ffffff;">Please wait while your reports load...</h3>
+        <center>
+      <h3 style="font-family: 'Josefin Sans', sans-serif;margin-top:10px;color:#ffffff;">Please wait while your reports load...</h3></center>
         <div id="loader">
         </div>
     </div>
