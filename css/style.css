@@ -1085,11 +1085,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #aetrexMobile {
-  background: #f1f1f1;;
-  clip-path: polygon(50% 5rem, 100% 0, 100% 100%, 0 100%, 0 0);
+  background: #f1f1f1;
   background-color: #ffffff;
   background-size: cover;
-  padding: 100px 0 0 0;
+  padding: 0px 0 0 0;
   position: relative;
 }
 
