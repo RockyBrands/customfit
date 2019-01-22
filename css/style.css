@@ -974,6 +974,53 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 0px;
 }
 
+/* Facts Mobile Section
+--------------------------------*/
+#factsMobile {
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(79,79,79,1) 20%);
+  background-size: cover;
+  padding: 150px 0 0 0;
+  position: relative;
+}
+
+#factsMobile::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(79,79,79,1) 20%);
+  z-index: 9;
+}
+
+#factsMobile .container {
+  position: relative;
+  z-index: 10;
+}
+
+#factsMobile .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #bed600;
+}
+
+#factsMobile .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #111;
+}
+
+#factsMobile .facts-img {
+  text-align: center;
+  padding-top: 0px;
+}
 
 
 /* Aetrex Section

@@ -21,8 +21,14 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <style>
-    .form-control{
-      color:#ffffff !important;
+    @media (min-width: 768px){
+      .facts{display:block!important;}
+      .factsMobile{display:none!important;}
+    }
+    @media (max-width: 768px) {
+      .owl-carousel.owl-loaded {display:none !important;}
+      .factsMobile{display:block !important;}
+      .facts{display:none!important;}
     }
   </style>
 </head>
@@ -206,7 +212,7 @@
           <h6 style="text-align:center;color:#bed600;">FEATURED BRANDS</h6>
           <h3 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;">You won't find this selection of<br>safety footwear on any other website</h3>
           <p style="text-align:left;font-size:1.25rem;">With over <b>70 brands</b> and <b>1000s of styles</b>, we have more safety footwear conveniently available in one spot than 
-              anybody else because we understand the importance of having options. We are able to provide an unparalled selection 
+              anybody else because we understand the importance of having options. We are able to provide an unparalleled selection 
               from top companies like <b>Rocky</b>, <b>Georgia</b>, <b>Timberland Pro</b>, <b>Keen</b>, and <b>Reebok</b>, all at a great discount. In the end, it's all 
               about providing premier safety for your employees and giving you the power to do so, however you want.</p>
         </header>
@@ -289,17 +295,18 @@
               <h3 style="border-bottom: 1px solid #000000;color:#000000;margin-bottom:5px!important;text-transform:uppercase;font-family: 'Josefin Sans', sans-serif;font-weight:700;">CustomFit 3D Foot Scanning, Powered by aetrex technology</h3>
             </div>
           </div>
+          <center>
           <div class="row" style="padding-top:40px;">
-            <div class="col-lg-4">
-                <img class="img-fluid" src="img/infrared.png" style="width:75%;height:auto;">
+            <div class="col-lg-4 col-xs-12">
+                <img class="img-fluid" src="img/infrared.png" style="height:auto;padding:10px!important;">
             </div>
-            <div class="col-lg-4">
-              <img class="img-fluid" src="img/aetrexLogo.png" style="width:75%;height:auto;">
+            <div class="col-lg-4 col-xs-12">
+              <img class="img-fluid" src="img/aetrexLogo.png" style="height:auto;padding:10px!important;">
               </div>
-              <div class="col-lg-4">
-                  <img class="img-fluid" src="img/18camera.png" style="width:75%;height:auto;">
+              <div class="col-lg-4 col-xs-12">
+                  <img class="img-fluid" src="img/18camera.png" style="height:auto;padding:10px!important;">
                 </div>
-          </div>
+          </div></center>
           <div class="row" style="padding-top:50px;">
             <div class="col-lg-12">
               <p style="font-size:1.25rem;">Meet <b>Albert</b>, Lehigh CustomFit’s advanced 3D foot scanner, powered by <b>Aetrex Technology</b>. During an on-site visit of 
@@ -310,7 +317,27 @@
           </div>
         </div>
       </section>
-    <section id="facts"  class="wow fadeIn">
+      <section id="factsMobile"  class="wow fadeIn factsMobile">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5" style="padding-top:50px;" class="wow fadeInLeft">
+                <h5 style="color:#ffffff;margin-bottom:5px!important;padding-top:45px;">CUSTOMFIT IS AVAILABLE</h5>
+                <h1 style="font-size:3rem!important;font-family: 'Josefin Sans', sans-serif;font-weight:700;color:#bed600;"class="wow fadeInLeft">ANYTIME,<br>ANYWHERE,<br>ON ANY DEVICE</h1>
+              </div>
+              <div class="col-lg-7 text-center">
+                  <img style="display:absolute;" src="img/siteDisplay.png" alt="" class="img-fluid wow fadeInRight">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+              <p style="padding-top:20px;padding-bottom:30px;color:#ffffff;font-size:1.25rem;" class="wow fadeInUp">Lehigh CustomFit is available <b>24/7/365</b> on any computer, tablet, or handheld device. Your business may also qualify 
+                  for an on-site kiosk for even easier employee ordering. If for any reason your employees don't like their shoes or they 
+                  received the wrong size, our simple and easy online returns process is available 24/7 and <b>free</b>.</p>
+                  </div>
+            </div>
+          </div>
+        </section>
+    <section id="facts"  class="wow fadeIn facts">
       <div class="container">
         <div class="row">
   				<div class="col-lg-5" style="padding-top:50px;" class="wow fadeInLeft">
