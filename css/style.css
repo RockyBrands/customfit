@@ -129,7 +129,13 @@ h6 {
   background: rgba(0, 0, 0, 1);
   padding: 20px 0;
   height: 72px;
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  z-index:997;
   transition: all 0.5s;
+  overflow-x:hidden !important;
 }
 
 #header #logo {
