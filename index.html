@@ -24,6 +24,9 @@
     .body{
       overflow-x:hidden !important;
     }
+    .dropdown-menu{
+      border:none !important;
+    }
     @media (min-width: 768px){
       .facts{display:block!important;}
       .factsMobile{display:none!important;}
@@ -40,14 +43,8 @@
   </style>
 </head>
 <body>
-  <header id="header">
-    <div class="container-fluid">
-      <div id="logo" class="pull-left">
-        <a href="#intro"><img src="img/logo.png" style="height:50px;width:auto;" alt="" title="" /></a>
-      </div>
-      <nav id="nav-menu-container" class="navbar navbar-default">
-        <ul class="nav-menu">
-            <div data-remodal-id="loginmodal" role="dialog" aria-labelledby="ContactForm" aria-describedby="ContactDesc" style="background-color:#000000 !important;border:5px solid #bed600;">
+  <header id="header_area">
+            <!--<div data-remodal-id="loginmodal" role="dialog" aria-labelledby="ContactForm" aria-describedby="ContactDesc" style="background-color:#000000 !important;border:5px solid #bed600;">
                 <div>
                     <h2 style="margin-top:0em !important;color:#ffffff;font-family: 'Josefin Sans', sans-serif;" id="ContactForm">Login To Your Account</h2>
                 </div>
@@ -65,39 +62,66 @@
                 </div>
                 </form>
                 <p data-remodal-action="cancel" style="color:#ffffff;cursor: pointer;margin-bottom:0em !important;">CLOSE WINDOW</p>
+            </div>-->
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="index.html">
+              <img src="img/logo_new.png" style="height:50px;width:auto;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+             aria-expanded="false" aria-label="Toggle navigation" style="background:#ffffff;border:none;">
+             <i class="fa fa-bars"></i>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+              <div class="row ml-0 w-100">
+                <div class="col-lg-12 pr-0">
+                  <ul class="nav navbar-nav center_nav pull-right" style="justify-content:flex-end!important;">
+                      <li class="nav-item ">
+                          <a class="nav-link" href="index.html"style="text-transform: uppercase;font-family: Roboto;padding-left:10px;color:#000000;padding-right:10px;text-align:right;">Home</a>
+                        </li>
+                    <li class="nav-item submenu dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="text-transform: uppercase;font-family: Roboto;padding-left:10px;padding-right:10px;color:#000000;text-align:right;">About Us</a>
+                      <ul class="dropdown-menu">          
+                      <li class="nav-item"><a href="whyCustomFit.html" style="padding:10px;color:#000000;text-align:right;">Why CustomFit?</a></li>
+                      <li class="nav-item"><a href="meetOurTeam.html" style="padding:10px;color:#000000;text-align:right;">Our Sales Team</a></li>
+                      <li class="nav-item"><a href="warranty.html" style="padding:10px;color:#000000;text-align:right;">Warranty</a></li>
+                      <li class="nav-item"><a href="returns.html" style="padding:10px;color:#000000;text-align:right;">Returns</a></li>
+                      <li class="nav-item"><a href="savings.html" style="padding:10px;color:#000000;text-align:right;">Savings</a></li>
+                      </ul>
+                    </li>
+                      <li class="nav-item submenu dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="text-transform: uppercase;font-family: Roboto;padding-left:10px;padding-right:10px;color:#000000;text-align:right;">Services</a>
+                          <ul class="dropdown-menu">          
+                              <li class="nav-item"><a href="kiosks.html" style="padding:10px;color:#000000;text-align:right;">Kiosks</a></li>
+                              <li class="nav-item"><a href="dataexchange.html" style="padding:10px;color:#000000;text-align:right;">Data Exchange</a></li>
+                              <li class="nav-item"><a href="vouchers.html" style="padding:10px;color:#000000;text-align:right;">Vouchers</a></li>
+                              <li class="nav-item"><a href="orderingOptions.html" style="padding:10px;color:#000000;text-align:right;">Ordering Options</a></li>
+                              <li class="nav-item"><a href="eipp.html" style="padding:10px;color:#000000;text-align:right;">EIPP</a></li>
+                          </ul>
+                        </li>
+                      <li class="nav-item submenu dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="text-transform: uppercase;font-family: Roboto;padding-left:10px;padding-right:10px;color:#000000;text-align:right;">Resources</a>
+                          <ul class="dropdown-menu">          
+                              <li class="nav-item"><a href="#" style="padding:10px;color:#000000;text-align:right;">Blog</a></li>
+                              <li class="nav-item"><a href="#" style="padding:10px;color:#000000;text-align:right;">Videos</a></li>
+                              <li class="nav-item"><a href="#" style="padding:10px;color:#000000;text-align:right;">Articles</a></li>
+                              <li class="nav-item"><a href="#" style="padding:10px;color:#000000;text-align:right;">Infographics</a></li>
+                              <li class="nav-item"><a href="bootsize.html" style="padding:10px;color:#000000;text-align:right;">Boot Size Guide</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" style="text-transform: uppercase;font-family: Roboto;padding-left:10px;padding-right:10px;color:#000000;text-align:right;" href="#">Login</a>
+                          </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          <li class="menu-active"><a href="#intro">Home</a></li>
-          <li><a href="#about">About Us</a>
-          <ul>
-            <li><a href="whyCustomFit.html">Why CustomFit?</a></li>
-            <li><a href="meetOurTeam.html">Our Sales Team</a></li>
-            <li><a href="warranty.html">Warranty</a></li>
-            <li><a href="returns.html">Returns</a></li>
-            <li><a href="savings.html">Savings</a></li>
-          </ul>
-          </li>
-          <li><a href="#featured-services">Services</a>
-          <ul>
-              <li><a href="kiosks.html">Kiosks</a></li>
-              <li><a href="dataexchange.html">Data Exchange</a></li>
-              <li><a href="vouchers.html">Vouchers</a></li>
-              <li><a href="orderingOptions.html">Ordering Options</a></li>
-              <li><a href="eipp.html">EIPP System</a></li>
-          </ul>
-          </li>
-          <li><a href="#">Resources</a>
-          <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Infographics</a></li>
-            <li><a href="bootsize.html">Boot Size Guide</a></li>
-          </ul></li>
-          <li><a href="#">Login</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+          </div>
+        </nav>
+      </div>
   </header>
 
   <section id="intro">
