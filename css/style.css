@@ -1257,6 +1257,38 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: .9s;
 }
 
+/* Call To Action Section
+--------------------------------*/
+
+#skillsMobile {
+  padding: 0px 0;
+}
+
+#skillsMobile .progress {
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+#skillsMobile .progress .skill {
+  font-family: "Open Sans", sans-serif;
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+
+#skillsMobile .progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+#skillsMobile .progress-bar {
+  width: 1px;
+  text-align: left;
+  transition: .9s;
+}
+
 /* Facts Section
 --------------------------------*/
 

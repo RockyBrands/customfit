@@ -28,20 +28,20 @@
     .body{
       overflow-x:hidden !important;
     }
-    .hideVid{
-      display:none;
-    }
     .dropdown-menu{
       border:none !important;
     }
     @media (min-width: 768px){
+      .skills {display:block!important;}
+      .skillsMobile {display:none!important;}
       .facts{display:block!important;}
       .factsMobile{display:none!important;}
       .aetrex{display:block !important;}
       .aetrexMobile{display:none!important;}
     }
     @media (max-width: 768px) {
-      .owl-carousel.owl-loaded {display:none !important;}
+      .skills {display:none !important;}
+      .skillsMobile {display:block !important;}
       .factsMobile{display:block !important;}
       .facts{display:none!important;}
       .aetrexMobile{display:block!important;}
@@ -51,25 +51,6 @@
 </head>
 <body>
   <header id="header_area">
-            <!--<div data-remodal-id="loginmodal" role="dialog" aria-labelledby="ContactForm" aria-describedby="ContactDesc" style="background-color:#000000 !important;border:5px solid #bed600;">
-                <div>
-                    <h2 style="margin-top:0em !important;color:#ffffff;font-family: 'Josefin Sans', sans-serif;" id="ContactForm">Login To Your Account</h2>
-                </div>
-                <form method="post" action="https://www.customfit.me/process.aspx">
-                <div class="form-group">
-                    <label for="txtCustomerNumber" style="color:#ffffff;">Account</label>
-                    <center><input type="text" class="form-control" id="txtCustomerNumber" name="txtCustomerNumber" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
-                    <label for="txtLocationNumber" style="color:#ffffff;">Location</label>
-                    <center><input type="text" class="form-control" id="txtLocationNumber" name="txtLocationNumber" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
-                    <label for="txtPassword" style="color:#ffffff;">Password</label>
-                    <center><input type="password" class="form-control" id="txtPassword" name="txtPassword" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
-                    <center>
-                            <button type="submit" class="btn btn-success" style="color:#000000;background-color:#bed600;border:0;height:3.4rem;line-height:3rem;">Submit</button>
-                    </center>
-                </div>
-                </form>
-                <p data-remodal-action="cancel" style="color:#ffffff;cursor: pointer;margin-bottom:0em !important;">CLOSE WINDOW</p>
-            </div>-->
     <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
@@ -152,8 +133,8 @@
             <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>At vero eos et accusamus</h2>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
+                <h2>Headline</h2>
+                <p>Text</p>
                 <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
@@ -243,10 +224,33 @@
         </div>
       </div>
     </section>
-
-    <section id="skills" style="padding-top:50px;">
+    <section id="skillsMobile" style="padding-top:50px;" class="skillsMobile">
+        <div class="container">
+          <header class="section-header">
+            <h6 style="text-align:center;color:#bed600;">FEATURED BRANDS</h6>
+            <h3 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;">You won't find this selection of<br>safety footwear on any other website</h3>
+            <p style="text-align:left;font-size:1.25rem;">With over <b>70 brands</b> and <b>1000s of styles</b>, we have more safety footwear conveniently available in one spot than 
+                anybody else because we understand the importance of having options. We are able to provide an unparalleled selection 
+                from top companies like <b>Rocky</b>, <b>Georgia</b>, <b>Timberland Pro</b>, <b>Keen</b>, and <b>Reebok</b>, all at a great discount. In the end, it's all 
+                about providing premier safety for your employees and giving you the power to do so, however you want.</p>
+          </header>
+              <div class="container" id="clients" style="padding-top:0px;padding-bottom:0px;">
+                <div class="owl-carousel clients-carousel">
+                  <img src="img/brands/Carhartt.png" alt="">
+                  <img src="img/brands/Durango.png" alt="">
+                  <img src="img/brands/GB.png" alt="">
+                  <img src="img/brands/LSS.png" alt="">
+                  <img src="img/brands/PUMA.png" alt="">
+                  <img src="img/brands/Reebok.png" alt="">
+                  <img src="img/brands/Rocky.png" alt="">
+                  <img src="img/brands/Slipgrips.png" alt="">
+                  <img src="img/brands/TimberlandPRO.png" alt="">
+                </div>
+              </div>
+        </div>
+      </section>
+    <section id="skills" style="padding-top:50px;" class="skills">
       <div class="container">
-
         <header class="section-header">
           <h6 style="text-align:center;color:#bed600;">FEATURED BRANDS</h6>
           <h3 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;">You won't find this selection of<br>safety footwear on any other website</h3>
