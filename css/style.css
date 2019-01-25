@@ -1230,6 +1230,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #skills {
   padding: 0px 0;
+  padding-bottom:50px;
 }
 
 #skills .progress {
@@ -1283,7 +1284,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 20px 0 0;
 }
 
-#skillsMobile .progress-bar {
+#skills .progress-bar {
   width: 1px;
   text-align: left;
   transition: .9s;
@@ -1307,8 +1308,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(79,79,79,1) 20%);
+  background: rgb(241,241,241);
+  background: linear-gradient(180deg, rgba(241,241,241,1) 20%, rgba(79,79,79,1) 20%);
   z-index: 9;
 }
 
@@ -1387,16 +1388,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+
+
+
+
 /* Aetrex Section
 --------------------------------*/
 
 #aetrex {
-  background: rgb(188,212,1);
-  background: linear-gradient(180deg, rgba(188,212,1,1) 0%, rgba(105,116,14,1) 55%, rgba(255,255,255,1) 55%);
-  clip-path: polygon(50% 10rem, 100% 0, 100% 100%, 0 100%, 0 0);
-  background-color: #ffffff;
+  background: rgb(241,241,241);
+  background: -webkit-linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), -webkit-linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
+  background: -o-linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), -o-linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
+  background: -moz-linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), -moz-linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
+  background: linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
+  background-color: #f1f1f1;
   background-size: cover;
-  padding: 100px 0 0 0;
+  padding: 20px 0 0 0;
   position: relative;
 }
 
@@ -1407,8 +1414,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgb(188,212,1);
-  background: linear-gradient(180deg, rgba(188,212,1,1) 0%, rgba(105,116,14,1) 55%, rgba(255,255,255,1) 55%);
+  background: rgb(241,241,241);
+  background: -webkit-linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), -webkit-linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
+  background: -o-linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), -o-linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
+  background: -moz-linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), -moz-linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
+  background: linear-gradient(170deg, #ffffff 15%, rgba(0, 0, 0, 0) 15%), linear-gradient(10deg, #f1f1f1 85%, #ffffff 85%);
   z-index: 9;
 }
 
