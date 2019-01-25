@@ -495,9 +495,9 @@ h6 {
 --------------------------------------------------------------*/
 
 #intro {
-  display: table;
+  display: block;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background: #000;
 }
 
@@ -534,9 +534,9 @@ h6 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  position: absolute;
+  position: inherit;
   bottom: 0;
-  top: 0;
+  top: 8%;
   left: 0;
   right: 0;
 }
