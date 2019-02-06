@@ -1275,6 +1275,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+#aboutHover .aboutHover-col:hover {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(190, 214, 0, 0.6) !important;
+  margin-bottom: 20px;
+}
+
 #about .about-col .img {
   position: relative;
 }
@@ -1338,6 +1345,201 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
+
+/* About New Mobile Section
+--------------------------------*/
+
+#aboutNewMobile {
+  background: url("../img/about-bg1.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#aboutNewMobile::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#aboutNewMobile .container {
+  position: relative;
+  z-index: 10;
+}
+
+#aboutNewMobile .aboutNewMobile-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#aboutNewMobile .aboutNewMobile-col .img {
+  position: relative;
+}
+
+#aboutNewMobile .aboutNewMobile-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+
+#aboutNewMobile .aboutNewMobile-col .icon {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  position: absolute;
+  background-color: #bed600;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #fff;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#aboutNewMobile .aboutNewMobile-col i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#aboutNewMobile .aboutNewMobile-col:hover .icon {
+  background-color: #fff;
+}
+
+#aboutNewMobile .aboutNewMobile-col:hover i {
+  color: #bed600;
+}
+
+#aboutNewMobile .aboutNewMobile-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+#aboutNewMobile .aboutNewMobile-col h2 a {
+  color: #000;
+}
+
+#aboutNewMobile .aboutNewMobile-col h2 a:hover {
+  color: #bed600;
+}
+
+#aboutNewMobile .aboutNewMobile-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
+
+
+
+
+/* About New Section
+--------------------------------*/
+
+#aboutNew {
+  background: url("../img/about-bg1.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#aboutNew::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#aboutNew .container {
+  position: relative;
+  z-index: 10;
+}
+
+#aboutNew .aboutNew-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+#aboutNew .aboutNew-col .img {
+  position: relative;
+}
+
+#aboutNew .aboutNew-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+
+#aboutNew .aboutNew-col .icon {
+  width: 64px;
+  height: 64px;
+  padding-top: 8px;
+  text-align: center;
+  position: absolute;
+  background-color: #bed600;
+  border-radius: 50%;
+  text-align: center;
+  border: 4px solid #fff;
+  left: calc( 50% - 32px);
+  bottom: -30px;
+  transition: 0.3s;
+}
+
+#aboutNew .aboutNew-col i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#aboutNew .aboutNew-col:hover .icon {
+  background-color: #fff;
+}
+
+#aboutNew .aboutNew-col:hover i {
+  color: #bed600;
+}
+
+#aboutNew .aboutNew-col h2 {
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0;
+  margin: 40px 0 12px 0;
+}
+
+#aboutNew .aboutNew-col h2 a {
+  color: #000;
+}
+
+#aboutNew .aboutNew-col h2 a:hover {
+  color: #bed600;
+}
+
+#aboutNew .aboutNew-col p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+  margin-bottom: 0;
+  padding: 0 20px 20px 20px;
+}
 
 /* About Mobile Section
 --------------------------------*/
@@ -1633,6 +1835,55 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #factsLighter .facts-img {
+  text-align: center;
+  padding-top: 0px;
+}
+
+/* Facts Lighter New
+--------------------------------*/
+
+#factsLighterNew {
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff,#bed600 33%,#bed600 50%,#ffffff 66%);
+  background-size: cover;
+  padding: 0px 0 0 0;
+  position: relative;
+}
+
+#factsLighterNew::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff,#bed600 33%,#bed600 50%,#ffffff 66%);
+  z-index: 9;
+}
+
+#factsLighterNew .container {
+  position: relative;
+  z-index: 10;
+}
+
+#factsLighterNew .counters span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: block;
+  color: #bed600;
+}
+
+#factsLighterNew .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #111;
+}
+
+#factsLighterNew .facts-img {
   text-align: center;
   padding-top: 0px;
 }
