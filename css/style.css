@@ -1844,7 +1844,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #factsLighterNew {
   background: #ffffff;
-  background: linear-gradient(to bottom, #ffffff,#bed600 33%,#bed600 50%,#ffffff 66%);
+  background: linear-gradient(to bottom, #ffffff 33%,#bed600 33%,#bed600 66%,#ffffff 66%);
   background-size: cover;
   padding: 0px 0 0 0;
   position: relative;
@@ -1858,7 +1858,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   bottom: 0;
   background: #ffffff;
-  background: linear-gradient(to bottom, #ffffff,#bed600 33%,#bed600 50%,#ffffff 66%);
+  background: linear-gradient(to bottom, #ffffff 33%,#bed600 33%,#bed600 66%,#ffffff 66%);
   z-index: 9;
 }
 
