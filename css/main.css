@@ -460,7 +460,7 @@ form,
   padding: 0;
 }
 
-#loader:before {
+/*#loader:before {
   content: "";
   border-top: 6px solid rgba(255, 255, 255, 0.1);
   border-right: 6px solid rgba(255, 255, 255, 0.1);
@@ -472,7 +472,7 @@ form,
   border-radius: 50%;
   width: 60px;
   height: 60px;
-}
+}*/
 
 @-webkit-keyframes load {
   0% {
