@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Lehigh CustomFit</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/remodal.css">
-    <link rel="stylesheet" href="css/remodal-default-theme.css">
+        <meta charset="utf-8">
+        <title>Lehigh CustomFit</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="icon" href="favicon.png" type="image/x-icon">
+        <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+        <link href="css/lity.css" rel="stylesheet">
+        <script src="vendors/jquery.js"></script>
+          <script src="js/lity.js"></script>
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="css/remodal.css">
+        <link rel="stylesheet" href="css/remodal-default-theme.css">
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/overrides.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
     <style>
         .s-header{
             top: 0px !important;
@@ -52,212 +58,167 @@
 </style>
 </head>
 <body id="top">
-    <header class="s-header">
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="images/logo.png" alt="Homepage" style="max-width:500px !important;">
-            </a>
-        </div>
-        <nav class="header-nav">
-                <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
-                <div class="header-nav__content">
-                        <div data-remodal-id="loginmodal" role="dialog" aria-labelledby="ContactForm" aria-describedby="ContactDesc" style="background-color:#000000 !important;border:5px solid #bed600;">
-                                <div>
-                                    <h2 style="margin-top:0em !important;color:#ffffff;font-family: 'Josefin Sans', sans-serif;" id="ContactForm">Login To Your Account</h2>
-                                </div>
-                                <form method="post" action="https://www.customfit.me/process.aspx">
-                                <div class="form-group">
-                                    <label for="txtCustomerNumber" style="color:#ffffff;">Account</label>
-                                    <center><input type="text" class="form-control" id="txtCustomerNumber" name="txtCustomerNumber" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
-                                    <label for="txtLocationNumber" style="color:#ffffff;">Location</label>
-                                    <center><input type="text" class="form-control" id="txtLocationNumber" name="txtLocationNumber" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
-                                    <label for="txtPassword" style="color:#ffffff;">Password</label>
-                                    <center><input type="password" class="form-control" id="txtPassword" name="txtPassword" style="color:#ffffff;border:1px solid #ffffff;background-color:#3c3c3c;"></center>
-                                    <center>
-                                            <button type="submit" class="btn btn-success" style="color:#000000;background-color:#bed600;border:0;height:3.4rem;line-height:3rem;">Submit</button>
-                                    </center>
-                                </div>
-                                </form>
-                                <p data-remodal-action="cancel" style="color:#ffffff;cursor: pointer;margin-bottom:0em !important;">CLOSE WINDOW</p>
+        <header id="header_area">
+                <div class="main_menu">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                      <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <a class="navbar-brand logo_h" href="index.html">
+                          <img src="img/logo_new.png" style="height:50px;width:auto;" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                         aria-expanded="false" aria-label="Toggle navigation" style="background:#ffffff;border:none;">
+                         <i class="fa fa-bars"></i>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                          <div class="row ml-0 w-100">
+                            <div class="col-lg-12 pr-0">
+                              <ul class="nav navbar-nav center_nav pull-right" style="justify-content:flex-end!important;">
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="index.html"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;color:#000000;padding-right:10px;text-align:right;"><span class="hvr-shadow-radial">Home</span></a>
+                                    </li>
+                                <li class="nav-item submenu dropdown">
+                                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;padding-right:10px;color:#000000;text-align:right;"><span class="hvr-shadow-radial">About Us</span></a>
+                                  <ul class="dropdown-menu">          
+                                  <li class="nav-item"><a href="whyCustomFit.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Why CustomFit?</span></a></li>
+                                  <li class="nav-item"><a href="ourteam.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Our Sales Team</span></a></li>
+                                  </ul>
+                                </li>
+                                  <li class="nav-item submenu dropdown">
+                                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;padding-right:10px;color:#000000;text-align:right;"><span class="hvr-shadow-radial">Services</span></a>
+                                      <ul class="dropdown-menu">          
+                                          <li class="nav-item"><a href="kiosks.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Kiosks</span></a></li>
+                                          <li class="nav-item"><a href="datamanagement.html" style="padding:10px;color:#000000;tfont-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Data Management</span></a></li>
+                                          <li class="nav-item"><a href="vouchers.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Vouchers</span></a></li>
+                                          <li class="nav-item"><a href="orderingOptions.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Ordering Options</span></a></li>
+                                      </ul>
+                                    </li>
+                                  <li class="nav-item submenu dropdown">
+                                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;padding-right:10px;color:#000000;text-align:right;"><span class="hvr-shadow-radial">Resources</span></a>
+                                      <ul class="dropdown-menu">
+                                          <li class="nav-item"><a href="footwear.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Our Footwear</span></a></li>
+                                          <li class="nav-item"><a href="bootsize.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Boot Size Guide</span></a></li>
+                                          <li class="nav-item"><a href="emailSignUp.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Email Sign Up</span></a></li>
+                                          <li class="nav-item"><a href="faq.html" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">FAQ</span></a></li>
+                                          <!--<li class="nav-item"><a href="#" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Videos</span></a></li>
+                                          <li class="nav-item"><a href="#" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Articles</span></a></li>
+                                          <li class="nav-item"><a href="#" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Infographics</span></a></li>-->
+                                      </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="blog.html"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;color:#000000;padding-right:10px;text-align:right;"><span class="hvr-shadow-radial">Blog</span></a>
+                                      </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="login.html"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;color:#000000;padding-right:10px;text-align:right;"><span class="hvr-shadow-radial">Login</span></a>
+                                      </li>
+                              </ul>
                             </div>
-                    <h3 style="text-decoration:none;color:#bed600;">LOGIN &&nbsp;<br />COMMAND CENTER</h3>
-                    <a style="text-decoration:none;color:#000000;" href="#loginmodal"><button class="btn btn-success" style="color:#000000;background-color:#bed600;border:0;height:3.4rem;line-height:3rem;">Click Here</button></a> 
-                    <ul class="header-nav__list">
-                        <li><a href="index.html" title="Home">Home</a></li>
-                        <!--WERE ON THE OLD ABOUT TAB-->
-                        <li><a href="whyCustomFit.html" title="Why Get CustomFit">Why Get CustomFit</a></li>
-                        <li><a href="meetOurTeam.html" title="Our Sales Team">Our Sales Team</a></li>
-                        <!--<li><a class="smoothscroll"  href="#" title="News & Events">News & Events</a></li>-->
-                        <!--WERE ON THE OLD SERVICES TAB-->
-                        <li><a href="kiosks.html" title="Kiosks">Kiosks</a></li>
-                        <li><a href="safetyshoe.html" title="Safety Shoe Truck">Safety Shoe Truck</a></li>
-                        <li><a href="dataexchange.html" title="Data Exchange">Data Exchange</a></li>
-                        <li><a href="vouchers.html" title="Vouchers">Vouchers</a></li>
-                        <li><a href="command.html" title="Command Center">Command Center</a></li>
-                        <li><a href="orderingOptions.html" title="Ordering Options">Ordering Options</a></li>
-                        <li><a href="eipp.html" title="EIPP System">EIPP System</a></li>
-                        <li><a href="warranty.html" title="Warranty">Warranty</a></li>
-                        <li><a href="returns.html" title="Returns">Returns</a></li>
-                        <li><a href="savings.html" title="Savings">Savings</a></li>
-                        <!--WERE ON THE OLD RESOURCES TAB-->
-                        <li><a href="bootSize.html" title="Boot Size Guide">Boot Size Guide</a></li>
-                        <li><a href="faq.html" title="FAQ">FAQ</a></li>
-                        <!--<li><a class="smoothscroll"  href="#" title="Articles">Articles</a></li>-->
-                        <li><a href="contact.html" title="Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        <a class="header-menu-toggle" href="#0">
-            <span class="header-menu-icon"></span>
-        </a>
-    </header>
-    <section id='about' class="s-about" style="padding-bottom:30px;">
-        <div class="row section-header" data-aos="fade-up">
-            <div class="col-full" style="padding-left:0px;">
-                <h3 class="subhead">Contact Us</h3>
-                <h1 class="display-1" style="font-family: 'Josefin Sans', sans-serif;">Contact one of our corporate representatives.</h1>
-            </div>
-            </div>
-            <div class="row narrow section-intro add-bottom text-center">
-                    <div class="col-twelve tab-full">
-                        <p style="text-align:left;">Want to set up a CustomFit website? Want to know more about the savings and selection? Have a question about some of the great products and services we offer? We're happy to connect with you in several ways.</p>
-                    </div>
-            </div>
-        <div class="row">
-            <div class="col-full" style="padding-left:0px;">
-            </div>
-        </div>
-        <div class="row"><center>
-                <div class="col-four tab-full">
-                        <img width="120" height="120" alt="sample-image" src="images/close-envelope.png">
-                        <p>Email us at<br>customfit@lehighoutfitters.com</p>
-                    </div>
-                    <div class="col-four tab-full">
-                            <img width="120" height="120" alt="sample-image" src="images/telephone.gif">
-                        <p>Call us toll free at<br>1-800-444-4086</p>
-                    </div>
-                    <div class="col-four tab-full">
-                            <img width="120" height="120" alt="sample-image" src="images/clock.png">
-                            <p>Monday-Friday 8 a.m. to 9 p.m. (EST)<br>
-                                Saturday and Sunday 8 a.m. to 5 p.m. (EST)</p>
-                        </div></center></div>
-    </section>
-    <section id='services' class="s-services" style="padding-top:30px;padding-bottom:30px;background-color:#f1f1f1 !important;color:#ffffff !important;">
-        <div class="row section-header" data-aos="fade-up" data-aos-delay="5" data-aos-duration="250">
-            <div class="col-full" style="padding-left:0px;">
-                <h3 class="subhead">Contact</h3>
-                <h1 class="display-1" style="font-family: 'Josefin Sans', sans-serif;color:#212121;">Send Us A  <span style="color:#bed600;">Message</span></h1>
-            </div>
-        </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="5" data-aos-duration="250">
-            <div class="col-full" style="padding-left:0px;">
-                <p class="lead" style="color:#212121;">
-                        Fill out the below form and we'll get back to you within one business day.
-                </p>
-
-                
-                            <h2 style="margin-top:0em !important;" id="ContactForm">Contact</h2>
-                            <!--[if lte IE 8]>
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-<![endif]-->
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-<script>
-  hbspt.forms.create({
-	portalId: "4392020",
-    formId: "7fc03a1a-67fb-4ebe-93bd-a9de7276d81b",
-    submitButtonClass: 'btn'
-});
-</script>
+                          </div>
                         </div>
+                      </div>
+                    </nav>
+                  </div>
+              </header>
+              <section id="intro" style="display:block!important;height:500px !important;">
+                    <div class="row" role="listbox" style="background:url('img/header.jpg');margin-right:0px;">
+                      <div class="carousel-item active">
+                        <div class="carousel-background"></div>
+                        <div class="carousel-container" style="position:inherit!important;">
+                          <div class="carousel-content">
+                            <h2 style="padding-top:65px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;">Contact Us</h2>
+                            <p style="font-size:1.25rem;">For general inquiries about the program please fill out the below form</p>
+                                <a href="emailSignUp.html" class="hvr-sweep-to-left btn-get-started scrollto" style="border:1px solid #ffffff;border-radius:0px !important;background:transparent;">PROMOTIONAL EMAILS</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-    </section>
-    <section id="contact" class="s-contact" style="padding-top:0px;">
-            <div class="row">
-                <div class="col-full contact-main" data-aos="fade-up" data-aos-delay="5" data-aos-duration="250" style="margin-top:10px;">
+                  </section>
+                  <section id="featured-services">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-12">
+                            <h6 style="text-align:center;color:#ffffff;padding-top:50px;margin: 0 0 10px 0;">Contact Us</h6>
+                            <header class="section-header"><h3></h3></header>
+                            </div>
+                          </div>
+                          <div class="row" style="padding-bottom:50px;">
+                            <div class="col-lg-12" style="padding-top:15px!important;">
+                                    <!--[if lte IE 8]>
+                                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+                                    <![endif]-->
+                                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                                    <script>
+                                      hbspt.forms.create({
+                                        portalId: "4392020",
+                                        formId: "7fc03a1a-67fb-4ebe-93bd-a9de7276d81b",
+                                        submitButtonClass: 'btn'
+                                    });
+                                    </script>          
+                            </div>>
+                        </div>
+                      </section>
+    <footer id="footer">
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 footer-links">
+                    <h4>SITE MAP</h4>
+                    <ul>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="index.html">Home</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="ourTeam.html">Our Team</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="bootSize.html">Size Guide</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="blog.html">Blog</a></li>
+                      <li><i class="ion-ios-arrow-right"></i> <a href="login.html">Login</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
                     <p>
-                    <h3 class="subhead subhead--light">Contact Us</h3>
-                    <a href="mailto:customfit@lehighoutfitters.com" class="contact-email" style="font-family: 'Josefin Sans', sans-serif;">customfit@lehighoutfitters.com</a>
-                    <span class="contact-number">1-800-444-4086</span>
+                      39 East Canal Street <br>
+                      Nelsonville, OH 45764<br>
+                      <strong>Phone:</strong> 1-800-444-4086<br>
+                      <strong>Email:</strong> <a href="mailto:customfit@lehighoutfitters.com">customfit@lehighoutfitters.com</a><br>
                     </p>
-                    <p style="display: block;height: 1px;width: 60px;background-color: #bed600;position: absolute;"></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-five tab-full contact-secondary" data-aos="fade-up" data-aos-delay="5" data-aos-duration="250">
-                    <h3 class="subhead subhead--light">Where To Find Us</h3>
-                    <p class="contact-address">
-                        39 East Canal St<br>
-                        Nelsonville, OH<br>
-                        45764 US
-                    </p>
-                </div>
-                <div class="col-five tab-full contact-secondary" data-aos="fade-up">
-                    <h3 class="subhead subhead--light">Follow Us</h3>
-                    <ul class="contact-social">
-                        <li>
-                            <a href="https://www.facebook.com/LehighCustomFit/"><i class="fab fa-facebook"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/LehighCustomFit"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/user/LehighTV"><i class="fab fa-youtube"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/company/lehigh-outfitters"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-full cl-copyright">
-                    <span>
-    &copy;<script>document.write(new Date().getFullYear());</script> Lehigh CustomFit. All rights reserved
-    </span> 
-                </div>
-            </div>
-            <div class="cl-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
-            </div>
-        </section>
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
+                    <div class="social-links">
+                      <a href="https://twitter.com/LehighCustomFit" class="twitter"><i class="fa fa-twitter"></i></a>
+                      <a href="https://www.facebook.com/LehighCustomFit/" class="facebook"><i class="fa fa-facebook"></i></a>
+                      <a href="https://www.youtube.com/user/LehighTV" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                      <a href="https://www.linkedin.com/company/lehigh-outfitters" class="linkedin"><i class="fa fa-linkedin"></i></a>
                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 footer-newsletter">
+                    <h4>Email Sign Up</h4>
+                    <p>We'd love for you join in on our newsletter! Head to the sign up page below and fill out your preferences.</p>
+                    <a href="emailSignUp.html" class="hvr-bounce-to-top btn-get-started-footer" style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;">SUBSCRIBE</a>
+                  </div>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div id="preloader">
-        <div id="loader">            
-        </div>
-    </div>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-<script src="js/remodal.js"></script>
-<script src="js/modalInitialize.js"></script>
-</body>
-</html>
+            <div class="container">
+              <div class="copyright">
+                &copy; Copyright <strong>Lehigh CustomFit</strong>. All Rights Reserved,
+              </div>
+            </div>
+          </footer><!-- #footer -->
+          <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+          <div id="preloader"></div>
+          <!-- JavaScript Libraries -->
+          <script src="lib/jquery/jquery.min.js"></script>
+          <script src="lib/jquery/jquery-migrate.min.js"></script>
+          <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="lib/easing/easing.min.js"></script>
+          <script src="lib/superfish/hoverIntent.js"></script>
+          <script src="lib/superfish/superfish.min.js"></script>
+          <script src="lib/wow/wow.min.js"></script>
+          <script src="lib/waypoints/waypoints.min.js"></script>
+          <script src="lib/counterup/counterup.min.js"></script>
+          <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+          <script src="lib/isotope/isotope.pkgd.min.js"></script>
+          <script src="lib/lightbox/js/lightbox.min.js"></script>
+          <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+          <!-- Template Main Javascript File -->
+          <script src="js/main_new.js"></script>
+          <script src="js/remodal.js"></script>
+        </body>
+        </html>
