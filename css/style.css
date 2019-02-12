@@ -44,7 +44,7 @@ body {
   right: 51%;
   bottom: 0;
   background: #bed600;
-  height: 4px;
+  height: 2px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
@@ -682,9 +682,9 @@ border-radius: 50%;
 }
 
 #intro .btn-get-started:hover {
-  background: #bed600 !important;
+  background: #ffffff !important;
   color: #000000;
-  border: 1px solid #bed600 !important;
+  border: 1px solid #ffffff !important;
 }
 .btn-get-started-footer:hover{
   color: #000000;
@@ -712,7 +712,7 @@ border-radius: 50%;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #bed600;
+  background: #ffffff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -731,6 +731,59 @@ border-radius: 50%;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+/* Sweep To Right */
+.hvr-sweep-to-rightKiosk {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.menu-text{
+  padding:3px;
+  padding-left:10px;
+  color:#000000;
+  font-family: 'Roboto', sans-serif;
+  font-size:14px!important;
+}
+
+.hvr-sweep-to-rightKiosk:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-rightKiosk:hover, .hvr-sweep-to-rightKiosk:focus, .hvr-sweep-to-rightKiosk:active {
+  color: #212121!important;
+  border: 1px solid #212121!important;
+}
+.hvr-sweep-to-rightKiosk:hover:before, .hvr-sweep-to-rightKiosk:focus:before, .hvr-sweep-to-rightKiosk:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
 
 /* Bounce To Top */
 .hvr-bounce-to-top {
@@ -798,7 +851,7 @@ border-radius: 50%;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #bed600;
+  background: #ffffff;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
   -webkit-transform-origin: 100% 50%;
@@ -1932,7 +1985,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #facts {
   background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(79,79,79,1) 20%);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(0,0,0,1) 20%);
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
@@ -1946,7 +1999,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 0;
   bottom: 0;
   background: rgb(241,241,241);
-  background: linear-gradient(180deg, rgba(241,241,241,1) 20%, rgba(79,79,79,1) 20%);
+  background: linear-gradient(180deg, rgba(241,241,241,1) 20%, rgba(0,0,0,1) 20%);
   z-index: 9;
 }
 
@@ -1979,8 +2032,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Mobile Section
 --------------------------------*/
 #factsMobile {
-  background: rgb(255,255,255);
-  background: rgba(79,79,79,1);
+  background: rgba(0,0,0,1);
+  background-image: linear-gradient(to right, #000000 , #313131);
   background-size: cover;
   padding: 0px 0 0 0;
   position: relative;
@@ -1993,8 +2046,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgb(255,255,255);
-  background:  rgba(79,79,79,1);
+  background:  rgba(0,0,0,1);
+  background-image: linear-gradient(to right, #000000 , #313131);
   z-index: 9;
 }
 
@@ -2491,9 +2544,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .member-info {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   opacity: 1;
-  transition: 0.4s;
+  transition: 0.3s;
+}
+
+#team .member .member-info:hover {
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: 0.3s;
 }
 
 #team .member .member-info-content {

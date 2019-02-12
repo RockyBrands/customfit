@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lehigh CustomFit</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+  <link href="css/lity.css" rel="stylesheet">
+  <script src="vendors/jquery.js"></script>
+	<script src="js/lity.js"></script>
+  <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/remodal-default-theme.css">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .body{
+      overflow-x:hidden !important;
+    }
+    .servicesHover{
+      color:#ffffff !important;
+    }
+    .servicesHover:hover{
+      color:#bed600 !important;
+    }
+    .dropdown-menu{
+      border:none !important;
+    }
+    @media (min-width: 768px){
+      .skills {display:block!important;}
+      .skillsMobile {display:none!important;}
+      .aetrex{display:block !important;}
+      .aetrexMobile{display:none!important;}
+    }
+    @media (max-width: 768px) {
+      .skills {display:none !important;}
+      .skillsMobile {display:block !important;}
+      .aetrexMobile{display:block!important;}
+      .aetrex{display:none!important;}
+    }
+    @media (max-width:992px) {
+      .factsMobileOrder{display:block !important;}
+      .factsLighter{display:none!important;}
+      .about{display:none !important;}
+      .aboutMobile{display:block !important;}
+    }
+    @media (min-width:992px){
+      .factsLighter{display:block!important;}
+      .factsMobileOrder{display:none!important;}
+      .about{display:block !important;}
+      .aboutMobile{display:none !important;}
+    }
+
+    button:active {
+    border: 0px;
+    background-color: #f1f1f1;
+    font-size: 1em;
+    color: #212121;
+}
+button:hover{
+    border:0px;
+    background-color:#bed600;
+    font-size: 1em;
+    color: #212121;
+}
+button:focus{
+    border:0px;
+    background-color:#212121;
+    font-size: 1em;
+    color: #bed600;
+    outline-color: #bed600 !important;
+}
+.containerStyling{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 5px solid #212121;
+    border-left: 5px solid #212121;
+    border-bottom: 5px solid #212121;
+    border-top: 5px solid #212121;
+}
+  </style>
+</head>
+<body>
+    <header id="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="index.html">
+                  <img src="img/logo_new.png" style="height:50px;width:auto;" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                 aria-expanded="false" aria-label="Toggle navigation" style="background:#ffffff;border:none;">
+                 <i class="fa fa-bars"></i>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                  <div class="row ml-0 w-100">
+                    <div class="col-lg-12 pr-0">
+                      <ul class="nav navbar-nav center_nav pull-right" style="justify-content:flex-end!important;">
+                          <li class="nav-item">
+                              <a class="nav-link" href="index.html"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;color:#000000;padding-right:10px;text-align:right;font-size:14px;"><span class="hvr-shadow-radial">Home</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ourteam.html"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;color:#000000;padding-right:10px;text-align:right;font-size:14px;"><span class="hvr-shadow-radial">Our  Team</span></a>
+                              </li>
+                          <li class="nav-item submenu dropdown">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;padding-right:10px;color:#000000;text-align:right;font-size:14px;"><span class="hvr-shadow-radial">Services</span></a>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item"><a href="datamanagement.html"><span class="hvr-underline-from-center menu-text">Data Management</span></a></li>
+                                  <li class="nav-item"><a href="orderingEvents.html"><span class="hvr-underline-from-center menu-text">Ordering Events</span></a></li>
+                                  <li class="nav-item"><a href="kiosks.html"><span class="hvr-underline-from-center menu-text">Kiosks</span></a></li>
+                                  <li class="nav-item"><a href="paymentOptions.html"><span class="hvr-underline-from-center menu-text">Payment Options</span></a></li>
+                              </ul>
+                            </li>
+                          <li class="nav-item submenu dropdown">
+                              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;padding-right:10px;color:#000000;text-align:right;font-size:14px;"><span class="hvr-shadow-radial">Resources</span></a>
+                              <ul class="dropdown-menu">
+                                  <li class="nav-item"><a href="footwear.html"><span class="hvr-underline-from-center menu-text">Our Footwear</span></a></li>
+                                  <li class="nav-item"><a href="bootsize.html"><span class="hvr-underline-from-center menu-text">Boot Size Guide</span></a></li>
+                                  <li class="nav-item"><a href="emailSignUp.html"><span class="hvr-underline-from-center menu-text">Email Sign Up</span></a></li>
+                                  <li class="nav-item"><a href="contact.html"><span class="hvr-underline-from-center menu-text">Contact</span></a></li>
+                                  <li class="nav-item"><a href="faq.html"><span class="hvr-underline-from-center menu-text">FAQ</span></a></li>
+                                  <!--<li class="nav-item"><a href="#" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Videos</span></a></li>
+                                  <li class="nav-item"><a href="#" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Articles</span></a></li>
+                                  <li class="nav-item"><a href="#" style="padding:10px;color:#000000;font-family: 'Roboto', sans-serif;"><span class="hvr-underline-from-center">Infographics</span></a></li>-->
+                              </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="blog.html"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;color:#000000;padding-right:10px;text-align:right;font-size:14px;"><span class="hvr-shadow-radial">Blog</span></a>
+                              </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="login.html"style="text-transform: uppercase;font-family: 'Roboto', sans-serif;padding-left:10px;color:#000000;padding-right:10px;text-align:right;font-size:14px;"><span class="hvr-shadow-radial">Login</span></a>
+                              </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+      </header>
+  <section id="intro" style="display:block!important;height:399px !important;">
+        <div class="row" role="listbox" style="background:url('img/orderingEventsHeader.jpg');margin-right:0px;">
+          <div class="carousel-item active">
+            <div class="carousel-background"></div>
+            <div class="carousel-container" style="position:inherit!important;">
+              <div class="carousel-content">
+                <img src="img/bootGuideIcon.png" style="padding-top:45px;padding-bottom:10px;">
+                <h2 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;">Every Type Of Footwear<br>For Every Type Of Job</h2>
+                <p style="width:100% !important;font-size:1.25rem;">No matter what industry you're in, CustomFit has you covered.</p>
+                <a href="#about" class="hvr-sweep-to-left btn-get-started scrollto" style="border:1px solid #bed600;border-radius:0px !important;background:#bed600;color:#212121;">VIEW TOP INDUSTRIES BELOW</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </section>
+  <main id="main">
+    <section id="about" style="background:#ffffff !important;">
+        <div class="container containerStyling">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                    <header class="section-header" style="margin-bottom:10px;">
+                    <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">GENERAL</h3></div></div>
+                    </header>
+                    <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <center><img src="img/3149_thumb.png"></center>
+                        <h6 style="text-align:center;padding-top:15px;">LEHIGH SAFETY SHOES<br>ST HYDROSHOCK WP WORK BOOT</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                            <center><img src="img/rkk0251_thumb.png"></center>
+                        <h6 style="text-align:center;padding-top:15px;">ROCKY<br>XO-TOE COMPOSITE WATERPROOF WORK BOOT</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                            <center><img src="img/16257001_thumb.png"></center>
+                        <h6 style="text-align:center;padding-top:15px;">DR. MARTENS<br>WINCH STEEL TOE WORK BOOT</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                            <center><img src="img/rb4041_thumb.png"></center>
+                        <h6 style="text-align:center;padding-top:15px;">REEBOK SUBLITE<br>ALLOY TOE EH WORK ATHLETIC SHOE</h6>
+                    </div>
+                </div>
+                    <hr style="background: #bed600;height:1px;">
+                    <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                <p style="margin-bottom:0px;">
+                    Whatever your company makes, moves, or manages, you're going to need to outfit your employees with safety shoes. That's where we come in--with top footwear brands and styles that satisfy requirements from any and every industry you can imagine. Whether you're looking for a lightweight athletic sneaker or a robust 6 inch protective toe  boot, CustomFit has you covered, and then some. Contact a representative today to learn how our selection can be tailored to fit your industry.
+                </p>
+                </div>             
+            </div>
+          </div>
+        <div class="container containerStyling">
+                <div class="row">
+                  <div class="col-md-12 wow fadeInUp">
+                        <header class="section-header" style="margin-bottom:10px;">
+                          <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">MANUFACTURING</h3></div></div>
+                          </header>
+                          <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <center><img src="img/8044445_thumb.png"></center>
+                                    <h6 style="text-align:center;padding-top:15px;">THOROGOOD<br>GEN FLEX2 COMPOSITE TOE WORK BOOT</h6>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <center><img src="img/A7712_thumb.png"></center>
+                                    <h6 style="text-align:center;padding-top:15px;">AVENGER<br>CROSSCUT ST EH WATERPROOF WORK HIKER</h6>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <center><img src="img/kl1012771.png"></center>
+                                    <h6 style="text-align:center;padding-top:15px;">KEEN UTILITY®<br>BRADDOCK ST WATERPROOF HIKER</h6>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <center><img src="img/65016_thumb.png"></center>
+                                    <h6 style="text-align:center;padding-top:15px;">TIMBERLAND PRO<br>ST WATERPROOF INSULATED WORK BOOT</h6>
+                                </div>
+                            </div>
+                          <hr style="background: #bed600;height:1px;">
+                          <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                      <p style="margin-bottom:0px;">
+                            We understand the needs of manufacturing facilities big and small. Working with organizations like Whirlpool Corporation and Fiat Chrysler, we've gained tremendous insight into the footwear needs of your employees, which is why we carry thousands of steel, composite, and alloy toe footwear styles from top brands like Timberland Pro, Keen, and Avenger, all at an amazing discount that you're unlikely to find anywhere else.
+                      </p>  
+                    </div>
+                </div>               
+                  </div>
+              <div class="container containerStyling">
+                    <div class="row">
+                      <div class="col-md-12 wow fadeInUp">
+                            <header class="section-header" style="margin-bottom:10px;">
+                              <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">TRANSPORTATION</h3></div></div>
+                              </header>
+                              <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <center><img src="img/A176A_thumb.png"></center>
+                                        <h6 style="text-align:center;padding-top:15px;">TIMBERLAND PRO<br>POWERTRAIN SPORT WORK ATHLETIC SHOE</h6>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <center><img src="img/5040_thumb.png"></center>
+                                        <h6 style="text-align:center;padding-top:15px;">LEHIGH SAFETY SHOES<br>STEEL TOE WORK BOOT</h6>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <center><img src="img/77083_thumb.png"></center>
+                                        <h6 style="text-align:center;padding-top:15px;">SKECHERS WORK<br>RELAXED FIT WORK ATHLETIC SHOE</h6>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <center><img src="img/MID412B1_thumb.png"></center>
+                                        <h6 style="text-align:center;padding-top:15px;">NEW BALANCE<br>412V1 BLACK ATHLETIC WORK SHOES</h6>
+                                    </div>
+                                </div>
+                              <hr style="background: #bed600;height:1px;">
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                          <p style="margin-bottom:0px;">
+                                The footwear needs of one industry don't match another. That's why we carry a broad selection of footwear for businesses in the transportation and shipping industry, featuring hundreds of lightweight athletic shoes and boots from brands like New Balance and Skechers Work. Our extensive history with top transportation companies such as FedEx and Schneider National says it all--we know what we're doing when it comes to outfitting the transportation industry with safety footwear.
+                          </p>                 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container containerStyling">
+                        <div class="row">
+                          <div class="col-md-12 wow fadeInUp">
+                                <header class="section-header" style="margin-bottom:10px;">
+                                  <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">FOOD PROCESSING</h3></div></div>
+                                  </header>
+                                  <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <center><img src="img/SLGP035_thumb.png"></center>
+                                            <h6 style="text-align:center;padding-top:15px;">SLIPGRIPS<br>ST SLIP-RESISTANT RUBBER WORK BOOT</h6>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                <center><img src="img/D81012_thumb.png"></center>
+                                            <h6 style="text-align:center;padding-top:15px;">DUNLOP<br>PVC 15 INCH ST WATERPROOF WORK BOOT</h6>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                <center><img src="img/FQ0006114_thumb.png"></center>
+                                            <h6 style="text-align:center;padding-top:15px;">ROCKY<br>MOBILITE ST WATERPROOF WORK BOOTS</h6>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                                <center><img src="img/G6633_thumb.png"></center>
+                                            <h6 style="text-align:center;padding-top:15px;">GEORGIA BOOT<br>MUDDOG WATERPROOF ST WORK BOOT</h6>
+                                        </div>
+                                    </div>
+                                  <hr style="background: #bed600;height:1px;">
+                                  <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                              <p style="margin-bottom:0px;">
+                                    Every industry has unique challenges when it comes to safety footwear, and food processing is no different. Thankfully, we have the largest selection of waterproof and rubber boots of any safety footwear company, from quality brands like Rocky, Georgia, Dunlop, and more. Our years of experience with companies like Kraft Foods, ConAgra, and Kellog's doesn't hurt either, so rest assured we know how to best outfit your company.
+                              </p>                 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container containerStyling">
+                            <div class="row">
+                              <div class="col-md-12 wow fadeInUp">
+                                    <header class="section-header" style="margin-bottom:10px;">
+                                      <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">HOSPITALITY</h3>
+                                      </header>
+                                      <hr style="background: #bed600;height:1px;">
+                                  <p style="margin-bottom:0px;">
+                                        In charge of the safety footwear for a restaurant chain, cruise line, casino, airline, or hotel? Partner with a company that understands the hospitality industry inside and out. With hundreds of  comfortable, lightweight, professional looking slip-resistant shoes, we offer a better selection than the competition while also providing the best customer service in the game. 
+                                  </p>                 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container containerStyling">
+                                <div class="row">
+                                  <div class="col-md-12 wow fadeInUp">
+                                        <header class="section-header" style="margin-bottom:10px;">
+                                          <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">MEDICAL</h3>
+                                          </header>
+                                          <hr style="background: #bed600;height:1px;">
+                                      <p style="margin-bottom:0px;">
+                                            A world in and of it's own, the medical industry has footwear needs like no other. From clinical staff to maintenance, adminstration, and dietary employees, medical facilities have a lot of different needs. With CustomFit's 70+ brands and 3000+ styles, everyone can find what they need--all at a uniquely low cost. We also offer a dedicated program for medical facilities called Shoe Angel. <a href="https://www.shoeangel.com">Learn more here >></a>
+                                      </p>                 
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="container containerStyling">
+                                    <div class="row">
+                                      <div class="col-md-12 wow fadeInUp">
+                                            <header class="section-header" style="margin-bottom:10px;">
+                                              <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">HEAVY INDUSTRY</h3>
+                                              </header>
+                                              <hr style="background: #bed600;height:1px;">
+                                          <p style="margin-bottom:0px;">
+                                                When your employees are working with heavy metals and composites, you can't afford to outfit them in low-quality safety footwear from a company that doesn't understand your needs. CustomFit offers the best selection of internal and external metatarsal guard boots on the market, from amazing brands like Carhartt, Michelin, and Georgia Boot. Working with companies like PDM Steel and Reliance Steel & Aluminum Co, we have made ourselves the leading provider of safety footwear for the heavy materials industry. 
+                                          </p>                 
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="container containerStyling">
+                                        <div class="row">
+                                          <div class="col-md-12 wow fadeInUp">
+                                                <header class="section-header" style="margin-bottom:10px;">
+                                                  <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">ADMINISTRATION</h3>
+                                                  </header>
+                                                  <hr style="background: #bed600;height:1px;">
+                                              <p style="margin-bottom:0px;">
+                                                    We get it--historically, protective toe shoes have looked bulky, ugly, and unprofessional. With CustomFit's broad and modern selection, this couldn't be further from the truth. Our top dress shoe brands like Florsheim Work, Rockport, and Dr. Martens all offer amazing safety shoes in sleek, professional styles. From leather wingtips to polished black dress shoes, moving from the office out to the floor is no longer a cause for concern.
+                                              </p>                 
+                                          </div>
+                                        </div>
+                                      </div>
+    </section>
+  </main>
+  <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>SITE MAP</h4>
+              <ul>
+                <li><i class="ion-ios-arrow-right"></i> <a href="index.html">Home</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="ourTeam.html">Our Team</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="bootSize.html">Size Guide</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="blog.html">Blog</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="login.html">Login</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <p>
+                39 East Canal Street <br>
+                Nelsonville, OH 45764<br>
+                <strong>Phone:</strong> 1-800-444-4086<br>
+                <strong>Email:</strong> <a href="mailto:customfit@lehighoutfitters.com">customfit@lehighoutfitters.com</a><br>
+              </p>
+              <div class="social-links">
+                <a href="https://twitter.com/LehighCustomFit" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/LehighCustomFit/" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/user/LehighTV" class="youtube"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.linkedin.com/company/lehigh-outfitters" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Email Sign Up</h4>
+              <p>We'd love for you join in on our newsletter! Head to the sign up page below to get started.</p>
+              <a href="emailSignUp.html" class="hvr-bounce-to-top btn-get-started-footer" style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong>Lehigh CustomFit</strong>. All Rights Reserved,
+        </div>
+      </div>
+    </footer><!-- #footer -->
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main_new.js"></script>
+  <script src="js/remodal.js"></script>
+</body>
+</html>
