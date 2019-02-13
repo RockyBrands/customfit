@@ -25,6 +25,26 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <style>
+    h6>a{
+      text-align:center!important;
+      font-size:14px;
+      color:#ffffff!important;
+      cursor:pointer;
+      border-bottom:1px solid #000000;
+    }
+    h6>a:hover{
+      text-align:center!important;
+      font-size:14px;
+      color:#bed600!important;
+      cursor:pointer;
+      border-bottom: 1px solid #bed600;
+    }
+    h6>a:active{
+      text-align:center!important;
+      font-size:14px;
+      color:#bed600!important;
+      cursor:pointer;
+    }
     .body{
       overflow-x:hidden !important;
     }
@@ -86,12 +106,131 @@ button:focus{
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    border-right: 5px solid #212121;
-    border-left: 5px solid #212121;
-    border-bottom: 5px solid #212121;
-    border-top: 5px solid #212121;
+    border-right: 0px solid #212121;
+    border-left: 0px solid #212121;
+    border-bottom: 0px solid #212121;
+    border-top: 0px solid #212121;
 }
   </style>
+
+<script>
+    function hideTheIndustry(){
+        let i = 0;
+        //Hide all content on page load
+        for(i=0;i<8;i++){
+            $("#industry"+i).hide();
+        }
+    }
+    
+    $(function(){
+        hideTheIndustry();
+        //Load General
+        $("#general").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry1").hide();
+            $("#industry2").hide();
+            $("#industry3").hide();
+            $("#industry4").hide();
+            $("#industry5").hide();
+            $("#industry6").hide();
+            $("#industry7").hide();
+            $("#industry0").show();
+            
+        });
+        //Load Manufacturing
+        $("#manufacturing").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry0").hide();
+            $("#industry2").hide();
+            $("#industry3").hide();
+            $("#industry4").hide();
+            $("#industry5").hide();
+            $("#industry6").hide();
+            $("#industry7").hide();
+            $("#industry1").show();
+        });
+        //Load Transportation
+        $("#transportation").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry0").hide();
+            $("#industry1").hide();
+            $("#industry3").hide();
+            $("#industry4").hide();
+            $("#industry5").hide();
+            $("#industry6").hide();
+            $("#industry7").hide();
+            $("#industry2").show();
+        });
+        //Load Food Processing
+        $("#foodprocessing").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry0").hide();
+            $("#industry1").hide();
+            $("#industry2").hide();
+            $("#industry4").hide();
+            $("#industry5").hide();
+            $("#industry6").hide();
+            $("#industry7").hide();
+            $("#industry3").show();
+        });
+        //Load Hospitality
+        $("#hospitality").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry0").hide();
+            $("#industry1").hide();
+            $("#industry2").hide();
+            $("#industry3").hide();
+            $("#industry5").hide();
+            $("#industry6").hide();
+            $("#industry7").hide();
+            $("#industry4").show();
+        });
+        //Load Medical
+        $("#medical").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry0").hide();
+            $("#industry1").hide();
+            $("#industry2").hide();
+            $("#industry3").hide();
+            $("#industry4").hide();
+            $("#industry6").hide();
+            $("#industry7").hide();
+            $("#industry5").show();
+        });
+        //Load Heavy Industry
+        $("#heavyindustry").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry0").hide();
+            $("#industry1").hide();
+            $("#industry2").hide();
+            $("#industry3").hide();
+            $("#industry4").hide();
+            $("#industry5").hide();
+            $("#industry7").hide();
+            $("#industry6").show();
+        });
+        //Load Administration
+        $("#administration").on("click", function(){
+            hideTheIndustry();
+            $("#hideThis").hide();
+            $("#industry0").hide();
+            $("#industry1").hide();
+            $("#industry2").hide();
+            $("#industry3").hide();
+            $("#industry4").hide();
+            $("#industry5").hide();
+            $("#industry6").hide();
+            $("#industry7").show();
+        });
+    });
+    </script>
 </head>
 <body>
     <header id="header_area">
@@ -154,7 +293,7 @@ button:focus{
           </div>
       </header>
   <section id="intro" style="display:block!important;height:399px !important;">
-        <div class="row" role="listbox" style="background:url('img/orderingEventsHeader.jpg');margin-right:0px;">
+        <div class="row" role="listbox" style="background:url('img/footwearHeader.jpg');margin-right:0px;">
           <div class="carousel-item active">
             <div class="carousel-background"></div>
             <div class="carousel-container" style="position:inherit!important;">
@@ -162,7 +301,7 @@ button:focus{
                 <img src="img/bootGuideIcon.png" style="padding-top:45px;padding-bottom:10px;">
                 <h2 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;">Every Type Of Footwear<br>For Every Type Of Job</h2>
                 <p style="width:100% !important;font-size:1.25rem;">No matter what industry you're in, CustomFit has you covered.</p>
-                <a href="#about" class="hvr-sweep-to-left btn-get-started scrollto" style="border:1px solid #bed600;border-radius:0px !important;background:#bed600;color:#212121;">VIEW TOP INDUSTRIES BELOW</a>
+                <a href="#selections" class="hvr-sweep-to-left btn-get-started scrollto" style="border:1px solid #bed600;border-radius:0px !important;background:#bed600;color:#212121;">VIEW TOP INDUSTRIES BELOW</a>
               </div>
             </div>
           </div>
@@ -170,10 +309,80 @@ button:focus{
       </section>
   </section>
   <main id="main">
-    <section id="about" style="background:#ffffff !important;">
-        <div class="container containerStyling">
+      <section id="selections" style="background:#000000 !important;padding: 20px 0 0px 0!important;">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                <header style="margin-bottom:10px;">
+                    <h3 style="padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;margin-bottom:0px;text-align:center;color:#ffffff;font-size:24px;">Select An Industry</h3>
+                    </header>
+                    </div>
+            </div>  
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <center><h6><a id="general">GENERAL</a></h6></center>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <center><h6><a id="manufacturing">MANUFACTURING</a></h6></center>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <center><h6><a id="transportation">TRANSPORTATION</a></h6></center>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <center><h6><a id="foodprocessing">FOOD PROCESSING</a></h6></center>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <center><h6><a id="hospitality">HOSPITALITY</a></h6></center>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                      <center><h6><a id="medical">MEDICAL</a></h6></center>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                      <center><h6><a id="heavyindustry">HEAVY INDUSTRY</a></h6></center>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                      <center><h6><a id="administration">ADMINISTRATION</a></h6></center>
+                  </div>
+                  </div>
+          </div>
+    </section>
+    <section id="about" style="background:#ffffff !important;padding: 30px 0 40px 0">
+        <div class="container containerStyling" id="hideThis">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                      <header class="section-header" style="margin-bottom:10px;">
+                      <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">GENERAL</h3></div></div>
+                      </header>
+                      <div class="row">
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                          <center><img src="img/3149_thumb.png"></center>
+                          <h6 style="text-align:center;padding-top:15px;">LEHIGH SAFETY SHOES<br>ST HYDROSHOCK WP WORK BOOT</h6>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                              <center><img src="img/RKK0251_thumb.png"></center>
+                          <h6 style="text-align:center;padding-top:15px;">ROCKY<br>XO-TOE COMPOSITE WATERPROOF WORK BOOT</h6>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                              <center><img src="img/16257001_thumb.png"></center>
+                          <h6 style="text-align:center;padding-top:15px;">DR. MARTENS<br>WINCH STEEL TOE WORK BOOT</h6>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-12">
+                              <center><img src="img/RB4041_thumb.png"></center>
+                          <h6 style="text-align:center;padding-top:15px;">REEBOK SUBLITE<br>ALLOY TOE EH WORK ATHLETIC SHOE</h6>
+                      </div>
+                  </div>
+                      <hr style="background: #bed600;height:1px;">
+                      <div class="row">
+                              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <p style="margin-bottom:0px;">
+                      Whatever your company makes, moves, or manages, you're going to need to outfit your employees with safety shoes. That's where we come in--with top footwear brands and styles that satisfy requirements from any and every industry you can imagine. Whether you're looking for a lightweight athletic sneaker or a robust 6 inch protective toe  boot, CustomFit has you covered, and then some. Contact a representative today to learn how our selection can be tailored to fit your industry.
+                  </p>
+                  </div>             
+              </div>
+            </div>  
+      <div class="container containerStyling" id="industry0">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+            <div class="col-lg-12 col-md-12 col-sm-12">
                     <header class="section-header" style="margin-bottom:10px;">
                     <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">GENERAL</h3></div></div>
                     </header>
@@ -197,16 +406,16 @@ button:focus{
                 </div>
                     <hr style="background: #bed600;height:1px;">
                     <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
                 <p style="margin-bottom:0px;">
                     Whatever your company makes, moves, or manages, you're going to need to outfit your employees with safety shoes. That's where we come in--with top footwear brands and styles that satisfy requirements from any and every industry you can imagine. Whether you're looking for a lightweight athletic sneaker or a robust 6 inch protective toe  boot, CustomFit has you covered, and then some. Contact a representative today to learn how our selection can be tailored to fit your industry.
                 </p>
                 </div>             
             </div>
           </div>
-        <div class="container containerStyling">
+        <div class="container containerStyling"id="industry1">
                 <div class="row">
-                  <div class="col-md-12 wow fadeInUp">
+                  <div class="col-md-12">
                         <header class="section-header" style="margin-bottom:10px;">
                           <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">MANUFACTURING</h3></div></div>
                           </header>
@@ -230,16 +439,16 @@ button:focus{
                             </div>
                           <hr style="background: #bed600;height:1px;">
                           <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
                       <p style="margin-bottom:0px;">
                             We understand the needs of manufacturing facilities big and small. Working with organizations like Whirlpool Corporation and Fiat Chrysler, we've gained tremendous insight into the footwear needs of your employees, which is why we carry thousands of steel, composite, and alloy toe footwear styles from top brands like Timberland Pro, Keen, and Avenger, all at an amazing discount that you're unlikely to find anywhere else.
                       </p>  
                     </div>
                 </div>               
                   </div>
-              <div class="container containerStyling">
+              <div class="container containerStyling"id="industry2">
                     <div class="row">
-                      <div class="col-md-12 wow fadeInUp">
+                      <div class="col-md-12">
                             <header class="section-header" style="margin-bottom:10px;">
                               <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">TRANSPORTATION</h3></div></div>
                               </header>
@@ -263,16 +472,16 @@ button:focus{
                                 </div>
                               <hr style="background: #bed600;height:1px;">
                               <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
                           <p style="margin-bottom:0px;">
                                 The footwear needs of one industry don't match another. That's why we carry a broad selection of footwear for businesses in the transportation and shipping industry, featuring hundreds of lightweight athletic shoes and boots from brands like New Balance and Skechers Work. Our extensive history with top transportation companies such as FedEx and Schneider National says it all--we know what we're doing when it comes to outfitting the transportation industry with safety footwear.
                           </p>                 
                       </div>
                     </div>
                   </div>
-                  <div class="container containerStyling">
+                  <div class="container containerStyling"id="industry3">
                         <div class="row">
-                          <div class="col-md-12 wow fadeInUp">
+                          <div class="col-md-12">
                                 <header class="section-header" style="margin-bottom:10px;">
                                   <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">FOOD PROCESSING</h3></div></div>
                                   </header>
@@ -296,16 +505,16 @@ button:focus{
                                     </div>
                                   <hr style="background: #bed600;height:1px;">
                                   <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
                               <p style="margin-bottom:0px;">
                                     Every industry has unique challenges when it comes to safety footwear, and food processing is no different. Thankfully, we have the largest selection of waterproof and rubber boots of any safety footwear company, from quality brands like Rocky, Georgia, Dunlop, and more. Our years of experience with companies like Kraft Foods, ConAgra, and Kellog's doesn't hurt either, so rest assured we know how to best outfit your company.
                               </p>                 
                           </div>
                         </div>
                       </div>
-                      <div class="container containerStyling">
+                      <div class="container containerStyling"id="industry4">
                             <div class="row">
-                              <div class="col-md-12 wow fadeInUp">
+                              <div class="col-md-12">
                                     <header class="section-header" style="margin-bottom:10px;">
                                       <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">HOSPITALITY</h3></div></div>
                                       </header>
@@ -329,16 +538,16 @@ button:focus{
                                     </div>
                                       <hr style="background: #bed600;height:1px;">
                                       <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
                                   <p style="margin-bottom:0px;">
                                         In charge of the safety footwear for a restaurant chain, cruise line, casino, airline, or hotel? Partner with a company that understands the hospitality industry inside and out. With hundreds of  comfortable, lightweight, professional looking slip-resistant shoes, we offer a better selection than the competition while also providing the best customer service in the game. 
                                   </p>                 
                               </div>
                             </div>
                           </div>
-                          <div class="container containerStyling">
+                          <div class="container containerStyling"id="industry5">
                                 <div class="row">
-                                  <div class="col-md-12 wow fadeInUp">
+                                  <div class="col-md-12">
                                         <header class="section-header" style="margin-bottom:10px;">
                                           <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">MEDICAL</h3></div></div>
                                           </header>
@@ -362,16 +571,16 @@ button:focus{
                                         </div>
                                           <hr style="background: #bed600;height:1px;">
                                           <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
                                       <p style="margin-bottom:0px;">
                                             A world in and of it's own, the medical industry has footwear needs like no other. From clinical staff to maintenance, adminstration, and dietary employees, medical facilities have a lot of different needs. With CustomFit's 70+ brands and 3000+ styles, everyone can find what they need--all at a uniquely low cost. We also offer a dedicated program for medical facilities called Shoe Angel. <a href="https://www.shoeangel.com">Learn more here >></a>
                                       </p>                 
                                   </div>
                                 </div>
                               </div>
-                              <div class="container containerStyling">
+                              <div class="container containerStyling"id="industry6">
                                     <div class="row">
-                                      <div class="col-md-12 wow fadeInUp">
+                                      <div class="col-md-12">
                                             <header class="section-header" style="margin-bottom:10px;">
                                               <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">HEAVY INDUSTRY</h3></div></div>
                                               </header>
@@ -395,16 +604,16 @@ button:focus{
                                             </div>
                                               <hr style="background: #bed600;height:1px;">
                                               <div class="row">
-                                                <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                                                <div class="col-lg-12 col-md-12 col-sm-12">
                                           <p style="margin-bottom:0px;">
                                                 When your employees are working with heavy metals and composites, you can't afford to outfit them in low-quality safety footwear from a company that doesn't understand your needs. CustomFit offers the best selection of internal and external metatarsal guard boots on the market, from amazing brands like Carhartt, Michelin, and Georgia Boot. Working with companies like PDM Steel and Reliance Steel & Aluminum Co, we have made ourselves the leading provider of safety footwear for the heavy materials industry. 
                                           </p>                 
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="container containerStyling">
+                                  <div class="container containerStyling"id="industry7">
                                         <div class="row">
-                                          <div class="col-md-12 wow fadeInUp">
+                                          <div class="col-md-12">
                                                 <header class="section-header" style="margin-bottom:10px;">
                                                   <h3 style="padding-top:20px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;text-align:center;color:#000000;">ADMINISTRATION</h3></div></div>
                                                   </header>
@@ -428,13 +637,112 @@ button:focus{
                                                 </div>
                                                   <hr style="background: #bed600;height:1px;">
                                                   <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 wow fadeInUp">
+                                                    <div class="col-lg-12 col-md-12 col-sm-12">
                                               <p style="margin-bottom:0px;">
                                                     We get it--historically, protective toe shoes have looked bulky, ugly, and unprofessional. With CustomFit's broad and modern selection, this couldn't be further from the truth. Our top dress shoe brands like Florsheim Work, Rockport, and Dr. Martens all offer amazing safety shoes in sleek, professional styles. From leather wingtips to polished black dress shoes, moving from the office out to the floor is no longer a cause for concern.
                                               </p>                 
                                           </div>
                                         </div>
                                       </div>
+    </section>
+
+    <section id="skills" style="padding-top:50px;background:#f1f1f1;" class="skills">
+        <div class="container">
+          <header class="section-header">
+            <h4 style="text-align:center;color:#000000;font-family: 'Josefin Sans', sans-serif;">THOUSANDS OF OTHER STYLES FROM THESE BRANDS AVAILABLE!</h4>
+          </header>
+              <div class="container" id="clients" style="padding-top:0px;padding-bottom:0px;">
+                <div class="owl-carousel clients-carousel">
+                  <img src="img/brands/Ariat.png" alt="">
+                  <img src="img/brands/Avenger.png" alt="">
+                  <img src="img/brands/Berne.png" alt="">
+                  <img src="img/brands/Blundstone.png" alt="">
+                  <img src="img/brands/Bulwark.png" alt="">
+                  <img src="img/brands/Carhartt.png" alt="">
+                  <img src="img/brands/Cherokee.png" alt="">
+                  <img src="img/brands/Chinook.png" alt="">
+                  <img src="img/brands/Chippewa.png" alt="">
+                  <img src="img/brands/Converse.png" alt="">
+                  <img src="img/brands/Crocs.png" alt="">
+                  <img src="img/brands/DanPost.png" alt="">
+                  <img src="img/brands/Dawgs.png" alt="">
+                  <img src="img/brands/Dickies.png" alt="">
+                  <img src="img/brands/Dingo.png" alt="">
+                  <img src="img/brands/DrMartens.png" alt="">
+                  <img src="img/brands/Durango.png" alt="">
+                  <img src="img/brands/Florsheim-Work.png" alt="">
+                  <img src="img/brands/FootGuard.png" alt="">
+                  <img src="img/brands/GB.png" alt="">
+                  <img src="img/brands/GenuineGrip.png" alt="">
+                  <img src="img/brands/Grabbers.png" alt="">
+                  <img src="img/brands/Honeywell.png" alt="">
+                  <img src="img/brands/Impacto.png" alt="">
+                  <img src="img/brands/IronAge.png" alt="">
+                  <img src="img/brands/JohnDeere.png" alt="">
+                  <img src="img/brands/JustinWorkBoots.png" alt="">
+                  <img src="img/brands/Keen.png" alt="">
+                  <img src="img/brands/Knapp.png" alt="">
+                  <img src="img/brands/Kodiak.png" alt="">
+                  <img src="img/brands/Laredo.png" alt="">
+                  <img src="img/brands/LSS.png" alt="">
+                  <img src="img/brands/McRaeIndustrial.png" alt="">
+                  <img src="img/brands/MellowWalk.png" alt="">
+                  <img src="img/brands/Michelin.png" alt="">
+                  <img src="img/brands/MoxieTrades.png" alt="">
+                  <img src="img/brands/Muck.png" alt="">
+                  <img src="img/brands/Nautilus.png" alt="">
+                  <img src="img/brands/NurseMates.png" alt="">
+                  <img src="img/brands/Oliver.png" alt="">
+                  <img src="img/brands/OriginalSwat.png" alt="">
+                  <img src="img/brands/PUMA.png" alt="">
+                  <img src="img/brands/RangerBoots.png" alt="">
+                  <img src="img/brands/Reebok.png" alt="">
+                  <img src="img/brands/RefrigiWear.png" alt="">
+                  <img src="img/brands/RockportWorks.png" alt="">
+                  <img src="img/brands/Rocky.png" alt="">
+                  <img src="img/brands/Royer.png" alt="">
+                  <img src="img/brands/S2VRocky.png" alt="">
+                  <img src="img/brands/Servus.png" alt="">
+                  <img src="img/brands/SkidBuster.png" alt="">
+                  <img src="img/brands/Slipgrips.png" alt="">
+                  <img src="img/brands/SmokyMtn.png" alt="">
+                  <img src="img/brands/Spenco.png" alt="">
+                  <img src="img/brands/SpringStep.png" alt="">
+                  <img src="img/brands/Stanley.png" alt="">
+                  <img src="img/brands/Terra.png" alt="">
+                  <img src="img/brands/Thorogood.png" alt="">
+                  <img src="img/brands/TimberlandPRO.png" alt="">
+                  <img src="img/brands/Tingley.png" alt="">
+                  <img src="img/brands/TonyLama.png" alt="">
+                  <img src="img/brands/WorkOne.png" alt="">
+                  <img src="img/brands/XTRATUFF.png" alt="">
+                </div>
+              </div>
+        </div>
+      </section>
+
+
+    <section id="about" style="background:#ffffff !important;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <center><img src="img/footwear_TruckIcon.png"></center>
+            <h3 style="text-align:center;color:#000000;padding-top:15px!important;">FREE SHIPPING<br>& RETURNS</h3>
+            <p style="text-align:center;">Always free shipping, and free returns if something just isn’t quite right.</p>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <center><img src="img/footwear_60DayIcon.png"></center>
+            <h3 style="text-align:center;color:#000000;padding-top:15px!important;">60 DAY<br>COMFORT GUARANTEE</h3>
+            <p style="text-align:center;">We think you’ll love em. If you don’t, return them in 60 days for a full refund.</p>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <center><img src="img/footwear_1YearIcon.png"></center>
+            <h3 style="text-align:center;color:#000000;padding-top:15px!important;">ONE YEAR<br>WARRANTY</h3>
+            <p style="text-align:center;">On any manufacturer defect when used under normal conditions.</p>
+          </div>
+        </div>
+        <center><a href="ourteam.html" class="hvr-sweep-to-rightKiosk btn-get-started" style="border: 1px solid #bed600;border-radius: 0px !important;background: #bed600 !important;padding: 8px 12px;color:#000000;">CONTACT A REP</a></center>
+      </div>
     </section>
   </main>
   <footer id="footer">
