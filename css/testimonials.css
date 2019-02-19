@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+}
+
+p.footer {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+div.layout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f5f8;
+  height: 100vh;
+  padding-top: 40px;
+}
+
+div.quote-left {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  min-height: 220px;
+  max-height: 220px;
+  border-radius: 16px;
+  background-color: #bdd600;
+  box-shadow: 0px 0px 15px gray;
+  margin-bottom: 60px;
+}
+div.quote-left div.quote-image {
+  width: 40%;
+  height: inherit;
+  background-image: url(../img/schneider_Logo.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px 0px 0px 16px;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+div.quote-left div.quote-circle {
+  position: absolute;
+  left: 240px;
+  top: 20px;
+  z-index: 10;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: #bdd600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div.quote-circle-inner {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 10px #bdd600;
+}
+
+div.quote-text {
+  flex: 1;
+  padding: 10px 30px 10px 30px;
+  border-radius: 0px 16px 16px 0px;
+  color: black;
+  font-family: proxima-nova, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 22px;
+}
+div.quote-text div.quote-author {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+
+div.quote-right {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  max-height: 220px;
+  min-height: 220px;
+  border-radius: 16px;
+  background-color: black;
+  box-shadow: 0px 0px 15px gray;
+  margin-bottom: 60px;
+}
+div.quote-right div.quote-image {
+  width: 40%;
+  height: inherit;
+  background-image: url(../img/pepsico_Logo.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 0px 16px 16px 0px;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+div.quote-right div.quote-circle {
+  position: absolute;
+  right: 210px;
+  top: 20px;
+  z-index: 10;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div.quote-right div.quote-circle div.quote-circle-inner {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+}
+div.quote-right div.quote-text {
+  flex: 1;
+  padding: 10px 20px 10px 40px;
+  border-radius: 0px 16px 16px 0px;
+  color: white;
+  font-family: proxima-nova, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 22px;
+}
+div.quote-right div.quote-text div.quote-author {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: #bdd600;
+}
+
+/*# sourceMappingURL=testimonials.css.map */
