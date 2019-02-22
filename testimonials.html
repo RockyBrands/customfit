@@ -199,52 +199,25 @@
                 </div>
               </section>
               <!--BEGIN VUE APPLICATION-->
-              <button class="btn-get-startedMap" id="schneider" style="color:#bed600;">Men's</button>
-                    <button class="btn-get-startedMap" id="pepsico" style="color:#bed600;">Women's</button>
-                    <div id="hideThis">
+              <div id="app">
+                    <div class="title-container">
+                        <div class="filters">
+                            <span class="filter" v-bind:class="{ active: currentFilter === 'Schneider' }" v-on:click="setFilter('Schneider')">Schneider</span>&nbsp;&nbsp;|&nbsp;
+                            <span class="filter" v-bind:class="{ active: currentFilter === 'PepsiCo' }" v-on:click="setFilter('PepsiCo')">PepsiCo</span>&nbsp;&nbsp;|&nbsp;
+                            <span class="filter" v-bind:class="{ active: currentFilter === 'AKSteel' }" v-on:click="setFilter('AKSteel')">AK Steel</span>
+                        </div>
                     </div>
-<div id="app">
-	<div class = 'layout'>
-		<quote-left></quote-left>
-		<quote-right></quote-right>
-	</div>
-</div>
-<div id="review0">
-<script type="text/x-template" id="quote-left">
-	<div class = 'quote-left'>
-		<div class = 'quote-image'></div>
-		<div class = 'quote-circle'>
-			<div class = 'quote-circle-inner'>
-				<i class="fas fa-quote-left"></i>
-			</div>
-		</div>
-		<div class = 'quote-text'>
-			<p>Employees can choose from hundreds of options that are within their budget requirements. Our shop operates 24 hours a day, 7 days a week, so the service provides an equal opportunity for all employees to purchase shoes according to their schedule. It improves productivity on the shop floor.</p>
-			<div class = 'quote-author'>
-				<p>- Schneider Trucking</p>
-			</div>
-		</div>
-	</div>
-</script>
-</div>
+                    <transition-group class="companies" name="companies">
+                        <div class="company" v-if="currentFilter === company.category || currentFilter === 'All'" v-bind:key="company.title" v-for="company in companies">
+                            <div class="company-image-wrapper">
+                                <img class="company-image" v-bind:src="company.image"></div>
+                                    <div class="review-container">
+                                    <span class="company-review">{{company.review}}</span>
+                                    </div>
+                        </div>
+                    </transition-group>
+                </div>
 
-<div id="review1">
-<script type="text/x-template" id="quote-right">
-	<div class = 'quote-right'>
-		<div class = 'quote-text'>
-			<p>The kiosk has been extremely user-friendly. The support personnel from Lehigh have been very helpful and are very accessible. There have been some bumps on the road (we put safety shoes on 300+ people) but Lehigh has been responsive to all issues that we have faced.</p>
-			<div class = 'quote-author'>
-				<p>- PepsiCo</p>
-			</div>
-		</div>
-		<div class = 'quote-circle'>
-			<div class = 'quote-circle-inner'>
-				<i class="fas fa-quote-right"></i>
-			</div>
-		</div>
-<div class = 'quote-image'></div>
-	</div>
-</script></div>
 <!--END VUE APPLICATION-->
 <footer id="footer">
         <div class="footer-top">

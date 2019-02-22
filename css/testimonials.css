@@ -1,153 +1,90 @@
-body {
-  margin: 0;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
-p.footer {
-  font-family: proxima-nova, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
+.title-container {
+	display:flex;
+	margin-top: 25px;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
 }
-
-div.layout {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f1f5f8;
-  height: 100vh;
-  padding-top: 40px;
+.review-container{
+	display:flex;
+	margin-top: 10px;
+	flex-direction:column;
+	padding-left:15px;
+	padding-right:15px;
+	margin-bottom:15px;
 }
-
-div.quote-left {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 700px;
-  min-height: 220px;
-  max-height: 220px;
-  border-radius: 16px;
-  background-color: #bdd600;
-  box-shadow: 0px 0px 15px gray;
-  margin-bottom: 60px;
+.company-title {
+font-size:12pt	
 }
-div.quote-left div.quote-image {
-  width: 40%;
-  height: inherit;
-  background-image: url(../img/schneider_Logo.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 16px 0px 0px 16px;
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+.company-review {
+font-size:12pt;
+	display: flex;
+	justify-content:left;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	margin-bottom:25px;
 }
-div.quote-left div.quote-circle {
-  position: absolute;
-  left: 240px;
-  top: 20px;
-  z-index: 10;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: white;
-  color: #bdd600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.filter {
+	font-family:arial;
+	padding: 6px 6px;
+	cursor:pointer;
+	transition: all 0.35s;
+	background:#ffffff;
+	text-transform:uppercase;
 }
-
-div.quote-circle-inner {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0px 0px 10px #bdd600;
+.filter.active {
+	box-shadow:0px 1px 3px 0px #00000026;
+	background-color:#272727;
+	border-radius:0px;
+	color:#ffffff;
+	cursor:pointer;
 }
-
-div.quote-text {
-  flex: 1;
-  padding: 10px 30px 10px 30px;
-  border-radius: 0px 16px 16px 0px;
-  color: black;
-  font-family: proxima-nova, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 22px;
+.filter:hover {
+	background:#bed600;
+	border-radius:0px;
+	color:#272727;
+} 
+.companies {
+	margin-bottom:0px;
+	margin-top:25px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
 }
-div.quote-text div.quote-author {
-  text-align: right;
-  font-size: 18px;
-  font-weight: 500;
-  font-style: normal;
-  color: black;
+.companies-enter {
+	transform: scale(0.5) translatey(-80px);
+	opacity:0;
 }
-
-div.quote-right {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 700px;
-  max-height: 220px;
-  min-height: 220px;
-  border-radius: 16px;
-  background-color: black;
-  box-shadow: 0px 0px 15px gray;
-  margin-bottom: 60px;
+.companies-leave-to{
+	transform: translatey(30px);
+	opacity:0;
 }
-div.quote-right div.quote-image {
-  width: 40%;
-  height: inherit;
-  background-image: url(../img/pepsico_Logo.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 0px 16px 16px 0px;
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+.companies-leave-active {
+	position: absolute;
+	z-index:-1;
 }
-div.quote-right div.quote-circle {
-  position: absolute;
-  right: 210px;
-  top: 20px;
-  z-index: 10;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: white;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.company {
+	transition: all .35s ease-in-out;
+	margin:10px;
+	box-shadow:0px 2px 8px lightgrey;
+	border-radius:3px;
+	width:300px;
+	height:300px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	border: 1px solid #f1f1f1;
+	background-image:linear-gradient(to bottom, #ffffff , #f1f1f1);
+	border-radius: 0px;
 }
-div.quote-right div.quote-circle div.quote-circle-inner {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0px 0px 10px black;
+.company-image-wrapper {
+	position:relative;
 }
-div.quote-right div.quote-text {
-  flex: 1;
-  padding: 10px 20px 10px 40px;
-  border-radius: 0px 16px 16px 0px;
-  color: white;
-  font-family: proxima-nova, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 22px;
+.company-image {
+	width:300px;
+	height:auto;
+	padding-top:15px;
+	
 }
-div.quote-right div.quote-text div.quote-author {
-  text-align: right;
-  font-size: 18px;
-  font-weight: 500;
-  font-style: normal;
-  color: #bdd600;
-}
-
-/*# sourceMappingURL=testimonials.css.map */
