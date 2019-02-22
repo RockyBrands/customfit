@@ -239,7 +239,7 @@ a {
   z-index: 99;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .main_menu {
-    background: #f8f8f8; }
+    background: #ffffff; }
   .header_area .navbar {
     padding: 0px;
     border: 0px;
@@ -271,7 +271,7 @@ a {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 15px/80px "Roboto", sans-serif;
+        font: 500 15px/40px "Roboto", sans-serif;
         text-transform: uppercase;
         color: #000000;
         padding: 0px;
@@ -279,7 +279,7 @@ a {
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #bed600; }
+        color: #000000; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -326,7 +326,7 @@ a {
             .header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
               line-height: 45px;
               color: #000000;
-              padding: 0px 30px;
+              padding: 0px 15px;
               transition: all 150ms linear;
               display: block;
               margin-right: 0px; }
@@ -334,7 +334,7 @@ a {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
               background: #bed600;
-              color: #fff; }
+              color: #000000; }
         @media (min-width: 992px) {
           .header_area .navbar .nav .nav-item.submenu:hover ul {
             visibility: visible;
