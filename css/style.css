@@ -54,6 +54,12 @@ body {
   src: local('Montserrat'), url(https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'Font Awesome';
+  font-display: swap;
+  src: local('Font Awesome'), url(https://rockybrands.github.io/customfit/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0) format('woff');
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
