@@ -12,6 +12,12 @@ body {
   src: local('Roboto'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'Josefin Sans';
+  font-display: swap;
+  src: local('Josefin Sans'), url(https://fonts.gstatic.com/s/josefinsans/v13/Qw3FZQNVED7rKGKxtqIqX5Ectllte10h.woff2) format('woff2');
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
