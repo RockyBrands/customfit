@@ -6,6 +6,12 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-display: swap;
+  src: local('Roboto'), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
