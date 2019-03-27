@@ -614,14 +614,14 @@ h6 {
 # Intro Section
 --------------------------------------------------------------*/
 
-#intro {
+#intro #introMobile{
   display: table;
   width: 100%;
   height: 100vh;
   background: #000;
 }
 
-#intro .carousel-item {
+#intro #introMobile .carousel-item {
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -629,7 +629,7 @@ h6 {
   background-repeat: no-repeat;
 }
 
-#intro .carousel-item::before {
+#intro #introMobile .carousel-item::before {
   content: '';
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
@@ -641,7 +641,7 @@ h6 {
   bottom: 0;
 }
 
-#intro .carousel-container {
+#intro #introMobile .carousel-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -661,70 +661,70 @@ h6 {
   right: 0;
 }
 
-#intro .carousel-background img {
+#intro #introMobile .carousel-background img {
   max-width: 100%;
 }
 
-#intro .carousel-content {
+#intro #introMobile .carousel-content {
   text-align: center;
 }
 
-#intro h2 {
+#intro #introMobile h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
 }
 
-#intro p {
+#intro #introMobile p {
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
 }
 
-#intro .carousel-fade {
+#intro #introMobile .carousel-fade {
   overflow: hidden;
 }
 
-#intro .carousel-fade .carousel-inner .carousel-item {
+#intro #introMobile .carousel-fade .carousel-inner .carousel-item {
   transition-property: opacity;
 }
 
-#intro .carousel-fade .carousel-inner .carousel-item,
-#intro .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+#intro #introMobile .carousel-fade .carousel-inner .carousel-item,
+#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-right {
   opacity: 0;
 }
 
-#intro .carousel-fade .carousel-inner .active,
-#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
-#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+#intro #introMobile .carousel-fade .carousel-inner .active,
+#intro #introMobile .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#intro #introMobile .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
   transition: 0.5s;
 }
 
-#intro .carousel-fade .carousel-inner .carousel-item-next,
-#intro .carousel-fade .carousel-inner .carousel-item-prev,
-#intro .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro .carousel-fade .carousel-inner .active.carousel-item-right {
+#intro #introMobile .carousel-fade .carousel-inner .carousel-item-next,
+#intro #introMobile .carousel-fade .carousel-inner .carousel-item-prev,
+#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-right {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-#intro .carousel-control-prev,
-#intro .carousel-control-next {
+#intro #introMobile .carousel-control-prev,
+#intro #introMobile .carousel-control-next {
   width: 10%;
 }
 
-#intro .carousel-control-next-icon,
-#intro .carousel-control-prev-icon {
+#intro #introMobile .carousel-control-next-icon,
+#intro #introMobile .carousel-control-prev-icon {
   background: none;
   font-size: 32px;
   line-height: 1;
 }
 
-#intro .carousel-indicators li {
+#intro #introMobile .carousel-indicators li {
   cursor: pointer;
 }
 
@@ -767,7 +767,7 @@ border-radius: 50%;
   width: 175px !important;
 }
 
-#intro .btn-get-started {
+#intro #introMobile .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -781,7 +781,7 @@ border-radius: 50%;
   background: #bed600;
 }
 
-#intro .btn-get-started:hover {
+#intro #introMobile .btn-get-started:hover {
   background: #ffffff !important;
   color: #000000;
   border: 1px solid #ffffff !important;
@@ -2985,12 +2985,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 60px;
   }
 
-  #intro p {
+  #intro #introMobile p {
     width: 60%;
   }
 
-  #intro .carousel-control-prev,
-  #intro .carousel-control-next {
+  #intro #introMobile .carousel-control-prev,
+  #intro #introMobile .carousel-control-next {
     width: 5%;
   }
 
@@ -3012,7 +3012,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     max-height: 40px;
   }
 
-  #intro h2 {
+  #intro #introMobile h2 {
     font-size: 28px;
   }
 
