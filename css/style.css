@@ -614,14 +614,20 @@ h6 {
 # Intro Section
 --------------------------------------------------------------*/
 
-#intro #introMobile{
+#intro{
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+#introMobile{
   display: table;
   width: 100%;
   height: 100vh;
   background: #000;
 }
 
-#intro #introMobile .carousel-item {
+#intro .carousel-item {
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -629,7 +635,15 @@ h6 {
   background-repeat: no-repeat;
 }
 
-#intro #introMobile .carousel-item::before {
+#introMobile .carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#intro .carousel-item::before {
   content: '';
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
@@ -641,7 +655,19 @@ h6 {
   bottom: 0;
 }
 
-#intro #introMobile .carousel-container {
+#introMobile .carousel-item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#intro .carousel-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -661,70 +687,157 @@ h6 {
   right: 0;
 }
 
-#intro #introMobile .carousel-background img {
+#introMobile .carousel-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#intro .carousel-background img {
   max-width: 100%;
 }
 
-#intro #introMobile .carousel-content {
+#introMobile .carousel-background img {
+  max-width: 100%;
+}
+
+#intro .carousel-content {
   text-align: center;
 }
 
-#intro #introMobile h2 {
+#introMobile .carousel-content {
+  text-align: center;
+}
+
+#intro h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
   font-weight: 700;
 }
 
-#intro #introMobile p {
+#introMobile h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro p {
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
 }
 
-#intro #introMobile .carousel-fade {
+#introMobile p {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#intro .carousel-fade {
   overflow: hidden;
 }
 
-#intro #introMobile .carousel-fade .carousel-inner .carousel-item {
+#introMobile .carousel-fade {
+  overflow: hidden;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item {
   transition-property: opacity;
 }
 
-#intro #introMobile .carousel-fade .carousel-inner .carousel-item,
-#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-right {
+#introMobile .carousel-fade .carousel-inner .carousel-item {
+  transition-property: opacity;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
   opacity: 0;
 }
 
-#intro #introMobile .carousel-fade .carousel-inner .active,
-#intro #introMobile .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
-#intro #introMobile .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+#introMobile .carousel-fade .carousel-inner .carousel-item,
+#introMobile .carousel-fade .carousel-inner .active.carousel-item-left,
+#introMobile .carousel-fade .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#intro .carousel-fade .carousel-inner .active,
+#intro .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#intro .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
   transition: 0.5s;
 }
 
-#intro #introMobile .carousel-fade .carousel-inner .carousel-item-next,
-#intro #introMobile .carousel-fade .carousel-inner .carousel-item-prev,
-#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-left,
-#intro #introMobile .carousel-fade .carousel-inner .active.carousel-item-right {
+#introMobile .carousel-fade .carousel-inner .active,
+#introMobile .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#introMobile .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#intro .carousel-fade .carousel-inner .carousel-item-next,
+#intro .carousel-fade .carousel-inner .carousel-item-prev,
+#intro .carousel-fade .carousel-inner .active.carousel-item-left,
+#intro .carousel-fade .carousel-inner .active.carousel-item-right {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-#intro #introMobile .carousel-control-prev,
-#intro #introMobile .carousel-control-next {
+#introMobile .carousel-fade .carousel-inner .carousel-item-next,
+#introMobile .carousel-fade .carousel-inner .carousel-item-prev,
+#introMobile .carousel-fade .carousel-inner .active.carousel-item-left,
+#introMobile .carousel-fade .carousel-inner .active.carousel-item-right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#intro .carousel-control-prev,
+#intro .carousel-control-next {
   width: 10%;
 }
 
-#intro #introMobile .carousel-control-next-icon,
-#intro #introMobile .carousel-control-prev-icon {
+#introMobile .carousel-control-prev,
+#introMobile .carousel-control-next {
+  width: 10%;
+}
+
+#intro .carousel-control-next-icon,
+#intro .carousel-control-prev-icon {
   background: none;
   font-size: 32px;
   line-height: 1;
 }
 
-#intro #introMobile .carousel-indicators li {
+#introMobile .carousel-control-next-icon,
+#introMobile .carousel-control-prev-icon {
+  background: none;
+  font-size: 32px;
+  line-height: 1;
+}
+
+#intro .carousel-indicators li {
+  cursor: pointer;
+}
+
+#introMobile .carousel-indicators li {
   cursor: pointer;
 }
 
@@ -767,7 +880,7 @@ border-radius: 50%;
   width: 175px !important;
 }
 
-#intro #introMobile .btn-get-started {
+#intro .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -781,11 +894,32 @@ border-radius: 50%;
   background: #bed600;
 }
 
-#intro #introMobile .btn-get-started:hover {
+#introMobile .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #bed600;
+}
+
+#intro .btn-get-started:hover {
   background: #ffffff !important;
   color: #000000;
   border: 1px solid #ffffff !important;
 }
+
+#introMobile .btn-get-started:hover {
+  background: #ffffff !important;
+  color: #000000;
+  border: 1px solid #ffffff !important;
+}
+
 .btn-get-started-footer:hover{
   color: #000000;
   border: 1px solid #ffffff !important;
@@ -2985,12 +3119,21 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 60px;
   }
 
-  #intro #introMobile p {
+  #intro p {
     width: 60%;
   }
 
-  #intro #introMobile .carousel-control-prev,
-  #intro #introMobile .carousel-control-next {
+  #introMobile p {
+    width: 60%;
+  }
+
+  #intro .carousel-control-prev,
+  #intro .carousel-control-next {
+    width: 5%;
+  }
+
+  #introMobile .carousel-control-prev,
+  #introMobile .carousel-control-next {
     width: 5%;
   }
 
@@ -3012,7 +3155,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     max-height: 40px;
   }
 
-  #intro #introMobile h2 {
+  #intro h2 {
+    font-size: 28px;
+  }
+
+  #introMobile h2 {
     font-size: 28px;
   }
 
