@@ -1571,14 +1571,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11{
+#about{
   background: url("../img/about-bg1.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
 }
 
-#about::before #about1::before #about2::before #about3::before #about4::before #about5::before #about6::before #about7::before #about8::before #about9::before #about10::before #about11::before{
+#about::before{
   content: '';
   position: absolute;
   left: 0;
@@ -1589,12 +1589,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 9;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .container {
+#about .container {
   position: relative;
   z-index: 10;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col {
+#about .about-col {
   background: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
@@ -1608,15 +1608,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col .img {
+#about .about-col .img {
   position: relative;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col .img img {
+#about .about-col .img img {
   border-radius: 4px 4px 0 0;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col .icon {
+#about .about-col .icon {
   width: 64px;
   height: 64px;
   padding-top: 8px;
@@ -1631,22 +1631,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col i {
+#about .about-col i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
   transition: 0.3s;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col:hover .icon {
+#about .about-col:hover .icon {
   background-color: #fff;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col:hover i {
+#about .about-col:hover i {
   color: #bed600;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col h2 {
+#about .about-col h2 {
   color: #000;
   text-align: center;
   font-weight: 700;
@@ -1655,15 +1655,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 40px 0 12px 0;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col h2 a {
+#about .about-col h2 a {
   color: #000;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col h2 a:hover {
+#about .about-col h2 a:hover {
   color: #bed600;
 }
 
-#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col p {
+#about .about-col p {
   font-size: 14px;
   line-height: 24px;
   color: #333;
