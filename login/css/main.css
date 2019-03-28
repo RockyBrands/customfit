@@ -108,15 +108,15 @@ textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
 textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder { color: #adadad;}
-input:-moz-placeholder { color: #adadad;}
-input::-moz-placeholder { color: #adadad;}
-input:-ms-input-placeholder { color: #adadad;}
+input::-webkit-input-placeholder { color: #515151;}
+input:-moz-placeholder { color: #515151;}
+input::-moz-placeholder { color: #515151;}
+input:-ms-input-placeholder { color: #515151;}
 
-textarea::-webkit-input-placeholder { color: #adadad;}
-textarea:-moz-placeholder { color: #adadad;}
-textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;}
+textarea::-webkit-input-placeholder { color: #515151;}
+textarea:-moz-placeholder { color: #515151;}
+textarea::-moz-placeholder { color: #515151;}
+textarea:-ms-input-placeholder { color: #515151;}
 
 /*---------------------------------------------*/
 button {
@@ -259,7 +259,7 @@ iframe {
 .focus-input100::after {
   content: attr(data-symbol);
   font-family: Material-Design-Iconic-Font;
-  color: #adadad;
+  color: #515151;
   font-size: 22px;
 
   display: -webkit-box;
