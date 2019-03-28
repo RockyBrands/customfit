@@ -3005,12 +3005,42 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 2px;
 }
 
+
+#footer .footer-top h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top h3::before,
+#footer .footer-top h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+}
+
+
 #footer .footer-top h4::before {
   right: 0;
   background: #555;
 }
 
 #footer .footer-top h4::after {
+  background: #bed600;
+  width: 60px;
+}
+
+#footer .footer-top h3::before {
+  right: 0;
+  background: #555;
+}
+
+#footer .footer-top h3::after {
   background: #bed600;
   width: 60px;
 }
