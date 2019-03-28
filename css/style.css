@@ -1571,14 +1571,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 
-#about {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11{
   background: url("../img/about-bg1.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
 }
 
-#about::before {
+#about::before #about1::before #about2::before #about3::before #about4::before #about5::before #about6::before #about7::before #about8::before #about9::before #about10::before #about11::before{
   content: '';
   position: absolute;
   left: 0;
@@ -1589,12 +1589,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 9;
 }
 
-#about .container {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .container {
   position: relative;
   z-index: 10;
 }
 
-#about .about-col {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col {
   background: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
@@ -1608,15 +1608,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
-#about .about-col .img {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col .img {
   position: relative;
 }
 
-#about .about-col .img img {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col .img img {
   border-radius: 4px 4px 0 0;
 }
 
-#about .about-col .icon {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col .icon {
   width: 64px;
   height: 64px;
   padding-top: 8px;
@@ -1631,22 +1631,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#about .about-col i {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col i {
   font-size: 36px;
   line-height: 1;
   color: #fff;
   transition: 0.3s;
 }
 
-#about .about-col:hover .icon {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col:hover .icon {
   background-color: #fff;
 }
 
-#about .about-col:hover i {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col:hover i {
   color: #bed600;
 }
 
-#about .about-col h2 {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col h2 {
   color: #000;
   text-align: center;
   font-weight: 700;
@@ -1655,15 +1655,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 40px 0 12px 0;
 }
 
-#about .about-col h2 a {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col h2 a {
   color: #000;
 }
 
-#about .about-col h2 a:hover {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col h2 a:hover {
   color: #bed600;
 }
 
-#about .about-col p {
+#about #about1 #about2 #about3 #about4 #about5 #about6 #about7 #about8 #about9 #about10 #about11 .about-col p {
   font-size: 14px;
   line-height: 24px;
   color: #333;
@@ -3024,6 +3024,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 2px;
 }
 
+#footer .footer-top h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top h2::before,
+#footer .footer-top h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+}
+
 
 #footer .footer-top h4::before {
   right: 0;
@@ -3041,6 +3059,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top h3::after {
+  background: #bed600;
+  width: 60px;
+}
+
+#footer .footer-top h2::before {
+  right: 0;
+  background: #555;
+}
+
+#footer .footer-top h2::after {
   background: #bed600;
   width: 60px;
 }
