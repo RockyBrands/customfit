@@ -3969,6 +3969,45 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #bed600;
 }
 
+
+/* Clients Section
+--------------------------------*/
+
+#clients1 {
+  padding: 60px 0;
+}
+
+#clients1 img {
+  max-width: 100%;
+  opacity: 0.5;
+  transition: 0.3s;
+  padding: 15px 0;
+}
+
+#clients1 img:hover {
+  opacity: 1;
+}
+
+#clients1 .owl-nav,
+#clients1 .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#clients1 .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#clients1 .owl-dot.active {
+  background-color: #bed600;
+}
+
+
 /* Testimonials Section
 --------------------------------*/
 
