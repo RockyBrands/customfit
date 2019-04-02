@@ -105,25 +105,25 @@ body {
   src: local('Open Sans'), url(https://fonts.gstatic.com/s/opensans/v15/mem6YaGs126MiZpBA-UFUK0Zdc1GAK6b.woff2) format('woff2');
 }
 
-/* width */
+/* width
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
 }
  
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #bed600; 
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #000000; 
-}
+}*/
 
 /* Underline From Center */
 .hvr-underline-from-center {
@@ -467,6 +467,11 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  font-weight:300;
+}
+
+p>b {
+  font-weight:300;
 }
 
 h1,
