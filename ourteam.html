@@ -927,9 +927,10 @@
                         <li v-for="rep in filterItems(reps)" :key="rep.name.first">
                            
                           <div style="text-align:center;">
-                            <div style="margin:0 auto">
+                            <div style="margin:0 auto;margin-top:25px;">
+                              <h2 style="text-transform:uppercase;"><small>{{ rep.specificity }}</small></h2>
                                 <img :src="rep.image" alt="" class="circular--landscape"><br clear="all" />
-                            <h2 style="margin-top:1rem !important;font-size:1.5rem;font-size:1.5rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small></h2>
+                            <h2 style="margin-top:1rem !important;font-size:1.25rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small></h2>
                             <div class="rep">
                               <div class="about">
                                 <div>
@@ -971,9 +972,9 @@
                       <ul class="card">
                         <li v-for="rep in reps3" :key="rep.name.first">
                             <div style="text-align:center;">
-                                <div style="margin:0 auto">
+                                <div style="margin:0 auto;margin-top:25px;">
                                 <img :src="rep.image" alt="" class="circular--landscape"><br clear="all" />
-                            <h2 style="margin-top:1rem !important;font-size:1.5rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small></h2>
+                            <h2 style="margin-top:1rem !important;font-size:1.25rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small></h2>
                             <div class="rep">
                               <div class="about">
                                 <div>
@@ -1003,7 +1004,7 @@
                               last: "Lau"
                             },
                             listedphone: "740-753-9100 Ext. 2127",
-                            phone: "7407539100,2594",
+                            phone: null,
                             email: "tim.lau@lehighoutfitters.com",
                             image: "img/tim_Profile.jpg",
                             linkedin: "https://www.linkedin.com/in/timlauseattle/",
@@ -1013,15 +1014,15 @@
                           }, {
                             // DONE
                             name: {
-                              first: "Caleb",
-                              last: "Robinson"
+                              first: "Domingo",
+                              last: "Gonzalez"
                             },
-                            listedphone: "949.510.4640",
-                            phone: "9495104640",
-                            email: "caleb.robinson@lehighoutfitters.com",
-                            image: "https://manage.customfit.me/document/data/403_1346doc.jpg",
-                            linkedin: "https://www.linkedin.com/pub/caleb-robinson/27/288/7b1",
-                            fun: "I like long walks on the beach.",
+                            listedphone: "740-753-9100 Ext. 2663",
+                            phone: null,
+                            email: "domingo.gonzalez@lehighoutfitters.com",
+                            image: "http://manage.customfit.me/document/data/412_1407doc.jpg",
+                            linkedin: null,
+                            fun: null,
                             title: "Territory Sales Manager",
                             states: ["California", "Clark County Nevada"]
                           }, {
@@ -1031,13 +1032,13 @@
                               last: "Kimes"
                             },
                             listedphone: "602.628.5663",
-                            phone: "602-628-5663",
+                            phone: null,
                             email: "Grant.Kimes@LehighOutfitters.com",
                             image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1096doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/grant-kimes/7b/136/68a",
                             fun: "I love skiing and riding motorcycles.",
                             title: "Territory Sales Manager",
-                            states: ["Arizona", "Utah", "New Mexico", "Colorado", "Western Texas"]
+                            states: ["Arizona", "Utah", "New Mexico", "Colorado"]
                           }, {
                             name: {
                               //DONE
@@ -1045,9 +1046,9 @@
                               last: "Linton"
                             },
                             listedphone: "740.270.4226 Ext. 2127",
-                            phone: "7402704226,2127",
+                            phone: null,
                             email: "Joshua.Linton@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/171102-linton.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1400doc.jpg",
                             linkedin: "https://www.linkedin.com/in/joshua-linton-3ba5aa4b",
                             fun: "I enjoy writing.",
                             title: "Territory Sales Manager",
@@ -1058,14 +1059,15 @@
                               first: "Mike",
                               last: "Jacobs"
                             },
+                            specificity: null,
                             listedphone: "740.270.5201",
-                            phone: "7402705201",
+                            phone: null,
                             email: "Mike.Jacobs@LehighOutfitters.com",
                             image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1094doc.jpg",
                             linkedin: null,
                             fun: null,
                             title: "Territory Sales Manager",
-                            states: ["Eastern Texas","Oklahoma", "Louisiana"]
+                            states: ["Eastern Texas","Western Texas","Oklahoma", "Louisiana"]
                           }, {
                             name: {
                               //DONE
@@ -1073,7 +1075,7 @@
                               last: "Waring"
                             },
                             listedphone: "740.753.9100",
-                            phone: "7407539100",
+                            phone: null,
                             email: "Kyle.Waring@LehighOutfitters.com",
                             image: "img/kyle_Profile.jpg",
                             linkedin: null,
@@ -1087,7 +1089,7 @@
                               last: "Frost"
                             },
                             listedphone: "740.753.9100",
-                            phone: "7407539100",
+                            phone: null,
                             email: "Greg.Frost@LehighOutfitters.com",
                             image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1095doc.jpg",
                             linkedin: "https://www.linkedin.com/in/gregfrost24",
@@ -1100,7 +1102,7 @@
                               last: "Rainville"
                             },
                             listedphone: "740.753.9100 Ext. 2223",
-                            phone: "7407539100,2223",
+                            phone: null,
                             email: "Matthew.Rainville@LehighOutfitters.com",
                             image: "https://manage.customfit.me/document/data/403_1345doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/matthew-p-rainville/a/b75/259",
@@ -1114,7 +1116,7 @@
                               last: "Sumpter"
                             },
                             listedphone: "740.753.9100 Ext. 2497",
-                            phone: "7407539100,2497",
+                            phone: null,
                             email: "Collin.Sumpter@lehighoutfitters.com",
                             image: "https://i.imgur.com/EdbOa1z.jpg",
                             linkedin: "https://www.linkedin.com/in/sumpter82",
@@ -1128,7 +1130,7 @@
                               last: "Conkling"
                             },
                             listedphone: "740.753.9100 Ext. 2574",
-                            phone: "7407539100,2574",
+                            phone: null,
                             email: "Peter.Conkling@LehighOutfitters.com",
                             image: "img/peter_Profile.jpg",
                             linkedin: null,
@@ -1142,7 +1144,7 @@
                               last: "Millwood"
                             },
                             listedphone: "740.753.9100 Ext. 2579",
-                            phone: "7407539100,2579",
+                            phone: null,
                             email: "Christian.Millwood@lehighoutfitters.com",
                             image: "https://manage.customfit.me/document/data/412_1350doc.jpg",
                             linkedin: "https://www.linkedin.com/in/christian-millwood-bb93a493",
@@ -1156,14 +1158,14 @@
                               last: "Mitchell"
                             },
                             listedphone: "740.591.5903",
-                            phone: "7405915903",
+                            phone: null,
                             email: "Tara.Mitchell@LehighOutfitters.com",
                             image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1083doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/tara-mitchell/35/a00/b58",
                             fun: "I like to bake on the weekends.",
                             title: "Territory Sales Manager",
                             states: ["Ohio", "West Virginia", "Western Pennsylvania", "Western New York", "Eastern Kentucky"]
-                          }, {
+                          }, /*{
                             name: {
                               //DONE
                               first: "Allen",
@@ -1177,49 +1179,50 @@
                             fun: "I recently completed my Open Water SCUBA certification.",
                             title: "Territory Sales Manager",
                             states: ["Eastern New York", "New Jersey", "Delaware", "Maryland", "Eastern Pennsylvania"]
-                          }, {
+                          },*/ {
                             name: {
                               //DONE
                               first: "Diane",
                               last: "Zawerton"
                             },
                             listedphone: "740.753.9100 Ext. 2119",
-                            phone: "7407539100,2119",
+                            phone: null,
                             email: "diane.zawerton@lehighoutfitters.com",
                             image: "img/diane_Profile.jpg",
                             linkedin: "https://www.linkedin.com/in/dianne-zawerton-300ba538/",
                             fun: null,
                             title: "Territory Sales Manager",
-                            states: ["Connecticut", "New Hampshire", "Maine", "Vermont", "Rhode Island", "Massachusetts", "New York City", "New York City "]
-                          }, {
-                            name: {
-                              //DONE
-                              first: "Colleen",
-                              last: "Binkley"
-                            },
-                            listedphone: "740.753.9100 Ext. 2121",
-                            phone: "7407539100,2121",
-                            email: "colleen.binkley@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/binkley.jpg",
-                            linkedin: "https://www.linkedin.com/in/colleen-binkley-9a491140",
-                            fun: null,
-                            title: "Business Development Rep",
-                            states: ["Louisiana","Oklahoma","Eastern Texas","Iowa"," Kansas","Minnesota","Missouri","North Dakota","South Dakota","Nebraska"]
+                            states: ["Connecticut", "New Hampshire", "Maine", "Vermont", "Rhode Island", "Massachusetts", "New York"]
                           }, {
                             name: {
                               // Done
-                              first: "David",
-                              last: "Tokie"
+                              first: "Samantha",
+                              last: "Retzlaff"
                             },
-                            listedphone: "740.753.9100 Ext. 2159",
-                            phone: "7407539100,2159",
-                            email: "David.Tokie@LehighOutfitters.com",
-                            image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1099doc.jpg",
-                            linkedin: "https://www.linkedin.com/pub/david-tokie/a9/64a/a29",
+                            specificity: "Southern Texas",
+                            listedphone: "740.753.9100 Ext. 2521",
+                            phone: null,
+                            email: "Samantha.Retzlaff@LehighOutfitters.com",
+                            image: "http://manage.customfit.me/document/data/412_1383doc.jpg",
+                            linkedin: null,/*https://www.linkedin.com/in/samantha-retzlaff-340663a2*/
+                            fun: null,
+                            title: "Territory Sales Manager",
+                            states: ["Western Texas","Eastern Texas"]
+                          },{
+                            name: {
+                              //DONE
+                              first: "Colleen",
+                              last: "Kemper"
+                            },
+                            listedphone: "740.753.9100 Ext. 2121",
+                            phone: "7407539100,2121",
+                            email: "colleen.kemper@lehighoutfitters.com",
+                            image: "http://manage.customfit.me/document/data/412_1396doc.jpg",
+                            linkedin: "https://www.linkedin.com/in/colleen-binkley-9a491140",
                             fun: null,
                             title: "Business Development Rep",
-                            states: ["Montana","Idaho","North Nevada","Clark County Nevada","Oregon","Washington","Wyoming","California"]
-                          }, {
+                            states: ["Iowa"," Kansas","Minnesota","Missouri","North Dakota","South Dakota","Nebraska","Montana","Idaho","Nevada","Oregon","Washington","Wyoming"]
+                          },  {
                             name: {
                               //DONE
                               first: "Bridgette",
@@ -1242,7 +1245,7 @@
                             listedphone: "740.753.9100 Ext. 2090",
                             phone: "7407539100,2090",
                             email: "rebecca.reynolds@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/reynolds.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1401doc.jpg",
                             linkedin: "https://www.linkedin.com/in/rebecca-l-reynolds-5a7ba6b3/",
                             fun: "I love dogs, and my favorite breed is rescued : ) and I enjoy people.",
                             title: "Business Development Rep",
@@ -1256,7 +1259,7 @@
                             listedphone: "740.753.9100 Ext. 2142",
                             phone: "740753-9100,2142",
                             email: "Bobby.Smathers@rockybrands.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/smathers-bobby.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1402doc.jpg",
                             linkedin: "https://www.linkedin.com/in/bobby-smathers-686b1095/",
                             fun: null,
                             title: "Account Sales Rep",
@@ -1270,7 +1273,7 @@
                             listedphone: "740.753.9100 Ext. 2064",
                             phone: "7407539100,2064",
                             email: "ashley.felts@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/bdr-felts-ashley.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1397doc.jpg",
                             linkedin: "https://www.linkedin.com/in/ashleyfeltssales",
                             fun: null,
                             title: "Business Development Rep",
@@ -1284,7 +1287,7 @@
                             listedphone: "740.753.9100 Ext. 2112",
                             phone: "7407539100,2112",
                             email: "ashley.campbell@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/bdr-campbell-ashley.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1395doc.jpg",
                             linkedin: "https://www.linkedin.com/in/ashley-campbell-2750115a",
                             fun: null,
                             title: "Business Development Rep",
@@ -1298,7 +1301,7 @@
                             listedphone: "740.753.9100 Ext. 2205",
                             phone: "7407539100,2205",
                             email: "kelly.leon@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/170515-leon_kelly.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1399doc.jpg",
                             linkedin: "https://www.linkedin.com/in/coryjneal",
                             fun: null,
                             title: "Account Sales Rep",
@@ -1316,7 +1319,7 @@
                             linkedin: "https://www.linkedin.com/in/sally-blake-a3441a6a",
                             fun: null,
                             title: "Business Development Rep",
-                            states: ["Arkansas","Tennessee","Mississippi","Western Pennsylvania", "Western New York"]
+                            states: ["Louisiana","Oklahoma","Eastern Texas","Arkansas","Tennessee","Mississippi","Western Pennsylvania", "Western New York"]
                           }, 
                           {
                             name: {
@@ -1348,9 +1351,8 @@
                             fun: null,
                             title: "Account Sales Rep",
                             states: ["Eastern Texas", "Oklahoma", "Louisiana"]
-                          }, {
+                          },/* {
                             name: {
-                              //DONE
                               first: "Tracy",
                               last: "McMahon"
                             },
@@ -1362,7 +1364,7 @@
                             fun: "I love baking and gardening.",
                             title: "Account Sales Rep",
                             states: ["Michigan", "Indiana", "Western Kentucky", "Utah", "Arizona", "Colorado", "New Mexico", "Western Texas","Michigan "]
-                          }, {
+                          },*/ {
                             name: {
                               //DONE
                               first: "Vicki",
@@ -1385,7 +1387,7 @@
                             listedphone: "740.753.9100 Ext. 2584",
                             phone: "7407539100,2584",
                             email: "kari.wendt@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/wendt-kari-cf.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1403doc.jpg",
                             linkedin: "https://www.linkedin.com/in/kari-wendt-91b6ba11b",
                             fun: null,
                             title: "Account Sales Rep",
@@ -1399,11 +1401,11 @@
                             listedphone: "740.753.9100 Ext. 2129",
                             phone: "7407539100,2129",
                             email: "sybil.kennedy@lehighoutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/asr-kennedy-sybil.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1398doc.jpg",
                             linkedin: "https://www.linkedin.com/in/sybil-kennedy-90980245",
                             fun: null,
                             title: "Account Sales Rep",
-                            states: ["Maryland", "Eastern Pennsylvania", "Delaware", "New Jersey", "Eastern New York", "New York City", "New York City ", "Connecticut", "Rhode Island", "Massachusetts", "Vermont", "New Hampshire", "Maine"]
+                            states: ["Maryland", "Eastern Pennsylvania", "Delaware", "New Jersey", "Eastern New York", "Western New York", "New York City", "New York City ", "Connecticut", "Rhode Island", "Massachusetts", "Vermont", "New Hampshire", "Maine"]
                           }
                         ],
                         reps2: [
@@ -1412,8 +1414,8 @@
                               first: "Tiffany",
                               last: "Watts"
                             },
-                            listedphone: "740.249.5572",
-                            phone: "7402495572",
+                            listedphone: null,
+                            //phone: "7402495572",
                             email: "Tiffany.Watts@LehighOutfitters.com",
                             image: "https://manage.customfit.me/document/data/403_1349doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/tiffany-watts/a/68/119",
@@ -1423,29 +1425,42 @@
                           {
                             name: {
                               first: "Heather",
-                              last: "Perkins"
+                              last: "Hickman"
                             },
-                            listedphone: "740.603.3268",
-                            phone: "7406033268",
-                            email: "heather.perkins@LehighOutfitters.com",
+                            //listedphone: "740.603.3268",
+                            //phone: "7406033268",
+                            email: "Heather.Hickman@LehighOutfitters.com",
                             image: "https://manage.customfit.me/document/data/403_1344doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/heather-phares-perkins/15/89a/301",
                             fun: null,
                             title: "Key Account Executive"
-                          }
-                          /*{
+                          },
+                          {
                             name: {
-                              first: "Rhys",
-                              last: "Wilton"
+                              first: "Chris",
+                              last: "Fenn"
                             },
-                            listedphone: "740.818.9681",
-                            phone: "7408189681",
-                            email: "Rhys.Wilton@LehighOutfitters.com",
-                            image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1088doc.jpg",
-                            linkedin: "https://www.linkedin.com/pub/rhys-wilton/9/6a2/b1",
+                            listedphone: null,
+                            phone: null,
+                            email: "Christian.Fenn@LehighOutfitters.com",
+                            image: "http://manage.customfit.me/document/data/412_1384doc.jpg",
+                            linkedin: null,
                             fun: null,
                             title: "Key Account Executive"
-                          }*/
+                          },
+                          {
+                            name: {
+                              first: "Tina",
+                              last: "Higgins"
+                            },
+                            //listedphone: "740.753.9100 Ext. 2635",
+                            //phone: "7407539100,2635",
+                            email: "tina.higgins@LehighOutfitters.com",
+                            image: "http://manage.customfit.me/document/data/412_1385doc.jpg",
+                            linkedin: null,
+                            fun: null,
+                            title: "Key Account Executive"
+                          }
                         ],
                         reps3: [
                           {
@@ -1459,7 +1474,7 @@
                             image: "https://i.imgur.com/H8hGBo4.jpg",
                             linkedin: "https://www.linkedin.com/in/jeffreyrstern",
                             fun: null,
-                            title: "Senior Vice President of Sales and Operations"
+                            title: "Senior VP of Sales and Operations"
                           },
                           {
                             name: {
@@ -1485,7 +1500,7 @@
                             image: "https://d1jdomzv2hp689.cloudfront.net/document/data/260_1173doc.png",
                             linkedin: "https://www.linkedin.com/in/mike-pack-a6612581",
                             fun: "I enjoy the outdoors. I can identify all the native trees and shrubs in the Midwest, both common name and Scientific name",
-                            title: "Inside Sales Manager"
+                            title: "Inside Sales Senior Manager"
                           },
                           {
                             name: {
@@ -1498,7 +1513,7 @@
                             image: "https://manage.customfit.me/document/data/403_1342doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/angel-justice-garleff/98/952/867",
                             fun: null,
-                            title: "Sales and Operations Specialist"
+                            title: "Retail Operations Manager"
                           },
                           {
                             name: {
@@ -1595,11 +1610,12 @@
                         padding: 0.5em;
                         box-sizing: border-box;
                         margin-top: 0.5em;
+                        min-height:417px;
     margin-bottom: 0.5em;
                       }
                       .card small {
                         font-weight: normal;
-                        font-size: 0.9rem;
+                        font-size: 0.8rem;
                         color: #212121;
                       }
                       
@@ -1652,7 +1668,7 @@
                       }
                       @media screen and (min-width: 1200px) {
                         .card li {
-                          width: calc(33.33% - 1.5%);
+                          width: calc(25% - 1.5%);
                         }
                         .about {
                           flex-direction: row;
