@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" style="overflow-y:scroll;overflow-x:hidden;">
 <head>
@@ -27,242 +28,7 @@
   <script src="jquery.min.js"></script>
   <script src="js/lity-min.js" defer></script>
   <style>
-
-/*RESET COOKIE STYLING FROM HUBSPOT*/
-div#hs-eu-cookie-confirmation{
-  background:rgba(0,0,0,1)!important;
-  border-bottom:none !important;
-  border-top: none !important;
-  box-shadow: none !important;
-  top:auto !important;
-  bottom: 0px !important;
-}
-
-div#hs-eu-cookie-confirmation-inner{
-  background: rgba(0,0,0,0)!important;
-}
-
-div#hs-eu-cookie-confirmation-inner p{
-  color:#ffffff!important;
-  font-size: 11px !important;
-}
-
-div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button{
-  background-color:#bed600!important;
-  background: #bed600!important;
-  border: 1px solid #bed600!important;
-  text-transform: uppercase!important;
-}
-
-div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button{
-  border:1px solid #bed600!important;
-  color: #ffffff!important;
-  text-transform: uppercase!important;
-}
-
-    #intro .btn-get-startedLogin{
-      font-family: "Montserrat",sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 32px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    color: #fff;
-    background: #bed600;
-    }
-
-    #intro .btn-get-startedLogin:hover{
-      background: #000000 !important;
-      border: 1px solid #000000 !important;
-    }
-
-    @media (max-width: 768px) {
-      #wcag-notice{display:none!important;}
-    }
-    #wcag-notice {
-        display: block;
-        width: 100%;
-        background-color: #000;
-        color: #FFF!important;
-        font-size: 0.75em;
-        line-height: 1;
-        margin: 0 auto;
-        padding: 1em 0 .25em;
-        text-align: center;
-    }
-    #wcag-notice p {
-      color:#FFFFFF!important;
-  }
-    #wcag-notice a {
-        color: #FFF!important;
-        text-decoration: underline;
-
-    }
-    #wcag-notice a:hover {
-        color: #EEE!important;
-    }
-
-    .body {
-      overflow-x: hidden !important;
-    }
-    .servicesHover {
-      color: #ffffff !important;
-    }
-    .servicesHover:hover {
-      color: #bed600 !important;
-    }
-    .dropdown-menu {
-      border: none !important;
-    }
-    .imgAutoPad {
-      height: auto;
-      padding: 10px !important;
-    }
-    @media (min-width: 768px) {
-      .skills {
-        display: block !important;
-      }
-      .skillsMobile {
-        display: none !important;
-      }
-      .facts {
-        display: none !important;
-      }
-      .factsMobile {
-        display: block !important;
-      }
-      .aetrex {
-        display: block !important;
-      }
-      .aetrexMobile {
-        display: none !important;
-      }
-      .introDesktopXL{
-        display:none!important;
-      }
-      .introDesktop {
-        display: block !important;
-      }
-      .introMobile {
-        display: none !important;
-      }
-    }
-
-    @media (min-width: 1100px) {
-      .introDesktopXL{
-        display:block!important;
-      }
-      .introDesktop {
-        display: none !important;
-      }
-      .introMobile {
-        display: none !important;
-      }
-      .factsMobile {
-        display: none !important;
-      }
-      .facts {
-        display: block !important;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .skills {
-        display: none !important;
-      }
-      .skillsMobile {
-        display: block !important;
-      }
-      .factsMobile {
-        display: block !important;
-      }
-      .facts {
-        display: none !important;
-      }
-      .aetrexMobile {
-        display: block !important;
-      }
-      .aetrex {
-        display: none !important;
-      }
-      .introDesktop {
-        display: none !important;
-      }
-      .introMobile {
-        display: block !important;
-      }
-      .introDesktopXL{
-        display:none!important;
-      }
-    }
-    :focus {
-      outline-color: #ffffff!important;
-      border-color: #bed600!important;
-      box-shadow: 0 0 4px rgba(190, 214, 0, 1) !important;
-}
-    .input-wrapper {
-        display:inline;
-        position: relative
-    }
-    .input-wrapper:before {
-        font-family: 'FontAwesome';
-        content: '\f007';
-        position: absolute;
-        left: 10px;
-        padding-top: 4px;
-        color:#000000;
-    }
-    .input-wrapper:focus-within::before {
-        font-family: 'FontAwesome';
-        content: '\f007';
-        position: absolute;
-        left: 10px;
-        padding-top: 4px;
-        color:#bed600;
-    }
-    .input-wrapperLoc {
-        display:inline;
-        position: relative
-    }
-    .input-wrapperLoc:before {
-        font-family: 'FontAwesome';
-        content: '\f0ac';
-        position: absolute;
-        left: 10px;
-        padding-top: 4px;
-        color:#000000;
-    }
-    .input-wrapperLoc:focus-within::before {
-        font-family: 'FontAwesome';
-        content: '\f0ac';
-        position: absolute;
-        left: 10px;
-        padding-top: 4px;
-        color:#bed600;
-    }
-    .input-wrapperPass {
-        display:inline;
-        position: relative
-    }
-    .input-wrapperPass:before {
-        font-family: 'FontAwesome';
-        content: '\f023';
-        position: absolute;
-        left: 12px;
-        padding-top: 4px;
-        color:#000000;
-    }
-    .input-wrapperPass:focus-within::before {
-        font-family: 'FontAwesome';
-        content: '\f023';
-        position: absolute;
-        left: 12px;
-        padding-top: 4px;
-        color:#bed600;
-    }
+#facts::before{background:linear-gradient(184deg,rgba(255,255,255,1) 20%,rgba(0,0,0,1) 20%)}div#hs-eu-cookie-confirmation{background:#000!important;border-bottom:none!important;border-top:none!important;box-shadow:none!important;top:auto!important;bottom:0px!important}div#hs-eu-cookie-confirmation-inner{background:rgba(0,0,0,0)!important}div#hs-eu-cookie-confirmation-inner p{color:#ffffff!important;font-size:11px!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button{background-color:#bed600!important;background:#bed600!important;border:1px solid #bed600!important;text-transform:uppercase!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button{border:1px solid #bed600!important;color:#ffffff!important;text-transform:uppercase!important}#intro .btn-get-startedLogin{font-family:"Montserrat",sans-serif;font-weight:500;font-size:16px;letter-spacing:1px;display:inline-block;padding:8px 32px;border-radius:50px;transition:0.5s;margin:10px;color:#fff;background:#bed600}#intro .btn-get-startedLogin:hover{background:#000000!important;border:1px solid #000000!important}@media (max-width:768px){#wcag-notice{display:none!important}}#wcag-notice{display:block;width:100%;background-color:#000;color:#FFF!important;font-size:.75em;line-height:1;margin:0 auto;padding:1em 0 .25em;text-align:center}#wcag-notice p{color:#FFFFFF!important}#wcag-notice a{color:#FFF!important;text-decoration:underline}#wcag-notice a:hover{color:#EEE!important}.body{overflow-x:hidden!important}.servicesHover{color:#ffffff!important}.servicesHover:hover{color:#bed600!important}.dropdown-menu{border:none!important}.imgAutoPad{height:auto;padding:10px!important}@media (min-width:768px){.skills{display:block!important}.skillsMobile{display:none!important}.facts{display:none!important}.factsMobile{display:block!important}.aetrex{display:block!important}.aetrexMobile{display:none!important}.introDesktopXL{display:none!important}.introDesktop{display:block!important}.introMobile{display:none!important}}@media (min-width:1100px){.introDesktopXL{display:block!important}.introDesktop{display:none!important}.introMobile{display:none!important}.factsMobile{display:none!important}.facts{display:block!important}}@media (max-width:768px){.skills{display:none!important}.skillsMobile{display:block!important}.factsMobile{display:block!important}.facts{display:none!important}.aetrexMobile{display:block!important}.aetrex{display:none!important}.introDesktop{display:none!important}.introMobile{display:block!important}.introDesktopXL{display:none!important}}:focus{outline-color:#ffffff!important;border-color:#bed600!important;box-shadow:0 0 4px rgba(190,214,0,1)!important}.input-wrapper{display:inline;position:relative}.input-wrapper:before{font-family:'FontAwesome';content:'\f007';position:absolute;left:10px;padding-top:4px;color:#000}.input-wrapper:focus-within::before{font-family:'FontAwesome';content:'\f007';position:absolute;left:10px;padding-top:4px;color:#bed600}.input-wrapperLoc{display:inline;position:relative}.input-wrapperLoc:before{font-family:'FontAwesome';content:'\f0ac';position:absolute;left:10px;padding-top:4px;color:#000}.input-wrapperLoc:focus-within::before{font-family:'FontAwesome';content:'\f0ac';position:absolute;left:10px;padding-top:4px;color:#bed600}.input-wrapperPass{display:inline;position:relative}.input-wrapperPass:before{font-family:'FontAwesome';content:'\f023';position:absolute;left:12px;padding-top:4px;color:#000}.input-wrapperPass:focus-within::before{font-family:'FontAwesome';content:'\f023';position:absolute;left:12px;padding-top:4px;color:#bed600}
   </style>
   <!-- Google Tag Manager -->
 
@@ -285,7 +51,6 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
 <body style="overflow:hidden;">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K46SHX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<div id="wcag-notice" style="top:0;"><p style="margin: 0 0 10px 0;">We are currently upgrading our websites to <a href="https://www.w3.org/TR/WCAG20/" style="color:#bed600!important;"><abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0</a>. If you are using a screen reader and are having problems using this website, please call <a href="tel:+01-866-442-4908" style="color:#bed600!important;" rel="nofollow">1-866-442-4908</a>.</p></div>
   <!-- End Google Tag Manager (noscript) -->
   <header class="header_area" id="header_area" style="background:#ffffff!important;top:auto!important;">
     <div class="main_menu">
@@ -328,6 +93,9 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
                         <a class="nav-link" href="kiosks.html" aria-label="Kiosks Page Link">Kiosks</a>
                       </li>
                       <li class="nav-item">
+                        <a class="nav-link" href="safety-pledge.html" aria-label="Safety Pledge Page Link">Safety Pledge</a>
+                      </li>
+                      <li class="nav-item">
                         <a class="nav-link" href="paymentOptions.html" aria-label="Payment Options Page Link">Payment
                           Options</a>
                       </li>
@@ -354,13 +122,62 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
                       </li>
                     </ul>
                   </li>
+                  <li class="nav-item submenu dropdown">
+                    <a href="#" class="nav-link dropdown-toggle hvr-underline-from-center" data-toggle="dropdown"
+                      role="button" aria-haspopup="true" aria-expanded="false">Wellness</a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a class="nav-link" href="aetrex.html" aria-label="Aetrex Page Link">Aetrex Foot Scanner</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="bootbreakdown.html" aria-label="Boot Size Guide Link">Boot Breakdown Dangers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="unhealthyfeet.html" aria-label="Boot Size Guide Link">Impacts Of Unhealthy Feet</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="truefit.html" aria-label="Boot Size Guide Link">True Fit Sizing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="whyorthotics.html" aria-label="Boot Size Guide Link">Why New Orthotics</a>
+                      </li>
+                    </ul>
+                  </li>
                   <li class="nav-item ">
                     <a class="nav-link hvr-underline-from-center" href="blog.html" aria-label="Blog page Link">Blog</a>
                   </li>
-                  <li class="nav-item ">
-                    <a class="nav-link hvr-underline-from-center" href="login.html"
-                      aria-label="Customer Login Page Link">Login</a>
-                  </li>
+                  <div class="nav-item dropdown login-dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle" aria-expanded="false"><i class="fa fa-user-o"></i> Account Login</a>
+                    <div class="dropdown-menu" style="min-width:18rem;padding: 1rem 1rem;">					
+                        <form class="form-inline login-form login100-form validate-form" action="https://www.customfit.me/process.aspx" method="post">
+                            <div class="input-group" style="margin:0px 10px 10px 0px;">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" style="min-width: 40px;">
+                                  <span class="fa fa-user" style="margin: 0 auto;"></span>
+                                </span>                    
+                              </div>
+                              <input type="text" class="form-control input100" placeholder="Account #" required="" name="txtCustomerNumber" id="txtCustomerNumber">
+                            </div>
+                            <div class="input-group" style="margin:0px 10px 10px 0px;">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" style="min-width: 40px;">
+                                  <span class="fa fa-globe" style="margin: 0 auto;"></span>
+                                </span>                    
+                              </div>
+                              <input type="text" class="form-control input100" placeholder="Location #" required="" name="txtLocationNumber" id="txtLocationNumber">
+                            </div>
+                            <div class="input-group" style="margin:0px 10px 10px 0px;">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" style="min-width: 40px;">
+                                  <i class="fa fa-lock" style="margin: 0 auto;"></i>
+                                </span>                    
+                              </div>
+                              <input type="text" class="form-control input100" placeholder="Password" required="" name="txtPassword" id="txtPassword">
+                            </div>
+                            <button type="submit" class="btn btn-success" style="background-color:#000000;border-radius: 0px;border: 0px;">LOGIN</button>
+                        </form>
+                      </div>
+                    </div>
                 </ul>
               </div>
             </div>
@@ -369,42 +186,54 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
       </nav>
     </div>
   </header>
-
-  <section id="intro" class="introDesktopXL" style="height:585px!important;padding-top:80px;">
-      <div class="row" role="listbox" style="background:url('img/header.jpg');margin-right:0px;">
+  <section style="background-color: #bed600;padding-top:80px;">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col-md-10" style="padding-top:18px;padding-bottom:9px;">
+          <p style="text-align:center;margin:0 auto;color:#000;font-family:'Josefin Sans', sans-serif;text-transform:uppercase;"><a href="safety-pledge.html" style="text-decoration: underline;color:#000;">Safety Pledge:</a> Watch how we're still safely performing on-site ordering &amp; wellness events</p>
+        </div>
+          <div class="col-md-1"></div>
+    </div>
+  </div>
+  </section>
+  <section id="intro" class="introDesktopXL" style="height:585px!important;padding-top:0px;">
+      <div class="row" style="background:url('img/header.jpg');margin-right:0px;" aria-label="Header Intro For Logging In">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-8">
         <div class="carousel-item active">
           <div class="carousel-background"></div>
-          <div class="carousel-container" style="position:inherit!important;">
-              <div class="carousel-content" style="float:left;text-align:left;">
-                <h1 style="padding-top:85px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:48px;color:#ffffff;">
-                  FREE MANAGED<br>SAFETY FOOTWEAR<br>PROGRAMS</h1>
-                <p style="font-size:1rem;margin-bottom: 0px;margin-left:0px;">With over 70 brands and 3000 styles, CustomFit
-                  has the perfect solution for all your safety footwear needs.</p><br>
-                <a href="ourteam.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="margin-left:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">CONTACT
-                  A REP</a>
+          <div class="carousel-container" style="position:inherit!important;padding-top:40px;">
+              <div class="carousel-content" style="float:left;text-align:left;margin-left: 90px;">
+                <h1 style="padding-top:75px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:48px;color:#ffffff;">
+                  The Power To<br>Gain Control of<br>Your PPE Program</h1>
+               
+                <a href="ourteam.html" aria-label="View Our Sales Team Here" class="scrollto" style="font-family:'Lato',sans-serif;margin-left:0px;color:#bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY FOOTWEAR</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                  <a href="ourteam.html" aria-label="View Our Sales Team Here" class=" scrollto" style="font-family:'Lato',sans-serif;margin-left:0px;color:#bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY WORKWEAR</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="ourteam.html" aria-label="View Our Sales Team Here" class=" scrollto" style="font-family:'Lato',sans-serif;margin-left:0px;color:#bed600;border-radius:0px !important;background:bed600;text-decoration:none;">FOOT &amp; BODY WELLNESS</a>
               </div>
                       <div class="col-lg-2">
     <form method="post" action="https://www.customfit.me/process.aspx" class="login100-form validate-form" style="
-        background-image:linear-gradient(to bottom,#ffffff,#f5f5f5);padding-top: 20px;border: 5px solid #fafbfc;float: right;padding-bottom: 20px;padding-left: 30px;padding-right: 30px;border-radius: 3px;margin-top: 75px;width: 300px;margin-left:-250px;">
+        background:#ffffff1A;padding-top: 20px;float: right;padding-bottom: 20px;padding-left: 30px;padding-right: 30px;margin-top: 75px;width: 300px;margin-right:-350px;backdrop-filter: blur(3px);">
               <span class="login100-form-title">
               </span>
     <div class="wrap-input100 validate-input m-b-23" data-validate="Account is required" style="margin-bottom: 10px;font-family: 'Josefin Sans', sans-serif;">
-        <label style="display:block;">Account</label>
+        <label style="display:block;color:#fff;">Account</label>
         <div class="input-wrapper">
-                <input class="input100" type="text" name="txtCustomerNumber" id="txtCustomerNumber" placeholder="Enter Account #" aria-label="Type Your Account Number Here" style="width: 100%;border-radius: 3px;border: 1px solid #c3c1c1;padding-top: 4px;padding-left: 30px;"></div>
+                <input class="input100" type="text" name="txtCustomerNumber" id="txtCustomerNumber" placeholder="Enter Account #" aria-label="Type Your Account Number Here" style="width: 100%;border: 1px solid #c3c1c1;padding-top: 4px;padding-left: 30px;"></div>
               </div>
               <div class="wrap-input100 validate-input m-b-23" data-validate="Location is required" style="margin-top: 10px;margin-bottom: 10px;font-family: 'Josefin Sans', sans-serif;">
       
-        <label style="display:block;">Location</label>
+        <label style="display:block;color:#fff;">Location</label>
         <div class="input-wrapperLoc">
-                  <input class="input100" type="text" name="txtLocationNumber" id="txtLocationNumber" placeholder="Enter Location #" aria-label="Type Your Location Number Here" style="width: 100%;padding-top: 4px;padding-left: 30px;border-radius: 3px;border: 1px solid #c3c1c1;">
+                  <input class="input100" type="text" name="txtLocationNumber" id="txtLocationNumber" placeholder="Enter Location #" aria-label="Type Your Location Number Here" style="width: 100%;padding-top: 4px;padding-left: 30px;border: 1px solid #c3c1c1;">
                 </div>
                 </div>
               <div class="wrap-input100 validate-input" data-validate="Password is required" style="margin-top: 10px;margin-bottom: 10px;font-family:'Josefin Sans',sans-serif;">
-        <label style="display:block;">Password</label>
+        <label style="display:block;color:#fff;">Password</label>
         <div class="input-wrapperPass">
                 <input class="input100" type="password" name="txtPassword" id="txtPassword" placeholder="Enter Password" aria-label="Type Your Password Here" style="
-        font-family: 'Josefin Sans', sans-serif;width: 100%;padding-top: 4px;padding-left: 30px;border-radius: 3px;border: 1px solid #c3c1c1;"></div>
+        font-family: 'Josefin Sans', sans-serif;width: 100%;padding-top: 4px;padding-left: 30px;border: 1px solid #c3c1c1;"></div>
               </div>
               <div class="container-login100-form-btn">
                 <div class="wrap-login100-form-btn">
@@ -413,20 +242,20 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
                 </div>
               </div>
               </form></div>
+              <div class="col-lg-1"></div>
             </div>
-        </div>
+        </div></div>
       </div>
     </section>
-
-  <section id="intro" class="introDesktop" style="height:585px!important;padding-top:80px;">
-    <div class="row" role="listbox" style="background:url('img/header.jpg');margin-right:0px;">
+  <section id="intro" class="introDesktop" style="height:585px!important;padding-top:0px;">
+    <div class="row" style="background:url('img/header.jpg');margin-right:0px;" aria-label="Header Intro For Logging In on Desktop">
       <div class="carousel-item active">
         <div class="carousel-background"></div>
-        <div class="carousel-container" style="position:inherit!important;">
+        <div class="carousel-container" style="position:inherit!important;padding-top:40px;">
           <div class="carousel-content" style="float:left;">
             <h1
               style="padding-top:85px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:48px;color:#ffffff;">
-              FREE MANAGED<br>SAFETY FOOTWEAR<br>PROGRAMS</h1>
+              The Power To<br>Gain Control of<br>Your PPE Program</h1>
             <p style="font-size:1.25rem;">With over 70 brands and 3000 styles, CustomFit
               has the perfect solution for all your safety footwear needs.</p>
             <a href="login.html" aria-label="Customer Login Page Link" class="hvr-sweep-to-left btn-get-started"
@@ -441,15 +270,15 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
     </div>
   </section>
 
-  <section id="introMobile" class="introMobile" style="height:550px!important;padding-top:80px;">
-    <div class="row" role="listbox" style="background:url('img/header.jpg');margin-right:0px;">
+  <section id="introMobile" class="introMobile" style="height:550px!important;padding-top:0px;">
+    <div class="row" style="background:url('img/header.jpg');margin-right:0px;" aria-label="Header Intro For Logging In on Mobile">
       <div class="carousel-item active">
         <div class="carousel-background"></div>
-        <div class="carousel-container" style="position:inherit!important;">
+        <div class="carousel-container" style="position:inherit!important;padding-top:40px">
           <div class="carousel-content">
             <h1
               style="padding-top:45px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:28px;color:#ffffff;">
-              FREE MANAGED<br>SAFETY FOOTWEAR<br>PROGRAMS</h1>
+              The Power To<br>Gain Control of<br>Your PPE Program</h1>
             <p style="font-size:1.25rem;">With over 70 brands and 3000 styles, CustomFit
               has the perfect solution for all your safety footwear needs.</p>
             <a href="login.html" aria-label="Customer Login Page Link" class="hvr-sweep-to-left btn-get-started"
@@ -463,17 +292,16 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
       </div>
     </div>
   </section>
-
   <main id="main">
-    <section id="about">
+    <section id="about" style="background:#fff!important;padding-bottom:0px;">
       <div class="container">
         <header class="section-header">
           <h2
             style="font-family: 'Josefin Sans', sans-serif;font-weight:700;font-size:32px;color:#000000;text-align:center;">
-            Take control of your safety footwear program today.</h2>
+            The industry's Innovation Leader in Managed PPE Programs.</h2>
         </header>
         <div class="row about-cols">
-          <div class="col-md-6 wow fadeInUp">
+          <div class="col-md-4 wow fadeInUp">
             <a style="color:#000000;text-decoration:none;"
               href="https://cdn2.hubspot.net/hubfs/4392020/CustomFitVid.mp4" aria-label="Custom Fit Video Watch Link"
               data-lity>
@@ -482,7 +310,7 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
                   <img src="img/WhatIsCustomFit.jpg" alt="What is Custom Fit?" class="img-fluid">
                 </div>
                 <p style="padding-top:10px;">
-                  Take control of your safety footwear program with Lehigh CustomFit’s
+                  Take control of your <span style="font-weight:700;">SAFETY FOOTWEAR</span> program with Lehigh CustomFit&#39;s
                   free managed safety footwear program. You can save your company up to
                   25% off footwear by setting up your CustomFit website.
                   <a style="color:#000000;text-decoration:none;"
@@ -493,23 +321,164 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
               </div>
             </a>
           </div>
-          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+          <div class="col-md-4 wow fadeInUp">
+            <a style="color:#000000;text-decoration:none;"
+              href="https://cdn2.hubspot.net/hubfs/4392020/AlbertVid.mp4" aria-label="Aetrex Video Link"
+              data-lity>
+              <div class="about-col">
+                <div class="img">
+                  <img src="https://manage.customfit.me/document/data/412_1539doc.jpg" alt="Work Wellness" class="img-fluid">
+                </div>
+                <p style="padding-top:10px;">
+                  Utilizing personal 3D foot scan data, we can expertly recommend custom orthotics to each employee to correct and alleviate foot and body ailments for greater productivity and less absenteeism.
+                  <a style="color:#000000;text-decoration:none;"
+                    href="https://www.youtube.com/embed/79HGux34-fM"
+                    aria-label="Aetrex Video Watch Link" target="_blank" data-lity><b style="color:#000000;">Watch the video
+                      >></b></a>
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <a href="footwear.html" aria-label="Footwear Page Link" style="color:#000000;text-decoration:none;">
               <div class="about-col">
                 <div class="img">
-                  <img src="img/RightFootwear.jpg" alt="Right Footwear For the Job Image" class="img-fluid">
+                  <img src="https://manage.customfit.me/document/data/412_1540doc.jpg" alt="Safety Workwear" class="img-fluid">
                   <p style="padding-top:10px;">
-                    CustomFit has top footwear brands and styles to satisfy any industry or job
-                    requirement, all at a huge discount to you. Plus, you can restrict the available
-                    styles offered to ensure your standards are met. <a href="footwear.html"
+                    Partnering with Carhartt Company Gear, we cover you in head-to-toe safety workwear branded with your company logo.<br><a href="footwear.html"
                       aria-label="Footwear Page Link" style="color:#000000;text-decoration:none;"><b
-                        style="color:#000000;">Learn more >></b></a>
+                        style="color:#000000;">Learn more >></b></a><br>&nbsp;
                   </p>
                 </div>
               </div>
             </a>
           </div>
         </div>
+    </section>
+    <section id="factsMobile" class="wow fadeIn factsMobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5" style="padding-top:50px;" class="wow fadeInLeft">
+            <h4 style="color:#ffffff;margin-bottom:5px!important;font-size:1.25rem;color:#ffffff;">CUSTOMFIT WEBSITES</h4>
+            <h1 style="font-size:3rem!important;font-family: 'Josefin Sans', sans-serif;font-weight:700;color:#bed600;"
+              class="wow fadeInLeft">ANYTIME,<br>ANYWHERE,<br>ON ANY DEVICE</h1>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img style="display:absolute;" src="img/laptopphone.png" alt="Laptop and Phone Icon"
+              class="img-fluid wow fadeInRight">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <p style="padding-top:20px;padding-bottom:10px;color:#ffffff;font-size:1.25rem;" class="wow fadeInUp">Employees can order online from your dedicated and password-secure website, displaying only products that you choose to show. Convenient 24/7 access from any devise always with free shipping, free and easy returns and 60-day comfort guarantee.<br><br>
+              <div class="row" style="text-align:center">
+                <div class="col-lg-12" style="margin:0 auto;">
+                  <a href="ourteam.html" class="hvr-sweep-to-right btn-get-started"
+                    style="border:1px solid #bed600;background:#bed600!important;color:#272727;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 600;font-size: 17px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">CONTACT
+                    A REP</a><br>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="facts" class="wow fadeIn facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5" style="padding-top:50px;" class="wow fadeInLeft">
+            <h2 style="color:#ffffff;margin-bottom:5px!important;padding-top:45px;font-size:1.25rem;">CUSTOMFIT WEBSITES</h2>
+            <h1 style="font-size:3rem!important;font-family: 'Josefin Sans', sans-serif;font-weight:700;color:#bed600;"
+              class="wow fadeInLeft">ANYTIME,<br>ANYWHERE,<br>ON ANY DEVICE</h1>
+          </div>
+          <div class="col-lg-7 text-center">
+            <img style="display:absolute;" src="img/laptopphone.png" alt="Laptop and Phone Icon"
+              class="img-fluid wow fadeInRight">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12" style="padding-bottom:25px;">
+            <p style="padding-top:20px;padding-bottom:10px;color:#ffffff;font-size:1.25rem;" class="wow fadeInUp">Employees can order online from your dedicated and password-secure website, displaying only products that you choose to show. Convenient 24/7 access from any devise always with free shipping, free and easy returns and 60-day comfort guarantee.
+              <div class="row" style="text-align:center">
+                <div class="col-lg-12" style="margin:0 auto;background:#000!important;">
+                  <a href="ourteam.html" class="hvr-sweep-to-left btn-get-started"
+                    style="margin-right:10px;border:1px solid #bed600;background:#bed600!important;color:#000000!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">CONTACT
+                    A REP</a>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skillsMobile" style="padding-top:50px;padding-bottom:50px;" class="skillsMobile">
+      <div class="container">
+        <header class="section-header">
+          <h5 style="text-align:center;color:#515151;font-size:1rem;">FEATURED BRANDS</h5>
+          <h3 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;">Control What Employees Wear With Unparalleled Selection</h3>
+          <p style="text-align:left;font-size:1.25rem;">With over <b>75 brands</b> and <b>1000s of styles</b>, we provide an unparalleled selection from retail-leading companies like <b>Rocky</b>, <b>Georgia Boot</b>, <b>Timberland PRO</b>, <b>KEEN Utility</b>, and <b>Reebok Work</b>.
+           </p>
+        </header>
+        <div class="container" id="clientsMobile" style="padding-top:0px;padding-bottom:0px;">
+          <div class="owl-carousel clients-carousel">
+            <img src="img/brands/TimberlandPRO-min.png" alt="Timberland PRO Logo">
+            <img src="img/brands/Reebok-min.png" alt="Reebok Logo">
+            <img src="img/brands/GB-min.png" alt="Georgia Boot Logo">
+            <img src="img/brands/Rocky-min.png" alt="Rocky Boots Logo">
+            <img src="img/brands/Avenger-min.png" alt="Avenger Logo">
+            <!-- Need New Balance -->
+            <img src="http://manage.customfit.me/document/data/412_1468doc.png" alt="Keen Logo">
+            <img src="img/brands/Slipgrips-min.png" alt="SlipGrips Logo">
+            <img src="img/brands/LSS-min.png" alt="Lehigh Safety Shoes Logo">
+            <img src="img/brands/Carhartt-min.png" alt="Carhartt Logo">
+            <img src="http://manage.customfit.me/document/data/412_1482doc.png" alt="Skechers Work Logo">
+            <img src="img/brands/Durango-min.png" alt="Durango Logo">
+            <img src="img/brands/Michelin-min.png" alt="Michelin Logo">
+            <img src="img/brands/Nautilus-min.png" alt="Nautilus Logo">
+            <img src="img/brands/GenuineGrip-min.png" alt="Genuine Grip Logo">
+            <img src="img/brands/RockportWorks-min.png" alt="Rockport Works Logo">
+            <img src="img/brands/Ariat-min.png" alt="Ariat Logo">
+            <img src="img/brands/PUMA-min.png" alt="Puma Logo">
+            <img src="http://manage.customfit.me/document/data/412_1470doc.png" alt="Iron Age Logo">
+            <img src="img/brands/Thorogood-min.png" alt="Thorogood Logo">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills" style="padding-top:50px;background-color: #fff!important;" class="skills">
+      <div class="container">
+        <header class="section-header">
+          <h4 style="text-align:center;color:#515151;font-size:1rem;">FEATURED BRANDS</h4>
+          <h3 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;">Control What Employees Wear<br> With Unparalleled Selection</h3>
+          <p style="text-align:left;font-size:1.25rem;">With over <b>75 brands</b> and <b>1000s of styles</b>, we provide an unparalleled selection from retail-leading companies like <b>Rocky</b>, <b>Georgia Boot</b>, <b>Timberland PRO</b>, <b>KEEN Utility</b>, and <b>Reebok Work</b>.</p>
+        </header>
+        <div class="container" id="clients" style="padding-top:0px;padding-bottom:0px;">
+          <div class="owl-carousel clients-carousel">
+            <img src="img/brands/TimberlandPRO-min.png" alt="Timberland PRO Logo">
+            <img src="img/brands/Reebok-min.png" alt="Reebok Logo">
+            <img src="img/brands/GB-min.png" alt="Georgia Boot Logo">
+            <img src="img/brands/Rocky-min.png" alt="Rocky Boots Logo">
+            <img src="img/brands/Avenger-min.png" alt="Avenger Logo">
+            <!-- Need New Balance -->
+            <img src="http://manage.customfit.me/document/data/412_1468doc.png" alt="Keen Logo">
+            <img src="img/brands/Slipgrips-min.png" alt="SlipGrips Logo">
+            <img src="img/brands/LSS-min.png" alt="Lehigh Safety Shoes Logo">
+            <img src="img/brands/Carhartt-min.png" alt="Carhartt Logo">
+            <img src="http://manage.customfit.me/document/data/412_1482doc.png" alt="Skechers Work Logo">
+            <img src="img/brands/Durango-min.png" alt="Durango Logo">
+            <img src="img/brands/Michelin-min.png" alt="Michelin Logo">
+            <img src="img/brands/Nautilus-min.png" alt="Nautilus Logo">
+            <img src="img/brands/GenuineGrip-min.png" alt="Genuine Grip Logo">
+            <img src="img/brands/RockportWorks-min.png" alt="Rockport Works Logo">
+            <img src="img/brands/Ariat-min.png" alt="Ariat Logo">
+            <img src="img/brands/PUMA-min.png" alt="Puma Logo">
+            <img src="http://manage.customfit.me/document/data/412_1470doc.png" alt="Iron Age Logo">
+            <img src="img/brands/Thorogood-min.png" alt="Thorogood Logo">
+          </div>
+        </div>
+      </div>
     </section>
     <section id="featured-services">
       <div class="container">
@@ -528,8 +497,8 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
 
             <h4 class="title"
               style="text-transform:uppercase;text-align:center;font-family: 'Josefin Sans', sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 10px 0;">
-              <a href="datamanagement.html" class="servicesHover">Data<br>Management</a></h4>
-            <p style="text-align:center;text-transform:uppercase;" class="description">Take control of your program</p>
+              <a href="datamanagement.html" class="servicesHover">EMPLOYEE<br>ADF</a></h4>
+            <p style="text-align:center;text-transform:uppercase;" class="description">Control with automated data feed</p>
           </div>
           <div class="col-lg-3 box" style="padding-top:15px!important;margin:0 auto;">
 
@@ -548,7 +517,7 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
 
             <h4 class="title"
               style="text-transform:uppercase;text-align:center;font-family: 'Josefin Sans', sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 10px 0;">
-              <a class="servicesHover" href="kiosks.html">On Site<br>Kiosks</a></h4>
+              <a class="servicesHover" href="kiosks.html">ELECTRONIC INVOICE<br>&amp; PAYMENT</a></h4>
             <p style="text-align:center;text-transform:uppercase;" class="description">Ordering made easy</p>
           </div>
           <div class="col-lg-3 box" style="padding-top:15px!important;margin:0 auto;">
@@ -558,275 +527,16 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
 
             <h4 class="title"
               style="text-transform:uppercase;text-align:center;font-family: 'Josefin Sans', sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 10px 0;">
-              <a class="servicesHover" href="paymentOptions.html">Subsidy & Payroll Deduction</a></h4>
-            <p style="text-align:center;text-transform:uppercase;" class="description">Convenience at its finest</p>
+              <a class="servicesHover" href="paymentOptions.html">COMMAND<br>CENTER</a></h4>
+            <p style="text-align:center;text-transform:uppercase;" class="description">Control eligibility usage and spend</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="skillsMobile" style="padding-top:50px;padding-bottom:50px;" class="skillsMobile">
-      <div class="container">
-        <header class="section-header">
-          <h5 style="text-align:center;color:#515151;font-size:1rem;">FEATURED BRANDS</h5>
-          <h3 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;">You won't find this selection
-            of<br>safety footwear on any other website</h3>
-          <p style="text-align:left;font-size:1.25rem;">With over <b>70 brands</b> and <b>1000s of styles</b>, we have
-            more safety footwear conveniently available in one spot than
-            anybody else because we understand the importance of having options. We are able to provide an unparalleled
-            selection
-            from top companies like <b>Rocky</b>, <b>Georgia</b>, <b>Timberland Pro</b>, <b>Keen</b>, and <b>Reebok</b>,
-            all at a great discount. In the end, it's all
-            about providing premier safety for your employees and giving you the power to do so, however you want.</p>
-        </header>
-        <div class="container" id="clientsMobile" style="padding-top:0px;padding-bottom:0px;">
-          <div class="owl-carousel clients-carousel">
-            <img src="img/brands/Carhartt-min.png" alt="Carhartt Logo">
-            <img src="img/brands/Durango-min.png" alt="Durango Logo">
-            <img src="img/brands/GB-min.png" alt="Georgia Boots Logo">
-            <img src="img/brands/LSS-min.png" alt="Lehigh Safety Shoes Logo">
-            <img src="img/brands/PUMA-min.png" alt="Puma Logo">
-            <img src="img/brands/Reebok-min.png" alt="Reebok Logo">
-            <img src="img/brands/Rocky-min.png" alt="Rocky Boots Logo">
-            <img src="img/brands/Slipgrips-min.png" alt="SlipGrips Logo">
-            <img src="img/brands/TimberlandPRO-min.png" alt="Timberland PRO Logo">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="skills" style="padding-top:50px;" class="skills">
-      <div class="container">
-        <header class="section-header">
-          <h4 style="text-align:center;color:#515151;font-size:1rem;">FEATURED BRANDS</h4>
-          <h3 style="font-family: 'Josefin Sans', sans-serif;font-weight:700;">You won't find this selection
-            of<br>safety footwear on any other website</h3>
-          <p style="text-align:left;font-size:1.25rem;">With over <b>70 brands</b> and <b>1000s of styles</b>, we have
-            more safety footwear conveniently available in one spot than
-            anybody else because we understand the importance of having options. We are able to provide an unparalleled
-            selection
-            from top companies like <b>Rocky</b>, <b>Georgia</b>, <b>Timberland Pro</b>, <b>Keen</b>, and <b>Reebok</b>,
-            all at a great discount. In the end, it's all
-            about providing premier safety for your employees and giving you the power to do so, however you want.</p>
-        </header>
-        <div class="container" id="clients" style="padding-top:0px;padding-bottom:0px;">
-          <div class="owl-carousel clients-carousel">
-            <img src="img/brands/Ariat-min.png" alt="Ariat Logo">
-            <img src="img/brands/Avenger-min.png" alt="Avenger Logo">
-            <img src="img/brands/Berne-min.png" alt="Berne Logo">
-            <img src="img/brands/Blundstone-min.png" alt="Blundstone Logo">
-            <img src="img/brands/Bulwark-min.png" alt="Bulwark Logo">
-            <img src="img/brands/Carhartt-min.png" alt="Carhartt Logo">
-            <img src="img/brands/Cherokee-min.png" alt="Cherokee Logo">
-            <img src="img/brands/Chinook-min.png" alt="Chinook Logo">
-            <img src="img/brands/Chippewa-min.png" alt="Chippewa Logo">
-            <img src="img/brands/Converse-min.png" alt="Converse Logo">
-            <img src="img/brands/Crocs-min.png" alt="Crocs Logo">
-            <img src="img/brands/DanPost-min.png" alt="Dan Post Logo">
-            <img src="img/brands/Dawgs-min.png" alt="Dawgs Logo">
-            <img src="img/brands/Dickies-min.png" alt="Dickies Logo">
-            <img src="img/brands/Dingo-min.png" alt="Dingo Logo">
-            <img src="img/brands/DrMartens-min.png" alt="Dr. Martens Logo">
-            <img src="img/brands/Durango-min.png" alt="Durango Logo">
-            <img src="img/brands/Florsheim-Work-min.png" alt="Florsheim Work Logo">
-            <img src="img/brands/FootGuard-min.png" alt="FootGuard Logo">
-            <img src="img/brands/GB-min.png" alt="Georgia Boot Logo">
-            <img src="img/brands/GenuineGrip-min.png" alt="Genuine Grip Logo">
-            <img src="img/brands/Grabbers-min.png" alt="Grabbers Logo">
-            <img src="img/brands/Honeywell-min.png" alt="Honeywell Logo">
-            <img src="img/brands/Impacto-min.png" alt="Impacto Logo">
-            <img src="img/brands/IronAge-min.png" alt="Iron Age Logo">
-            <img src="img/brands/JohnDeere-min.png" alt="John Deere Logo">
-            <img src="img/brands/JustinWorkBoots-min.png" alt="Justin Work Boots Logo">
-            <img src="img/brands/Keen-min.png" alt="Keen Logo">
-            <img src="img/brands/Knapp-min.png" alt="Knapp Logo">
-            <img src="img/brands/Kodiak-min.png" alt="Kodiak Logo">
-            <img src="img/brands/Laredo-min.png" alt="Laredo Logo">
-            <img src="img/brands/LSS-min.png" alt="Lehigh Safety Shoes Logo">
-            <img src="img/brands/McRaeIndustrial-min.png" alt="McRae Industrial Logo">
-            <img src="img/brands/MellowWalk-min.png" alt="Mellow Walk Logo">
-            <img src="img/brands/Michelin-min.png" alt="Michelin Logo">
-            <img src="img/brands/MoxieTrades-min.png" alt="Moxie Trades Logo">
-            <img src="img/brands/Muck-min.png" alt="Muck Logo">
-            <img src="img/brands/Nautilus-min.png" alt="Nautilus Logo">
-            <img src="img/brands/NurseMates-min.png" alt="Nurse Mates Logo">
-            <img src="img/brands/Oliver-min.png" alt="Oliver Logo">
-            <img src="img/brands/OriginalSwat-min.png" alt="Original Swat Logo">
-            <img src="img/brands/PUMA-min.png" alt="Puma Logo">
-            <img src="img/brands/RangerBoots-min.png" alt="Ranger Boots Logo">
-            <img src="img/brands/Reebok-min.png" alt="Reebok Logo">
-            <img src="img/brands/RefrigiWear-min.png" alt="Refrigiwear Logo">
-            <img src="img/brands/RockportWorks-min.png" alt="Rockport Works Logo">
-            <img src="img/brands/Rocky-min.png" alt="Rocky Boots Logo">
-            <img src="img/brands/Royer-min.png" alt="Royer Logo">
-            <img src="img/brands/S2VRocky-min.png" alt="S2V Rocky Logo">
-            <img src="img/brands/Servus-min.png" alt="Servus Logo">
-            <img src="img/brands/SkidBuster-min.png" alt="SkidBuster Logo">
-            <img src="img/brands/Slipgrips-min.png" alt="SlipGrips Logo">
-            <img src="img/brands/SmokyMtn-min.png" alt="Smoky Mountain Logo">
-            <img src="img/brands/Spenco-min.png" alt="Spenco Logo">
-            <img src="img/brands/SpringStep-min.png" alt="Spring Step Logo">
-            <img src="img/brands/Stanley-min.png" alt="Stanley Logo">
-            <img src="img/brands/Terra-min.png" alt="Terra Logo">
-            <img src="img/brands/Thorogood-min.png" alt="Thorogood Logo">
-            <img src="img/brands/TimberlandPRO-min.png" alt="Timberland PRO Logo">
-            <img src="img/brands/Tingley-min.png" alt="Tingley Logo">
-            <img src="img/brands/TonyLama-min.png" alt="Tony Lama Logo">
-            <img src="img/brands/WorkOne-min.png" alt="Work One Logo">
-            <img src="img/brands/XTRATUFF-min.png" alt="XTRATUFF Logo">
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="aetrexMobile" class="wow fadeIn aetrexMobile">
-      <div class="container">
-        <div class="row" style="padding-top:50px;">
-          <div class="col-lg-12 text-center">
-            <h3
-              style="border-bottom: 1px solid #000000;color:#000000;margin-bottom:5px!important;text-transform:uppercase;font-family: 'Josefin Sans', sans-serif;font-weight:700;">
-              Customfitting Footwear From The Inside Out</h3>
-          </div>
-        </div>
+   
 
-        <div class="row" style="padding-top:40px;text-align:center;">
-          <div class="col-lg-4 col-xs-12" style="margin:0 auto">
-            <img class="img-fluid imgAutoPad" src="img/infrared.png" alt="Infrared lighting">
-          </div>
-          <div class="col-lg-4 col-xs-12" style="margin:0 auto">
-            <img class="img-fluid imgAutoPad" src="img/aetrexLogo.png" alt="Aetrex Logo">
-          </div>
-          <div class="col-lg-4 col-xs-12" style="margin:0 auto">
-            <img class="img-fluid imgAutoPad" src="img/18camera.png" alt="18 Camera System">
-          </div>
-        </div>
-        <div class="row" style="padding-top:50px;">
-          <div class="col-lg-12">
-            <p style="font-size:1.25rem;">Meet <b style="font-weight:700;">Albert</b>, Lehigh CustomFit’s advanced 3D
-              foot scanner, powered by <b>Aetrex Technology</b>. During an on-site visit of
-              Albert at a Lehigh CustomFit ordering event, employees learn their precise foot length, width, arch
-              height, degree of
-              pronation, pressure points and more. With this information, our ordering event experts will help employees
-              identify a
-              proper footwear solution to keep them <b>safe, healthy and on the job</b>.<a
-                style="color:#000000;text-decoration:none;" href="https://cdn2.hubspot.net/hubfs/4392020/AlbertVid.mp4"
-                data-lity><b> Watch the video >></b></a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="aetrex" class="wow fadeIn aetrex">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <a href="https://cdn2.hubspot.net/hubfs/4392020/AlbertVid.mp4" data-lity><img src="img/AetrexMainBlack.jpg"
-                alt="Aetrex Machine Main Image" onmouseover="this.src='img/AetrexMainGreen.jpg'"
-                onmouseout="this.src='img/AetrexMainBlack.jpg'" class="img-fluid"
-                style="border: 10px solid #ffffff !important;display: block;margin-left: auto;margin-right: auto;"></a>
-          </div>
-        </div>
-        <div class="row" style="padding-top:50px;">
-          <div class="col-lg-12 text-center">
-            <h3
-              style="border-bottom: 1px solid #000000;color:#000000;margin-bottom:5px!important;text-transform:uppercase;font-family: 'Josefin Sans', sans-serif;font-weight:700;">
-              Customfitting Footwear From The Inside Out</h3>
-          </div>
-        </div>
-        <div class="row" style="padding-top:40px;text-align:center;">
-          <div class="col-lg-4 col-xs-12" style="margin:0 auto">
-            <img class="img-fluid imgAutoPad" src="img/infrared.png" alt="Infrared Logo">
-          </div>
-          <div class="col-lg-4 col-xs-12" style="margin:0 auto">
-            <img class="img-fluid imgAutoPad" src="img/aetrexLogo.png" alt="Aetrex Logo">
-          </div>
-          <div class="col-lg-4 col-xs-12" style="margin:0 auto">
-            <img class="img-fluid imgAutoPad" src="img/18camera.png" alt="18 Camera System Logo">
-          </div>
-        </div>
-        <div class="row" style="padding-top:50px;">
-          <div class="col-lg-12">
-            <p style="font-size:1.25rem;">Meet <strong>Albert</strong>, Lehigh CustomFit’s advanced 3D foot scanner,
-              powered by <strong>Aetrex Technology</strong>. During an on-site visit of
-              Albert at a Lehigh CustomFit ordering event, employees learn their precise foot length, width, arch
-              height, degree of
-              pronation, pressure points and more. With this information, our ordering event experts will help employees
-              identify a
-              proper footwear solution to keep them <strong>safe, healthy and on the job</strong>.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="factsMobile" class="wow fadeIn factsMobile">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5" style="padding-top:50px;" class="wow fadeInLeft">
-            <h4 style="color:#ffffff;margin-bottom:5px!important;font-size:1.25rem;color:#ffffff;">CUSTOMFIT IS
-              AVAILABLE</h4>
-            <h1 style="font-size:3rem!important;font-family: 'Josefin Sans', sans-serif;font-weight:700;color:#bed600;"
-              class="wow fadeInLeft">ANYTIME,<br>ANYWHERE,<br>ON ANY DEVICE</h1>
-          </div>
-          <div class="col-lg-7 text-center">
-            <img style="display:absolute;" src="img/laptopphone.png" alt="Laptop and Phone Icon"
-              class="img-fluid wow fadeInRight">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <p style="padding-top:20px;padding-bottom:10px;color:#ffffff;font-size:1.25rem;" class="wow fadeInUp">Lehigh
-              CustomFit is available <strong>24/7/365</strong> on any computer, tablet, or handheld device. Your
-              business may also qualify
-              for an on-site kiosk for even easier employee ordering. If for any reason your employees don't like their
-              shoes or they
-              received the wrong size, our simple and easy online returns process is available 24/7 and
-              <strong>free</strong>.<br><br>
-              <div class="row" style="text-align:center">
-                <div class="col-lg-12" style="margin:0 auto;">
-                  <a href="ourteam.html" class="hvr-sweep-to-right btn-get-started"
-                    style="border:1px solid #bed600;background:#bed600!important;color:#272727;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">CONTACT
-                    A REP</a><br><a href="login.html" class="hvr-sweep-to-left btn-get-started"
-                    style="margin-top:10px;border:1px solid #bed600;background:#bed600!important;color:#272727;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                </div>
-              </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="facts" class="wow fadeIn facts">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5" style="padding-top:50px;" class="wow fadeInLeft">
-            <h2 style="color:#ffffff;margin-bottom:5px!important;padding-top:45px;font-size:1.25rem;">CUSTOMFIT IS
-              AVAILABLE</h2>
-            <h1 style="font-size:3rem!important;font-family: 'Josefin Sans', sans-serif;font-weight:700;color:#bed600;"
-              class="wow fadeInLeft">ANYTIME,<br>ANYWHERE,<br>ON ANY DEVICE</h1>
-          </div>
-          <div class="col-lg-7 text-center">
-            <img style="display:absolute;" src="img/laptopphone.png" alt="Laptop and Phone Icon"
-              class="img-fluid wow fadeInRight">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <p style="padding-top:20px;padding-bottom:10px;color:#ffffff;font-size:1.25rem;" class="wow fadeInUp">Lehigh
-              CustomFit is available <strong>24/7/365</strong> on any computer, tablet, or handheld device. Your
-              business may also qualify
-              for an on-site kiosk for even easier employee ordering. If for any reason your employees don't like their
-              shoes or they
-              received the wrong size, our simple and easy online returns process is available 24/7 and
-              <strong>free</strong>.
-              <div class="row" style="text-align:center">
-                <div class="col-lg-12" style="margin:0 auto;">
-                  <a href="ourteam.html" class="hvr-sweep-to-left btn-get-started"
-                    style="margin-right:10px;border:1px solid #bed600;background:#bed600!important;color:#000000!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">CONTACT
-                    A REP</a><a href="login.html" class="hvr-sweep-to-right btn-get-started"
-                    style="margin-left:10px;border:1px solid #bed600;background:#bed600!important;color:#000000!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-                </div>
-              </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="team">
-      <div class="container" id="blog">
+      <!--<div class="container" id="blog">
         <div class="section-header wow fadeInUp">
           <h2
             style="font-family: 'Josefin Sans', sans-serif;font-weight:700;font-size:32px;color:#000000;text-align:center;">
@@ -889,9 +599,9 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
       <p
-        style="margin-bottom:15px!important;text-transform:uppercase;font-family: 'Josefin Sans', sans-serif;font-weight:700;padding-top:30px;text-align:center;">
+        style="margin-bottom:15px!important;text-transform:uppercase;font-family: 'Josefin Sans', sans-serif;font-weight:700;padding-top:0px;text-align:center;">
         With us, you're in good company</p>
       <div class="row" style="text-align:center;">
         <div class="col-lg-12" style="display:block;margin:0 auto;">
@@ -900,9 +610,9 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
             alt="Kellogs Logo"
             style="padding-left:10px !important;padding-right:10px!important;height:49px;width:132px;"><img
             src="img/brands/vallenBW-min.png" alt="Vallen BW Logo"
-            style="padding-left:10px !important;padding-right:10px!important;height:45px;width:138px;"><img
+            style="padding-left:10px !important;padding-right:10px!important;height:45px;width:138px;"><!--<img
             src="img/brands/wmBW-min.png" alt="Waste Management Logo"
-            style="padding-left:10px !important;padding-right:10px!important;height:42px;width:119px;"><img
+            style="padding-left:10px !important;padding-right:10px!important;height:42px;width:119px;">--><img
             src="img/brands/tysonBW-min.png" alt="Tyson Logo"
             style="padding-left:10px !important;padding-right:10px!important;height:48px;width:82px;"><img
             src="img/brands/whirlpoolBW-min.png" alt="Whirlpool Logo"
@@ -940,14 +650,14 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
               Nelsonville, OH 45764<br>
               <strong>Phone:</strong> 1-800-444-4086<br>
               <strong>Email:</strong> <a style="color:#bed600;"
-                href="mailto:customfit@lehighoutfitters.com">customfit@lehighoutfitters.com</a><br>
+                href="mailto:customfit@lehigh.com">customfit@lehigh.com</a><br>
             </p>
             <div class="social-links">
               <a href="https://twitter.com/LehighCustomFit" class="twitter" aria-label="Custom Fit Twitter Link"><i
                   class="fa fa-twitter"></i></a>
               <a href="https://www.facebook.com/LehighCustomFit/" class="facebook"
                 aria-label="Custom Fit Facebook Link"><i class="fa fa-facebook"></i></a>
-              <a href="https://www.youtube.com/channel/UCMxjz5o_WyPL9Wx_D6UZPMw" class="youtube"
+              <a href="https://www.youtube.com/channel/UCQWezX6E3wR8DxYLz-W3IYg" class="youtube"
                 aria-label="Custom Fit YouTube Link"><i class="fa fa-youtube-play"></i></a>
               <a href="https://www.linkedin.com/company/lehigh-outfitters" class="linkedin"
                 aria-label="Custom Fit LinkedIn Link"><i class="fa fa-linkedin"></i></a>
@@ -959,6 +669,9 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
             <a href="emailSignUp.html" aria-label="Email Sign Up Page Link"
               class="hvr-bounce-to-top btn-get-started-footer"
               style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">SUBSCRIBE</a>
+              <h2 style="padding-top:25px;">SMS Notifications</h2>
+                                  <p>Receive important safety PPE order & eligibility notifications direct to your phone.</p>
+                                  <a href="sms.html" aria-label="Email Sign Up Page Link" class="hvr-bounce-to-top btn-get-started-footer" style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">GET ALERTS</a>
           </div>
         </div>
       </div>
@@ -1006,6 +719,39 @@ div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-declin
       })();
 
   </script>
+   <script>
+    var url = "";
+    if (window.location.hostname.indexOf("www.customfit.me") == -1 && window.location.hostname.indexOf("staging.customfit.me") == -1 && window.location.hostname.indexOf("dev.customfit.me")==-1 )
+    {
+        if (window.location.hostname.indexOf("customfit.me") != -1 || window.location.hostname.indexOf("lehighsafetyshoes.com") != -1 || window.location.hostname.indexOf("shoeangel.com") != -1 || window.location.hostname.indexOf("fastenal.com") != -1) {
+    
+            url = 'http://' + window.location.hostname + '/default.aspx' + window.location.search;
+            window.location.href = url;
+        }   
+    }
+    var hurl = window.location.href;
+    if (hurl.indexOf('err=true') != -1) {
+        alert('Invalid account# or password ')
+        $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
+    }
+    $(document).ready(function () {
+        $('a').each(function () {
+            var oldUrl = $(this).attr("href"); // Get current url
+            if (oldUrl.indexOf(".html") != -1) {
+                var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
+                if (window.location.hostname.indexOf("dev.customfit") != -1) {
+                    newUrl = "http://dev.customfit.me/" + oldUrl;
+                }
+                $(this).attr("href", newUrl); // Set herf value
+            }
+            else {
+                if (oldUrl.indexOf("#") != -1) {
+                    var newUrl = window.location.href + oldUrl; // Create new url
+                    $(this).attr("href", newUrl); // Set herf value
+                }
+            }
+        });
+    });
+            </script>
 </body>
-
 </html>
