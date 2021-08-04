@@ -25,6 +25,7 @@
   <script src="jquery.min.js"></script>
   <script src="js/lity-min.js" defer></script>
   <style>
+        a:focus{box-shadow:none!important;}.form-control{border-radius:0rem!important;}.input-group-text{border-radius:0rem!important;}.btn-success{width:91%;font-weight: 700;background-color:#000;border-radius: 0px;border: 0px;}.btn-success:hover{border-color:#bed600;background-color:#bed600;color:#000;}
       .s-header{
             top: 0px !important;
             background-color: #111111!important;
@@ -144,6 +145,9 @@
                                   <a class="nav-link" href="kiosks.html" aria-label="Kiosks Page Link">Kiosks</a>
                                 </li>
                                 <li class="nav-item">
+                                  <a class="nav-link" href="safety-pledge.html" aria-label="Safety Pledge Page Link">Safety Pledge</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="paymentOptions.html" aria-label="Payment Options Page Link">Payment Options</a>
                                   </li>
                             </ul>
@@ -168,12 +172,59 @@
                                     </li>
                             </ul>
                           </li>
-                          <li class="nav-item ">
-                              <a class="nav-link hvr-underline-from-center" href="blog.html" aria-label="Blog page Link">Blog</a>
-                            </li>
-                        <li class="nav-item ">
-                          <a class="nav-link hvr-underline-from-center" href="login.html" aria-label="Customer Login Page Link">Login</a>
-                        </li>
+                          <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle hvr-underline-from-center" data-toggle="dropdown"
+                              role="button" aria-haspopup="true" aria-expanded="false">Wellness</a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item">
+                                <a class="nav-link" href="aetrex.html" aria-label="Aetrex Page Link">Aetrex Foot Scanner</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="bootbreakdown.html" aria-label="Boot Size Guide Link">Boot Breakdown Dangers</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="unhealthyfeet.html" aria-label="Boot Size Guide Link">Impacts Of Unhealthy Feet</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="truefit.html" aria-label="Boot Size Guide Link">True Fit Sizing</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="whyorthotics.html" aria-label="Boot Size Guide Link">Why New Orthotics</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <div class="nav-item dropdown login-dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle hvr-underline-from-center" aria-expanded="false"><i class="fa fa-user-o"></i> Account Login</a>
+                            <div class="dropdown-menu" style="min-width:18rem;padding: 1rem 1rem;">					
+                                <form class="form-inline login-form login100-form validate-form" action="https://www.customfit.me/process.aspx" method="post">
+                                    <div class="input-group" style="margin:0px 10px 10px 0px;">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" style="min-width: 40px;">
+                                          <span class="fa fa-user" style="margin: 0 auto;"></span>
+                                        </span>                    
+                                      </div>
+                                      <input type="text" class="form-control input100" placeholder="Account #" required="" name="txtCustomerNumber" id="txtCustomerNumber">
+                                    </div>
+                                    <div class="input-group" style="margin:0px 10px 10px 0px;">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" style="min-width: 40px;">
+                                          <span class="fa fa-globe" style="margin: 0 auto;"></span>
+                                        </span>                    
+                                      </div>
+                                      <input type="text" class="form-control input100" placeholder="Location #" required="" name="txtLocationNumber" id="txtLocationNumber">
+                                    </div>
+                                    <div class="input-group" style="margin:0px 10px 10px 0px;">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" style="min-width: 40px;">
+                                          <i class="fa fa-lock" style="margin: 0 auto;"></i>
+                                        </span>                    
+                                      </div>
+                                      <input type="text" class="form-control input100" placeholder="Password" required="" name="txtPassword" id="txtPassword">
+                                    </div>
+                                    <button type="submit" class="btn btn-success">LOGIN</button>
+                                </form>
+                              </div>
+                            </div>
                       </ul>
                     </div>
                   </div>
@@ -201,8 +252,19 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 box">
-                    <p style="padding-left:25px;padding-right:25px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1;font-size:1rem;">As the leader in managed safety footwear programs we are experts at helping companies significantly reduce accidents, lost-time incidents, workers compensation claims and costs by providing visibility to participation rates, styles, budgeting, eligibility, subsidies and so much more! </p>
-                    <p style="padding-left:25px;padding-right:25px;padding-top:10px;padding-bottom:10px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1;font-size:1rem;">If you are looking for a general inquiry form, you may fill out the one located <a href="contact.html" style="color:#000000;text-decoration:underline;">here</a> and a representative will contact you within 24 hours (Monday-Friday).</p>
+                    <p style="padding-left:0px;padding-right:0px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1.25;font-size:1.25rem;font-weight:400;">As the leader in managed safety footwear programs we are experts at helping companies significantly reduce accidents, lost-time incidents, workers compensation claims and costs by providing visibility to participation rates, styles, budgeting, eligibility, subsidies and so much more! </p>
+                    <p style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1.25;font-size:1.25rem;font-weight:400;">If you are looking for a general inquiry form, you may fill out the one located <a href="contact.html" style="color:#000000;text-decoration:underline;">here</a> and a representative will contact you within 24 hours (Monday-Friday).
+                    </p>
+                    <hr style="border: 0; border-bottom: 3px solid #ebebeb;">
+                    <h2>Job Openings</h2>
+                      <p style="padding-bottom:20px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1;font-size:1.25rem;line-height: 1.25;font-weight:400;">We are currently hiring Territory Sales Managers for the following regions:</p>
+                      <ul>
+                        <li>
+                          <a target="_blank" style="color:#828282;" href="https://recruiting.ultipro.com/ROC1011RBD/JobBoard/7e2cec98-83e5-418d-9e0e-1a03210a5c51/OpportunityDetail?opportunityId=f8728139-eb83-4d7d-a4ac-ef27cfbb94af">Delaware, Maryland, Washington D.C. and Virginia</a>
+                        </li>
+                      </ul>
+                      <p style="padding-bottom:20px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1;font-size:1.25rem;line-height: 1.25;font-weight:400;">Click on one of the above links to apply if interested.</p>
+                      <hr style="border: 0; border-bottom: 3px solid #ebebeb;">
                     <p style="line-height:1;font-size: 2em; font-weight: bold; text-align: center;color:#000000!important;padding-top: 20px;">CLICK ON YOUR STATE BELOW TO FIND YOUR DEDICATED REGION REPRESENTATIVE. </p>
                     <div id="app">
                       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1008 612" style="enable-background:new 0 0 1008 612;" xml:space="preserve">
@@ -921,6 +983,7 @@
                             <text transform="matrix(1 0 0 1 157.4721 321.1823)"><tspan x="0" y="0" class="st3 st4 st8">Clark County</tspan><tspan x="8.7" y="9.2" class="st3 st4 st6">NV</tspan></text>
                         </g>
                       </svg>
+                      
                       <hr style="border: 0; border-bottom: 3px solid #ebebeb;" id="anchor" class="anchor">
                       <h2 v-if="activeTerritory != null">Your Selected State: {{ activeTerritory }}</h2>
                       <ul class="card" id="reps">
@@ -928,9 +991,9 @@
                            
                           <div style="text-align:center;">
                             <div style="margin:0 auto;margin-top:25px;">
-                              <h2 style="text-transform:uppercase;"><small>{{ rep.specificity }}</small></h2>
+                              <h2 style="text-transform:uppercase;line-height:0.5;"><small>{{ rep.specificity }}</small></h2>
                                 <img :src="rep.image" alt="" class="circular--landscape"><br clear="all" />
-                            <h2 style="margin-top:1rem !important;font-size:1.25rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small></h2>
+                            <h2 style="margin-top:1rem !important;font-size:1.25rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small><br>{{ rep.jobPosting }}</h2>
                             <div class="rep">
                               <div class="about">
                                 <div>
@@ -947,19 +1010,20 @@
                         </li>
                       </ul>
                       <h2>National Accounts</h2>
-                      <p style="padding-bottom:20px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1;font-size:1rem;">Contact one of our Key Account Executives about our comprehensive National Accounts Program and how we can specifically customize each location's safety footwear needs. We welcome your comments and questions. Contact Lehigh CustomFit national representatives or someone else from the team if you have any questions regarding CustomFit.</p>
+                      <p style="padding-bottom:20px;text-align:left;color:#000000!important;font-family:'Open Sans', sans-serif;line-height:1;font-size:1.25rem;line-height: 1.25;font-weight:400;">Contact one of our Key Account Executives about our comprehensive National Accounts Program and how we can specifically customize each location's safety footwear needs. We welcome your comments and questions. Contact Lehigh CustomFit national representatives or someone else from the team if you have any questions regarding CustomFit.</p>
                       <ul class="card">
                         <li v-for="rep in reps2" :key="rep.name.first">
                             <div style="text-align:center;">
                                 <div style="margin:0 auto">
                                 <img :src="rep.image" alt="" class="circular--landscape"><br clear="all" />
-                            <h2 style="margin-top:1rem !important;font-size:1.5rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small></h2>
+                            <h2 style="margin-top:1rem !important;font-size:1.5rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}<br>{{ rep.jobPosting }}</small></h2>
                             <div class="rep">
-                              <div class="about">
+                              <div class="about" v-if="rep.email != null">
                                 <div>
                                   <a :href="'mailto:'+rep.email" class="btn-get-startedMap">Email</a>
                                   <a :href="'tel:'+rep.phone" class="btn-get-startedMap">Call</a>
                                   <div class="linkedin" v-if="rep.linkedin != null"><a :href="rep.linkedin" class=" btn-get-startedMap">LinkedIn</a></div>
+                                 
                                 </div>
                               </div>
                               <!--<div class="fun" v-if="rep.fun != null">Fun Fact: {{ rep.fun }}</div>-->
@@ -968,7 +1032,7 @@
                         </div>
                         </li>
                       </ul>
-                      <h2>The Rest of The Sales Team</h2>
+                      <h2>Executive Sales & Operations</h2>
                       <ul class="card">
                         <li v-for="rep in reps3" :key="rep.name.first">
                             <div style="text-align:center;">
@@ -977,9 +1041,9 @@
                             <h2 style="margin-top:1rem !important;font-size:1.25rem;">{{ rep.name.first }} {{ rep.name.last }}<br><small>{{ rep.title }}<br>{{ rep.listedphone }}</small></h2>
                             <div class="rep">
                               <div class="about">
-                                <div>
+                                <div v-if="rep.email != null">
                                   <a :href="'mailto:'+rep.email" class="btn-get-startedMap">Email</a>
-                                  <a :href="'tel:'+rep.phone" class="btn-get-startedMap">Call</a>
+                                  <a v-if="rep.phone != null" :href="'tel:'+rep.phone" class="btn-get-startedMap">Call</a>
                                   <div class="linkedin" v-if="rep.linkedin != null"><a :href="rep.linkedin" class=" btn-get-startedMap">LinkedIn</a></div>
                                 </div>
                               </div>
@@ -1000,14 +1064,14 @@
                         reps: [
                           {
                             name: {
-                              first: "Tim",
-                              last: "Lau"
+                              first: "Ryan",
+                              last: "Smitchger"
                             },
-                            listedphone: "740-753-9100 Ext. 2127",
+                            listedphone: "740-753-9100 Ext. 2212",
                             phone: null,
-                            email: "tim.lau@lehighoutfitters.com",
-                            image: "img/tim_Profile.jpg",
-                            linkedin: "https://www.linkedin.com/in/timlauseattle/",
+                            email: "ryan.smitchger@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1536doc.jpg",
+                            linkedin: null,
                             fun: null,
                             title: "Territory Sales Manager",
                             states: ["Washington", "Oregon", "Idaho", "Montana", "Wyoming", "North Nevada"]
@@ -1017,6 +1081,7 @@
                               first: "Domingo",
                               last: "Gonzalez"
                             },
+                            specificity: "Southern California",
                             listedphone: "740-753-9100 Ext. 2663",
                             phone: null,
                             email: "domingo.gonzalez@lehighoutfitters.com",
@@ -1026,6 +1091,21 @@
                             title: "Territory Sales Manager",
                             states: ["California", "Clark County Nevada"]
                           }, {
+                            name: {
+                              // DONE
+                              first: "Open",
+                              last: null
+                            },
+                            specificity: "Northern California",
+                            listedphone: null,
+                            phone: null,
+                            email: null,
+                            image: "http://manage.customfit.me/document/data/412_1498doc.jpg",
+                            linkedin: null,
+                            fun: null,
+                            title: "Territory Sales Manager",
+                            states: ["California"]
+                          },{
                             name: {
                               // DONE
                               first: "Grant",
@@ -1045,11 +1125,11 @@
                               first: "Josh",
                               last: "Linton"
                             },
-                            listedphone: "740.270.4226 Ext. 2127",
+                            listedphone: null,
                             phone: null,
-                            email: "Joshua.Linton@lehighoutfitters.com",
+                            email: null,
                             image: "http://manage.customfit.me/document/data/412_1400doc.jpg",
-                            linkedin: "https://www.linkedin.com/in/joshua-linton-3ba5aa4b",
+                            linkedin: null,
                             fun: "I enjoy writing.",
                             title: "Territory Sales Manager",
                             states: [" Kansas", "Nebraska", "South Dakota", "North Dakota", "Minnesota", "Iowa", "Missouri"]
@@ -1084,29 +1164,15 @@
                             states: ["Arkansas", "Mississippi", "Tennessee"]
                           }, {
                             name: {
-                              //DONE
-                              first: "Greg",
-                              last: "Frost"
+                              first: "Austin",
+                              last: "Fisher"
                             },
-                            listedphone: "740.753.9100",
-                            phone: null,
-                            email: "Greg.Frost@LehighOutfitters.com",
-                            image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1095doc.jpg",
-                            linkedin: "https://www.linkedin.com/in/gregfrost24",
+                            listedphone: "740.753.9100 Ext. 2608",
+                            phone: "7407539100,2608",
+                            email: "Austin.Fisher@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1500doc.jpg",
+                            linkedin: null,
                             fun: null,
-                            title: "Territory Sales Manager",
-                            states: ["Wisconsin", "Illinois"]
-                          }, {
-                            name: {
-                              first: "Matt",
-                              last: "Rainville"
-                            },
-                            listedphone: "740.753.9100 Ext. 2223",
-                            phone: null,
-                            email: "Matthew.Rainville@LehighOutfitters.com",
-                            image: "https://manage.customfit.me/document/data/403_1345doc.jpg",
-                            linkedin: "https://www.linkedin.com/pub/matthew-p-rainville/a/b75/259",
-                            fun: "I love the Outdoors... Family, Faith, Work",
                             title: "Territory Sales Manager",
                             states: ["Michigan", "Indiana", "Western Kentucky", "Michigan "]
                           }, {
@@ -1154,32 +1220,34 @@
                           }, {
                             name: {
                               //DONE
-                              first: "Tara",
-                              last: "Mitchell"
+                              first: "Sam",
+                              last: "Baker"
                             },
-                            listedphone: "740.591.5903",
+                            listedphone: "740.753.9100 Ext. 2545",
                             phone: null,
-                            email: "Tara.Mitchell@LehighOutfitters.com",
-                            image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1083doc.jpg",
-                            linkedin: "https://www.linkedin.com/pub/tara-mitchell/35/a00/b58",
-                            fun: "I like to bake on the weekends.",
+                            email: "sam.baker@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1417doc.jpg",
+                            linkedin: null,
+                            fun: null,
                             title: "Territory Sales Manager",
-                            states: ["Ohio", "West Virginia", "Western Pennsylvania", "Western New York", "Eastern Kentucky"]
-                          }, /*{
+                            states: ["New Jersey", "Eastern Pennsylvania", "New York City", "New York City "]
+                          },
+                          {
                             name: {
                               //DONE
-                              first: "Allen",
-                              last: "Becker"
+                              first: "Greer",
+                              last: "Vivonetto"
                             },
-                            listedphone: "216.407.2200",
-                            phone: "2164072200",
-                            email: "Allen.Becker@LehighOutfitters.com",
-                            image: "http://info.rockybrands.com/rs/018-APH-439/images/nae-becker-allen.jpg",
-                            linkedin: "https://www.linkedin.com/pub/allen-becker/1b/709/98",
-                            fun: "I recently completed my Open Water SCUBA certification.",
+                            listedphone: "740.753.9100 Ext. 2889",
+                            phone: null,
+                            email: "greer.vivonetto@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1414doc.jpg",
+                            linkedin: null,
+                            fun: null,
                             title: "Territory Sales Manager",
-                            states: ["Eastern New York", "New Jersey", "Delaware", "Maryland", "Eastern Pennsylvania"]
-                          },*/ {
+                            states: ["Illinois", "Wisconsin"]
+                          },
+                          {
                             name: {
                               //DONE
                               first: "Diane",
@@ -1192,7 +1260,21 @@
                             linkedin: "https://www.linkedin.com/in/dianne-zawerton-300ba538/",
                             fun: null,
                             title: "Territory Sales Manager",
-                            states: ["Connecticut", "New Hampshire", "Maine", "Vermont", "Rhode Island", "Massachusetts", "New York"]
+                            states: ["Connecticut", "New Hampshire", "Maine", "Vermont", "Rhode Island", "Massachusetts", "Eastern New York", "Western New York"]
+                          },{
+                            name: {
+                              //DONE
+                              first: "Open",
+                              last: null
+                            },
+                            listedphone: null,
+                            phone: null,
+                            email: null,
+                            image: "http://manage.customfit.me/document/data/412_1498doc.jpg",
+                            linkedin: null,
+                            fun: null,
+                            title: "Territory Sales Manager",
+                            states: ["Delaware", "Maryland"]
                           }, {
                             name: {
                               // Done
@@ -1204,10 +1286,24 @@
                             phone: null,
                             email: "Samantha.Retzlaff@LehighOutfitters.com",
                             image: "http://manage.customfit.me/document/data/412_1383doc.jpg",
-                            linkedin: null,/*https://www.linkedin.com/in/samantha-retzlaff-340663a2*/
+                            linkedin: null,
                             fun: null,
                             title: "Territory Sales Manager",
                             states: ["Western Texas","Eastern Texas"]
+                          },{
+                            name: {
+                              //DONE
+                              first: "Becca",
+                              last: "Farley"
+                            },
+                            listedphone: "740.753.9100 Ext. 2523",
+                            phone: "7407539100,2523",
+                            email: null,
+                            image: "http://manage.customfit.me/document/data/412_1537doc.jpg",
+                            linkedin: null,
+                            fun: null,
+                            title: "Business Development Rep",
+                            states: ["Alabama", "Georgia", "Illinois", "Wisconsin"]
                           },{
                             name: {
                               //DONE
@@ -1220,8 +1316,8 @@
                             image: "http://manage.customfit.me/document/data/412_1396doc.jpg",
                             linkedin: "https://www.linkedin.com/in/colleen-binkley-9a491140",
                             fun: null,
-                            title: "Business Development Rep",
-                            states: ["Iowa"," Kansas","Minnesota","Missouri","North Dakota","South Dakota","Nebraska","Montana","Idaho","Nevada","Oregon","Washington","Wyoming"]
+                            title: "Territory Sales Manager",
+                            states: ["Ohio","West Virginia","Eastern Kentucky","Western Pennsylvania"]
                           },  {
                             name: {
                               //DONE
@@ -1235,7 +1331,7 @@
                             linkedin: "https://www.linkedin.com/in/bridgette-lewellyn",
                             fun: null,
                             title: "Business Development Rep",
-                            states: ["Arizona", "Utah", "Colorado", "New Mexico", "Western Texas", "Illinois", "Wisconsin"]
+                            states: ["Arizona", "Utah", "Colorado", "New Mexico", "Montana", "Idaho", "Oregon", "Washington", "Wyoming", "North Nevada"]
                           }, {
                             name: {
                               //Done
@@ -1249,21 +1345,21 @@
                             linkedin: "https://www.linkedin.com/in/rebecca-l-reynolds-5a7ba6b3/",
                             fun: "I love dogs, and my favorite breed is rescued : ) and I enjoy people.",
                             title: "Business Development Rep",
-                            states: ["Ohio", "Michigan", "West Virginia", "Indiana", "Western Kentucky", "Eastern Kentucky", "Michigan "]
+                            states: ["Ohio", "Michigan", "West Virginia", "Indiana", "Western Kentucky", "Eastern Kentucky", "Michigan ", "Western Pennsylvania"]
                           }, {
                             name: {
                               //Done
-                              first: "Bobby",
-                              last: "Smathers"
+                              first: "Megan",
+                              last: "Fisher"
                             },
-                            listedphone: "740.753.9100 Ext. 2142",
-                            phone: "740753-9100,2142",
-                            email: "Bobby.Smathers@rockybrands.com",
-                            image: "http://manage.customfit.me/document/data/412_1402doc.jpg",
-                            linkedin: "https://www.linkedin.com/in/bobby-smathers-686b1095/",
+                            listedphone: "740.753.9100 Ext. 2080",
+                            phone: "7407539100,2080",
+                            email: "megan.fisher@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1535doc.jpg",
+                            linkedin: null,
                             fun: null,
                             title: "Account Sales Rep",
-                            states: ["Iowa", " Kansas","Minnesota","Missouri","North Dakota","South Dakota","Nebraska","Eastern Kentucky","Ohio","Western Pennsylvania","Western New York","West Virginia"]
+                            states: ["Iowa", " Kansas","Minnesota","Missouri","North Dakota","South Dakota","Nebraska","Eastern Kentucky","Ohio","Western Pennsylvania","West Virginia"]
                           }, {
                             name: {
                               // DONE
@@ -1273,11 +1369,11 @@
                             listedphone: "740.753.9100 Ext. 2064",
                             phone: "7407539100,2064",
                             email: "ashley.felts@lehighoutfitters.com",
-                            image: "http://manage.customfit.me/document/data/412_1397doc.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1499doc.jpg",
                             linkedin: "https://www.linkedin.com/in/ashleyfeltssales",
                             fun: null,
                             title: "Business Development Rep",
-                            states: ["Alabama", "Georgia", "South Carolina", "North Carolina", "Virginia "]
+                            states: ["Delaware", "Maryland", "South Carolina", "North Carolina", "Virginia "]
                           }, {
                             name: {
                               //DONE
@@ -1291,7 +1387,7 @@
                             linkedin: "https://www.linkedin.com/in/ashley-campbell-2750115a",
                             fun: null,
                             title: "Business Development Rep",
-                            states: ["Maine", "Vermont", "New Hampshire", "Massachusetts", "Connecticut", "Rhode Island","New York City", "New York City "]
+                            states: ["Arkansas", "Mississippi", "Tennessee", "California"]
                           }, {
                             name: {
                               //DONE
@@ -1305,7 +1401,7 @@
                             linkedin: "https://www.linkedin.com/in/coryjneal",
                             fun: null,
                             title: "Account Sales Rep",
-                            states: ["Montana", "Idaho", "North Nevada", "Clark County Nevada", "Oregon", "Washington", "Wyoming","California"]
+                            states: ["Montana", "Idaho", "North Nevada", "Clark County Nevada", "Oregon", "Washington", "Wyoming", "California"]
                           }, {
                             name: {
                               //DONE
@@ -1319,7 +1415,7 @@
                             linkedin: "https://www.linkedin.com/in/sally-blake-a3441a6a",
                             fun: null,
                             title: "Business Development Rep",
-                            states: ["Louisiana","Oklahoma","Eastern Texas","Arkansas","Tennessee","Mississippi","Western Pennsylvania", "Western New York"]
+                            states: ["Louisiana","Oklahoma","Eastern Texas","Western Texas"]
                           }, 
                           {
                             name: {
@@ -1334,37 +1430,51 @@
                             linkedin: "https://www.linkedin.com/in/chris-ballenger-1a803a55/",
                             fun: null,
                             title: "Business Development Rep",
-                            states: ["Florida", "Delaware","Eastern Pennsylvania","New Jersey","Maryland","Eastern New York"]
+                            states: ["Florida","Eastern Pennsylvania","New Jersey","New York City", "New York City "]
                           },
-                          
+                          {
+                            name: {
+                              //DONE
+                              first: "Saralee",
+                              last: "Brooks"
+                            },
+                            listedphone: "740.753.9100 Ext. 2164",
+                            phone: "7407539100,2164",
+                            email: "saralee.brooks@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1416doc.jpg",
+                            linkedin: null,
+                            fun: null,
+                            title: "Business Development Rep",
+                            states: ["Connecticut", "Massachusetts", "Maine", "New Hampshire", "Rhode Island", "Vermont", "Western New York", "Eastern New York", "Iowa", "Kansas", "Minnesota", "Missouri", "North Dakota", "Nebraska", "South Dakota"]
+                          },
                           {
                             name: {
                               //DONE
                               first: "Shanda",
-                              last: "Hunter"
+                              last: "Kaaz"
                             },
                             listedphone: "740.753.9100 Ext. 2045",
                             phone: "7407539100,2045",
-                            email: "Shanda.Hunter@LehighOutfitters.com",
+                            email: "Shanda.Kaaz@lehigh.com",
                             image: "https://d1jdomzv2hp689.cloudfront.net/document/data/118_1093doc.jpg",
                             linkedin: null,
                             fun: null,
                             title: "Account Sales Rep",
-                            states: ["Eastern Texas", "Oklahoma", "Louisiana"]
-                          },/* {
+                            states: ["Eastern Texas", "Western Texas", "Oklahoma", "Louisiana"]
+                          }, {
                             name: {
-                              first: "Tracy",
-                              last: "McMahon"
+                              first: "Trevor",
+                              last: "Blevins"
                             },
-                            listedphone: "740.753.9100 Ext. 2662",
-                            phone: "7407539100,2662",
-                            email: "Tracy.McMahon@LehighOutfitters.com",
-                            image: "https://d1jdomzv2hp689.cloudfront.net/document/data/260_1181doc.png",
-                            linkedin: "https://www.linkedin.com/in/lehightracy",
-                            fun: "I love baking and gardening.",
+                            listedphone: "740.753.9100 Ext. 2149",
+                            phone: "7407539100,2149",
+                            email: "trevor.blevins@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1538doc.jpg",
+                            linkedin: null,
+                            fun: null,
                             title: "Account Sales Rep",
-                            states: ["Michigan", "Indiana", "Western Kentucky", "Utah", "Arizona", "Colorado", "New Mexico", "Western Texas","Michigan "]
-                          },*/ {
+                            states: ["Michigan", "Indiana", "Western Kentucky", "Utah", "Arizona", "Colorado", "New Mexico","Michigan "]
+                          }, {
                             name: {
                               //DONE
                               first: "Vicki",
@@ -1398,8 +1508,8 @@
                               first: "Sybil",
                               last: "Kennedy"
                             },
-                            listedphone: "740.753.9100 Ext. 2129",
-                            phone: "7407539100,2129",
+                            listedphone: "740.753.9100 Ext. 2455",
+                            phone: "7407539100,2455",
                             email: "sybil.kennedy@lehighoutfitters.com",
                             image: "http://manage.customfit.me/document/data/412_1398doc.jpg",
                             linkedin: "https://www.linkedin.com/in/sybil-kennedy-90980245",
@@ -1427,8 +1537,8 @@
                               first: "Heather",
                               last: "Hickman"
                             },
-                            //listedphone: "740.603.3268",
-                            //phone: "7406033268",
+                            listedphone: null,
+                            phone: null,
                             email: "Heather.Hickman@LehighOutfitters.com",
                             image: "https://manage.customfit.me/document/data/403_1344doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/heather-phares-perkins/15/89a/301",
@@ -1510,10 +1620,23 @@
                             listedphone: "740.753.9100 Ext. 2565",
                             phone: "7407539100,2565",
                             email: "Angel.Justice-Garleff@LehighOutfitters.com",
-                            image: "https://manage.customfit.me/document/data/403_1342doc.jpg",
+                            image: "http://manage.customfit.me/document/data/412_1489doc.jpg",
                             linkedin: "https://www.linkedin.com/pub/angel-justice-garleff/98/952/867",
                             fun: null,
                             title: "Retail Operations Manager"
+                          },
+                          {
+                            name: {
+                              first: "Sharon",
+                              last: "Sabillon-Pompey"
+                            },
+                            listedphone: "740.753.9100 Ext. 2162",
+                            phone: "7407539100,2162",
+                            email: "sharon.pompey@lehigh.com",
+                            image: "http://manage.customfit.me/document/data/412_1501doc.jpg",
+                            linkedin: null,
+                            fun: null,
+                            title: "Retail Sales Operations Specialist"
                           },
                           {
                             name: {
@@ -1527,19 +1650,6 @@
                             linkedin: "https://www.linkedin.com/in/jeff-clark-0061b390",
                             fun: null,
                             title: "Bids and Sales Specialist"
-                          },
-                          {
-                            name: {
-                              first: "Shannon ",
-                              last: "Schell"
-                            },
-                            listedphone: "740.753.9100 Ext. 2182",
-                            phone: "7407539100,2182",
-                            email: "Shannon.Schell@lehighoutfitters.com",
-                            image: "https://manage.customfit.me/document/data/412_1354doc.jpg",
-                            linkedin: null,
-                            fun: null,
-                            title: "Retail Sales Coordinator"
                           }
                         ]
                       },
@@ -1703,12 +1813,12 @@
                 Saturday - Sunday 8:00 a.m. - 5:00 p.m. (EST)<br>
                 Nelsonville, OH 45764<br>
                 <strong>Phone:</strong> 1-800-444-4086<br>
-                <strong>Email:</strong> <a style="color:#bed600;" href="mailto:customfit@lehighoutfitters.com">customfit@lehighoutfitters.com</a><br>
+                <strong>Email:</strong> <a style="color:#bed600;" href="mailto:customfit@lehigh.com">customfit@lehigh.com</a><br>
               </p>
               <div class="social-links">
                 <a href="https://twitter.com/LehighCustomFit" class="twitter" aria-label="Custom Fit Twitter Link"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/LehighCustomFit/" class="facebook" aria-label="Custom Fit Facebook Link"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UCMxjz5o_WyPL9Wx_D6UZPMw" class="youtube" aria-label="Custom Fit YouTube Link"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.youtube.com/channel/UCQWezX6E3wR8DxYLz-W3IYg" class="youtube" aria-label="Custom Fit YouTube Link"><i class="fa fa-youtube-play"></i></a>
                 <a href="https://www.linkedin.com/company/lehigh-outfitters" class="linkedin" aria-label="Custom Fit LinkedIn Link"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
@@ -1716,6 +1826,9 @@
               <h3>Email Sign Up</h3>
               <p>We'd love for you join in on our newsletter! Head to the sign up page below to get started.</p>
               <a href="emailSignUp.html" aria-label="Email Sign Up Page Link" class="hvr-bounce-to-top btn-get-started-footer" style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">SUBSCRIBE</a>
+              <h2 style="padding-top:25px;">SMS Notifications</h2>
+                                  <p>Receive important safety PPE order & eligibility notifications direct to your phone.</p>
+                                  <a href="sms.html" aria-label="Email Sign Up Page Link" class="hvr-bounce-to-top btn-get-started-footer" style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">GET ALERTS</a>
             </div>
           </div>
         </div>
@@ -1758,5 +1871,59 @@
       })();
 
   </script>
+<script>
+
+  var url = "";
+  
+  if (window.location.hostname.indexOf("www.customfit.me") == -1 && window.location.hostname.indexOf("staging.customfit.me") == -1 && window.location.hostname.indexOf("dev.customfit.me")==-1 )
+  {
+     
+      if (window.location.hostname.indexOf("customfit.me") != -1 || window.location.hostname.indexOf("lehighsafetyshoes.com") != -1 || window.location.hostname.indexOf("shoeangel.com") != -1 || window.location.hostname.indexOf("fastenal.com") != -1) {
+  
+          url = 'http://' + window.location.hostname + '/default.aspx' + window.location.search;
+          window.location.href = url;
+  
+      }
+  
+      
+  }
+  
+  var hurl = window.location.href;
+  if (hurl.indexOf('err=true') != -1) {
+  
+      alert('Invalid account# or password ')
+      $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
+  }
+    
+  
+  $(document).ready(function () {
+      $('a').each(function () {
+          var oldUrl = $(this).attr("href"); // Get current url
+          if (oldUrl.indexOf(".html") != -1) {
+  
+  
+              var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
+              if (window.location.hostname.indexOf("dev.customfit") != -1) {
+                  newUrl = "http://dev.customfit.me/" + oldUrl;
+              }
+  
+              $(this).attr("href", newUrl); // Set herf value
+  
+          }
+          else {
+              if (oldUrl.indexOf("#") != -1) {
+  
+                  var newUrl = window.location.href + oldUrl; // Create new url
+                  $(this).attr("href", newUrl); // Set herf value
+  
+              }
+          }
+  
+  
+      });
+  });
+  
+  
+          </script>
 </body>
 </html>

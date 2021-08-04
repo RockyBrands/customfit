@@ -25,6 +25,7 @@
   <script src="jquery.min.js"></script>
   <script src="js/lity-min.js" defer></script>
   <style>
+        a:focus{box-shadow:none!important;}.form-control{border-radius:0rem!important;}.input-group-text{border-radius:0rem!important;}.btn-success{width:91%;font-weight: 700;background-color:#000;border-radius: 0px;border: 0px;}.btn-success:hover{border-color:#bed600;background-color:#bed600;color:#000;}
     .body{
       overflow-x:hidden !important;
     }
@@ -176,6 +177,9 @@ button:focus{
                                   <a class="nav-link" href="kiosks.html" aria-label="Kiosks Page Link">Kiosks</a>
                                 </li>
                                 <li class="nav-item">
+                                  <a class="nav-link" href="safety-pledge.html" aria-label="Safety Pledge Page Link">Safety Pledge</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="paymentOptions.html" aria-label="Payment Options Page Link">Payment Options</a>
                                   </li>
                             </ul>
@@ -200,12 +204,59 @@ button:focus{
                                     </li>
                             </ul>
                           </li>
-                          <li class="nav-item ">
-                              <a class="nav-link hvr-underline-from-center" href="blog.html" aria-label="Blog page Link">Blog</a>
-                            </li>
-                        <li class="nav-item ">
-                          <a class="nav-link hvr-underline-from-center" href="login.html" aria-label="Customer Login Page Link">Login</a>
-                        </li>
+                          <li class="nav-item submenu dropdown">
+                            <a href="#" class="nav-link dropdown-toggle hvr-underline-from-center" data-toggle="dropdown"
+                              role="button" aria-haspopup="true" aria-expanded="false">Wellness</a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item">
+                                <a class="nav-link" href="aetrex.html" aria-label="Aetrex Page Link">Aetrex Foot Scanner</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="bootbreakdown.html" aria-label="Boot Size Guide Link">Boot Breakdown Dangers</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="unhealthyfeet.html" aria-label="Boot Size Guide Link">Impacts Of Unhealthy Feet</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="truefit.html" aria-label="Boot Size Guide Link">True Fit Sizing</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="whyorthotics.html" aria-label="Boot Size Guide Link">Why New Orthotics</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <div class="nav-item dropdown login-dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle hvr-underline-from-center" aria-expanded="false"><i class="fa fa-user-o"></i> Account Login</a>
+                            <div class="dropdown-menu" style="min-width:18rem;padding: 1rem 1rem;">					
+                                <form class="form-inline login-form login100-form validate-form" action="https://www.customfit.me/process.aspx" method="post">
+                                    <div class="input-group" style="margin:0px 10px 10px 0px;">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" style="min-width: 40px;">
+                                          <span class="fa fa-user" style="margin: 0 auto;"></span>
+                                        </span>                    
+                                      </div>
+                                      <input type="text" class="form-control input100" placeholder="Account #" required="" name="txtCustomerNumber" id="txtCustomerNumber">
+                                    </div>
+                                    <div class="input-group" style="margin:0px 10px 10px 0px;">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" style="min-width: 40px;">
+                                          <span class="fa fa-globe" style="margin: 0 auto;"></span>
+                                        </span>                    
+                                      </div>
+                                      <input type="text" class="form-control input100" placeholder="Location #" required="" name="txtLocationNumber" id="txtLocationNumber">
+                                    </div>
+                                    <div class="input-group" style="margin:0px 10px 10px 0px;">
+                                      <div class="input-group-prepend">
+                                        <span class="input-group-text" style="min-width: 40px;">
+                                          <i class="fa fa-lock" style="margin: 0 auto;"></i>
+                                        </span>                    
+                                      </div>
+                                      <input type="text" class="form-control input100" placeholder="Password" required="" name="txtPassword" id="txtPassword">
+                                    </div>
+                                    <button type="submit" class="btn btn-success">LOGIN</button>
+                                </form>
+                              </div>
+                            </div>
                       </ul>
                     </div>
                   </div>
@@ -284,12 +335,12 @@ button:focus{
                 Saturday - Sunday 8:00 a.m. - 5:00 p.m. (EST)<br>
                 Nelsonville, OH 45764<br>
                 <strong>Phone:</strong> 1-800-444-4086<br>
-                <strong>Email:</strong> <a style="color:#bed600;" href="mailto:customfit@lehighoutfitters.com">customfit@lehighoutfitters.com</a><br>
+                <strong>Email:</strong> <a style="color:#bed600;" href="mailto:customfit@lehigh.com">customfit@lehigh.com</a><br>
               </p>
               <div class="social-links">
                 <a href="https://twitter.com/LehighCustomFit" class="twitter" aria-label="Custom Fit Twitter Link"><i class="fa fa-twitter"></i></a>
                 <a href="https://www.facebook.com/LehighCustomFit/" class="facebook" aria-label="Custom Fit Facebook Link"><i class="fa fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/UCMxjz5o_WyPL9Wx_D6UZPMw" class="youtube" aria-label="Custom Fit YouTube Link"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.youtube.com/channel/UCQWezX6E3wR8DxYLz-W3IYg" class="youtube" aria-label="Custom Fit YouTube Link"><i class="fa fa-youtube-play"></i></a>
                 <a href="https://www.linkedin.com/company/lehigh-outfitters" class="linkedin" aria-label="Custom Fit LinkedIn Link"><i class="fa fa-linkedin"></i></a>
               </div>
             </div>
@@ -297,6 +348,9 @@ button:focus{
               <h3>Email Sign Up</h3>
               <p>We'd love for you join in on our newsletter! Head to the sign up page below to get started.</p>
               <a href="emailSignUp.html" aria-label="Email Sign Up Page Link" class="hvr-bounce-to-top btn-get-started-footer" style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">SUBSCRIBE</a>
+              <h2 style="padding-top:25px;">SMS Notifications</h2>
+                                  <p>Receive important safety PPE order & eligibility notifications direct to your phone.</p>
+                                  <a href="sms.html" aria-label="Email Sign Up Page Link" class="hvr-bounce-to-top btn-get-started-footer" style="color:#000000!important;border:1px solid #bed600;background:#bed600!important;border-radius:0px !important;background:transparent;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 16px;letter-spacing: 1px;display: inline-block;padding: 8px 32px;text-decoration:none;">GET ALERTS</a>
             </div>
           </div>
         </div>
@@ -339,5 +393,59 @@ button:focus{
       })();
 
   </script>
+  <script>
+
+    var url = "";
+    
+    if (window.location.hostname.indexOf("www.customfit.me") == -1 && window.location.hostname.indexOf("staging.customfit.me") == -1 && window.location.hostname.indexOf("dev.customfit.me")==-1 )
+    {
+       
+        if (window.location.hostname.indexOf("customfit.me") != -1 || window.location.hostname.indexOf("lehighsafetyshoes.com") != -1 || window.location.hostname.indexOf("shoeangel.com") != -1 || window.location.hostname.indexOf("fastenal.com") != -1) {
+    
+            url = 'http://' + window.location.hostname + '/default.aspx' + window.location.search;
+            window.location.href = url;
+    
+        }
+    
+        
+    }
+    
+    var hurl = window.location.href;
+    if (hurl.indexOf('err=true') != -1) {
+    
+        alert('Invalid account# or password ')
+        $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
+    }
+      
+    
+    $(document).ready(function () {
+        $('a').each(function () {
+            var oldUrl = $(this).attr("href"); // Get current url
+            if (oldUrl.indexOf(".html") != -1) {
+    
+    
+                var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
+                if (window.location.hostname.indexOf("dev.customfit") != -1) {
+                    newUrl = "http://dev.customfit.me/" + oldUrl;
+                }
+    
+                $(this).attr("href", newUrl); // Set herf value
+    
+            }
+            else {
+                if (oldUrl.indexOf("#") != -1) {
+    
+                    var newUrl = window.location.href + oldUrl; // Create new url
+                    $(this).attr("href", newUrl); // Set herf value
+    
+                }
+            }
+    
+    
+        });
+    });
+    
+    
+            </script>
 </body>
 </html>
