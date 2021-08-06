@@ -152,6 +152,9 @@
                                 <a class="nav-link" href="aetrex.html" aria-label="Aetrex Page Link">Aetrex Foot Scanner</a>
                               </li>
                               <li class="nav-item">
+                                <a class="nav-link" href="orthotics.html" aria-label="Aetrex Page Link">Aetrex Orthotics</a>
+                              </li>
+                              <li class="nav-item">
                                 <a class="nav-link" href="bootbreakdown.html" aria-label="Boot Size Guide Link">Boot Breakdown Dangers</a>
                               </li>
                               <li class="nav-item">
@@ -309,63 +312,52 @@
                       </script>
 
 <script>
-
   var url = "";
-  
   if (window.location.hostname.indexOf("www.customfit.me") == -1 && window.location.hostname.indexOf("staging.customfit.me") == -1 && window.location.hostname.indexOf("dev.customfit.me")==-1 )
   {
-     
-      if (window.location.hostname.indexOf("customfit.me") != -1 || window.location.hostname.indexOf("lehighsafetyshoes.com") != -1 || window.location.hostname.indexOf("shoeangel.com") != -1 || window.location.hostname.indexOf("fastenal.com") != -1) {
-  
-          url = 'http://' + window.location.hostname + '/default.aspx' + window.location.search;
-          window.location.href = url;
-  
-      }
-  
-      
+    if (window.location.hostname.indexOf("customfit.me") != -1 || window.location.hostname.indexOf("lehighsafetyshoes.com") != -1 || window.location.hostname.indexOf("shoeangel.com") != -1 || window.location.hostname.indexOf("fastenal.com") != -1) {
+        url = 'http://' + window.location.hostname + '/default.aspx' + window.location.search;
+        window.location.href = url;
+    }   
   }
-  
   var hurl = window.location.href;
   if (hurl.indexOf('err=true') != -1) {
-  
-      alert('Invalid account# or password ')
-      $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
+    alert('Invalid account# or password ')
+    $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
   }
     
-  
   $(document).ready(function () {
-      $('a').each(function () {
-          var oldUrl = $(this).attr("href"); // Get current url
-          if (oldUrl.indexOf(".html") != -1) {
-  
-  
-              var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
-              if (window.location.hostname.indexOf("dev.customfit") != -1) {
-                  newUrl = "http://dev.customfit.me/" + oldUrl;
-              }
-  
-              $(this).attr("href", newUrl); // Set herf value
-  
+    $('a').each(function () {
+      var oldUrl = $(this).attr("href");
+        if (oldUrl.indexOf(".html") != -1) {
+          var newUrl = "https://www.customfit.me/" + oldUrl;
+          if (window.location.hostname.indexOf("dev.customfit") != -1) {
+            newUrl = "http://dev.customfit.me/" + oldUrl;
           }
-          else {
-              if (oldUrl.indexOf("#") != -1) {
-  
-                  var newUrl = window.location.href + oldUrl; // Create new url
-                  $(this).attr("href", newUrl); // Set herf value
-  
-              }
+          $(this).attr("href", newUrl);
+        }
+        else {
+          if (oldUrl.indexOf("#") != -1) {
+            var newUrl = window.location.href + oldUrl;
+            $(this).attr("href", newUrl);
           }
-  
-  
+        }
       });
-  });
-  
-  
-          </script>
+    });
+</script>
           
+<script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UNZmce"></script>
 
-                      <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=UNZmce"></script>
-                    
-                    </body>
-                    </html>
-                    
+  
+<script>
+  // Get URL and send data variable to Klaviyo
+  let prepend = "?data=";
+  let fullURLText = window.location.href;
+  let dataEncode = fullURLText.split(prepend).pop();
+  let buildURL = "https://a.klaviyo.com/api/identify?data=" + dataEncode;
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open( "GET", buildURL, false );
+  xmlHttp.send(null);
+</script>
+</body>
+</html>
