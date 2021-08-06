@@ -350,14 +350,13 @@
 
   
 <script>
-  // Get URL and send data variable to Klaviyo
   let prepend = "?data=";
   let fullURLText = window.location.href;
   let dataEncode = fullURLText.split(prepend).pop();
   let buildURL = "https://a.klaviyo.com/api/identify?data=" + dataEncode;
   var xmlHttp = new XMLHttpRequest();
   xmlHttp.open( "GET", buildURL, true );
-  xmlHttp.send(null);
+  xmlHttp.send();
 </script>
 </body>
 </html>
