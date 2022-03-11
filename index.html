@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en" style="overflow-y:scroll;overflow-x:hidden;">
 <head>
+<base href="https://rockybrands.github.io/customfit/" />
   <meta charset="utf-8">
   <meta http-equiv="content-language" content="en">
   <title>Lehigh CustomFit</title>
@@ -27,11 +29,249 @@
   <script src="jquery.min.js"></script>
   <script src="js/lity-min.js" defer></script>
   <style>
-    a:focus{box-shadow:none!important;}.form-control{border-radius:0rem!important;}.input-group-text{border-radius:0rem!important;}.btn-success{width:91%;font-weight: 700;background-color:#000;border-radius: 0px;border: 0px;}.btn-success:hover{border-color:#bed600;background-color:#bed600;color:#000;}
-#facts::before{background:linear-gradient(180deg,rgba(255,255,255,1) 20%,rgba(0,0,0,1) 20%)}div#hs-eu-cookie-confirmation{background:#000!important;border-bottom:none!important;border-top:none!important;box-shadow:none!important;top:auto!important;bottom:0px!important}div#hs-eu-cookie-confirmation-inner{background:rgba(0,0,0,0)!important}div#hs-eu-cookie-confirmation-inner p{color:#ffffff!important;font-size:11px!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button{background-color:#bed600!important;background:#bed600!important;border:1px solid #bed600!important;text-transform:uppercase!important}div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button{border:1px solid #bed600!important;color:#ffffff!important;text-transform:uppercase!important}#intro .btn-get-startedLogin{font-family:"Montserrat",sans-serif;font-weight:500;font-size:16px;letter-spacing:1px;display:inline-block;padding:8px 32px;border-radius:50px;transition:0.5s;margin:10px;color:#fff;background:#bed600}#intro .btn-get-startedLogin:hover{background:#000000!important;border:1px solid #000000!important}@media (max-width:768px){#wcag-notice{display:none!important}}#wcag-notice{display:block;width:100%;background-color:#000;color:#FFF!important;font-size:.75em;line-height:1;margin:0 auto;padding:1em 0 .25em;text-align:center}#wcag-notice p{color:#FFFFFF!important}#wcag-notice a{color:#FFF!important;text-decoration:underline}#wcag-notice a:hover{color:#EEE!important}.body{overflow-x:hidden!important}.servicesHover{color:#ffffff!important}.servicesHover:hover{color:#bed600!important}.dropdown-menu{border:none!important}.imgAutoPad{height:auto;padding:10px!important}@media (min-width:768px){.skills{display:block!important}.skillsMobile{display:none!important}.facts{display:none!important}.factsMobile{display:block!important}.aetrex{display:block!important}.aetrexMobile{display:none!important}.introDesktopXL{display:none!important}.introDesktop{display:block!important}.introMobile{display:none!important}}@media (min-width:1100px){.introDesktopXL{display:block!important}.introDesktop{display:none!important}.introMobile{display:none!important}.factsMobile{display:none!important}.facts{display:block!important}}@media (max-width:768px){.skills{display:none!important}.skillsMobile{display:block!important}.factsMobile{display:block!important}.facts{display:none!important}.aetrexMobile{display:block!important}.aetrex{display:none!important}.introDesktop{display:none!important}.introMobile{display:block!important}.introDesktopXL{display:none!important}}:focus{outline-color:#ffffff!important;border-color:#bed600!important;box-shadow:0 0 4px rgba(190,214,0,1)!important}.input-wrapper{display:inline;position:relative}.input-wrapper:before{font-family:'FontAwesome';content:'\f007';position:absolute;left:10px;padding-top:4px;color:#000}.input-wrapper:focus-within::before{font-family:'FontAwesome';content:'\f007';position:absolute;left:10px;padding-top:4px;color:#bed600}.input-wrapperLoc{display:inline;position:relative}.input-wrapperLoc:before{font-family:'FontAwesome';content:'\f0ac';position:absolute;left:10px;padding-top:4px;color:#000}.input-wrapperLoc:focus-within::before{font-family:'FontAwesome';content:'\f0ac';position:absolute;left:10px;padding-top:4px;color:#bed600}.input-wrapperPass{display:inline;position:relative}.input-wrapperPass:before{font-family:'FontAwesome';content:'\f023';position:absolute;left:12px;padding-top:4px;color:#000}.input-wrapperPass:focus-within::before{font-family:'FontAwesome';content:'\f023';position:absolute;left:12px;padding-top:4px;color:#bed600}
+a:focus {
+    box-shadow: none !important;
+}
+.form-control {
+    border-radius: 0rem !important;
+}
+.input-group-text {
+    border-radius: 0rem !important;
+}
+.btn-success {
+    width: 91%;
+    font-weight: 700;
+    background-color: #000;
+    border-radius: 0px;
+    border: 0px;
+}
+.btn-success:hover {
+    border-color: #bed600;
+    background-color: #bed600;
+    color: #000;
+}
+#facts::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 1) 20%);
+}
+div#hs-eu-cookie-confirmation {
+    background: #000 !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+    top: auto !important;
+    bottom: 0px !important;
+}
+div#hs-eu-cookie-confirmation-inner {
+    background: rgba(0, 0, 0, 0) !important;
+}
+div#hs-eu-cookie-confirmation-inner p {
+    color: #ffffff !important;
+    font-size: 11px !important;
+}
+div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-confirmation-button {
+    background-color: #bed600 !important;
+    background: #bed600 !important;
+    border: 1px solid #bed600 !important;
+    text-transform: uppercase !important;
+}
+div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner div#hs-eu-policy-wording {
+  color:#fff;
+}
+div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button {
+    border: 1px solid #bed600 !important;
+    color: #ffffff !important;
+    text-transform: uppercase !important;
+}
+div#hs-eu-cookie-confirmation div#hs-eu-cookie-confirmation-inner a#hs-eu-decline-button {
+  border: 1px solid #bed600!important;
+  color: #bed600!important;
+}
+#intro .btn-get-startedLogin {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    background: #bed600;
+}
+#intro .btn-get-startedLogin:hover {
+    background: #000000 !important;
+    border: 1px solid #000000 !important;
+}
+@media (max-width: 768px) {
+    #wcag-notice {
+        display: none !important;
+    }
+}
+#wcag-notice {
+    display: block;
+    width: 100%;
+    background-color: #000;
+    color: #fff !important;
+    font-size: 0.75em;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 1em 0 0.25em;
+    text-align: center;
+}
+#wcag-notice p {
+    color: #ffffff !important;
+}
+#wcag-notice a {
+    color: #fff !important;
+    text-decoration: underline;
+}
+#wcag-notice a:hover {
+    color: #eee !important;
+}
+.body {
+    overflow-x: hidden !important;
+}
+.servicesHover {
+    color: #ffffff !important;
+}
+.servicesHover:hover {
+    color: #bed600 !important;
+}
+.dropdown-menu {
+    border: none !important;
+}
+.imgAutoPad {
+    height: auto;
+    padding: 10px !important;
+}
+@media (min-width: 768px) {
+    .skills { display: block !important; }
+    .skillsMobile { display: none !important;}
+    .facts {display: none !important; }
+    .factsMobile {display: block !important;}
+    .aetrex {display: block !important; }
+    .aetrexMobile { display: none !important;}
+    .introDesktopXL { display: none !important;}
+    .introDesktop {display: block !important;}
+    .introMobile {display: none !important;}
+    #vidCalloutSectionXL {display: none !important;}
+    #vidCalloutSectionDesktop {display: block !important;}
+    #vidCalloutSectionMobile {display: none !important;}
+    #vidCalloutSectionMids {display: none !important;}
+    .introMids {display:none!important;}
+    .desktopLogo{display:block!important;}
+      .mobileLogo{display:none!important;}
+}
+@media (min-width: 1100px) {
+    .introDesktopXL {display: block !important;}
+    #vidCalloutSectionDesktop {display: none !important;}
+    #vidCalloutSectionMobile {display: none !important; }
+    #vidCalloutSectionXL {display: block !important; }
+    .introDesktop {display: none !important;}
+    .introMobile {display: none !important;}
+    .factsMobile { display: none !important;}
+    .facts {display: block !important;}
+    #vidCalloutSectionMids {display: none !important;}
+    .introMids {display:none!important;}
+    .desktopLogo{display:block!important;}
+      .mobileLogo{display:none!important;}
+}
+@media (max-width: 768px) {
+    .skills {display: none !important;}
+    .skillsMobile { display: block !important;}
+    .factsMobile {display: block !important;}
+    .facts {display: none !important;}
+    .aetrexMobile {display: block !important;}
+    .aetrex {display: none !important;}
+    .introDesktop { display: none !important;}
+    .introMobile {display: block !important;}
+    .introDesktopXL { display: none !important;}
+    #vidCalloutSectionDesktop {display: none !important;}
+    #vidCalloutSectionXL {display: none !important;}
+    #vidCalloutSectionMobile {display: block !important;}
+    #vidCalloutSectionMids {display: none !important;}
+    .introMids {display:none!important;}
+    .desktopLogo{display:none!important;}
+      .mobileLogo{display:block!important;}
+  }
+    @media only screen and (max-width: 768px) and (min-width: 480px) {
+      #vidCalloutSectionMids { display: block !important; }
+      .introMids {display:block!important;}
+}
+:focus {
+    outline-color: #ffffff !important;
+    border-color: #bed600 !important;
+    box-shadow: 0 0 4px rgba(190, 214, 0, 1) !important;
+}
+.input-wrapper {
+    display: inline;
+    position: relative;
+}
+.input-wrapper:before {
+    font-family: "FontAwesome";
+    content: "\f007";
+    position: absolute;
+    left: 10px;
+    padding-top: 4px;
+    color: #000;
+}
+.input-wrapper:focus-within::before {
+    font-family: "FontAwesome";
+    content: "\f007";
+    position: absolute;
+    left: 10px;
+    padding-top: 4px;
+    color: #bed600;
+}
+.input-wrapperLoc {
+    display: inline;
+    position: relative;
+}
+.input-wrapperLoc:before {
+    font-family: "FontAwesome";
+    content: "\f0ac";
+    position: absolute;
+    left: 10px;
+    padding-top: 4px;
+    color: #000;
+}
+.input-wrapperLoc:focus-within::before {
+    font-family: "FontAwesome";
+    content: "\f0ac";
+    position: absolute;
+    left: 10px;
+    padding-top: 4px;
+    color: #bed600;
+}
+.input-wrapperPass {
+    display: inline;
+    position: relative;
+}
+.input-wrapperPass:before {
+    font-family: "FontAwesome";
+    content: "\f023";
+    position: absolute;
+    left: 12px;
+    padding-top: 4px;
+    color: #000;
+}
+.input-wrapperPass:focus-within::before {
+    font-family: "FontAwesome";
+    content: "\f023";
+    position: absolute;
+    left: 12px;
+    padding-top: 4px;
+    color: #bed600;
+}
+
 .btn-get-started {
       margin: 4px!important;
     }
+    .vidTopHover:hover{color:#bed600!important;}
+    .cover-up { width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-transform: uppercase; text-align: center; text-shadow: 0px 0px 10px #000; }
+    #customfit-play { width: 100%; height: 100%; background: transparent; border: none; opacity: 1; transition: opacity 0.2s; -webkit-transition: opacity 0.2s; }
+    #customfit-play.ease-out { opacity: 0; transition: opacity 0.2s; -webkit-transition: opacity 0.2s; }
   </style>
   <!-- Google Tag Manager -->
 
@@ -49,17 +289,35 @@
   })(window, document, 'script', 'dataLayer', 'GTM-5K46SHX');</script>
   
   <!-- End Google Tag Manager -->
+  <meta name="facebook-domain-verification" content="ookebihw4x73bo5bd5mesuime0hh6w" />
+  <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  
+  fbq('init', '776951502664726');
+  fbq('set','agent','tmgoogletagmanager', '776951502664726');
+  fbq('track', "PageView");
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=776951502664726&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+  
 </head>
 
 <body style="overflow:hidden;">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K46SHX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<section style="background-color: #000;>
+<section style="background-color: #bed600;">
   <div class="container">
   <div class="row">
     <div class="col-md-1"></div>
       <div class="col-md-10" style="padding-top:18px;padding-bottom:9px;">
-        <p style="text-align:center;font-size:12px;margin:0 auto;color:#fff;font-family:'Josefin Sans', sans-serif;text-transform:uppercase;"><a href="safety-pledge.html" style="text-decoration: underline;color:#bed600;"><span style="color:#fff;text-decoration: none;padding-right:5px;"><i class="fa fa-info-circle" aria-hidden="true"></i></span>Safety Pledge:</a> Watch how we're still safely performing on-site ordering &amp; wellness events</p>
+        <p style="text-align:center;font-size:12px;margin:0 auto;color:#000;font-family:'Josefin Sans', sans-serif;text-transform:uppercase;"><a href="safety-pledge.html" style="text-decoration: underline;color:#000;"><span style="color:#000;text-decoration: none;padding-right:5px;"><i class="fa fa-info-circle" aria-hidden="true"></i></span>Safety Pledge:</a> Watch how we're still safely performing on-site ordering &amp; wellness events</p>
       </div>
         <div class="col-md-1"></div>
   </div>
@@ -72,7 +330,8 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <a class="navbar-brand logo_h" href="index.html" aria-label="Home Page Link">
-            <img src="img/logo_new.png" alt="Lehigh CustomFit Logo" style="max-width:75%;">
+            <img class="mobileLogo" src="img/cf_logo_new.png" alt="Lehigh CustomFit Logo" style="max-width:75%;">
+            <img class="desktopLogo" src="img/logo_new_horizontal.png" alt="Lehigh CustomFit Logo" style="max-width:50%;padding:10px 0px 10px 0px;">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -108,6 +367,9 @@
                       <li class="nav-item">
                         <a class="nav-link" href="paymentOptions.html" aria-label="Payment Options Page Link">Payment
                           Options</a>
+                          <li class="nav-item">
+                            <a class="nav-link" href="warranty.html" aria-label="Payment Options Page Link">Warranty</a>
+                          </li>
                       </li>
                     </ul>
                   </li>
@@ -137,16 +399,22 @@
                       role="button" aria-haspopup="true" aria-expanded="false">Wellness</a>
                     <ul class="dropdown-menu">
                       <li class="nav-item">
-                        <a class="nav-link" href="aetrex.html" aria-label="Aetrex Page Link">Aetrex Foot Scanner</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="orthotics.html" aria-label="Aetrex Page Link">Aetrex Orthotics</a>
+                        <a class="nav-link" href="unhealthyfeet.html" aria-label="Boot Size Guide Link">Impacts Of Unhealthy Feet</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="bootbreakdown.html" aria-label="Boot Size Guide Link">Boot Breakdown Dangers</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="unhealthyfeet.html" aria-label="Boot Size Guide Link">Impacts Of Unhealthy Feet</a>
+                        <a class="nav-link" href="aetrex.html" aria-label="Aetrex Page Link">Aetrex Foot Scanner</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="orthotics.html" aria-label="Aetrex Orthotics Link">Aetrex Orthotics</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="ada-styles.html" aria-label="ADA Styles Link">ADA Styles</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="os1st.html" aria-label="Boot Size Guide Link">OS1st Compression Socks</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="truefit.html" aria-label="Boot Size Guide Link">True Fit Sizing</a>
@@ -196,38 +464,52 @@
       </nav>
     </div>
   </header>
-  
+  <section style="margin-top:75px;background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('http://manage.customfit.me/document/data/412_1643doc.jpg');background-size:cover;border-right: 10px solid #fff;border-left: 10px solid #fff;border-bottom:10px solid #fff;">
+    <div class="container">
+    <div class="row">
+      <div class="col-md-1"></div>
+        <div class="col-md-10" style="padding-top:38px;padding-bottom:32px;">
+          <img src="img/celebrate-cf.gif" style="display:block;margin:0 auto;text-align: center;max-width:50px;margin-bottom:10px;">
+          <p style="text-align:center;font-size:14px;margin:0 auto;color:#fff;font-family:'Josefin Sans', sans-serif;text-transform:uppercase;"><span style="font-size:18px;">Celebrating the BIG 100 with a BRAND NEW LOOK</span><br /><a href="making-our-mark.html" style="text-decoration: underline;color:#bed600;"><span style="color:#fff;text-decoration: none;padding-right:5px;"></span>LEARN ABOUT OUR NEW LOGO</a> | <a href="https://pages.customfit.me/big100" target="_blank" style="text-decoration: underline;color:#bed600;"><span style="color:#fff;text-decoration: none;padding-right:5px;"></span>Receive a Free Gift</a> | <a href="history.html" style="text-decoration: underline;color:#bed600;"><span style="color:#fff;text-decoration: none;padding-right:5px;"></span>Scan Through 100 Years of Safety &amp; Innovation</a></p>
+        </div>
+          <div class="col-md-1"></div>
+    </div>
+  </div>
+  </section>
   <section id="intro" class="introDesktopXL" style="height:585px!important;padding-top:0px;">
       <div class="row" style="background:url('img/cf_header.jpg');margin-right:0px;margin-left:0px;background-size:cover;max-height:100%;" aria-label="Header Intro For Logging In">
         <div class="col-lg-12">
         <div class="carousel-item active">
           <div class="carousel-background"></div>
-          <div class="carousel-container" style="position:inherit!important;padding-top:40px;">
+          <div class="carousel-container" style="position:inherit!important;padding-top:10px;">
               <div class="carousel-content" style="text-align:center;">
-                <h1 style="padding-top:175px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:48px;color:#ffffff;">
+                <h1 style="padding-top:140px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:48px;color:#ffffff;">
                   The Power To Gain Control<br>Of Your PPE Program</h1>
-               <p style="margin:0 auto 10px auto;font-weight: 300;font-size:1.2rem;">Utilizing years of experience, Lehigh CustomFit resolves your current program pain points and inefficiencies to completely customize your PPE Program in 3 main areas.</p>
-                <a href="footwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;font-weight:700;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY FOOTWEAR</a>
-                  <a href="safety-workwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;font-weight:700;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY WORKWEAR</a>
-                    <a href="wellness.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;font-weight:700;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">FOOT &amp; BODY WELLNESS</a>
+               <p style="margin:0 auto 10px auto;font-weight: 300;font-size:1.2rem;">Utilizing years of experience, Lehigh CustomFit resolves your current program pain points and inefficiencies to completely customize your PPE Program in three main areas.</p>
+                <a href="footwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;font-weight:700;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;width:300px;">SAFETY FOOTWEAR</a>
+                <a href="wellness.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;font-weight:700;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;width:300px;">FOOT &amp; BODY WELLNESS</a>
+                  <a href="safety-workwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;font-weight:700;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;width:300px;">SAFETY WORKWEAR</a>
+
+
               </div>
             </div>
         </div></div>
       </div>
     </section>
   <section id="intro" class="introDesktop" style="height:585px!important;padding-top:30px;">
-    <div class="row" style="background:url('img/header.jpg');margin-right:0px;" aria-label="Header Intro For Logging In on Desktop">
+    <div class="row" style="background:url('img/cf_header.jpg');margin-right:0px;margin-left:0px;background-size:cover;max-height:100%;" aria-label="Header Intro For Logging In on Desktop">
       <div class="carousel-item active">
         <div class="carousel-background"></div>
         <div class="carousel-container" style="position:inherit!important;padding-top:40px;">
           <div class="carousel-content" style="float:left;">
             <h1
-              style="padding-top:85px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:48px;color:#ffffff;">
-              The Power To<br>Gain Control of<br>Your PPE Program</h1>
-            <p style="font-size:1.25rem;">Utilizing years of experience, Lehigh CustomFit resolves your current program pain points and inefficiencies to completely customize your PPE Program in 3 main areas.</p>
-              <a href="footwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY FOOTWEAR</a>
-              <a href="safety-workwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY WORKWEAR</a>
-                <a href="wellness.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">FOOT &amp; BODY WELLNESS</a>
+              style="padding-top:85px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:38px;color:#ffffff;">
+              The Power To Gain Control<br>of Your PPE Program</h1>
+            <p style="font-size:1.2rem;">Utilizing years of experience, Lehigh CustomFit resolves your current program pain points and inefficiencies to completely customize your PPE Program in three main areas.</p>
+              <a href="footwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;font-weight:700;">SAFETY FOOTWEAR</a>
+              <a href="wellness.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;font-weight:700;">FOOT &amp; BODY WELLNESS</a>
+              <a href="safety-workwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;font-weight:700;">SAFETY WORKWEAR</a>
+
           </div>
         </div>
       </div>
@@ -235,24 +517,64 @@
   </section>
 
   <section id="introMobile" class="introMobile" style="height:550px!important;padding-top:40px;">
-    <div class="row" style="background:url('img/header.jpg');margin-right:0px;" aria-label="Header Intro For Logging In on Mobile">
+    <div class="row" style="background:url('img/cf_header.jpg');margin-right:0px;margin-left:0px;background-size:cover;max-height:100%;" aria-label="Header Intro For Logging In on Mobile">
       <div class="carousel-item active">
         <div class="carousel-background"></div>
         <div class="carousel-container" style="position:inherit!important;padding-top:40px">
           <div class="carousel-content">
             <h1
-              style="max-width:60%;padding-top:45px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:28px;color:#ffffff;text-align:center;margin:0 auto;">
+              style="max-width:65%;padding-top:45px;padding-bottom:10px;font-family: 'Josefin Sans', sans-serif;font-weight:700;margin-bottom:0px;font-size:26px;color:#ffffff;text-align:center;margin:0 auto;">
               The Power To Gain Control of Your PPE Program</h1>
             <p style="font-size:1rem;margin:0px auto 20px auto;">Utilizing years of experience, Lehigh CustomFit resolves your current program pain points and inefficiencies to completely customize your PPE Program in 3 main areas.</p>
-              <a href="footwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY FOOTWEAR</a>
+              <a href="footwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY FOOTWEAR</a><br />
+              <a href="wellness.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">FOOT &amp; BODY WELLNESS</a><br />
               <a href="safety-workwear.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">SAFETY WORKWEAR</a>
-                <a href="wellness.html" aria-label="View Our Sales Team Here" class="hvr-sweep-to-right btn-get-started scrollto" style="font-size:14px;letter-spacing:0px;color:#000000;border:1px solid #bed600;border-radius:0px !important;background:bed600;text-decoration:none;">FOOT &amp; BODY WELLNESS</a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section style="background-color: #bed600;>
+
+<section id="vidCalloutSectionXL">
+  <div class="row mr-0 ml-0" style="margin-top: -90px;">
+    <div class="col-lg-3 col-md-2"></div>
+    <div class="col-lg-6 col-md-8 no-pads">
+      <video id="customfit-video" style="width: 100%; height: 100%;border: 10px solid #fff;" playsinline="" controls poster="https://manage.customfit.me/document/data/412_1584doc.jpg">
+      <source src="https://github.com/RockyBrands/customfit/blob/master/videos/CFThePowerToGainControl-Subtitles720.mp4?raw=true" type="video/mp4">
+      Sorry, your browser does not support embedded video.
+      </video>
+      </div>
+    <div class="col-lg-3 col-md-2"></div>
+  </div>
+</section>
+
+<section id="vidCalloutSectionDesktop">
+  <div class="row mr-0 ml-0" style="margin-top: -90px;">
+    <div class="col-lg-2 col-md-1"></div>
+    <div class="col-lg-8 col-md-10 no-pads">
+      <video id="customfit-video" style="width: 100%; height: 100%;border: 10px solid #fff;" playsinline="" poster="https://manage.customfit.me/document/data/412_1584doc.jpg">
+      <source src="https://github.com/RockyBrands/customfit/blob/master/videos/CFThePowerToGainControl-Subtitles720.mp4?raw=true" type="video/mp4">
+      Sorry, your browser does not support embedded video.
+      </video>
+      </div>
+    <div class="col-lg-2 col-md-1"></div>
+  </div>
+</section>
+
+<section id="vidCalloutSectionMobile">
+  <div class="row mr-0 ml-0" style="margin-top: -20px;">
+    <div class="col-lg-2 col-md-1 col-sm-1"></div>
+    <div class="col-lg-8 col-md-10 col-sm-10 no-pads">
+      <video id="customfit-video" style="width: 100%; height: 100%;border: 10px solid #fff;" playsinline="" poster="https://manage.customfit.me/document/data/412_1584doc.jpg">
+      <source src="https://github.com/RockyBrands/customfit/blob/master/videos/CFThePowerToGainControl-Subtitles720.mp4?raw=true" type="video/mp4">
+      Sorry, your browser does not support embedded video.
+      </video>
+      </div>
+    <div class="col-lg-2 col-md-1 col-sm-1"></div>
+  </div>
+</section>
+
+  <section>
     <div class="container">
     <div class="row">
       <div class="col-md-1"></div>
@@ -264,7 +586,8 @@
   </div>
   </section>
   <main id="main">
-    <section id="about" style="background:#fff!important;padding-bottom:0px;">
+    <hr style="width:50%;" />
+    <section id="about" style="background:#fff!important;padding-bottom:0px;padding-top:20px;">
       <div class="container">
         <header class="section-header">
           <h2
@@ -393,23 +716,23 @@
         <div class="container" id="clientsMobile" style="padding-top:0px;padding-bottom:0px;">
           <div class="owl-carousel clients-carousel">
             <img src="img/brands/TimberlandPRO-min.png" alt="Timberland PRO Logo">
-            <img src="http://manage.customfit.me/document/data/412_1543doc.png" alt="Reebok Logo">
+            <img src="https://manage.customfit.me/document/data/412_1543doc.png" alt="Reebok Logo">
             <img src="img/brands/GB-min.png" alt="Georgia Boot Logo">
             <img src="img/brands/Rocky-min.png" alt="Rocky Boots Logo">
             <img src="img/brands/Avenger-min.png" alt="Avenger Logo">
-            <img src="http://manage.customfit.me/document/data/412_1541doc.png" alt="New Balance Logo">
-            <img src="http://manage.customfit.me/document/data/412_1468doc.png" alt="Keen Logo">
+            <img src="https://manage.customfit.me/document/data/412_1541doc.png" alt="New Balance Logo">
+            <img src="https://manage.customfit.me/document/data/412_1468doc.png" alt="Keen Logo">
             <img src="img/brands/Slipgrips-min.png" alt="SlipGrips Logo">
             <img src="img/brands/LSS-min.png" alt="Lehigh Safety Shoes Logo">
             <img src="img/brands/Carhartt-min.png" alt="Carhartt Logo">
-            <img src="http://manage.customfit.me/document/data/412_1482doc.png" alt="Skechers Work Logo">
-            <img src="img/brands/Durango-min.png" alt="Durango Logo">
+            <img src="https://manage.customfit.me/document/data/412_1482doc.png" alt="Skechers Work Logo">
+            <img src="https://manage.customfit.me/document/data/412_1583doc.png" alt="Durango Logo">
             <img src="img/brands/Michelin-min.png" alt="Michelin Logo">
             <img src="img/brands/Nautilus-min.png" alt="Nautilus Logo">
             <img src="img/brands/GenuineGrip-min.png" alt="Genuine Grip Logo">
             <img src="img/brands/RockportWorks-min.png" alt="Rockport Works Logo">
             <img src="img/brands/PUMA-min.png" alt="Puma Logo">
-            <img src="http://manage.customfit.me/document/data/412_1470doc.png" alt="Iron Age Logo">
+            <img src="https://manage.customfit.me/document/data/412_1470doc.png" alt="Iron Age Logo">
             <img src="img/brands/Thorogood-min.png" alt="Thorogood Logo">
           </div>
         </div>
@@ -425,23 +748,23 @@
         <div class="container" id="clients" style="padding-top:0px;padding-bottom:0px;">
           <div class="owl-carousel clients-carousel">
             <img src="img/brands/TimberlandPRO-min.png" alt="Timberland PRO Logo">
-            <img src="http://manage.customfit.me/document/data/412_1543doc.png" alt="Reebok Logo">
+            <img src="https://manage.customfit.me/document/data/412_1543doc.png" alt="Reebok Logo">
             <img src="img/brands/GB-min.png" alt="Georgia Boot Logo">
             <img src="img/brands/Rocky-min.png" alt="Rocky Boots Logo">
             <img src="img/brands/Avenger-min.png" alt="Avenger Logo">
-            <img src="http://manage.customfit.me/document/data/412_1541doc.png" alt="New Balance Logo">
-            <img src="http://manage.customfit.me/document/data/412_1468doc.png" alt="Keen Logo">
+            <img src="https://manage.customfit.me/document/data/412_1541doc.png" alt="New Balance Logo">
+            <img src="https://manage.customfit.me/document/data/412_1468doc.png" alt="Keen Logo">
             <img src="img/brands/Slipgrips-min.png" alt="SlipGrips Logo">
             <img src="img/brands/LSS-min.png" alt="Lehigh Safety Shoes Logo">
             <img src="img/brands/Carhartt-min.png" alt="Carhartt Logo">
-            <img src="http://manage.customfit.me/document/data/412_1482doc.png" alt="Skechers Work Logo">
-            <img src="img/brands/Durango-min.png" alt="Durango Logo">
+            <img src="https://manage.customfit.me/document/data/412_1482doc.png" alt="Skechers Work Logo">
+            <img src="https://manage.customfit.me/document/data/412_1583doc.png" alt="Durango Logo">
             <img src="img/brands/Michelin-min.png" alt="Michelin Logo">
             <img src="img/brands/Nautilus-min.png" alt="Nautilus Logo">
             <img src="img/brands/GenuineGrip-min.png" alt="Genuine Grip Logo">
             <img src="img/brands/RockportWorks-min.png" alt="Rockport Works Logo">
             <img src="img/brands/PUMA-min.png" alt="Puma Logo">
-            <img src="http://manage.customfit.me/document/data/412_1470doc.png" alt="Iron Age Logo">
+            <img src="https://manage.customfit.me/document/data/412_1470doc.png" alt="Iron Age Logo">
             <img src="img/brands/Thorogood-min.png" alt="Thorogood Logo">
           </div>
         </div>
@@ -482,7 +805,7 @@
             <p style="text-align:center;text-transform:uppercase;" class="description">No More Delay or Loss</p>
           </div>
           <div class="col-lg-3 box" style="padding-top:15px!important;margin:0 auto;">
-            <img src="http://manage.customfit.me/document/data/412_1562doc.png" alt="Subsidy and Payroll Deduction Icon"
+            <img src="https://manage.customfit.me/document/data/412_1562doc.png" alt="Subsidy and Payroll Deduction Icon"
               style="padding-bottom:10px;max-height:65px !important;width:auto!important;">
             <h4 class="title"
               style="text-transform:uppercase;text-align:center;font-family: 'Josefin Sans', sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 10px 0;">
@@ -710,5 +1033,18 @@
         });
     });
             </script>
+            <script>
+              var heritageVideo = document.getElementById("customfit-video"); 
+              var heritageButton = document.getElementById("customfit-play");
+              
+              function playPause() { 
+                  if (heritageVideo.paused) 
+                  heritageVideo.play(),
+                  heritageButton.classList.add("ease-out");
+                  else
+                  heritageVideo.pause(),
+                  heritageButton.classList.remove("ease-out");
+              } 
+              </script>
 </body>
 </html>
