@@ -45,26 +45,33 @@
       .aetrexMobile{display:none!important;}
       .desktopHeadLogo {display:block!important;}
       .mobileHeadLogo {display:none!important;}
+      .desktopLogo{display:block!important;}
+      .mobileLogo{display:none!important;}
     }
     @media (max-width: 768px) {
       .skills {display:none !important;}
       .skillsMobile {display:block !important;}
-      .aetrexMobile{display:block!important;}
       .aetrex{display:none!important;}
       .desktopHeadLogo {display:none!important;}
       .mobileHeadLogo {display:block!important;}
+      .desktopLogo{display:none!important;}
+      .mobileLogo{display:block!important;}
     }
     @media (max-width:992px) {
       .factsMobileOrder{display:block !important;}
       .factsLighter{display:none!important;}
       .about{display:none !important;}
       .aboutMobile{display:block !important;}
+      .mobileLogo{display:block!important;}
+      .desktopLogo{display:none!important;}
     }
     @media (min-width:992px){
       .factsLighter{display:block!important;}
       .factsMobileOrder{display:none!important;}
       .about{display:block !important;}
       .aboutMobile{display:none !important;}
+      .desktopLogo{display:block!important;}
+      .mobileLogo{display:none!important;}
     }
     .card {
         border:none;
@@ -182,7 +189,8 @@
               <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand logo_h" href="index.html" aria-label="Home Page Link">
-                  <img src="img/logo_new.png" alt="Lehigh CustomFit Logo" style="max-width:75%;">
+                  <img class="mobileLogo" src="img/cf_logo_new.png" alt="Lehigh CustomFit Logo" style="max-width:75%;">
+                  <img class="desktopLogo" src="img/logo_new_horizontal.png" alt="Lehigh CustomFit Logo" style="max-width:50%;padding:10px 0px 10px 0px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                  aria-expanded="false" aria-label="Toggle navigation" style="margin-right:10px;border:0px solid transparent;">
@@ -195,7 +203,7 @@
                       <ul class="nav navbar-nav center_nav pull-right" style="justify-content:flex-end!important;">
                          
                         <li class="nav-item ">
-                          <a class="nav-link hvr-underline-from-center" href="ourteam.html" aria-label="Our Team Page Link To View Our Sales Team">Find Your Rep</a>
+                          <a class="nav-link hvr-underline-from-center" href="ourteam.html" aria-label="Our Team Page Link To View Our Sales Team">Set Up A Program</a>
                         </li>
                         <li class="nav-item submenu dropdown">
                             <a href="#" class="nav-link dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
@@ -268,7 +276,7 @@
                             </ul>
                           </li>
                           <div class="nav-item dropdown login-dropdown">
-                            <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle hvr-underline-from-center" aria-expanded="false"><i class="fa fa-user-o"></i> Account Login</a>
+                            <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle hvr-underline-from-center" aria-expanded="false"><i class="fa fa-user-o"></i> Login</a>
                             <div class="dropdown-menu" style="min-width:18rem;padding: 1rem 1rem;">					
                                 <form class="form-inline login-form login100-form validate-form" action="https://www.customfit.me/process.aspx" method="post">
                                     <div class="input-group" style="margin:0px 10px 10px 0px;">
@@ -313,8 +321,8 @@
             <div class="carousel-background"></div>
             <div class="carousel-container" style="position:inherit!important;">
               <div class="carousel-content">
-                <img class="desktopHeadLogo" src="http://manage.customfit.me/document/data/412_1589doc.png" style="max-width:75%;padding-top:80px;margin: 0 auto;" alt="Fastenal + Lehigh CustomFit">
-                <img class="mobileHeadLogo" src="http://manage.customfit.me/document/data/412_1590doc.png" style="max-width:60%;padding-top:50px;margin:0 auto;" alt="Fastenal + Lehigh CustomFit Mobile">
+                <img class="desktopHeadLogo" src="img/Fastenal_CustomFit_Logo.png" style="max-width:75%;padding-top:80px;margin: 0 auto;" alt="Fastenal + Lehigh CustomFit">
+                <img class="mobileHeadLogo" src="img/Fastenal_CustomFit_Logo.png" style="max-width:60%;padding-top:50px;margin:0 auto;" alt="Fastenal + Lehigh CustomFit Mobile">
               </div>
             </div>
           </div>
@@ -559,23 +567,7 @@
         })();
 
     </script>
-    <script>
-
-      var url = "";
-      
-      if (window.location.hostname.indexOf("www.customfit.me") == -1 && window.location.hostname.indexOf("staging.customfit.me") == -1 && window.location.hostname.indexOf("dev.customfit.me")==-1 )
-      {
-         
-          if (window.location.hostname.indexOf("customfit.me") != -1 || window.location.hostname.indexOf("lehighsafetyshoes.com") != -1 || window.location.hostname.indexOf("shoeangel.com") != -1 || window.location.hostname.indexOf("fastenal.com") != -1) {
-      
-              url = 'http://' + window.location.hostname + '/default.aspx' + window.location.search;
-              window.location.href = url;
-      
-          }
-      
-          
-      }
-      
+    <script>      
       var hurl = window.location.href;
       if (hurl.indexOf('err=true') != -1) {
       
