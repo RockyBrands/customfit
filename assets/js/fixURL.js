@@ -6,14 +6,21 @@ if (hurl.indexOf('err=true') != -1) {
 $(document).ready(function () {
     $('a').each(function () {
         var oldUrl = $(this).attr("href"); // Get current url
-        console.log(oldUrl);
         if ((oldUrl.indexOf("./index.html") &&
         oldUrl.indexOf("./accessibility") && 
         oldUrl.indexOf("./ada-styles") && 
         oldUrl.indexOf("./aetrex-orthotics") && 
         oldUrl.indexOf("./aetrex-scanner") && 
         oldUrl.indexOf("./automated-data-feed") && 
-        oldUrl.indexOf("./blog/boots-and-ladders-safety") && 
+        oldUrl.indexOf("./blog/boots-and-ladders-safety") &&
+        oldUrl.indexOf("./blog/foundation-of-success") &&
+        oldUrl.indexOf("./blog/how-long-boots-last") &&
+        oldUrl.indexOf("./blog/our-new-logo") &&
+        oldUrl.indexOf("./blog/plantar-fasciitis") &&
+        oldUrl.indexOf("./blog/right-safety-boots") &&
+        oldUrl.indexOf("./blog/true-fit-launch") &&
+        oldUrl.indexOf("./blog/whats-in-your-boots") &&
+        oldUrl.indexOf("./blog/work-shoe-fits") &&
         oldUrl.indexOf("./breakdown-dangers") && 
         oldUrl.indexOf("./command-center") && 
         oldUrl.indexOf("./compression-socks") && 
