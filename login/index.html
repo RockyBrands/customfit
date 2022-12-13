@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <base href="https://lehighcustomfit.github.io/lcf/login/" />
+  <base href="https://rockybrands.github.io/customfit/" />
   <meta property="og:title" content="Lehigh CustomFit">
   <meta name="og:description" content="The Leader in Custom Safety Footwear Programs">
-  <meta property="og:image" content="../assets/img/1920x1080/lcf-new-logo.jpg">
+  <meta property="og:image" content="./assets/img/1920x1080/lcf-new-logo.jpg">
   <meta name="title" content="Lehigh CustomFit | The leader in managed safety footwear programs.">
   <meta name="description" content="Welcome to Lehigh CustomFit. Learn about our data management program.">
   <!-- Title -->
   <title>Log In Portal | CustomFit</title>
-  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="shortcut icon" href="./favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="../assets/css/vendor.css">
-  <link rel="stylesheet" href="../assets/css/lcf.css">
-  <script src="../assets/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/vendor.css">
+  <link rel="stylesheet" href="./assets/css/lcf.css">
+  <script src="./assets/js/jquery.min.js"></script>
  <!-- Google Tag Manager -->
  <script>(function (w, d, s, l, i) {
     w[l] = w[l] || []; w[l].push({
@@ -44,7 +44,7 @@
 
           <div class="position-relative">
             <video autoplay muted loop id="loginVideo">
-              <source src="../assets/video/SiteLogin.mp4" type="video/mp4">
+              <source src="./assets/video/SiteLogin.mp4" type="video/mp4">
             </video>
             <!-- Card -->
             <div class="card card-shadow card-login">
@@ -54,8 +54,8 @@
                     <!-- Form -->
                     <form method="post" action="https://www.customfit.me/process.aspx" class="login100-form validate-form" novalidate>
                       <div class="text-center">
-                        <a class="navbar-brand mx-auto" href="../index.html" aria-label="Lehigh CustomFit">
-                          <img class="navbar-brand-logo mb-4" src="../assets/png/logos/cf-logo.png" alt="CustomFit Logo">
+                        <a class="navbar-brand mx-auto" href="./index.html" aria-label="Lehigh CustomFit">
+                          <img class="navbar-brand-logo mb-4" src="./assets/png/logos/cf-logo.png" alt="CustomFit Logo">
                         </a>
                         <div class="mb-5">
                           
@@ -119,13 +119,13 @@
                 </div>
                 <!-- End Col -->
                   
-                <div class="col-md-4 d-md-flex justify-content-center flex-column bg-light p-8 p-md-5" style="background-image: url(../assets/svg/components/wave-pattern.svg);">
+                <div class="col-md-4 d-md-flex justify-content-center flex-column bg-light p-8 p-md-5" style="background-image: url(./assets/svg/components/wave-pattern.svg);">
                   <h5 class="mb-4">Need help or have questions about our service? No worries, we&#39;ve got you covered.</h5>
 
                   <!-- List Checked -->
                   <ul class="list-checked list-checked-primary list-py-2">
-                    <li class="list-checked-item">Simple question? Check out the <a class="text-decoration-underline" href="../faq/" aria-label="FAQ Link">FAQs</a></li>
-                    <li class="list-checked-item" style="padding-top:0;">Don't have an account yet? <a class="text-decoration-underline" href="../team/" aria-label="Our Team Page">Talk to one of our reps</a></li>
+                    <li class="list-checked-item">Simple question? Check out the <a class="text-decoration-underline" href="./faq/" aria-label="FAQ Link">FAQs</a></li>
+                    <li class="list-checked-item" style="padding-top:0;">Don't have an account yet? <a class="text-decoration-underline" href="./team/" aria-label="Our Team Page">Talk to one of our reps</a></li>
                   </ul>
                   <!-- End List Checked -->
 
@@ -145,8 +145,9 @@
     <!-- End Content -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
-  <script src="../assets/js/vendor.min.js"></script>
-  <script src="../assets/js/lcf.min.js"></script>
+  <script src="./assets/js/vendor.min.js"></script>
+  <script src="./assets/js/lcf.min.js"></script>
+  <script src="./assets/js/fixURL.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -230,32 +231,5 @@
   })();
 </script>
 <!-- End GA Tracking -->
-
-<!-- Base URL CF Code -->
-<script>
-  var hurl = window.location.href;
-  if (hurl.indexOf('err=true') != -1) {
-      alert('Invalid account# or password ')
-      $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
-  }
-  $(document).ready(function () {
-      $('a').each(function () {
-          var oldUrl = $(this).attr("href"); // Get current url
-          if (oldUrl.indexOf(".html") != -1) {
-              var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
-              if (window.location.hostname.indexOf("dev.customfit") != -1) {
-                  newUrl = "http://dev.customfit.me/" + oldUrl;
-              }
-              $(this).attr("href", newUrl); // Set herf value
-          }
-          else {
-              if (oldUrl.indexOf("#") != -1) {
-                  var newUrl = window.location.href + oldUrl; // Create new url
-                  $(this).attr("href", newUrl); // Set herf value
-              }
-          }
-      });
-  });
-</script>
 </body>
 </html>
