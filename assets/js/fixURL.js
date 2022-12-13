@@ -11,7 +11,8 @@ $(document).ready(function () {
         oldUrl.indexOf("./ada-styles") && 
         oldUrl.indexOf("./aetrex-orthotics") && 
         oldUrl.indexOf("./aetrex-scanner") && 
-        oldUrl.indexOf("./automated-data-feed") && 
+        oldUrl.indexOf("./automated-data-feed") &&
+        oldUrl.indexOf("./blog/") && 
         oldUrl.indexOf("./blog/boots-and-ladders-safety") &&
         oldUrl.indexOf("./blog/foundation-of-success") &&
         oldUrl.indexOf("./blog/how-long-boots-last") &&
