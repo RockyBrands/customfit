@@ -21252,7 +21252,7 @@ input[type="number"] {
     position: absolute;
     overflow: hidden;
     white-space: nowrap;
-    animation: slide 60s linear infinite;
+    animation: slide 30s linear infinite;
 }
 .scrolling-image-reverse {
     position: absolute;
