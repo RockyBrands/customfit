@@ -54,11 +54,10 @@
                     <!-- Form -->
                     <form method="post" action="https://www.customfit.me/process.aspx" class="login100-form validate-form" novalidate>
                       <div class="text-center">
-                        <a class="navbar-brand mx-auto" href="./index.html" aria-label="Lehigh CustomFit">
-                          <img class="navbar-brand-logo mb-4" src="./assets/png/logos/cf-logo.png" alt="CustomFit Logo">
-                        </a>
                         <div class="mb-5">
-                          
+                          <a class="navbar-brand mx-auto" href="./index.html" aria-label="Lehigh CustomFit">
+                            <img class="navbar-brand-logo mb-4 mx-auto" src="./assets/png/logos/cf-logo.png" alt="CustomFit Logo">
+                          </a>
                           <h3 class="card-title">Log In To CustomFit</h3>
                         </div>
                       </div>
@@ -73,20 +72,17 @@
                         <input type="text" class="form-control form-control-lg" name="txtLocationNumber" id="txtLocationNumber" tabindex="1" placeholder="Enter company location number" aria-label="Enter company location number" required>
                       </div>
                       <!-- Form -->
-                      <div class="mb-4">
+                      <div class="mb-4" data-validate="Password Is Required">
                         <label class="form-label" for="txtPassword" tabindex="0">Password</label>
                         <div class="input-group-merge">
-                          <input type="password" class="js-toggle-password form-control form-control-lg" name="txtPassword" id="txtPassword" placeholder="Enter your password" aria-label="Enter your password" required minlength="4"
+                          <input type="password" class="js-toggle-password form-control form-control-lg" name="txtPassword" id="txtPassword" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4"
                                  data-hs-toggle-password-options='{
                                    "target": "#changePassTarget",
                                    "defaultClass": "bi-eye-slash",
                                    "showClass": "bi-eye",
                                    "classChangeTarget": "#changePassIcon"
                                  }'>
-                          <a id="changePassTarget" class="input-group-append input-group-text" href="javascript:;">
-                            <i id="changePassIcon" class="bi-eye"></i>
-                          </a>
-                          <span class="invalid-feedback">Please enter a valid password.</span>
+                         
                         </div>
                       </div>
                       <!-- End Form -->
@@ -94,7 +90,7 @@
                      
 
                       <div class="d-grid gap-4 login100-form-bgbtn">
-                        <button type="submit" class="btn btn-primary btn-lg login100-form-btn">Sign In</button>
+                        <button type="submit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
                       </form>
                       
                       <span class="divider-center text-muted mb-1">NEED YOUR LOGIN URL?</span>
