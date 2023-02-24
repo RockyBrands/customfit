@@ -23396,11 +23396,10 @@ a:hover .text-inherit {
     min-height: 100%;
   }
   .loginPicture {
-    background-image: url(../img/others/accountLandingBG.jpg);
+    background-image: url(../img/others/accountLandingBGWhite.jpg);
     background-size: cover;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
   }
 
   .maxWidth100 {
