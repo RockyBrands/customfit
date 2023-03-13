@@ -7262,3 +7262,8 @@ img.mfp-img {
 .mfp-bg {
   opacity: 0.8 !important;
 }
+
+.productName {
+    font-family: 'Futura', sans-serif;
+    font-weight: 800;
+}
