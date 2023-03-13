@@ -4620,6 +4620,8 @@ body.modal-open .mm-slideout {
 /*-------- 2.2 General Listing --------*/
 .grid_item {
   margin-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: left;
   position: relative;
   cursor: pointer;
@@ -7271,6 +7273,7 @@ img.mfp-img {
     font-weight: 800!important;
     text-align: left;
     color:#131313;
+    min-height:200px;
 }
 .productName:hover {
     font-family: 'Futura', sans-serif;
