@@ -2362,7 +2362,7 @@ header .sticky_element {
   }
 }
 header.version_1 .main_header {
-  background-color: #004dda;
+  background-color: #fff;
 }
 header.version_1 .main_header a.phone_top {
   color: #fff;
@@ -2640,11 +2640,11 @@ header.version_2 .search_mob_wp .btn_1:hover {
 }
 
 header.version_1 .main-menu > ul > li > a {
-  color: #fff;
+  color: #131313;
 }
 
 header.version_1 .main-menu > ul > li:hover > a {
-  color: #fff;
+  color: #131313;
 }
 
 .main-menu > ul > li.submenu:hover > a:after {
