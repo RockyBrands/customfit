@@ -7265,5 +7265,14 @@ img.mfp-img {
 
 .productName {
     font-family: 'Futura', sans-serif;
-    font-weight: 800;
+    font-weight: 800!important;
+    text-align: left;
+}
+.productPrice {
+    font-family: 'Futura', sans-serif;
+    text-align: left;
+    color: #131313;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: 1rem;
 }
