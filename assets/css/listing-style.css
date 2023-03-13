@@ -4748,6 +4748,7 @@ body.modal-open .mm-slideout {
   color: #004dda;
 }
 .grid_item .price_box {
+    margin-top: 5px;
   margin-bottom: 5px;
 }
 .grid_item .price_box .old_price {
@@ -7269,6 +7270,13 @@ img.mfp-img {
     font-family: 'Futura', sans-serif;
     font-weight: 800!important;
     text-align: left;
+    color:#131313;
+}
+.productName:hover {
+    font-family: 'Futura', sans-serif;
+    font-weight: 800!important;
+    text-align: left;
+    color:#bed600!important;
 }
 .productPrice {
     font-family: 'Futura', sans-serif;
