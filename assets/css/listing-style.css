@@ -4714,7 +4714,7 @@ body.modal-open .mm-slideout {
   padding: 0;
 }
 .grid_item ul li a:hover {
-  background-color: #004dda;
+  background-color: #131313;
 }
 .grid_item ul li a:hover i {
   color: #fff;
@@ -7277,4 +7277,18 @@ img.mfp-img {
     font-weight: 500;
     font-size: 16px;
     font-size: 1rem;
+}
+.productStyle {
+    font-family: 'Futura', sans-serif;
+    text-align: left;
+    color: #bfbfbf;
+    font-size: 0.85rem;
+}
+.plpAddToCart {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    background-color: #131313;
+    color: #fff;
+    font-family: 'Industry', sans-serif;
 }
