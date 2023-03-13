@@ -7307,3 +7307,8 @@ img.mfp-img {
     max-height: 400px;
     max-width: 400px;
 }
+.subsidyText {
+ font-family: 'Industry', sans-serif;
+ text-align: center;
+ margin-bottom: 0px!important;   
+}
