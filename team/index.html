@@ -759,7 +759,8 @@
             "emailAddress":"saralee.brooks@lehigh.com",
             "phoneNumber": "740-753-9100 x2164",
             "phoneLink" : "7407539100,2164",
-            "linkedin" : "https://www.linkedin.com/in/saralee-brooks-6b66b4122/"
+            "linkedin" : "https://www.linkedin.com/in/saralee-brooks-6b66b4122/",
+            "calendly" : "https://calendly.com/saralee-brooks"
         },
         {
             "stateID": "AZ",
@@ -1202,6 +1203,16 @@
             "phoneNumber": "740-753-9100 x2149",
             "phoneLink" : "7407539100,2149",
             "linkedin" : "https://www.linkedin.com/in/trevor-blevins-a85885205/"
+        },
+        {
+            "stateID": "KYE",
+            "name" : "Derek Travis",
+            "picture" : "./assets/img/160x160/user.png",
+            "title" : "Territory Sales Manager",
+            "emailAddress":"derek.travis@lehigh.com",
+            "phoneNumber": "740-753-9100 x2680",
+            "phoneLink" : "7407539100,2680",
+            "linkedin" : "https://www.linkedin.com/in/derek-travis-19131081"
         },
         /* END KENTUCKY EAST */
 
@@ -1879,6 +1890,16 @@
             "phoneLink" : "7407539100,2149",
             "linkedin" : "https://www.linkedin.com/in/trevor-blevins-a85885205/"
         },
+        {
+            "stateID": "OH",
+            "name" : "Derek Travis",
+            "picture" : "./assets/img/160x160/user.png",
+            "title" : "Territory Sales Manager",
+            "emailAddress":"derek.travis@lehigh.com",
+            "phoneNumber": "740-753-9100 x2680",
+            "phoneLink" : "7407539100,2680",
+            "linkedin" : "https://www.linkedin.com/in/derek-travis-19131081"
+        },
         /* END OHIO */
 
         /* START OKLAHOMA */
@@ -2000,6 +2021,16 @@
             "phoneNumber": "740-753-9100 x2149",
             "phoneLink" : "7407539100,2149",
             "linkedin" : "https://www.linkedin.com/in/trevor-blevins-a85885205/"
+        },
+        {
+            "stateID": "PAW",
+            "name" : "Derek Travis",
+            "picture" : "./assets/img/160x160/user.png",
+            "title" : "Territory Sales Manager",
+            "emailAddress":"derek.travis@lehigh.com",
+            "phoneNumber": "740-753-9100 x2680",
+            "phoneLink" : "7407539100,2680",
+            "linkedin" : "https://www.linkedin.com/in/derek-travis-19131081"
         },
         /* END PENNSYLVANIA WEST */
 
@@ -2377,6 +2408,16 @@
             "phoneLink" : "7407539100,2149",
             "linkedin" : "https://www.linkedin.com/in/trevor-blevins-a85885205/"
         },
+        {
+            "stateID": "WV",
+            "name" : "Derek Travis",
+            "picture" : "./assets/img/160x160/user.png",
+            "title" : "Territory Sales Manager",
+            "emailAddress":"derek.travis@lehigh.com",
+            "phoneNumber": "740-753-9100 x2680",
+            "phoneLink" : "7407539100,2680",
+            "linkedin" : "https://www.linkedin.com/in/derek-travis-19131081"
+        },
         /* END WEST VIRGINIA */
 
         /* START WYOMING */
@@ -2434,7 +2475,10 @@ function employeeDetails() {
                     document.getElementById('pro2').style.display = "block";
                     // Input all data for employees to table
                     /* var tblRow = "<tr>" + "<td class='vertical-align-middle'>" + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</td>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline" href="mailto:' + matchemp.emailAddress + '">' + matchemp.emailAddress + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + '<a href="tel:' + matchemp.phoneLink + '">' + matchemp.phoneNumber + "</td>" + "</tr>";
-                    $(tblRow).appendTo("#employee1"); */
+                    $(tblRow).appendTo("#employee1"); 
+                    
+                    '<a class="iconLinkPadding" href="' + matchemp.calendly + '">' + '<i class="bi-calendar2-date iconResize"></i>'
+                    */
                     var tblRow = "<tbody><tr>" + '<th scope="row" class="vertical-align-middle">' + '<img class="avatar avatar-lg avatar-circle" src="' + matchemp.picture + '">' + "</th>" + "<td class='vertical-align-middle'>" + '<a href="' + matchemp.linkedin + '" target="_blank">' + matchemp.name + "</a>" + "</td>" + "<td class='vertical-align-middle'>" + matchemp.title + "</td>" + "<td class='vertical-align-middle'>" + '<a class="text-decoration-underline iconLinkPadding" href="mailto:' + matchemp.emailAddress + '">' + '<i class="bi-envelope-fill iconResize"></i>' + "</a>" + '<a class="iconLinkPadding" href="tel:' + matchemp.phoneLink + '">' + '<i class="bi-telephone-fill iconResize"></i>' + '<a class="iconLinkPadding" href="' + matchemp.linkedin + '">' + '<i class="bi-linkedin iconResize"></i>' + "</td>" + "</tr></tbody>";
                     $(tblRow).appendTo("#employee1");
                 }
