@@ -7,6 +7,7 @@ $(document).ready(function () {
     $('a').each(function () {
         var oldUrl = $(this).attr("href"); // Get current url
         if ((oldUrl.indexOf("./index.html") &&
+        oldUrl.indexOf("./assets") &&
         oldUrl.indexOf("./accessibility") && 
         oldUrl.indexOf("./ada-styles") && 
         oldUrl.indexOf("./aetrex-orthotics") && 
@@ -25,7 +26,14 @@ $(document).ready(function () {
         oldUrl.indexOf("./breakdown-dangers") && 
         oldUrl.indexOf("./command-center") && 
         oldUrl.indexOf("./compression-socks") && 
-        oldUrl.indexOf("./contact") && 
+        oldUrl.indexOf("./contact") &&
+        oldUrl.indexOf("./documentation") &&
+        oldUrl.indexOf("./documentation/purchasing") &&
+        oldUrl.indexOf("./documentation/true-fit") &&
+        oldUrl.indexOf("./documentation/filters") &&
+        oldUrl.indexOf("./documentation/returns") &&
+        oldUrl.indexOf("./documentation/aetrex-data") &&
+        oldUrl.indexOf("./documentation/size-guides") &&
         oldUrl.indexOf("./electronic-invoicing") && 
         oldUrl.indexOf("./email") && 
         oldUrl.indexOf("./faq") && 
