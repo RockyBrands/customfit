@@ -1,6 +1,6 @@
 var hurl = window.location.href;
 if (hurl.indexOf('err=true') != -1) {
-    alert('Invalid account# or password ')
+    alert('We are currently upgrading Command Center logins.  Please reach out to your sales team or customer service for access.')
     $("<a style='color:#000; margin-left:30px;' href='https://www.customfit.me/lcfforgotpass.aspx'>Forgot your password?</a>").insertAfter(".wrap-login100-form-btn");
 }
 $(document).ready(function () {
