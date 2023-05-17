@@ -48,7 +48,8 @@ $(document).ready(function () {
         oldUrl.indexOf("./privacy-policy") && 
         oldUrl.indexOf("./safety-pledge") && 
         oldUrl.indexOf("./size-guide") && 
-        oldUrl.indexOf("./sms") && 
+        oldUrl.indexOf("./sms") &&
+        oldUrl.indexOf("./superfeet") &&
         oldUrl.indexOf("./team") && 
         oldUrl.indexOf("./terms-and-conditions") && 
         oldUrl.indexOf("./testimonials") && 
