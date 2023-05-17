@@ -23336,6 +23336,10 @@ a:hover .text-inherit {
     max-height: 25%;
   }
 
+  .maxWidth75 {
+    max-width: 75%;
+  }
+
   .maxHeight75px {
     max-height: 75px;
   }
