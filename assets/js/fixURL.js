@@ -36,6 +36,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./documentation/size-guides") &&
         oldUrl.indexOf("./electronic-invoicing") && 
         oldUrl.indexOf("./email") && 
+        oldUrl.indexOf("./fatigue") &&
         oldUrl.indexOf("./faq") && 
         oldUrl.indexOf("./fitting-events") && 
         oldUrl.indexOf("./footwear") && 
@@ -51,6 +52,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./sms") &&
         oldUrl.indexOf("./superfeet") &&
         oldUrl.indexOf("./team") && 
+        oldUrl.indexOf("./teamwellness") && 
         oldUrl.indexOf("./terms-and-conditions") && 
         oldUrl.indexOf("./testimonials") && 
         oldUrl.indexOf("./true-fit") && 
