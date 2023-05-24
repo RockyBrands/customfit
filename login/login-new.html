@@ -76,10 +76,10 @@
                         <label class="form-label" for="txtEmployeeID">Email-ID</label>
                         <input type="text" class="form-control form-control-lg" name="txtEmployeeID" id="txtEmployeeID" tabindex="1" placeholder="Enter your Email-ID here" aria-label="Enter Email-ID here" required>
                       </div>
-                      <div id="divSSN" class="mb-4" data-validate="Password Is Required">
-                        <label class="form-label" for="txtSSN" tabindex="0">Password</label>
+                      <div class="mb-4" data-validate="Password Is Required">
+                        <label class="form-label" for="txtPassword" tabindex="0">Password</label>
                         <div class="input-group-merge">
-                          <input id="txtSSN" type="password" class="js-toggle-password form-control form-control-lg" name="txtSSN" id="txtSSN" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4"
+                          <input type="password" class="js-toggle-password form-control form-control-lg" name="txtPassword" id="txtPassword" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4"
                                  data-hs-toggle-password-options='{
                                    "target": "#changePassTarget",
                                    "defaultClass": "bi-eye-slash",
@@ -91,7 +91,7 @@
                       </div>
                       <!-- End Form -->
                       <div class="d-grid gap-4 login100-form-bgbtn">
-                        <button type="submit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
+                        <button type="submit" name="btnSubmit" id="btSubmit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
                       </form>
                       
                       <span class="divider-center text-muted mb-1">NEED YOUR LOGIN URL?</span>
@@ -228,5 +228,171 @@
   })();
 </script>
 <!-- End GA Tracking -->
+<script>
+
+
+function resetpass() {
+    showresetform();
+}
+
+$("input[type='text']").keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+
+        if (document.getElementById("myModal").style.display == 'block') {
+            Validemphchk();
+            return false;
+        }
+
+
+    }
+    //Stop the event from propogation to other handlers
+    //If this line will be removed, then keypress event handler attached 
+    //at document level will also be triggered
+    //event.stopPropagation();
+
+
+
+});
+
+
+$(document).keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+
+        if (document.getElementById("myModal").style.display == 'block') {
+            Validemphchk();
+            return false;
+        }
+    }
+
+});
+
+function Validemphchk() {
+
+    var ErrMsg = '';
+    var flag = true;
+
+    if ((document.forms[0].email.value.length == 0) && (document.forms[0].phone.value.length == 0)) {
+        ErrMsg += "Please enter either  Email ID or Phone Number \n";
+    }
+
+    /* if ((document.forms[0].email.value.length == 0) || (document.forms[0].email.value == null)) {
+         ErrMsg += "Please Enter Email ID \n";
+     }
+     if ((document.forms[0].phone.value.length == 0) || (document.forms[0].phone.value == null)) {
+         ErrMsg += "Please Enter Phone Number \n";
+     }*/
+
+
+    if ((document.forms[0].email.value.length != 0) || (document.forms[0].email.value != "")) {
+        if (isvalid_emailid() == false) {
+            ErrMsg += "Please Enter Valid Email ID \n";
+        }
+    }
+
+
+
+    if ((document.forms[0].phone.value.length != 0) || (document.forms[0].phone.value != "")) {
+
+
+
+        if (validatePhoneNumber(document.forms[0].phone.value) == false) {
+
+            ErrMsg += "Please enter valid phone number without country code \n";
+            //  alert("Please enter valid phone number without country code");
+            // return false;
+        }
+    }
+
+    //isvalid_emailid
+
+    if (document.getElementById("chk1") != null) {
+        if (document.getElementById("chk1").checked == false) {
+            ErrMsg += "Please check the acknowledgement [I agree to receive communications from Lehigh CustomFit] \n";
+        }
+    }
+
+    if (document.getElementById("chk2") != null) {
+        if (document.getElementById("chk2").checked == false) {
+            ErrMsg += "Please check the acknowledgement [I agree to allow Lehigh CustomFit to store and process my data.] \n";
+        }
+    }
+
+    if (ErrMsg != '') {
+        document.getElementById("spnerror").innerHTML = ErrMsg.replace("\n", "<br/>");
+        alert(ErrMsg);
+        flag = false;
+        return flag;
+    }
+    else {
+        flag = true;
+        return flag;
+    }
+
+
+}
+
+function validatePhoneNumber(input_str) {
+    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+    return re.test(input_str);
+}
+
+
+
+function isvalid_emailid() {
+    var newNewStr = document.getElementById("email").value
+    newNewStr = newNewStr.replace(/\s/g, "");
+    document.getElementById("email").value = newNewStr;
+
+    mail1 = new RegExp(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/);
+    mail2 = mail1.exec(document.getElementById("email").value);
+    if (!mail2) {
+        //alert('Please enter valid email address !')
+        //document.getElementById ("txtEmail").focus();
+        document.getElementById("spnerror").innerHTML = "Please enter valid email address";
+        return false;
+    }
+
+    return true;
+}
+
+
+
+function ValidationForm() {
+    var ErrMsg = '';
+    var flag = true;
+
+    if ((document.forms[0].txtEmployeeID.value == "EmployeeID") || (document.forms[0].txtEmployeeID.value.length == 0) || (document.forms[0].txtEmployeeID.value == null)) {
+        ErrMsg += "Please Enter Employee ID \n";
+    }
+
+    if (document.getElementById("chkAck") != null) {
+        if (document.getElementById("chkAck").checked == false) {
+            ErrMsg += "Please check the acknowledgement \n";
+        }
+    }
+
+    //
+    if (document.getElementById("txtSSN") != null) {
+        if (document.getElementById("txtSSN").value.length == 0) {
+            ErrMsg += "Please Enter SSN No \n";
+        }
+    }
+
+    if (ErrMsg != '') {
+        alert(ErrMsg);
+        flag = false;
+        return flag;
+    }
+    else {
+        flag = true;
+        return flag;
+    }
+}
+
+$(document).ready(function () { $("#txtEmployeeID").focus(); })
+</script>
 </body>
 </html>
