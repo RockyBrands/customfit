@@ -140,24 +140,6 @@
   <script src="./assets/js/fixURL.js"></script>
 
   <!-- JS Plugins Init. -->
-  <script>
-    (function() {
-      // INITIALIZATION OF BOOTSTRAP VALIDATION
-      // =======================================================
-      HSBsValidation.init('.js-validate', {
-        onSubmit: data => {
-          data.event.preventDefault()
-          alert('Submited')
-        }
-      })
-
-
-      // INITIALIZATION OF TOGGLE PASSWORD
-      // =======================================================
-      new HSTogglePassword('.js-toggle-password')
-    })()
-  </script>
-
 <script>
   function getEmpLoginInfo() {
     document.getElementById('employeeAccountLocation').innerHTML = '';
