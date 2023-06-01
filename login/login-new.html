@@ -33,6 +33,64 @@
   .notice-border {border-radius: 10px;}
   .emailpass {display:block;}
   .accountlocationpass{display: none;}
+
+  /* Adjust reset password on screen size */
+  @media only screen and (max-width:600px) {
+      .modal-content {
+      background-color: e6e6e6;
+      margin: auto;
+      padding: 25px;
+      border: 1px solid #888;
+      width: 85%;
+      border-radius: 10px;
+    }
+  }
+  @media only screen and (min-width:601px) and (max-width: 1200px) {
+      .modal-content {
+      background-color: e6e6e6;
+      margin: auto;
+      padding: 25px;
+      border: 1px solid #888;
+      width: 75%;
+      border-radius: 10px;
+    }
+  }
+  @media only screen and (min-width:1201px) {
+      .modal-content {
+      background-color: e6e6e6;
+      margin: auto;
+      padding: 25px;
+      border: 1px solid #888;
+      width: 40%;
+      border-radius: 10px;
+    }
+  }
+  
+  .modal {
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    align-content: center;
+    vertical-align: center;
+    padding-top: 25vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    cursor: pointer;
+  }
+  .width100 {
+    width: 100%!important;
+  }
 </style>
 </head>
 <body class="d-flex align-items-center min-h-100 bg-light">
@@ -86,6 +144,48 @@
                           <input type="password" class="js-toggle-password form-control form-control-lg" name="txtSSN" id="txtSSN" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4">
                         </div>
                       </div>
+                      <div style="margin: 5px 0px 5px 0px; text-align:left;">
+                        <p>Forgot password? <a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset it here.</a></p>
+                     </div>
+                      <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">x</span>
+                            <div id="divpo" class="confirm_signup">
+                                <div class="title">
+                                    Please confirm or enter your email address.
+                                </div>
+                                <div class="form_element dark">
+                                    <div class="element_content">
+                                        <label for="phone"><sup class="red">*</sup>PASSWORD:</label>
+                                        <input name="txtpwd1" type="password" id="txtpwd1" class="inp">
+                                    </div>
+                                    <div class="element_content">
+                                        <label for="phone"><sup class="red">*</sup>CONFIRM PASSWORD:</label>
+                                        <input name="txtpwd2" type="password" id="txtpwd2" class="inp">
+                                    </div>
+                                </div>
+                                <div class="form_element actions">
+                                    <input type="submit" name="btnsetoptemail" value="SUBMIT" onclick="javascript:return Validemphchk();" id="btnsetoptemail" class="btn login-btn">
+                                </div>
+                            </div>
+                            <form method="post" action="https://www.customfit.me/newcfprocess.aspx">
+                              <div id="divResetForm" class="confirm_signup text-center">
+                                <h4 style="margin-bottom:0px;">Password Reset Form</h4>
+                                  <div class="form_element dark">
+                                      <div class="element_content">
+                                          <label for="Email"><sup class="red"></sup></label>
+                                          <input style="padding: 5px 15px 5px 15px;" name="txtresetEmail" type="text" id="txtresetEmail" class="inp width100" placeholder="Enter your email address here">
+                                      </div>
+                                  </div>
+                                  <div class="form_element actions mt-3 width100">
+                                      <input style="width:100%;" type="submit" name="btnReset" value="Submit" id="btnReset" class="btn login-btn btn btn-primary btn-lg ">
+                                  </div>
+                              </div>
+                            </form>
+                            <input type="hidden" id="hidpo" name="hidpo">
+                        </div>
+                    </div>
                       <div id="divsubmit" class="d-grid gap-4 login100-form-bgbtn">
                         <button type="submit" name="btnSubmit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
                         </div>
@@ -125,6 +225,49 @@
                             <input type="password" class="js-toggle-password form-control form-control-lg" name="txtPassword" id="txtPassword" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4">
                         </div>
                         </div>
+                        <div style="margin-top: 5px; text-align:center;">
+                          <a style="color: black;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset Password</a>
+                       </div>
+                        <div id="myModal" class="modal">
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                              <span class="close">x</span>
+                              <div id="divpo" class="confirm_signup">
+                                  <div class="title">
+                                      Please confirm or enter your email address.
+                                  </div>
+                                  <div class="form_element dark">
+                                      <div class="element_content">
+                                          <label for="phone"><sup class="red">*</sup>PASSWORD:</label>
+                                          <input name="txtpwd1" type="password" id="txtpwd1" class="inp">
+                                      </div>
+                                      <div class="element_content">
+                                          <label for="phone"><sup class="red">*</sup>CONFIRM PASSWORD:</label>
+                                          <input name="txtpwd2" type="password" id="txtpwd2" class="inp">
+                                      </div>
+                                  </div>
+                                  <div class="form_element actions">
+                                      <input type="submit" name="btnsetoptemail" value="SUBMIT" onclick="javascript:return Validemphchk();" id="btnsetoptemail" class="btn login-btn">
+                                  </div>
+                              </div>
+                              <div id="divResetForm" class="confirm_signup">
+                                  <div class="title">
+                                      Please enter your email address.
+                                  </div>
+                                  <div class="form_element dark">
+                                      <div class="element_content">
+                                          <label for="Email"><sup class="red">*</sup>EMAIL:</label>
+                                          <input name="txtresetEmail" type="text" id="txtresetEmail" class="inp">
+                                      </div>
+                                  </div>
+                                  <div class="form_element actions">
+                                      <input type="submit" name="btnReset" value="SUBMIT" id="btnReset" class="btn login-btn">
+                                  </div>
+                              </div>
+                              <input type="hidden" id="hidpo" name="hidpo">
+                          </div>
+                      </div>
+
                         <div class="d-grid gap-4 login100-form-bgbtn">
                         <button type="submit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
                         </div>
@@ -185,6 +328,179 @@
         $("#accountlocationpass").hide();
     }
 </script>
+
+<script>
+
+function resetpass() {
+    showresetform();
+}
+
+$("input[type='text']").keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+
+        if (document.getElementById("myModal").style.display == 'block') {
+            Validemphchk();
+            return false;
+        }
+
+
+    }
+});
+
+$(document).keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+
+        if (document.getElementById("myModal").style.display == 'block') {
+            Validemphchk();
+            return false;
+        }
+    }
+
+});
+
+function Validemphchk() {
+    var ErrMsg = '';
+    var flag = true;
+    if ((document.forms[0].email.value.length == 0) && (document.forms[0].phone.value.length == 0)) {
+        ErrMsg += "Please enter either  Email ID or Phone Number \n";
+    }
+    if ((document.forms[0].email.value.length != 0) || (document.forms[0].email.value != "")) {
+        if (isvalid_emailid() == false) {
+            ErrMsg += "Please Enter Valid Email ID \n";
+        }
+    }
+    if ((document.forms[0].phone.value.length != 0) || (document.forms[0].phone.value != "")) {
+
+        if (validatePhoneNumber(document.forms[0].phone.value) == false) {
+
+            ErrMsg += "Please enter valid phone number without country code \n";
+        }
+    }
+
+    if (document.getElementById("chk1") != null) {
+        if (document.getElementById("chk1").checked == false) {
+            ErrMsg += "Please check the acknowledgement [I agree to receive communications from Lehigh CustomFit] \n";
+        }
+    }
+
+    if (document.getElementById("chk2") != null) {
+        if (document.getElementById("chk2").checked == false) {
+            ErrMsg += "Please check the acknowledgement [I agree to allow Lehigh CustomFit to store and process my data.] \n";
+        }
+    }
+
+    if (ErrMsg != '') {
+        document.getElementById("spnerror").innerHTML = ErrMsg.replace("\n", "<br/>");
+        alert(ErrMsg);
+        flag = false;
+        return flag;
+    }
+    else {
+        flag = true;
+        return flag;
+    }
+
+
+}
+
+function validatePhoneNumber(input_str) {
+    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+    return re.test(input_str);
+}
+
+function isvalid_emailid() {
+    var newNewStr = document.getElementById("email").value
+    newNewStr = newNewStr.replace(/\s/g, "");
+    document.getElementById("email").value = newNewStr;
+
+    mail1 = new RegExp(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/);
+    mail2 = mail1.exec(document.getElementById("email").value);
+    if (!mail2) {
+        document.getElementById("spnerror").innerHTML = "Please enter valid email address";
+        return false;
+    }
+    return true;
+}
+
+function ValidationForm() {
+    var ErrMsg = '';
+    var flag = true;
+
+    if ((document.forms[0].txtEmployeeID.value == "EmployeeID") || (document.forms[0].txtEmployeeID.value.length == 0) || (document.forms[0].txtEmployeeID.value == null)) {
+        ErrMsg += "Please Enter Employee ID \n";
+    }
+
+    if (document.getElementById("chkAck") != null) {
+        if (document.getElementById("chkAck").checked == false) {
+            ErrMsg += "Please check the acknowledgement \n";
+        }
+    }
+
+    //
+    if (document.getElementById("txtSSN") != null) {
+        if (document.getElementById("txtSSN").value.length == 0) {
+            ErrMsg += "Please Enter SSN No \n";
+        }
+    }
+
+    if (ErrMsg != '') {
+        alert(ErrMsg);
+        flag = false;
+        return flag;
+    }
+    else {
+        flag = true;
+        return flag;
+    }
+}
+
+$(document).ready(function () { $("#txtEmployeeID").focus(); })
+</script>
+
+
+<script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            function showmodal(id) {
+                modal.style.display = "block";
+                $("#divpo").show();
+                $("#divResetForm").hide();
+
+            }
+
+            function showresetform() {
+                modal.style.display = "block";
+                $("#divResetForm").show();
+                $("#divpo").hide();
+            }
+
+
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+</script>
+
+
   <!-- JS Plugins Init. -->
 <script>
   function getEmpLoginInfo() {
