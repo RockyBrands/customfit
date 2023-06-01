@@ -49,9 +49,9 @@
       .modal-content {
       background-color: e6e6e6;
       margin: auto;
-      padding: 25px;
+      padding: 25px 50px 50px 50px;
       border: 1px solid #888;
-      width: 75%;
+      width: 65%;
       border-radius: 10px;
     }
   }
@@ -59,7 +59,7 @@
       .modal-content {
       background-color: e6e6e6;
       margin: auto;
-      padding: 25px;
+      padding: 25px 50px 50px 50px;
       border: 1px solid #888;
       width: 40%;
       border-radius: 10px;
@@ -133,7 +133,7 @@
                           </div>
                         </div>
                       </div>
-                      <p class="text-left mt-3">If you wish to sign in with an account/location/password combination please click <strong><a href="#" aria-label="Go To Account Location Password Login" onclick="javascript:oldLogin()">here</a></strong>.</p>
+                      <p class="text-left mt-3">If you wish to sign in with an account/location/password combination please click <strong><a aria-label="Go To Account Location Password Login" onclick="javascript:oldLogin()">here</a></strong>.</p>
                       <div id="divemp2" class="mb-4" data-validate="Email Address Is Required">
                         <label class="form-label" for="txtEmployeeID">Email Address</label>
                         <input type="text" class="form-control form-control-lg" name="txtEmployeeID" id="txtEmployeeID" tabindex="1" placeholder="Enter your email address here" aria-label="Enter email address here" required>
@@ -144,48 +144,6 @@
                           <input type="password" class="js-toggle-password form-control form-control-lg" name="txtSSN" id="txtSSN" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4">
                         </div>
                       </div>
-                      <div style="margin: 5px 0px 5px 0px; text-align:left;">
-                        <p>Forgot password? <a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset it here.</a></p>
-                     </div>
-                      <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">x</span>
-                            <div id="divpo" class="confirm_signup">
-                                <div class="title">
-                                    Please confirm or enter your email address.
-                                </div>
-                                <div class="form_element dark">
-                                    <div class="element_content">
-                                        <label for="phone"><sup class="red">*</sup>PASSWORD:</label>
-                                        <input name="txtpwd1" type="password" id="txtpwd1" class="inp">
-                                    </div>
-                                    <div class="element_content">
-                                        <label for="phone"><sup class="red">*</sup>CONFIRM PASSWORD:</label>
-                                        <input name="txtpwd2" type="password" id="txtpwd2" class="inp">
-                                    </div>
-                                </div>
-                                <div class="form_element actions">
-                                    <input type="submit" name="btnsetoptemail" value="SUBMIT" onclick="javascript:return Validemphchk();" id="btnsetoptemail" class="btn login-btn">
-                                </div>
-                            </div>
-                            <form method="post" action="https://www.customfit.me/newcfprocess.aspx">
-                              <div id="divResetForm" class="confirm_signup text-center">
-                                <h4 style="margin-bottom:0px;">Password Reset Form</h4>
-                                  <div class="form_element dark">
-                                      <div class="element_content">
-                                          <label for="Email"><sup class="red"></sup></label>
-                                          <input style="padding: 5px 15px 5px 15px;" name="txtresetEmail" type="text" id="txtresetEmail" class="inp width100" placeholder="Enter your email address here">
-                                      </div>
-                                  </div>
-                                  <div class="form_element actions mt-3 width100">
-                                      <input style="width:100%;" type="submit" name="btnReset" value="Submit" id="btnReset" class="btn login-btn btn btn-primary btn-lg" formtarget="_blank">
-                                  </div>
-                              </div>
-                            </form>
-                            <input type="hidden" id="hidpo" name="hidpo">
-                        </div>
-                    </div>
                       <div id="divsubmit" class="d-grid gap-4 login100-form-bgbtn">
                         <button type="submit" name="btnSubmit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
                         </div>
@@ -209,8 +167,7 @@
                             </div>
                         </div>
                         </div>
-                        <p class="text-left mt-3">If you wish to sign in with an email/password combination please click <strong><a href="#
-                            " aria-label="Go To Email Password  Login" onclick="javascript:newLogin()">here</a></strong>.</p>
+                        <p class="text-left mt-3">If you wish to sign in with an email/password combination please click <strong><a aria-label="Go To Email Password  Login" onclick="javascript:newLogin()">here</a></strong>.</p>
                         <div class="mb-4" data-validate="Account Is Required">
                         <label class="form-label" for="txtCustomerNumber">Account Number</label>
                         <input type="text" class="form-control form-control-lg" name="txtCustomerNumber" id="txtCustomerNumber" tabindex="1" placeholder="Enter company account number" aria-label="Enter company account number" required>
@@ -225,49 +182,6 @@
                             <input type="password" class="js-toggle-password form-control form-control-lg" name="txtPassword" id="txtPassword" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4">
                         </div>
                         </div>
-                        <div style="margin-top: 5px; text-align:center;">
-                          <a style="color: black;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset Password</a>
-                       </div>
-                        <div id="myModal" class="modal">
-                          <!-- Modal content -->
-                          <div class="modal-content">
-                              <span class="close">x</span>
-                              <div id="divpo" class="confirm_signup">
-                                  <div class="title">
-                                      Please confirm or enter your email address.
-                                  </div>
-                                  <div class="form_element dark">
-                                      <div class="element_content">
-                                          <label for="phone"><sup class="red">*</sup>PASSWORD:</label>
-                                          <input name="txtpwd1" type="password" id="txtpwd1" class="inp">
-                                      </div>
-                                      <div class="element_content">
-                                          <label for="phone"><sup class="red">*</sup>CONFIRM PASSWORD:</label>
-                                          <input name="txtpwd2" type="password" id="txtpwd2" class="inp">
-                                      </div>
-                                  </div>
-                                  <div class="form_element actions">
-                                      <input type="submit" name="btnsetoptemail" value="SUBMIT" onclick="javascript:return Validemphchk();" id="btnsetoptemail" class="btn login-btn">
-                                  </div>
-                              </div>
-                              <div id="divResetForm" class="confirm_signup">
-                                  <div class="title">
-                                      Please enter your email address.
-                                  </div>
-                                  <div class="form_element dark">
-                                      <div class="element_content">
-                                          <label for="Email"><sup class="red">*</sup>EMAIL:</label>
-                                          <input name="txtresetEmail" type="text" id="txtresetEmail" class="inp">
-                                      </div>
-                                  </div>
-                                  <div class="form_element actions">
-                                      <input type="submit" name="btnReset" value="SUBMIT" id="btnReset" class="btn login-btn">
-                                  </div>
-                              </div>
-                              <input type="hidden" id="hidpo" name="hidpo">
-                          </div>
-                      </div>
-
                         <div class="d-grid gap-4 login100-form-bgbtn">
                         <button type="submit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
                         </div>
@@ -291,7 +205,45 @@
                           <p class="loginLookup" id="noAccountFound"></p>
                       </div>
                     </form>
-                    
+                    <div id="myModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                          <span class="close">x</span>
+                          <div id="divpo" class="confirm_signup">
+                              <div class="title">
+                                  Please confirm or enter your email address.
+                              </div>
+                              <div class="form_element dark">
+                                  <div class="element_content">
+                                      <label for="phone"><sup class="red">*</sup>PASSWORD:</label>
+                                      <input name="txtpwd1" type="password" id="txtpwd1" class="inp">
+                                  </div>
+                                  <div class="element_content">
+                                      <label for="phone"><sup class="red">*</sup>CONFIRM PASSWORD:</label>
+                                      <input name="txtpwd2" type="password" id="txtpwd2" class="inp">
+                                  </div>
+                              </div>
+                              <div class="form_element actions">
+                                  <input type="submit" name="btnsetoptemail" value="SUBMIT" onclick="javascript:return Validemphchk();" id="btnsetoptemail" class="btn login-btn">
+                              </div>
+                          </div>
+                          <form method="post" action="https://www.customfit.me/newcfprocess.aspx">
+                            <div id="divResetForm" class="confirm_signup text-center">
+                              <h4 style="margin-bottom:0px;">Password Reset Form</h4>
+                                <div class="form_element dark">
+                                    <div class="element_content">
+                                        <label for="Email"><sup class="red"></sup></label>
+                                        <input style="padding: 5px 15px 5px 15px;" name="txtresetEmail" type="text" id="txtresetEmail" class="inp width100" placeholder="Enter your email address here">
+                                    </div>
+                                </div>
+                                <div class="form_element actions mt-3 width100">
+                                    <input style="width:100%;" type="submit" name="btnReset" value="Submit" id="btnReset" class="btn login-btn btn btn-primary btn-lg">
+                                </div>
+                            </div>
+                          </form>
+                          <input type="hidden" id="hidpo" name="hidpo">
+                      </div>
+                  </div>
                     </div>
                     
                     </div>
@@ -301,6 +253,7 @@
                     <h5 class="mb-4">Need help or have questions about our service? No worries, we&#39;ve got you covered.</h5>
                     <!-- List Checked -->
                     <ul class="list-checked list-checked-primary list-py-2">
+                      <li class="list-checked-item">Forgot password?<br /><a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset it here.</a></li>
                       <li class="list-checked-item">Simple question? Check out the <a class="text-decoration-underline" href="./faq/" aria-label="FAQ Link">FAQs</a></li>
                       <li class="list-checked-item" style="padding-top:0;">Don't have an account yet? <a class="text-decoration-underline" href="./team/" aria-label="Our Team Page">Talk to one of our reps</a></li>
                     </ul>
