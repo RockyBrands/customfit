@@ -43,7 +43,8 @@ $(document).ready(function () {
         oldUrl.indexOf("./foundation-of-wellness") && 
         oldUrl.indexOf("./history") && 
         oldUrl.indexOf("./linkedin") && 
-        oldUrl.indexOf("./login") && 
+        oldUrl.indexOf("./login") &&
+        oldUrl.indexOf("./login/login-new.html") &&
         oldUrl.indexOf("./making-our-mark") && 
         oldUrl.indexOf("./payment-options") && 
         oldUrl.indexOf("./privacy-policy") && 
