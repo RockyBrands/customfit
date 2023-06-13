@@ -194,6 +194,7 @@
                         <label class="form-label" for="txtPassword" tabindex="0">Password</label>
                         <div class="input-group-merge">
                             <input type="password" class="js-toggle-password form-control form-control-lg" name="txtPassword" id="txtPassword" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4">
+                            <i class="fa-solid fa-eye" id="eyeOld"></i>
                         </div>
                         </div>
                         <div class="d-grid gap-4 login100-form-bgbtn">
@@ -298,11 +299,18 @@
 </script>
 <script>
 const passwordInput = document.querySelector("#txtSSN");
+const passwordInputOld = document.querySelector("#txtPassword");
 const eye = document.querySelector("#eye");
+const eyeOld = document.querySelector("#eyeOld");
 eye.addEventListener("click", function(){
   this.classList.toggle("fa-eye-slash")
   const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
   passwordInput.setAttribute("type", type)
+})
+eyeOld.addEventListener("click", function(){
+  this.classList.toggle("fa-eye-slash")
+  const typeOld = passwordInputOld.getAttribute("type") === "password" ? "text" : "password"
+  passwordInputOld.setAttribute("type", typeOld)
 })
 </script>
 <script>
