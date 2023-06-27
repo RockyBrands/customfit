@@ -1,6 +1,6 @@
 var hurl = window.location.href;
 if (hurl.indexOf('err=true') != -1) {
-    alert('We are currently upgrading Command Center logins.  Please reach out to your sales team or customer service for access.');
+    alert('You have entered an incorrect password. Please try again. If you are still having issues, please reach out to your sales team or customer service for access.');
 }
 $(document).ready(function () {
     $('a').each(function () {
