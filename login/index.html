@@ -274,36 +274,19 @@
                           <input type="hidden" id="hidpo" name="hidpo">
                       </div>
                   </div>
-                  <div id="myModalURL" class="modalURL">
-                    <div class="modal-content-url">
-                      <span class="close">x</span>
-                      <div id="divCheckURL" class="text-center">
-                        <form class="mt-3" method="POST">
-                          <label class="form-label" for="empEmail">CustomFit Account Email</label>
-                          <div class="input-group-merge">
-                          <input class="form-control form-control-lg" type="text" name="empEmail" id="empEmail" placeholder="Enter Email Address" aria-label="Enter your CustomFit Account Email Address Here" required minlength="7" required>
-                          <button type="button" class="btn btn-dark btn-lg login100-form-btn width100 mt-4" value='send' id="submit" onclick="getEmpLoginInfo()">Submit</button>
-                          </div>
-                          </form>
-                          <div class="col-md-12">
-                            <p class="loginLookup mt-4" id="employeeAccountLocation"></p>
-                            <p class="loginLookup" id="employeeURL"></p>
-                            <p class="loginLookup" id="noAccountFound"></p>
-                        </div>
-                      </div>
-                      <input type="hidden" id="hidpo" name="hidpo">
-                    </div>
-                </div>
+                
                 
                     </div>
                   </div>
                   <div class="col-md-4 d-md-flex justify-content-center flex-column bg-light p-8 p-md-5" style="background-image: url(./assets/svg/components/wave-pattern.svg);">
-                    <h5 class="mb-4">Need help? No worries, we&#39;ve got you covered.</h5>
+                    <!--<h5 class="mb-4">Need help? No worries, we&#39;ve got you covered.</h5>-->
                     <!-- List Checked -->
                     <ul class="list-checked list-checked-primary list-py-2">
                       <li class="list-checked-item">Forgot password?<br /><a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset it here.</a></li>
-                      <li class="list-checked-item">Need your login URL? <a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:checkURL();">Search here.</a></li>
-                      <li class="list-checked-item" style="padding-top:0;">Sign in with an account and location combination <a style="color:#000;text-decoration: underline;" aria-label="Go To Account Location Password Login" onclick="javascript:oldLogin()">here</a>.</li>
+               
+                      <li class="list-checked-item" style="padding-top:0;"><strong>Sign in with an account, location and password combination <a style="color:#000;text-decoration: underline;" aria-label="Go To Account Location Password Login" onclick="javascript:oldLogin()">here</a>.</strong></li>
+                      <li class="list-checked-item" style="padding-top:0;">Customer Service<br /><a href="tel:18004444086">1-800-444-4086<br /><a href="mailto:customfit@lehigh.com">customfit@lehigh.com</a></li>
+                    
                     </ul>
                   </div>
               </div>
@@ -349,9 +332,6 @@ eyeOld.addEventListener("click", function(){
 
 function resetpass() {
     showresetform();
-}
-function checkURL() {
-    showURLform();
 }
 
 $("input[type='text']").keypress(function (event) {
@@ -436,23 +416,19 @@ function isvalid_emailid() {
 function ValidationForm() {
     var ErrMsg = '';
     var flag = true;
-
     if ((document.forms[0].txtEmployeeID.value == "EmployeeID") || (document.forms[0].txtEmployeeID.value.length == 0) || (document.forms[0].txtEmployeeID.value == null)) {
         ErrMsg += "Please Enter Employee ID \n";
     }
-
     if (document.getElementById("chkAck") != null) {
         if (document.getElementById("chkAck").checked == false) {
             ErrMsg += "Please check the acknowledgement \n";
         }
     }
-
     if (document.getElementById("txtSSN") != null) {
         if (document.getElementById("txtSSN").value.length == 0) {
             ErrMsg += "Please Enter SSN No \n";
         }
     }
-
     if (ErrMsg != '') {
         alert(ErrMsg);
         flag = false;
@@ -470,91 +446,33 @@ $(document).ready(function () { $("#txtEmployeeID").focus(); })
 <script>
             // Get the modal
             var modal = document.getElementById("myModal");
-            var modalURL = document.getElementById("myModalURL");
             // Get the <span> element that closes the modal
             var span = document.getElementsByClassName("close")[0];
-            var spanURL = document.getElementsByClassName("close")[1];
 
             // When the user clicks the button, open the modal 
             function showmodal(id) {
                 modal.style.display = "block";
-                modalURL.style.display = "block";
                 $("#divpo").show();
                 $("#divResetForm").hide();
-                $("#divCheckURL").hide();
             }
             function showresetform() {
                 modal.style.display = "block";
-                $("#divCheckURL").hide();
                 $("#divResetForm").show();
                 $("#divpo").hide();
             }
             function showURLform() {
                 modal.style.display = "block";
                 $("#divResetForm").hide();
-                $("#divCheckURL").show();
                 $("#divpo").hide();
             }
             span.onclick = function () {
                 modal.style.display = "none";
             }
-            spanURL.onclick = function () {
-                modalURL.style.display = "none";
-            }
             window.onclick = function (event) {
                 if (event.target == modal) {
                     modal.style.display = "none";
                 }
-                else if (event.target == modalURL) {
-                  modalURL.style.display = "none";
-                }
             }
-</script>
-
-  <!-- JS Plugins Init. -->
-<script>
-  function getEmpLoginInfo() {
-    document.getElementById('employeeAccountLocation').innerHTML = '';
-    document.getElementById('employeeURL').innerHTML = '';
-    document.getElementById('noAccountFound').innerHTML = '';
-      var myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
-      var urlencoded = new URLSearchParams();
-      var cf_token;
-      urlencoded.append("username", "apiklaviyo");
-      urlencoded.append("password", "lcftrack783");
-      urlencoded.append("grant_type", "password");
-      var requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: urlencoded,
-      redirect: 'follow'
-      };
-      fetch("https://albert.customfit.me/token", requestOptions)
-      .then(response => response.json())
-      .then(result => {cf_token = result.access_token
-          var newHeaders = new Headers();
-          newHeaders.append("Authorization", "Bearer " + cf_token + "");
-          var requestNewOptions = {
-              method: 'GET',
-              headers: newHeaders,
-              redirect: 'follow'
-          };
-          let empEmail = document.getElementById("empEmail").value;
-          fetch("https://albert.customfit.me/api/getEmpLoginInfo/" + empEmail + "/", requestNewOptions)
-          .then(response => response.json())
-          .then(data => {
-            if (data.length === 1) {
-              document.getElementById('employeeAccountLocation').innerHTML = "Account / Location Number: " + data[0].account + " / " + data[0].location;
-              let urlLoginLink = data[0].url;
-              document.getElementById('employeeURL').innerHTML = "Login: " + '<a class="text-decoration-underline" href="http://' + urlLoginLink + '">' + urlLoginLink + '</a>';
-            }
-            else if (data.length === 0) {
-              document.getElementById('noAccountFound').innerHTML = "No account was found with the provided email address. Please contact customer service for further help.";
-            }
-          })
-      })
-  }
 </script>
 
   <!-- LinkedIn Tracking -->

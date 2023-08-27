@@ -44,6 +44,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./history") && 
         oldUrl.indexOf("./linkedin") && 
         oldUrl.indexOf("./login") &&
+        oldUrl.indexOf("./login/faq.html") &&
         oldUrl.indexOf("./making-our-mark") && 
         oldUrl.indexOf("./payment-options") && 
         oldUrl.indexOf("./privacy-policy") && 
