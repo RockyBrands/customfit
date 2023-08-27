@@ -283,10 +283,9 @@
                     <!-- List Checked -->
                     <ul class="list-checked list-checked-primary list-py-2">
                       <li class="list-checked-item">Forgot password?<br /><a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset it here.</a></li>
-               
+                      <li class="list-checked-item">Trouble logging in?<br /><a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:goToLoginFAQ();">Read our FAQs.</a></li>
                       <li class="list-checked-item" style="padding-top:0;"><strong>Sign in with an account, location and password combination <a style="color:#000;text-decoration: underline;" aria-label="Go To Account Location Password Login" onclick="javascript:oldLogin()">here</a>.</strong></li>
                       <li class="list-checked-item" style="padding-top:0;">Customer Service<br /><a href="tel:18004444086">1-800-444-4086<br /><a href="mailto:customfit@lehigh.com">customfit@lehigh.com</a></li>
-                    
                     </ul>
                   </div>
               </div>
@@ -332,6 +331,11 @@ eyeOld.addEventListener("click", function(){
 
 function resetpass() {
     showresetform();
+}
+
+function goToLoginFAQ() {
+  var loginFAQURL = "https://www.customfit.me/login/faq.html";
+  window.location.href = loginFAQURL;
 }
 
 $("input[type='text']").keypress(function (event) {
