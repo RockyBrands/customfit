@@ -162,7 +162,7 @@
 
           <div class="position-relative">
             <video autoplay muted loop id="loginVideo">
-              <source src="./assets/video/SiteLogin.mp4" type="video/mp4">
+              <source src="./assets/video/warehouse-bg.mp4" type="video/mp4">
             </video>
             <!-- Card -->
             <div class="card card-shadow card-login">
@@ -186,12 +186,13 @@
                         <label class="form-label" for="txtEmployeeID">Email Address</label>
                         <input type="text" class="form-control form-control-lg" name="txtEmployeeID" id="txtEmployeeID" tabindex="1" placeholder="Enter your email address here" aria-label="Enter email address here" required>
                       </div>
-                      <div class="mb-4" id="divSSN" data-validate="EmployeeID Is Required">
+                      <div class="mb-3" id="divSSN" data-validate="EmployeeID Is Required">
                         <label class="form-label" id="div2" for="txtSSN" tabindex="0">Password</label>
                         <div class="input-group-merge">
                           <input type="password" class="js-toggle-password form-control form-control-lg" name="txtSSN" id="txtSSN" tabindex="1" placeholder="Enter your password" aria-label="Enter your password" required minlength="4">
                           <i class="fa-solid fa-eye" id="eye"></i>
                         </div>
+                        <p class="mt-3"><a style="color: black;font-weight:800;font-size:0.85rem;color:#3f4700;" href="javascript:void(0);" onclick="javascript:resetpass();">Forgot password?</a></p>
                       </div>
                       <div id="divsubmit" class="d-grid gap-4 login100-form-bgbtn">
                         <button type="submit" name="btnSubmit" class="btn btn-primary btn-lg login100-form-btn" tabindex="1">Sign In</button>
@@ -282,7 +283,6 @@
                     <!--<h5 class="mb-4">Need help? No worries, we&#39;ve got you covered.</h5>-->
                     <!-- List Checked -->
                     <ul class="list-checked list-checked-primary list-py-2">
-                      <li class="list-checked-item">Forgot password?<br /><a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:resetpass();">Reset it here.</a></li>
                       <li class="list-checked-item">Trouble logging in?<br /><a style="color: black;text-decoration:underline;" href="javascript:void(0);" onclick="javascript:goToLoginFAQ();">Read our FAQs.</a></li>
                       <li class="list-checked-item" style="padding-top:0;"><strong>Sign in with an account, location and password combination <a style="color:#000;text-decoration: underline;" aria-label="Go To Account Location Password Login" onclick="javascript:oldLogin()">here</a>.</strong></li>
                       <li class="list-checked-item" style="padding-top:0;">Customer Service<br /><a href="tel:18004444086">1-800-444-4086<br /><a href="mailto:customfit@lehigh.com">customfit@lehigh.com</a></li>
