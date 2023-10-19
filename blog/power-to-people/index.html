@@ -7,11 +7,11 @@
   <base href="https://rockybrands.github.io/customfit/" />
   <meta property="og:title" content="Lehigh CustomFit">
   <meta name="og:description" content="The Leader in Custom Safety Footwear Programs">
-  <meta property="og:image" content="./assets/img/1920x1080/lcf-new-logo.jpg">
+  <meta property="og:image" content="../assets/img/1920x1080/lcf-new-logo.jpg">
   <meta name="title" content="Lehigh CustomFit | The leader in managed safety footwear programs.">
   <meta name="description" content="Welcome to Lehigh CustomFit. Learn about our data management program.">
   <!-- Title -->
-  <title>Accurate Fit Protection | CustomFit</title>
+  <title>Fighting Fatigue | CustomFit</title>
   <link rel="shortcut icon" href="./favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- CSS Implementing Plugins -->
@@ -28,65 +28,36 @@
     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); 
     })(window, document, 'script', 'dataLayer', 'GTM-5K46SHX');</script>
 <!-- End Google Tag Manager -->
-  <script>
-    function hideTheSizing(){
-        let i = 0;
-        //Hide all content on page load
-        for(i=0;i<3;i++){
-            $("#sizing"+i).hide();
-        }
-    }
-    
-    $(function(){
-        hideTheSizing();
-        //Load Men
-        $("#mensChart").on("click", function(){
-            hideTheSizing();
-            $("#hideThis").hide();
-            $("#sizing0").show();
-        });
-    
-        //Load Women
-        $("#womensChart").on("click", function(){
-            hideTheSizing();
-            $("#hideThis").hide();
-            $("#sizing1").show();
-        });
-    
-        //Load Kid
-        $("#kidsChart").on("click", function(){
-            hideTheSizing();
-            $("#hideThis").hide();
-            $("#sizing2").show();
-        });
-    });
-    </script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
+   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K46SHX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-  <!-- ========== HEADER ========== -->
-  <header id="header" class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- ========== HEADER ========== -->
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light navbar-absolute-top navbar-show-hide"
+    data-hs-header-options='{
+      "fixMoment": 0,
+      "fixEffect": "slide"
+    }'>
     <div class="container">
-      <nav class="js-mega-menu navbar-nav-wrap">
-<!-- Default Logo -->
-<a class="navbar-brand" href="./index.html" aria-label="Lehigh CustomFit">
-<img class="navbar-brand-logo" src="./assets/png/logos/cf-logo.png" alt="CustomFit Logo">
-</a>
-<!-- End Default Logo -->
-<!-- Toggler -->
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-default">
-  <i class="bi-list"></i>
-</span>
-<span class="navbar-toggler-toggled">
-  <i class="bi-x"></i>
-</span>
-</button>
-<!-- End Toggler -->
-<!-- Collapse -->
+    <nav class="js-mega-menu navbar-nav-wrap">
+    <!-- Default Logo -->
+    <a class="navbar-brand" href="./index.html" aria-label="Lehigh CustomFit">
+    <img class="navbar-brand-logo" src="./assets/png/logos/cf-logo.png" alt="CustomFit Logo">
+    </a>
+    <!-- End Default Logo -->
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-default">
+      <i class="bi-list"></i>
+    </span>
+    <span class="navbar-toggler-toggled">
+      <i class="bi-x"></i>
+    </span>
+    </button>
+    <!-- End Toggler -->
+    <!-- Collapse -->
 <div class="collapse navbar-collapse" id="navbarNavDropdown">
   <div class="navbar-absolute-top-scroller">
     <ul class="navbar-nav nav-pills">
@@ -132,13 +103,11 @@
                 <a class="dropdown-item" href="./compression-socks/" aria-label="Compression Socks">OS1st Compression Socks</a>
                 <a class="dropdown-item" href="./size-guide/" aria-label="Accurate Fit Protection">Accurate Fit Protection</a>
                 <a class="dropdown-item" href="./history/" aria-label="Our History">Our History</a>
-                <a class="dropdown-item" href="./making-our-mark/" aria-label="History">Making Our Mark</a>
                 <a class="dropdown-item" href="./faq/" aria-label="FAQ">FAQ</a>
               </div>
   
               <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <span class="dropdown-header">Wellness</span>
-                <a class="dropdown-item" href="./wellness/" aria-label="Impacts of Unhealthy Feet">Foundation of Wellness</a>
                 <a class="dropdown-item" href="./unhealthy-feet/" aria-label="Impacts of Unhealthy Feet">Impacts of Unhealthy Feet</a>
                 <a class="dropdown-item" href="./breakdown-dangers/" aria-label="Boot Breakdown Dangers">Boot Breakdown Dangers</a>
                 <a class="dropdown-item" href="./aetrex-scanner/" aria-label="Aetrex Foot Scanner">Aetrex Foot Scanner</a>
@@ -291,61 +260,46 @@
   </div>
   </div>
   <!-- End Collapse -->
-</nav>
-</div>
-</header>
-
-  <!-- ========== END HEADER ========== -->
+    </nav>
+    </div>
+    </header>
+    
+      <!-- ========== END HEADER ========== -->
 
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero -->
-    <div class="overflow-hidden">
+    <div class="bg-gradient-to-bottom-sm-light">
       <div class="container content-space-t-3">
-        <div class="row justify-content-lg-between align-items-md-center">
-          <div class="col-md-6 col-lg-5 mb-5 mb-lg-0">
-          
-            <h1 class="display-7 mb-5">Your team getting the best fit is critical to their health and performance and to <span class="text-highlight-warning">your productivity</span></h1>
-            <div class="js-swiper-clients-1 swiper text-center">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img class="avatar avatar-lg avatar-4x3" src="./assets/png/brands/aetrex-logo.png" alt="Aetrex Logo">
-                </div>
-                <!-- End Slide -->
-      
-                <div class="swiper-slide">
-                  <img class="avatar avatar-lg avatar-4x3" src="./assets/png/brands/true-fit-logo.png" alt="True Fit Logo">
-                </div>
-                <!-- End Slide -->
-      
-                <div class="swiper-slide">
-                  <img class="avatar avatar-lg avatar-4x3" src="./assets/png/brands/bazaarvoice-logo.png" alt="BV Logo">
-                </div>
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-8">
+            <!-- Media -->
+            <div class="d-flex align-items-center mb-4">
+              <div class="flex-shrink-0">
+                <img class="avatar avatar-circle" src="./assets/img/authors/janellekinnaird.jpg" alt="Janelle Kinnaird Profile Picture">
+              </div>
+
+              <div class="flex-grow-1 ms-3">
+                <h6 class="mb-0">
+                  <a class="link link-dark" href="https://www.linkedin.com/in/janellekinnaird" target="_blank" aria-label="LinkedIn Profile">Janelle Kinnaird</a>
+                </h6>
+                <span class="d-block fs-5 text-muted">6/9/23</span>
               </div>
             </div>
-            <!-- End Blockquote -->
+            <!-- End Media -->
+
+            <div class="mb-6">
+              <h1 class="h2">Fighting Fatigue</h1>
+              <aside><a href="https://ohsonline.com/articles/2023/07/14/fighting-fatigue.aspx" target="_blank"><strong>As Seen On Occupational Health &amp; Safety &#8594;</strong></a><br />The Cost of Occupational Fatigue and a Wellness Benefit Solution</aside>
+            </div>
           </div>
           <!-- End Col -->
+        </div>
+        <!-- End Row -->
 
-          <div class="col-md-6 col-lg-5 d-md-block">
-            <div class="row gx-3 me-lg-n10">
-             
-              <!-- End Col -->
-
-            
-              <!-- End Col -->
-
-              <div class="col-6">
-                <img class="img-fluid rounded-3" src="./assets/img/950x950/crew-shot.jpg" alt="Crew Working">
-              </div>
-              <!-- End Col -->
-
-              <div class="col-5">
-                <img class="img-fluid rounded-3" src="./assets/img/950x950/aetrex-scanner-main.jpg" alt="Aetrex Foot Scanner">
-              </div>
-              <!-- End Col -->
-            </div>
-            <!-- End Row -->
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-10">
+            <img class="img-fluid" src="./assets/img/1920x1080/tired-worker.webp" alt="Tired worker">
           </div>
           <!-- End Col -->
         </div>
@@ -353,169 +307,187 @@
       </div>
     </div>
     <!-- End Hero -->
-   
-    <!-- Features -->
-    <div class="overflow-hidden">
-      <div class="container content-space-1 content-space-lg-0">
-        <div class="container content-space-1 content-space-lg-0 pb-0b">
-          <div class="border-top border-2 my-5 mx-auto text-center" style="max-width: 50%;"></div>
-          <div class="row justify-content-lg-between">
-            <div class="col-md-6 mb-5 mb-md-0">
-              <h2>How We Provide<br />The Most Accurate Fit</h2>
-              <p>Data is not wrong. It is more accurate than actually trying the shoes on. Feet are 3-dimensional, but most tools to measure them are only 2-dimensional. That is why most people believe they need to try footwear on to actually know it fits well. 3D technology proves them wrong.</p>
-              <a class="btn btn-primary d-none d-lg-inline-block mt-2" href="./team/" aria-label="Link To Our Team page" target="_blank"><i class="bi-chat-dots-fill"></i>&nbsp;&nbsp;Request a demo</a>
-            </div>
-            <!-- End Col -->
-    
-            <div class="col-md-6 col-lg-5">
-              <iframe class="mt-2" width="450" height="253" src="https://www.youtube.com/embed/Eh9H5fo4lbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            
-            <!-- End Col -->
-          </div>
 
-<div class="row justify-content-lg-between mt-4">
-      <!-- Media -->
-      <div class="col-md-4"> <div class="flex-grow-1 ms-4">
-          <h5><i class="bi-upc-scan fs-2 text-primary"></i>&nbsp;&nbsp;3D Foot Scan</h5>
-          <p>By using the most advanced Albert 2 Pro 3D foot scanner with 4 state-of-the-art Intel<sup>&reg;</sup> RealSense<sup>&trade;</sup> 3D Depth Cameras to capture the most accurate foot measurements down to 1 millimeter, we can fit a boot perfectly to any foot.
-          </p>
-          <strong><a class="link link-dark" href="https://www.youtube.com/watch?v=tvqS3E5FW7c" role="button" data-fslightbox="youtube-video"><i class="bi-play-circle me-1"></i> Learn More</a></strong>
+    <!-- Description -->
+    <div class="container content-space-2 content-space-lg-2">
+      <div class="row mb-5">
+        <div class="col-md-10 col-lg-8 offset-md-1 offset-lg-2">
+          <figure class="blockquote-lg text-center mb-3">
+            <blockquote class="blockquote">&ldquo; Over two-thirds of your employees feel tired during the workday, according to a workplace fatigue survey report by the National Safety Council<sup>1</sup>. &rdquo;</blockquote>
+          </figure>
         </div>
+        <!-- End Col -->
       </div>
-      <!-- End Media -->
+      <!-- End Row -->
 
-      <!-- Media -->
-      <div class="col-md-4">
-        <div class="flex-grow-1 ms-4">
-          <h5><i class="bi-clipboard-data fs-2 text-primary"></i>&nbsp;&nbsp;FitGenius<sup>&trade;</sup></h5>
-          <p>Utilizing millions of 3D scans Aetrex matches an individual&#39;s unique 3D foot profile & fit preference data with the shoe purchase history of similar profiles to recommend the right fit. Once scanned, we will tell each of your employees their best fitting style in your online catalog.</p>
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <p>Ok, so they&#39;re tired. What exactly does that mean? How does fatigue hurt you and your company? And how can you improve employee energy?</p>
         </div>
+        <!-- End Col -->
       </div>
-      <div class="col-md-4">
-        <div class="flex-grow-1 ms-4">
-          <h5><i class="bi-clipboard2-check fs-2 text-primary"></i>&nbsp;&nbsp;True Fit<sup>&reg;</sup></h5>
-          <p>Millions of consumer order data + footwear manufacturing design data is used to
-                  recommend the best fitting shoe size in a brand compared to what an individual
-                  already wears and fits well in another brand.</p>
-                  <strong><a class="link link-dark" href="https://www.youtube.com/watch?v=tqOgmGz9-Mc" role="button" data-fslightbox="youtube-video"><i class="bi-play-circle me-1"></i> Watch how it works</a></strong>
-        </div>
-      </div>
-    
-      <!-- End Media -->
-      <!-- Media -->
-      <!-- End Media -->
-</div>
-<div class="row justify-content-lg-between mt-4">
-  <!-- Media -->
-  <div class="col-md-2"></div> 
-  <div class="col-md-4">
-    <div class="flex-grow-1 ms-4">
-      <h5><i class="bi-chat-dots fs-2 text-primary"></i>&nbsp;&nbsp;Bazaarvoice</h5>
-      <p>Our consumer review platform allows us to collect our specific user feedback and also access feedback from our various brands on how their specific footwear products fit. This is displayed on our websites for your employees to use in helping them know the best fit.</p>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="flex-grow-1 ms-4">
-      <h5><i class="bi-clipboard-plus fs-2 text-primary"></i>&nbsp;&nbsp;Vast Selection</h5>
-      <p>Our huge number of brands and styles provides greater amount of FitGenius high-ranked recommendations to practically guarantee your employees find their perfect fit in a style they&#39;ll love to wear.</p>
-    </div>
-  </div>
-  <div class="col-md-2"></div>
+      <!-- End Row -->
 
-</div>
-<div class="row align-items-center mt-4 mb-4">
-  <div class="col d-none d-md-block">
-    <img class="img-fluid rounded-3" src="./assets/img/580x480/man-on-ladder.jpg" alt="Man with Black Boots On Ladder">
-  </div>
-  <div class="col d-none d-sm-block">
-    <img class="img-fluid rounded-3" src="./assets/img/500x650/thorogood-closeup.jpg" alt="Person standing with Thorogood Boots">
-  </div>
-  <div class="col d-none d-md-block">
-    <img class="img-fluid rounded-3" src="./assets/img/580x480/keen-in-mud.jpg" alt="Keen Boot In Mud">
-  </div>
-</div>
-          <div class="row justify-content-lg-between">
-            <div class="col-md-6 mb-5 mb-md-0">
-              <h2>Why It Is Important</h2>
-             
-            </div>
-            <!-- End Col -->
-            <div class="row justify-content-lg-between mt-2 mb-4">
-              <!-- Media -->
-              <div class="col-md-3"> <div class="flex-grow-1 ms-4">
-                  <h5><i class="bi-arrow-down fs-2 text-primary"></i>&nbsp;&nbsp;Lower Return Rate</h5>
-                  <p>When the work boot fits perfect the first time, your return rate decreases. CustomFit&#39;s average
-                    return rate is 15-20% lower than the industry average. That&#39;s less time any of your crew is
-                    in the wrong boot and out of compliance.
-                  </p>
-                </div>
-              </div>
-              <!-- End Media -->
-        
-              <!-- Media -->
-              <div class="col-md-3">
-                <div class="flex-grow-1 ms-4">
-                  <h5><i class="bi-heart-pulse fs-2 text-primary"></i>&nbsp;&nbsp;Employee Wellness</h5>
-                  <p>The right fit means employees are not experiencing blisters, foot and leg fatigue, and
-                    other debilitating issues that result in errors, injuries and claims.</p>
-                    <strong><a class="link link-dark" href="https://www.youtube.com/watch?v=K6u_sTh33Mg" role="button" data-fslightbox="youtube-video"><i class="bi-play-circle me-1"></i> See how orthotics help</a></strong>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="flex-grow-1 ms-4">
-                  <h5><i class="bi-clipboard-plus fs-2 text-primary"></i>&nbsp;&nbsp;Higher Productivity</h5>
-                  <p>A proper fitting boot allows employees to reduce their pain and muscle fatigue to they can work faster and longer with less days called off for recovery. Reduce absenteeism, presenteeism and overtime expense to get more work done.</p>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="flex-grow-1 ms-4">
-                  <h5><i class="bi-router fs-2 text-primary"></i>&nbsp;&nbsp;Online Ordering</h5>
-                  <p>3D scanning is a transformational change in buying footwear. Trying on to secure a good fit is now
-                    obsolete - personal foot data ensures the best fit a person can get. No need for a shoe truck or to go to a store.</p>
-                    <strong><a class="link link-dark" href="https://www.youtube.com/watch?v=f3m9lU9E_t8" role="button" data-fslightbox="youtube-video"><i class="bi-play-circle me-1"></i> How to order</a></strong>
-                </div>
-              </div>
-              <!-- End Media -->
-              <!-- Media -->
-              <!-- End Media -->
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>Tired At Work</h5>
+
+          <p>According to the NSC, fatigue is described as &#39;the feelings of tiredness, sleepiness, reduced energy and increased effort needed to perform tasks at a desired level&#39;. When tired, your employees don&#39;t think as clearly, don&#39;t make informed decisions easily or quickly, get distracted and lose focus more, slow down and are less productive.</p>
+          <p>Fatigue is a cognitive impairment effecting how we think as well as our attention level, memory, concentration, impulse control and more. 97% of respondents reported decreased cognitive performance while at work - 97%!</p>
+          <p>Of course, this leads to performance impairment as tired workers are 6% less productive. And it&#39;s dangerous as 16% reported at least one safety incident due to fatigue and 13% of workplace injuries can be contributed to fatigue.</p>
         </div>
-        <div class="row mb-6">
-          <div class="border-top border-2 my-5 mx-auto text-center" style="max-width: 50%;"></div>
-            <h3>If you have not had your feet scanned and need 2-dimensional measurements select your sizing chart below</h3>
-            <div class="text-center">
-              <div class="col-md-12 mb-4">
-              <button class="btn btn-primary d-none d-lg-inline-block mt-2" id="mensChart"><i class="bi-arrow-down"></i>&nbsp;&nbsp;Men's</button>
-              <button class="btn btn-primary d-none d-lg-inline-block mt-2" id="womensChart"><i class="bi-arrow-down"></i>&nbsp;&nbsp;Women's</button>
-              <button class="btn btn-primary d-none d-lg-inline-block mt-2" id="kidsChart"><i class="bi-arrow-down"></i>&nbsp;&nbsp;Kids'</button>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>Lost Cost</h5>
+
+          <p>Fatigue in the workplace cost US companies $136 billion each year in health-related lost productivity<sup>2</sup>. 84% or $114.24 billion was due to presenteeism - reduced performance level while at work. So while the cost of absenteeism, depression and anxiety from fatigue is significant, the bulk of the cost is from cognitive impairment (remember that 97% you just read).</p>
+
+          <p>Fatigued workers lose an average 2.3 hours of productive time a week more than non-fatigued workers.
+            In fact, one single employee experiencing daily fatigue can costs an employer $3500 a year in lost productivity, absenteeism, and increased health care costs1. For a company that employees 1000 workers that adds up to $3.5 million... for every year that it is not managed or reduced. 
+            </p>
+
+          
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+      <!-- End Row -->
+
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>Why So Tired?</h5>
+
+          <p>Studies and surveys report a few factors that lead to fatigue. The most recent NSC report1 looked at 9 risk factors that contribute such as working night shifts, long shifts, overtime and mentally-demanding jobs. While optimizing shift scheduling to allow for sufficient time off between shift changes can help, companies are not in control of what their workers do off the clock to make sure they get needed sleep. </p>
+
+          <p>Most adults need at least 7 hours of sleep a day for optimal performance. And yet, 43% of ALL workers and 59% of night shift workers get LESS than 7 hours. Night shift employees find it hard to sleep during their time off as working non-daylight hours goes against their natural body clock. The rise in sleep disorders such as sleep apnea and insomnia also prevents workers getting enough proper rest. In non-work hours, many choose to fulfill their time with family and recreational activities over getting enough sleep. There are only so many hours in a day.</p>
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>Employer VS Employee</h5>
+
+          <p>While it&#39;s proven that fatigue is a legitimate safety issue, there does seem to be a gap between how employers and their employees view its severity and impact. 93% of employers believe fatigue is a critical issue while only 72% of employees do<sup>3</sup>. These numbers show that workers are not always good judges of how tired they are, not understanding the signs of fatigue or noticing their delay or loss of focus. Throughout the day, the onset of fatigue can be gradual and less noticeable. And after a long day, workers expect to be more tired than when they started, believing its normal and nothing that impairs their abilities.</p>
+
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>Take Control</h5>
+
+          <p>Since employers see a greater risk of fatigue, management needs to be the guiding force to close that gap - for the health of employees as well as the company&#39;s bottom line. Assessing and identifying factors that cause fatigue and hanging educational breakroom posters (that are often overlooked) is a start, but not enough. Implementing policies, practices and programs will go a long way in changing your workplace culture around fatigue.</p>
+          <p>One program example would be to subsidize wearing foot and body wellness products such as orthotics, insoles and compression garments to help prevent injury and fatigue on the job.</p>
+
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>For Your Industrial Athlete</h5>
+
+          <p>The sport athletic industry has seen great benefits from incorporating compression garments to enhance performance, provide pain relief, prevent injury and aid in recovery. Introducing this concept to industrial athletes would be just as beneficial.</p>
+          <p>Compression is shown to increase blood circulation back to the heart which can prevent blood clots, minimize swelling and reduce pain and fatigue. It also increases the oxygen level in muscles which increases a person&#39;s energy level as well as aids in recovery from exertion by preventing soreness.
+            Compression also keeps muscles warm which enable them to be more flexible and have a wider range of motion, decreasing risk of injury. Some compression products even provide the benefits of a kinesiology taping treatment.
+            </p>
+            <p>In a study that evaluated lower leg muscle fatigue and edema induced by long-standing of workers wearing regular socks compared to degrees of compression as intervention, compression proved beneficial<sup>4</sup>. Lower leg muscle twitch force, volume and discomfort ratings were measured before and after a 12-hour standing work shift. Muscle twitch force is the level and frequency of contraction by a muscle. When muscles are fatigued the contraction is less intense and frequent, a slower response time. The study showed that the control group wearing non-compression saw a decrease while the group wearing 15-20 mmHg (millimeters of mercury) low-level compression had minimal change at the end of the shift. Therefore, compression maintained the workers muscle response time from beginning to end of shift - a worker could end a shift as good as they started.</p>
+
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>Full Coverage</h5>
+
+          <p>The orthotic and insole industry is growing rapidly with market size projected to increase by CAGR (compound annual growth rate) of 7.8% to $8.8 million by 2032. With the rise in non-invasive foot treatments, personal wellness solutions and a large US population of diabetes and arthritis suffers, as well as other painful foot conditions, the need for foot relief is great.</p>
+          <p>Based on that demand, major safety footwear brands now implement premium footbeds in most styles to tell a feel-good fatigue-fighting comfort story. And while it is initially helpful, the life expectancy of any footbed is short, breaking down well before the rest of the shoe typically does. When the footbed loses its cushion, support and structure, the whole body can be negatively affected.
+            </p>
+            <p>All feet are built different. Add in physical wear, tear and breakdown from excessive standing and we create a need for personal adjustment to re-establish natural body position and alignment. When the body is out of alignment it works unnecessarily harder and fatigues faster.</p>
+            <p>Custom orthotics built to relieve pressure, reposition foot tissue, tendons & muscles, and to properly position the arch to align feet, knees, hips & back will prevent issues, correct current ailments, and relieve debilitating pain. When all is aligned, not excessively stretched, and free of pain, the body expels less energy and is therefore less tired.</p>
+            <p>Premium insoles can help reduce muscle fatigue with custom cushion, body-weight pressure and shock absorption and heel support for stability.</p>
+
+        </div>
+        <!-- End Col -->
+      </div>
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h5>A Ground-Up Solution</h5>
+
+          <p>When a company invests in programs and products that don&#39;t just focus on the accidental injury but look beyond the minimum safety requirement to ways to ensure long-term full body health, employees perceive that management wants them to stick around a while and increases their overall retention.</p>
+          <p>When employees have greater energy, they are more productive throughout the entire workday and don&#39;t have a need to call off work to rest or heal an overworked muscle or stressed back. A company will have less time off cases and overtime expense as well as lower incident rates and RSIs (repetitive stress injuries).
+            </p>
+            <p>Introducing wellness products such as orthotics, insoles and compression garments as part of an employee wellness benefit option or as an extension to a safety footwear program will empower your employees to take control of their own wellness so that they have more energy at the end of the shift, while you see the benefits of greater productivity throughout the shift.</p>
+
+        </div>
+        <!-- End Col -->
+      </div>
+      <div class="row mb-3">
+        <div class="col-10 col-md-10 col-lg-8 offset-1 offset-md-1 offset-lg-2">
+          <h6>Sources:</h6>
+
+          <em><p><sup>1</sup>Fatigue In The Workplace: Causes & Consequences of Employee Fatigue, NSC 2017</p>
+
+          <p><sup>2</sup>Journal of Occupational and Environmental Medicine vol 49, No.1, Jan. 2007</p>
+
+            <p><sup>3</sup>Fatigue In Safety Critical Industries: Impact, Risks & Recommendations, NSC 2017</p>
+
+            <p><sup>4</sup>Comparison of Physiological Effects Induced by Two Compression Stockings and Regular Socks During Prolonged Standing Work, June 2021</p></em>
+
+        </div>
+        <!-- End Col -->
+      </div>
+    </div>
+    <!-- End Description -->
+
+    <!-- About Author -->
+    <div class="bg-light">
+      <div class="container content-space-1">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-8">
+            <div class="mb-5">
+              <h5>About the author</h5>
             </div>
-              <div id="hideThis">
-                <img class="img-responsive" alt="Men's Sizing Guide Image" src="./assets/img/others/mensSizesNew.jpg" style="max-width:100%;height:auto;">
+
+            <!-- Media -->
+            <div class="d-sm-flex">
+              <div class="flex-shrink-0 mb-3 mb-sm-0">
+                <img class="avatar avatar-xl avatar-circle" src="./assets/img/authors/janellekinnaird.jpg" alt="Image Description">
               </div>
-              <div id="sizing0">
-                <img class="img-responsive" alt="Men's Sizing Guide Image" src="./assets/img/others/mensSizesNew.jpg" style="max-width:100%;height:auto;">
-              </div>
-              <div id="sizing1">
-                <img class="img-responsive" alt="Women's Sizing Guide Image" src="./assets/img/others/womensSizes.jpg" style="max-width:100%;height:auto;">
-              </div>
-              <div id="sizing2">
-                <img class="img-responsive" alt="Kid's Sizing Guide Image" src="./assets/img/others/kidSizing.jpg" style="max-width:100%;height:auto;">
+
+              <div class="flex-grow-1 ms-sm-4">
+                <!-- Media -->
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h4 class="mb-0 text-dark">
+                    Janelle Kinnaird
+                  </h4>
+                  <a href="https://www.linkedin.com/in/janellekinnaird" target="_blank" aria-label="Janelle LinkedIn Profile">
+                  <button type="button" class="btn btn-outline-dark btn-sm">
+                    <i class="bi-person-plus-fill me-1"></i> Follow
+                  </button>
+                </a>
+                </div>
+                <!-- End Media -->
+                <p>Janelle is the Director of Marketing for Lehigh CustomFit Managed Safety Footwear and Wellness Programs which has provided innovative solutions to protect companies and their workers for over 100 years.</p>
               </div>
             </div>
+            <!-- End Media -->
           </div>
         </div>
-            
-            <!-- End Col -->
-          </div>
-        </div>
       </div>
     </div>
-    </div>
+    <!-- End About Author -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
-  
- <!-- ========== FOOTER ========== -->
+  <!-- ========== FOOTER ========== -->
  <footer class="bg-dark">
   <div class="container">
     <div class="row align-items-center pt-8 pb-4">
@@ -559,7 +531,6 @@
             <li><a class="link link-light link-light-75" href="./compression-socks" aria-label="Compression Socks Footer">OS1<sup>st</sup> Compression Socks</a></li>
             <li><a class="link link-light link-light-75" href="./size-guide/" aria-label="Accurate Fit Protection Footer">Accurate Fit Protection</a></li>
             <li><a class="link link-light link-light-75" href="./history/" aria-label="Our History Footer">Our History</a></li>
-            <li><a class="link link-light link-light-75" href="./making-our-mark/" aria-label="Making Our Mark Footer">Making Our Mark</a></li>
             <li><a class="link link-light link-light-75" href="https://recruiting.ultipro.com/ROC1011RBD/JobBoard/7e2cec98-83e5-418d-9e0e-1a03210a5c51/?q=&o=postedDateDesc" aria-label="Careers Footer" target="_blank">Careers</a> <span class="fs-6 fw-bold text-primary">&mdash; We&#39;re hiring</span></li>
             <!--<li><a class="link link-light link-light-75" href="./documentation/" aria-label="Documentation Footer">Documentation</a></li>
             <li><a class="link link-light link-light-75" href="./assets/" aria-label="Assets Footer">Assets</a></li>-->
@@ -573,7 +544,6 @@
 
           <!-- List -->
           <ul class="list-unstyled list-py-1 mb-0">
-            <li><a class="link link-light link-light-75" href="./wellness/" aria-label="Foundation of Wellness Footer">Foundation of Wellness</a></li>
             <li><a class="link link-light link-light-75" href="./unhealthy-feet" aria-label="Unhealthy Feet Footer">Unhealthy Feet</a></li>
               <li><a class="link link-light link-light-75" href="./breakdown-dangers" aria-label="Breakdown Dangers Footer">Breakdown Dangers</a></li>
               <li><a class="link link-light link-light-75" href="./aetrex-scanner" aria-label="Aetrex Foot Scanner Footer">Aetrex Foot Scanner</a></li>
@@ -667,7 +637,7 @@
       </div>
       <!-- End Col -->
       <div class="col-md-auto">
-        <p class="fs-5 text-white-70 mb-0">&copy; Lehigh CustomFit, 2023</p>
+        <p class="fs-5 text-white-70 mb-0">© Lehigh CustomFit, 2023</p>
       </div>
       <!-- End Col -->
     </div>
@@ -702,89 +672,44 @@
   <script src="./assets/js/fixURL.js"></script>
 
   <!-- JS Plugins Init. -->
- <!-- JS Plugins Init. -->
- <script>
-  (function() {
-    // INITIALIZATION OF NAVBAR
-    // =======================================================
-    new HSHeader('#header').init()
+  <script>
+    (function() {
+      // INITIALIZATION OF NAVBAR
+      // =======================================================
+      new HSHeader('#header').init()
 
 
-    // INITIALIZATION OF MEGA MENU
-    // =======================================================
-    const megaMenu = new HSMegaMenu('.js-mega-menu', {
-      desktop: {
-        position: 'left'
-      }
-    })
+      // INITIALIZATION OF MEGA MENU
+      // =======================================================
+      const megaMenu = new HSMegaMenu('.js-mega-menu', {
+        desktop: {
+          position: 'left'
+        }
+      })
 
 
-    // INITIALIZATION OF GO TO
-    // =======================================================
-    new HSGoTo('.js-go-to')
-
-
-    // INITIALIZATION OF SWIPER
-    // =======================================================
-    var swiper = new Swiper('.js-swiper-clients-1',{
-      slidesPerView: 2,
-      autoplay: true,
-      loop: true,
-      breakpoints: {
-        380: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-      },
-    });
-
-    // Clients 2
-    var swiper = new Swiper('.js-swiper-clients-2',{
-      slidesPerView: 2,
-      autoplay: true,
-      loop: true,
-      breakpoints: {
-        380: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-      },
-    });
-  })()
-</script>
-  <!-- LinkedIn Tracking -->
-  <script type="text/javascript"> _linkedin_partner_id = "702826"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
-    https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
-    " /> </noscript>
-  <!-- End LinkedIn Tracking -->
-  
-  <!-- GA Tracking -->
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-22942799-1']);
-    _gaq.push(['_trackPageview']);
-    (function () {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
   </script>
-  <!-- End GA Tracking -->
+  <!-- LinkedIn Tracking -->
+<script type="text/javascript"> _linkedin_partner_id = "702826"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
+  https://dc.ads.linkedin.com/collect/?pid=702826&fmt=gif
+  " /> </noscript>
+<!-- End LinkedIn Tracking -->
+
+<!-- GA Tracking -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22942799-1']);
+  _gaq.push(['_trackPageview']);
+  (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End GA Tracking -->
 </body>
 </html>
