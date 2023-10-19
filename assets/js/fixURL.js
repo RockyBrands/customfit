@@ -19,6 +19,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./blog/how-long-boots-last") &&
         oldUrl.indexOf("./blog/our-new-logo") &&
         oldUrl.indexOf("./blog/plantar-fasciitis") &&
+        oldUrl.indexOf("./blog/power-to-people") &&
         oldUrl.indexOf("./blog/right-safety-boots") &&
         oldUrl.indexOf("./blog/true-fit-launch") &&
         oldUrl.indexOf("./blog/whats-in-your-boots") &&
