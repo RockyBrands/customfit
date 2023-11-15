@@ -32,6 +32,7 @@ function getEmpLoginInfo() {
             if (data.length === 1) {
               //document.getElementById('employeeAccountLocation').innerHTML = "Account / Location Number: " + data[0].account + " / " + data[0].location;
               let urlLoginLink = data[0].url;
+              document.getElementById('employeeURL').innerHTML = "";
               document.getElementById('employeeURL').innerHTML = "Your account login URL is" + '<a class="text-decoration-underline" href="http://' + urlLoginLink + '">' + urlLoginLink + '</a>';
             }
             else if (data.length === 0) {
