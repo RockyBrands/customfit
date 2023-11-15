@@ -274,7 +274,28 @@
   <!-- ========== MAIN CONTENT ========== -->
   <main id="content" role="main">
     <!-- Hero -->
-    <div class="container content-space-t-3">
+
+      <div class="row justify-content-lg-between align-items-lg-center" style="padding: 2rem 5rem 2rem 5rem;margin-top: 5rem;background-color: #f5f5f5;">
+        <div class="col-md-8 col-sm-12">
+          <h1 class="display-7 text-dark mb-5">Need help logging in?</h1>
+          <p>Due to security upgrades the ordering URL you may have bookmarked in the past will no longer work. You can reach out to your safety manager to obtain your link or if you know the email address associated with your account you may enter it on the form to access your ordering URL yourself. You will want to bookmark the link itself, not the page it takes you to. If you need help with how to do that please reference the first FAQ on <a href="./login/faq.html" style="text-decoration: underline;">this page</a>.</p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+        <form method="POST">
+          <label class="form-label" for="empEmail">CustomFit Account Email</label>
+          <div class="input-group-merge">
+          <input class="form-control form-control-lg" type="text" name="empEmail" id="empEmail" placeholder="Enter Email Address" aria-label="Enter your CustomFit Account Email Address Here" required="" minlength="7">
+          <button type="button" class="btn btn-dark btn-lg login100-form-btn width100 mt-4" value="send" id="submit" onclick="getEmpLoginInfo()">Submit</button>
+          <div class="col-md-12">
+            <p class="loginLookup" id="employeeURL"></p>
+            <p class="loginLookup" id="noAccountFound"></p>
+        </div>
+        </div>
+      </form>
+    </div>
+      </div>
+
+    <div class="container content-space-t-1">
       <div class="row justify-content-lg-between align-items-lg-center">
         <div class="col-lg-5 mb-5 mb-lg-0">
           <div class="mb-5">
@@ -816,6 +837,7 @@
   <script src="./assets/js/vendor.min.js"></script>
   <script src="./assets/js/lcf.min.js"></script>
   <script src="./assets/js/fixURL.js"></script>
+  <script src="./assets/js/getURL.js"></script>
   <!-- JS Plugins Init. -->
   <script>
     (function() {
