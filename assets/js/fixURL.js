@@ -35,6 +35,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./documentation/returns") &&
         oldUrl.indexOf("./documentation/aetrex-data") &&
         oldUrl.indexOf("./documentation/size-guides") &&
+        oldUrl.indexOf("./easyreturns") && 
         oldUrl.indexOf("./electronic-invoicing") && 
         oldUrl.indexOf("./email") && 
         oldUrl.indexOf("./fatigue") &&
