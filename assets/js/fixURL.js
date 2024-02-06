@@ -21,6 +21,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./blog/plantar-fasciitis") &&
         oldUrl.indexOf("./blog/power-to-people") &&
         oldUrl.indexOf("./blog/right-safety-boots") &&
+        oldUrl.indexOf("./blog/safety-puzzle") &&
         oldUrl.indexOf("./blog/true-fit-launch") &&
         oldUrl.indexOf("./blog/whats-in-your-boots") &&
         oldUrl.indexOf("./blog/work-shoe-fits") &&
