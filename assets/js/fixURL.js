@@ -44,6 +44,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./fitting-events") && 
         oldUrl.indexOf("./footwear") && 
         oldUrl.indexOf("./foundation-of-wellness") && 
+        oldUrl.indexOf("./ge") && 
         oldUrl.indexOf("./history") && 
         oldUrl.indexOf("./linkedin") && 
         oldUrl.indexOf("./login") &&
