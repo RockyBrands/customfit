@@ -19,7 +19,9 @@ $(document).ready(function () {
         oldUrl.indexOf("./blog/how-long-boots-last") &&
         oldUrl.indexOf("./blog/our-new-logo") &&
         oldUrl.indexOf("./blog/plantar-fasciitis") &&
+        oldUrl.indexOf("./blog/power-to-people") &&
         oldUrl.indexOf("./blog/right-safety-boots") &&
+        oldUrl.indexOf("./blog/safety-puzzle") &&
         oldUrl.indexOf("./blog/true-fit-launch") &&
         oldUrl.indexOf("./blog/whats-in-your-boots") &&
         oldUrl.indexOf("./blog/work-shoe-fits") &&
@@ -34,6 +36,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./documentation/returns") &&
         oldUrl.indexOf("./documentation/aetrex-data") &&
         oldUrl.indexOf("./documentation/size-guides") &&
+        oldUrl.indexOf("./easyreturns") && 
         oldUrl.indexOf("./electronic-invoicing") && 
         oldUrl.indexOf("./email") && 
         oldUrl.indexOf("./fatigue") &&
@@ -41,6 +44,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./fitting-events") && 
         oldUrl.indexOf("./footwear") && 
         oldUrl.indexOf("./foundation-of-wellness") && 
+        oldUrl.indexOf("./ge") && 
         oldUrl.indexOf("./history") && 
         oldUrl.indexOf("./linkedin") && 
         oldUrl.indexOf("./login") &&

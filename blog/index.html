@@ -83,22 +83,24 @@
             <div class="row">
               <div class="col-sm-6 col-lg-3">
                 <span class="dropdown-header">Services</span>
-                <a class="dropdown-item" href="./fitting-events/" aria-label="Fitting Events">Fitting Events</a>
-                <a class="dropdown-item" href="./automated-data-feed/" aria-label="Automated Data Feed">Employee ADF</a>
+                <a class="dropdown-item" href="./fitting-events/" aria-label="Ordering Events">Fitting Events</a>
+                <a class="dropdown-item" href="./automated-data-feed/" aria-label="Automatic Data Feed">Employee ADF</a>
                 <a class="dropdown-item" href="./command-center/" aria-label="Command Center">Command Center</a>
                 <a class="dropdown-item" href="./electronic-invoicing/" aria-label="Electronic Invoicing">Electronic Invoicing</a>
                 <a class="dropdown-item" href="./payment-options/" aria-label="Payment Options">Payment Options</a>
                 <a class="dropdown-item" href="./safety-pledge/" aria-label="Safety Pledge">Safety Pledge</a>
+                <a class="dropdown-item" href="./easyreturns/" aria-label="Easy Returns">Easy Returns</a>
                 <a class="dropdown-item" href="./warranty/" aria-label="Warranty">Warranty</a>
               </div>
-  
+
               <div class="col-sm-6 col-lg-3 mt-sm-0 mb-3 mb-lg-0">
                 <span class="dropdown-header">Resources</span>
                 <a class="dropdown-item" href="./footwear/" aria-label="Safety Footwear">Safety Footwear</a>
                 <a class="dropdown-item" href="./aetrex-orthotics/" aria-label="Aetrex Orthotics">Aetrex Orthotics</a>
+                <a class="dropdown-item" href="./superfeet/" aria-label="Superfeet">Superfeet</a>
                 <a class="dropdown-item" href="./compression-socks/" aria-label="Compression Socks">OS1st Compression Socks</a>
                 <a class="dropdown-item" href="./size-guide/" aria-label="Accurate Fit Protection">Accurate Fit Protection</a>
-                <a class="dropdown-item" href="./history/" aria-label="Our History">Our History</a>
+                <a class="dropdown-item" href="./history/" aria-label="History">Our History</a>
                 <a class="dropdown-item" href="./making-our-mark/" aria-label="History">Making Our Mark</a>
                 <a class="dropdown-item" href="./faq/" aria-label="FAQ">FAQ</a>
               </div>
@@ -271,6 +273,37 @@
       <!-- Swiper Main Slider -->
       <div class="js-swiper-blog-modern-hero swiper swiper-equal-height">
         <div class="swiper-wrapper">
+          <div class="swiper-slide bg-img-start content-space-2 content-space-t-sm-3 content-space-b-sm-4" style="background-image: url(./assets/img/1920x1080/power-to-people.webp);">
+            <!-- Container -->
+            <div class="container content-space-b-sm-2">
+              <div class="row">
+                <div class="col-md-8">
+                  <!-- Media -->
+                  <div class="d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0">
+                      <div class="avatar avatar-circle">
+                        <img class="avatar-img" src="./assets/img/authors/janellekinnaird.jpg" alt="Janelle Pic">
+                      </div>
+                    </div>
+
+                    <div class="flex-grow-1 ms-3 text-white">Janelle Kinnaird
+                    </div>
+                  </div>
+                  <!-- End Media -->
+
+                  <div class="mb-5">
+                    <h2 class="h1 text-white darkTextShadow">Power To The People</h2>
+                    <p class="text-white darkTextShadow">The Occupational Safety and Health Administration (OSHA) requires you to provide employees with personal protective equipment (PPE) when used to comply with OSHA standards. Compliance is critical to avoid warnings, fines and sanctions.</p>
+                  </div>
+                  
+                  <a class="btn btn-light btn-pointer" href="./blog/power-to-people/" aria-label="Power To The People Article Link">Read article</a>
+                </div>
+                <!-- End Col -->
+              </div>
+              <!-- End Row -->
+            </div>
+            <!-- End Container -->
+          </div>
           <div class="swiper-slide bg-img-start content-space-2 content-space-t-sm-3 content-space-b-sm-4" style="background-image: url(./assets/img/1920x1080/fatigued-worker-new.webp);">
             <!-- Container -->
             <div class="container content-space-b-sm-2">
@@ -381,6 +414,9 @@
           <div class="js-swiper-blog-modern-hero-thumbs swiper swiper-step-pagination swiper-step-pagination-light">
             <div class="swiper-wrapper">
                <!-- Slide -->
+               <div class="swiper-slide">
+                <span class="swiper-step-pagination-title">Power To The People</span>
+              </div>
  <div class="swiper-slide">
   <span class="swiper-step-pagination-title">Fighting Fatigue</span>
 </div>
@@ -426,7 +462,7 @@
                       <h4 class="card-title">
                         <a href="./blog/right-safety-boots/" aria-label="The Right Safety Boots">The Right<br />Safety Boots</a>
                       </h4>
-                      <p class="card-text">From steel toe to puncture resistant, static dissipative, electical hazard and so on, plus an abundance of comfort features; safety footwear can have a lot of bells and whistles...</p>
+                      <p class="card-text">From steel toe to puncture resistant, static dissipative, electrical hazard and so on, plus an abundance of comfort features; safety footwear can have a lot of bells and whistles...</p>
                       <!-- Card Footer -->
                       <div class="card-footer">
                         <div class="d-flex">
@@ -968,7 +1004,7 @@
         slidesPerView: 4,
         breakpoints: {
           580: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 30,
           },
           1024: {
