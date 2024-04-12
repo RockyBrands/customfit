@@ -15,6 +15,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./blog/") && 
         oldUrl.indexOf("./blog/boots-and-ladders-safety") &&
         oldUrl.indexOf("./blog/fighting-fatigue") &&
+        oldUrl.indexOf("./blog/foot-protection") &&
         oldUrl.indexOf("./blog/foundation-of-success") &&
         oldUrl.indexOf("./blog/how-long-boots-last") &&
         oldUrl.indexOf("./blog/our-new-logo") &&
