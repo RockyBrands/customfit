@@ -56,6 +56,7 @@ $(document).ready(function () {
         oldUrl.indexOf("./safety-pledge") && 
         oldUrl.indexOf("./size-guide") && 
         oldUrl.indexOf("./sms") &&
+        oldUrl.indexOf("./safety-fair") &&
         oldUrl.indexOf("./superfeet") &&
         oldUrl.indexOf("./team") && 
         oldUrl.indexOf("./teamwellness") && 
