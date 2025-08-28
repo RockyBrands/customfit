@@ -54,7 +54,8 @@ $(document).ready(function () {
         oldUrl.indexOf("./login/faq.html") &&
         oldUrl.indexOf("./making-our-mark") && 
         oldUrl.indexOf("./payment-options") && 
-        oldUrl.indexOf("./privacy-policy") && 
+        oldUrl.indexOf("./privacy-policy") &&
+        oldUrl.indexOf("./prescription-safety-eyewear") &&
         oldUrl.indexOf("./safety-pledge") && 
         oldUrl.indexOf("./size-guide") && 
         oldUrl.indexOf("./sms") &&
