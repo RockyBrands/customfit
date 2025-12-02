@@ -14,6 +14,8 @@ $(document).ready(function () {
         oldUrl.indexOf("./automated-data-feed") &&
         oldUrl.indexOf("./blog/") && 
         oldUrl.indexOf("./blog/boots-and-ladders-safety") &&
+        oldUrl.indexOf("./blog/bolle-safety") &&
+        oldUrl.indexOf("./blog/employee-wellness-drives-ppe") &&
         oldUrl.indexOf("./blog/fighting-fatigue") &&
         oldUrl.indexOf("./blog/foot-protection") &&
         oldUrl.indexOf("./blog/foundation-of-success") &&
