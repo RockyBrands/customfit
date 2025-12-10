@@ -5,9 +5,9 @@ function getEmpLoginInfo() {
       myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
       var urlencoded = new URLSearchParams();
       var cf_token;
-      urlencoded.append("username", "apiklaviyo");
-      urlencoded.append("password", "lcftrack783");
-      urlencoded.append("grant_type", "password");
+      urlencoded.append("username", "");
+      urlencoded.append("password", "");
+      urlencoded.append("grant_type", "");
       var requestOptions = {
       method: 'POST',
       headers: myHeaders,
