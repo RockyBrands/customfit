@@ -1,0 +1,99 @@
+// Saralee
+{
+    "stateID": "",
+    "name" : "Saralee Brooks",
+    "picture" : "./assets/img/160x160/saralee.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"saralee.brooks@lehigh.com",
+    "phoneNumber": "740-753-9100 x2164",
+    "phoneLink" : "7407539100,2164",
+    "linkedin" : "https://www.linkedin.com/in/saralee-brooks-6b66b4122/"
+},
+// Becca Farley
+{
+    "stateID": "",
+    "name" : "Becca Farley",
+    "picture" : "./assets/img/160x160/becca.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"becca.farley@lehigh.com",
+    "phoneNumber": "740-753-9100 x2523",
+    "phoneLink" : "7407539100,2523",
+    "linkedin" : "https://www.linkedin.com/in/becca-farley-014309215/"
+},
+// Nicole Hooper
+{
+    "stateID": "",
+    "name" : "Nicole Hooper",
+    "picture" : "./assets/img/160x160/nicole.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"nicole.hooper@lehigh.com",
+    "phoneNumber": "740-753-9100 x2339",
+    "phoneLink" : "7407539100,2339",
+    "linkedin" : "https://www.linkedin.com/in/nicoleleehooper/"
+},
+// Christian Millwood
+{
+    "stateID": "",
+    "name" : "Christian Millwood",
+    "picture" : "./assets/img/160x160/christian.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"christian.millwood@lehigh.com",
+    "phoneNumber": "740-753-9100 x2579",
+    "phoneLink" : "7407539100,2579",
+    "linkedin" : "https://www.linkedin.com/in/christian-millwood-bb93a493"
+},
+//Grant Kimes
+{
+    "stateID": "",
+    "name" : "Grant Kimes",
+    "picture" : "./assets/img/160x160/grant.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"grant.kimes@lehigh.com",
+    "phoneNumber": "602-628-5663",
+    "phoneLink" : "6026285663",
+    "linkedin" : "https://www.linkedin.com/pub/grant-kimes/7b/136/68a"
+},
+// Nick Elrod
+{
+    "stateID": "",
+    "name" : "Nick Elrod",
+    "picture" : "./assets/img/160x160/nick.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"nick.elrod@lehigh.com",
+    "phoneNumber": "740-753-9100 x2410",
+    "phoneLink" : "7407539100,2410",
+    "linkedin" : "https://www.linkedin.com/in/nicholas-elrod-394b2641"
+},
+// Scott Thomasson
+{
+    "stateID": "",
+    "name" : "Scott Thomasson",
+    "picture" : "./assets/img/160x160/scott.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"scott.thomasson@lehigh.com",
+    "phoneNumber": "740-753-9100 x2341",
+    "phoneLink" : "7407539100,2341",
+    "linkedin" : "https://www.linkedin.com/in/scott-thomasson-349508284/"
+},
+// Austin Short
+{
+    "stateID": "",
+    "name" : "Austin Short",
+    "picture" : "./assets/img/160x160/austin_short.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"austin.short@lehigh.com",
+    "phoneNumber": "740-753-9100 x2370",
+    "phoneLink" : "7407539100,2370",
+    "linkedin" : "https://www.linkedin.com/in/austin-short-66a251177/"
+},
+// Mike Jacobs
+{
+    "stateID": "",
+    "name" : "Mike Jacobs",
+    "picture" : "./assets/img/160x160/michael.jpg",
+    "title" : "Regional Account Manager",
+    "emailAddress":"mike.jacobs@lehigh.com",
+    "phoneNumber": "740-753-9100 x2405",
+    "phoneLink" : "7407539100,2405",
+    "linkedin" : "https://www.linkedin.com/in/mike-jacobs-aa476311a/"
+},
