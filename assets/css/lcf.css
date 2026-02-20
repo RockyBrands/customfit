@@ -23481,3 +23481,16 @@ a:hover .text-inherit {
     border-top-right-radius: 0.8125rem !important;
     border-bottom-right-radius: 0.8125rem !important;
 }
+
+.dielectric-safety-box {
+    background-color: #bed600;
+    color: #fff;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.dielectric-safety-text {
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
