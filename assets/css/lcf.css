@@ -23471,3 +23471,13 @@ a:hover .text-inherit {
   .min-450px-height {
     min-height: 450px;
   }
+
+  .rounded-3-left {
+    border-top-left-radius: 0.8125rem !important;
+    border-bottom-left-radius: 0.8125rem !important;
+  }
+
+.rounded-3-right {
+    border-top-right-radius: 0.8125rem !important;
+    border-bottom-right-radius: 0.8125rem !important;
+}
