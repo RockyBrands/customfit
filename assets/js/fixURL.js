@@ -71,17 +71,18 @@ $(document).ready(function () {
         oldUrl.indexOf("./unhealthy-feet") && 
         oldUrl.indexOf("./warranty") && 
         oldUrl.indexOf("./wellness") && 
+        oldUrl.indexOf("./wesco") && 
         oldUrl.indexOf("./why-new-orthotics")) != -1) {
             var newUrl = "https://www.customfit.me/" + oldUrl; // Create new url
             if (window.location.hostname.indexOf("dev.customfit") != -1) {
                 newUrl = "http://dev.customfit.me/" + oldUrl;
             }
-            $(this).attr("href", newUrl); // Set herf value
+            $(this).attr("href", newUrl); // Set href value
         }
         else {
             if (oldUrl.indexOf("#") != -1) {
                 var newUrl = window.location.href + oldUrl; // Create new url
-                $(this).attr("href", newUrl); // Set herf value
+                $(this).attr("href", newUrl); // Set href value
             }
         }
     });
