@@ -21254,6 +21254,12 @@ input[type="number"] {
     overflow: hidden;
 }
 
+.scrolling-image-container-wesco {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
 .scrolling-image {
     position: absolute;
     overflow: hidden;
