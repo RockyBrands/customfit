@@ -18836,6 +18836,9 @@ input[type="number"] {
 .list-checked-lg .list-unchecked-item:not(:last-child) {
     margin-bottom: 1.25rem;
 }
+
+
+
 .list-checked-lg .list-checked-item::before,
 .list-checked-lg .list-unchecked-item::before {
     width: 1.5rem;
@@ -23496,4 +23499,8 @@ a:hover .text-inherit {
 
 .safety-standards-text {
     font-weight: 800;
+}
+
+.tight-checked-item {
+    margin-bottom: 0.5rem!important;
 }
